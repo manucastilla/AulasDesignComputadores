@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "dadoROM[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dadoROM[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dadoROM[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dadoROM[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dadoROM[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dadoROM[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dadoROM[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dadoROM[7]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
