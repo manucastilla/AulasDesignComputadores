@@ -1,0 +1,25 @@
+Quartus Prime Archive log --	C:/intelFPGA_lite/17.1/Aula_12/__Aula_12.auto.qarlog
+
+Archive:	C:/intelFPGA_lite/17.1/Aula_12/__Aula_12.auto.qar
+Date:		Thu Oct 22 19:05:24 2020
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+Aula_12.qsf
+Aula_12.vhd
+C:/intelFPGA_lite/17.1/Aula_12/db/Aula_12.cbx.xml
+C:/intelFPGA_lite/17.1/Aula_12/db/Aula_12.qpf
+C:/intelFPGA_lite/17.1/Aula_12/output_files/Aula_12.flow.rpt
+C:/intelFPGA_lite/17.1/Aula_12/output_files/Aula_12.map.rpt
+C:/intelFPGA_lite/17.1/Aula_12/output_files/Aula_12.map.summary
+ROMMIPS.vhd
+ULA.vhd
+UnidadeControle.vhd
+bancoRegistradores.vhd
+c:/intelfpga_lite/17.1/quartus/bin64/assignment_defaults.qdf
+registradorGenerico.vhd
+somaConstante.vhd
+	======= Total: 14 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
