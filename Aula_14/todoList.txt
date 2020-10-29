@@ -1,0 +1,11 @@
+--> o que falta
+
+: colocar read no ram
+-Arrumar unidade de controle
+
+
+
+
+-Trocar seletor por ALIAS
+-Organizar constantes
+--- Colocar no constante MIPS
