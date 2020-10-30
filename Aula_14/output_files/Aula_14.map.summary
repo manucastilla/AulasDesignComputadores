@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Thu Oct 29 12:38:55 2020
+Analysis & Elaboration Status : Successful - Thu Oct 29 21:34:37 2020
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : Aula_14
-Top-level Entity Name : Aula_14
+Top-level Entity Name : processador
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

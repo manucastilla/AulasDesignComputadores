@@ -39,6 +39,7 @@ architecture arch_name of processador is
 	--SIGNAL PC_MUX                 : std_logic_vector(31 DOWNTO 0);
 	SIGNAL PC_ROM_INC             : std_logic_vector(31 DOWNTO 0);
 	SIGNAL PC_MUX              : std_logic_vector(31 DOWNTO 0);
+	SIGNAL PC_MUX_JUMP              : std_logic_vector(31 DOWNTO 0);
 
 	-- ROM MIPS --
 	SIGNAL ROM_UC                 : std_logic_vector(31 DOWNTO 0);
@@ -59,8 +60,9 @@ architecture arch_name of processador is
 	SIGNAL saida_ULA               : std_logic_vector(31 DOWNTO 0);
 	
 	-- UC --
-	SIGNAL palavraControle_out    : std_logic_vector(9 DOWNTO 0);
+	SIGNAL palavraControle_out    : std_logic_vector(10 DOWNTO 0);
 
+	ALIAS seletor_JMP             : std_logic IS palavraControle_out(10);
 	ALIAS seletorMUX_RT_RD        : std_logic IS palavraControle_out(9);
 	ALIAS escreveC				  : std_logic IS palavraControle_out(8);
 	ALIAS seletorMUX_rt_imediato  : std_logic IS palavraControle_out(7);
@@ -69,10 +71,11 @@ architecture arch_name of processador is
 	ALIAS BEQ                     : std_logic IS palavraControle_out(2);  
 	ALIAS rd                      : STD_LOGIC is palavraControle_out (1);
 	ALIAS wr                      : std_logic is palavraControle_out (0);
-	  
+ 
 
 	ALIAS opcode            	  : std_logic_vector (31 DOWNTO 26) IS ROM_UC(31 DOWNTO 26);
-	ALIAS func            	      : std_logic_vector (5 DOWNTO 0) IS ROM_UC(5 DOWNTO 0);	
+	ALIAS func            	      : std_logic_vector (5 DOWNTO 0) IS ROM_UC(5 DOWNTO 0);
+	ALIAS imediato                : std_logic_vector (25 DOWNTO 0) IS ROM_UC(25 DOWNTO 0);	
 
 	-- EXTENSAO --
 	SIGNAL MUXentradaB_extensao   : std_logic_vector(31 DOWNTO 0);
@@ -86,35 +89,44 @@ architecture arch_name of processador is
 begin
 
 	LEFT_sinal_externo: entity work.shftLEFT
-	  port map(
-		dataIN  => MUXentradaB_extensao ,
-		dataOUT => saidaSHIFT_entradaSUM
-	  ) ;
+			port map(
+				dataIN  => MUXentradaB_extensao ,
+				dataOUT => saidaSHIFT_entradaSUM
+			) ;
 	
 
 	somador_somador : entity work.somadorGenerico
-	generic map (larguraDados => 32)
-	port map( 
-		entradaA => saida_SOMA_FIXA, 
-		entradaB =>  saidaSHIFT_entradaSUM, 
-		saida => saida_SUM_MUX
-	);
+			generic map (larguraDados => 32)
+			port map( 
+				entradaA => saida_SOMA_FIXA, 
+				entradaB =>  saidaSHIFT_entradaSUM, 
+				saida => saida_SUM_MUX
+			);
 
 	MUX_somador : entity work.muxGenerico2x1 				-- mux entre somador e pc
-	generic map(larguraDados => 32)
-	port map(
-		entradaA_MUX => saida_SOMA_FIXA, 
-		entradaB_MUX => saida_SUM_MUX ,
-		seletor_MUX => selMUX_AND_BEQ, 
-		saida_MUX    => PC_MUX
-	);
+			generic map(larguraDados => 32)
+			port map(
+				entradaA_MUX => saida_SOMA_FIXA, 
+				entradaB_MUX => saida_SUM_MUX ,
+				seletor_MUX => selMUX_AND_BEQ, 
+				saida_MUX    => PC_MUX
+			);
 
 	selMUX_AND_BEQ <= BEQ AND flagZero;
+
+	MUX_jump  : entity work.muxGenerico2x1 				-- mux JMP
+			generic map(larguraDados => 32)
+			port map(
+				entradaA_MUX => PC_MUX, 
+				entradaB_MUX =>  saida_SOMA_FIXA(31 DOWNTO 28) & imediato  & b"00",
+				seletor_MUX => seletor_JMP , 
+				saida_MUX    => PC_MUX_JUMP
+			);
 
 	PC : entity work.registradorGenerico   
 				generic map (larguraDados => 32)
 				port map (
-					DIN => PC_MUX, 
+					DIN => PC_MUX_JUMP, 
 					DOUT => PC_ROM_INC, 
 					ENABLE => '1', 
 					CLK => clk, 
