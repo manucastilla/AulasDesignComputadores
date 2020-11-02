@@ -16,7 +16,12 @@ entity processador is
 	barramento_endereco      : out std_logic_vector(31 DOWNTO 0);
 	barramentoDeEscritaDados : out std_logic_vector(31 DOWNTO 0);
 	habilitaEscrita          : out std_logic;
-	habilitaLeitura          : out std_logic
+	habilitaLeitura          : out std_logic;
+	
+	PC_out				: out std_logic_vector(31 DOWNTO 0);
+	saida_ULA_out       : out std_logic_vector(31 DOWNTO 0);
+	saidaBanco_REG2_out : out std_logic_vector(31 DOWNTO 0);
+	seletor_out  : out std_logic_vector(31 DOWNTO 0)
 	
   );
 end entity;
@@ -50,9 +55,9 @@ architecture arch_name of processador is
 	SIGNAL ULAentradaA_RS         : std_logic_vector(31 DOWNTO 0);
 	SIGNAL saidaBanco_REG2        : std_logic_vector(31 DOWNTO 0);
 	SIGNAL entrada_REG_MUX        : std_logic_vector(31 DOWNTO 0);
-	ALIAS entradaA_RS         	  : std_logic_vector (25 DOWNTO 21) IS ROM_UC(25 DOWNTO 21);
-	ALIAS entradaB_RT         	  : std_logic_vector (20 DOWNTO 16) IS ROM_UC(20 DOWNTO 16);
-	ALIAS entradaC_RD        	  : std_logic_vector (15 DOWNTO 11) IS ROM_UC(15 DOWNTO 11);
+	ALIAS entradaA_RS         	  : std_logic_vector (4 DOWNTO 0) IS ROM_UC(25 DOWNTO 21);
+	ALIAS entradaB_RT         	  : std_logic_vector (4 DOWNTO 0) IS ROM_UC(20 DOWNTO 16);
+	ALIAS entradaC_RD        	  : std_logic_vector (4 DOWNTO 0) IS ROM_UC(15 DOWNTO 11);
 	SIGNAL entrada_REG_MUX0       : std_logic_vector (4 DOWNTO 0);
 
 	-- ULA --
@@ -103,6 +108,8 @@ begin
 				saida => saida_SUM_MUX
 			);
 
+	selMUX_AND_BEQ <= BEQ AND flagZero;
+	
 	MUX_somador : entity work.muxGenerico2x1 				-- mux entre somador e pc
 			generic map(larguraDados => 32)
 			port map(
@@ -112,7 +119,7 @@ begin
 				saida_MUX    => PC_MUX
 			);
 
-	selMUX_AND_BEQ <= BEQ AND flagZero;
+	
 
 	MUX_jump  : entity work.muxGenerico2x1 				-- mux JMP
 			generic map(larguraDados => 32)
@@ -143,7 +150,7 @@ begin
 	ROM_mips: entity work.ROMMIPS
 				port map(
 					clk => clk,
-					Endereco => saida_SOMA_FIXA,
+					Endereco => PC_ROM_INC,
 					Dado => ROM_UC
 				);
 
@@ -202,11 +209,11 @@ begin
 				);
 				
 	
-	MUX2 : entity work.muxGenerico2x1 				-- mux entre ula e memoria de dados
+	MUX2 : entity work.muxGenerico2x1 				-- mux entre banco e memoria de dados
 				generic map(larguraDados => 32)
 				port map(
 					entradaA_MUX => saida_ULA, 
-					entradaB_MUX => barramento_leituraDados, -- saida 
+					entradaB_MUX => barramento_leituraDados, -- --talvez aqui
 					seletor_MUX => seletor_MUX_ULA_MEM, 
     				saida_MUX    => entrada_REG_MUX
 				);
@@ -225,5 +232,10 @@ begin
 	barramentoDeEscritaDados <= saidaBanco_REG2;
 	habilitaEscrita          <= wr; 
 	habilitaLeitura          <= rd; 
+	
+	PC_out                   <= PC_ROM_INC;
+	saidaBanco_REG2_out <=	saidaBanco_REG2;
+	saida_ULA_out <= saida_ULA;
+	seletor_out <= seletor;
 	
 	end architecture;
