@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/simulation/qsim
 Eaula_14
-Z1 w1604335833
+Z1 w1604337681
 Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 YZlobdkPHzE;N99jHfcMc3
 Z3 DPx8 cyclonev 19 cyclonev_components 0 22 WF17oJHHbo`b[5Bl5P6_h0
 Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 dfin^_@l97Ngz6cK0kjS62
@@ -24,18 +24,18 @@ Z11 8Aula_14.vho
 Z12 FAula_14.vho
 l0
 L38
-VG:Jb<_geoH9DSc1SiJe1[0
-!s100 Q56lP21IPTXaI=zhY3B1R1
+Vc@RO9iUXUgi5;36jSF?z10
+!s100 45^0Zi`^kEH2l?WWHhcB10
 Z13 OV;C;10.5b;63
 32
-!s110 1604335837
+Z14 !s110 1604337682
 !i10b 1
-Z14 !s108 1604335836.000000
-Z15 !s90 -work|work|Aula_14.vho|
-Z16 !s107 Aula_14.vho|
+Z15 !s108 1604337682.000000
+Z16 !s90 -work|work|Aula_14.vho|
+Z17 !s107 Aula_14.vho|
 !i113 1
-Z17 o-work work
-Z18 tExplicit 1 CvgOpt 0
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
 Astructure
 R2
 R3
@@ -46,62 +46,62 @@ R7
 R8
 R9
 R10
-DEx4 work 7 aula_14 0 22 G:Jb<_geoH9DSc1SiJe1[0
-l7055
-L47
-V[UEcoS]c]UA2WW_UX]eke2
-!s100 YmoN04zF0:[hHaDN5CeVR0
+DEx4 work 7 aula_14 0 22 c@RO9iUXUgi5;36jSF?z10
+l7068
+L48
+Vo<YFmJe3bh47W6?>Z4HYi3
+!s100 LDd__WlgWLR:DD?KjTG=J1
 R13
 32
-!s110 1604335838
-!i10b 1
 R14
+!i10b 1
 R15
 R16
-!i113 1
 R17
+!i113 1
 R18
+R19
 Eaula_14_vhd_vec_tst
-Z19 w1604335826
+Z20 w1604337675
 R8
 R9
 R0
-Z20 8Waveform1.vwf.vht
-Z21 FWaveform1.vwf.vht
+Z21 8Waveform1.vwf.vht
+Z22 FWaveform1.vwf.vht
 l0
 L31
 VHGQWH4YHO[lK[KXWUOikZ1
 !s100 >YdEjP0oNb^kzAnLX?^gb1
 R13
 32
-Z22 !s110 1604335841
+Z23 !s110 1604337683
 !i10b 1
-Z23 !s108 1604335840.000000
-Z24 !s90 -work|work|Waveform1.vwf.vht|
-Z25 !s107 Waveform1.vwf.vht|
+Z24 !s108 1604337683.000000
+Z25 !s90 -work|work|Waveform1.vwf.vht|
+Z26 !s107 Waveform1.vwf.vht|
 !i113 1
-R17
 R18
+R19
 Aaula_14_arch
 R8
 R9
-Z26 DEx4 work 19 aula_14_vhd_vec_tst 0 22 HGQWH4YHO[lK[KXWUOikZ1
-l48
+Z27 DEx4 work 19 aula_14_vhd_vec_tst 0 22 HGQWH4YHO[lK[KXWUOikZ1
+l50
 L33
-Z27 V]n_>[IdIL<ETbBZL`OD]10
-Z28 !s100 8SZN9nSLa3069ePlEzCl03
+VFBX:DD6LVXaQGKO]1foRN3
+!s100 <9J@l5OZ?Q9T;;@m<o9JZ2
 R13
 32
-R22
-!i10b 1
 R23
+!i10b 1
 R24
 R25
+R26
 !i113 1
-R17
 R18
+R19
 Eprocessador
-Z29 w1604096310
+Z28 w1604096310
 R2
 R3
 R4
@@ -120,14 +120,14 @@ VT0amFT:`8XDFaVjf>BJlL3
 !s100 aIiYd5o?aO5iI[QlcV6GT1
 R13
 32
-Z30 !s110 1604096311
+Z29 !s110 1604096311
 !i10b 1
-Z31 !s108 1604096311.000000
-R15
+Z30 !s108 1604096311.000000
 R16
-!i113 1
 R17
+!i113 1
 R18
+R19
 Astructure
 R2
 R3
@@ -145,35 +145,35 @@ V<Jl55G@YDU5@9<_?S^Kb63
 !s100 4@@R5@hfIR8OSdh<lm4`z1
 R13
 32
-R30
+R29
 !i10b 1
-R31
-R15
+R30
 R16
-!i113 1
 R17
+!i113 1
 R18
+R19
 Eprocessador_vhd_vec_tst
-Z32 w1604096308
+Z31 w1604096308
 R8
 R9
 R0
-R20
 R21
+R22
 l0
 L31
 Vk<SBL<HheXO9k9UO0l:Ig0
 !s100 TPgJLGD3BYbhR1^cMGS2h0
 R13
 32
-R30
+R29
 !i10b 1
-R31
-R24
+R30
 R25
+R26
 !i113 1
-R17
 R18
+R19
 Aprocessador_arch
 R8
 R9
@@ -184,11 +184,11 @@ V=O_DIzUTcn[UDY054Mkgh2
 !s100 SV_DZf@OE`3OKn68YPzC:0
 R13
 32
-R30
+R29
 !i10b 1
-R31
-R24
+R30
 R25
+R26
 !i113 1
-R17
 R18
+R19

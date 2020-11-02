@@ -13,7 +13,7 @@ entity Aula_14 is
 	  PC_out_out : out std_logic_vector(31 DOWNTO 0);
 	  saida_ULA_out_out : out std_logic_vector(31 DOWNTO 0);
 	  saidaBanco_REG2_out_out : out std_logic_vector(31 DOWNTO 0);
-	  seletor_out_out : out std_logic_vector(31 DOWNTO 0)
+	  seletor_out_out : out std_logic_vector(2 DOWNTO 0)
 	 
 
   );

@@ -25,7 +25,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Mon Nov 02 13:50:22 2020
+    Info: Processing started: Mon Nov 02 14:21:11 2020
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Aula_14 -c Aula_14 --vector_source=C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/Waveform1.vwf --testbench_file=C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/simulation/qsim/Waveform1.vwf.vht
 Info (119006): Selected device 5CEBA4F23C7 for design "Aula_14"
 
@@ -53,15 +53,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Mon Nov 02 13:50:27 2020
+    Info: Processing started: Mon Nov 02 14:21:16 2020
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/simulation/qsim/ Aula_14 -c Aula_14
 Info (119006): Selected device 5CEBA4F23C7 for design "Aula_14"
 Info (204019): Generated file Aula_14.vho in folder "C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4722 megabytes
-    Info: Processing ended: Mon Nov 02 13:50:34 2020
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Processing ended: Mon Nov 02 14:21:21 2020
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
 
 Completed successfully. 
 
@@ -80,20 +80,16 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
-
 # do Aula_14.do
-
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:50:36 on Nov 02,2020
+# Start time: 14:21:22 on Nov 02,2020
 # vcom -work work Aula_14.vho 
-
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package VITAL_Timing
-
 # -- Loading package VITAL_Primitives
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
@@ -103,11 +99,11 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Compiling entity Aula_14
 # -- Compiling architecture structure of Aula_14
 
-# End time: 13:50:40 on Nov 02,2020, Elapsed time: 0:00:04
+# End time: 14:21:23 on Nov 02,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:50:40 on Nov 02,2020
+# Start time: 14:21:23 on Nov 02,2020
 # vcom -work work Waveform1.vwf.vht 
 # -- Loading package STANDARD
 
@@ -115,12 +111,11 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package std_logic_1164
 # -- Compiling entity Aula_14_vhd_vec_tst
 # -- Compiling architecture Aula_14_arch of Aula_14_vhd_vec_tst
-
-# End time: 13:50:41 on Nov 02,2020, Elapsed time: 0:00:01
+# End time: 14:21:23 on Nov 02,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Aula_14_vhd_vec_tst 
-# Start time: 13:50:41 on Nov 02,2020
+# Start time: 14:21:23 on Nov 02,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -138,18 +133,11 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading cyclonev.cyclonev_io_ibuf(arch)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
-# ** Warning: Design size of 636843 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 636993 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
-
 # after#34
 
-# Simulation time: 0 ps
-
-# Simulation time: 0 ps
-
-# Simulation time: 0 ps
-
-# End time: 13:50:55 on Nov 02,2020, Elapsed time: 0:00:14
+# End time: 14:21:27 on Nov 02,2020, Elapsed time: 0:00:04
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
@@ -162,7 +150,7 @@ Reading C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/simulation/qsim/A
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/simulation/qsim/Aula_14_20201102135055.sim.vwf
+Writing the resulting VWF to C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/simulation/qsim/Aula_14_20201102142128.sim.vwf
 
 Finished VCD to VWF conversion.
 

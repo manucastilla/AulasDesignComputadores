@@ -380,6 +380,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "seletor_out_out[1]",
+					"strict" : false
+				},
+				{
 					"name" : "CLOCK_50",
 					"strict" : false
 				}

@@ -1075,6 +1075,46 @@ SIGNAL("saidaBanco_REG2_out_out[0]")
 	PARENT = "saidaBanco_REG2_out_out";
 }
 
+SIGNAL("seletor_out_out")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 3;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("seletor_out_out[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "seletor_out_out";
+}
+
+SIGNAL("seletor_out_out[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "seletor_out_out";
+}
+
+SIGNAL("seletor_out_out[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "seletor_out_out";
+}
+
 TRANSITION_LIST("CLOCK_50")
 {
 	NODE
@@ -1947,6 +1987,33 @@ TRANSITION_LIST("saidaBanco_REG2_out_out[1]")
 }
 
 TRANSITION_LIST("saidaBanco_REG2_out_out[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 240.0;
+	}
+}
+
+TRANSITION_LIST("seletor_out_out[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 240.0;
+	}
+}
+
+TRANSITION_LIST("seletor_out_out[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 240.0;
+	}
+}
+
+TRANSITION_LIST("seletor_out_out[0]")
 {
 	NODE
 	{
@@ -2952,6 +3019,46 @@ DISPLAY_LINE
 	TREE_INDEX = 99;
 	TREE_LEVEL = 1;
 	PARENT = 67;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "seletor_out_out";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 100;
+	TREE_LEVEL = 0;
+	CHILDREN = 101, 102, 103;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "seletor_out_out[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 101;
+	TREE_LEVEL = 1;
+	PARENT = 100;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "seletor_out_out[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 102;
+	TREE_LEVEL = 1;
+	PARENT = 100;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "seletor_out_out[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 103;
+	TREE_LEVEL = 1;
+	PARENT = 100;
 }
 
 TIME_BAR

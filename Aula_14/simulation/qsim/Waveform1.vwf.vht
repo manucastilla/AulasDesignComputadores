@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "11/02/2020 13:50:26"
+-- Generated on "11/02/2020 14:21:15"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Aula_14
 -- 
@@ -37,12 +37,14 @@ SIGNAL CLOCK_50 : STD_LOGIC;
 SIGNAL PC_out_out : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL saida_ULA_out_out : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL saidaBanco_REG2_out_out : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL seletor_out_out : STD_LOGIC_VECTOR(2 DOWNTO 0);
 COMPONENT Aula_14
 	PORT (
 	CLOCK_50 : IN STD_LOGIC;
 	PC_out_out : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	saida_ULA_out_out : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-	saidaBanco_REG2_out_out : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+	saidaBanco_REG2_out_out : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	seletor_out_out : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN
@@ -52,7 +54,8 @@ BEGIN
 	CLOCK_50 => CLOCK_50,
 	PC_out_out => PC_out_out,
 	saida_ULA_out_out => saida_ULA_out_out,
-	saidaBanco_REG2_out_out => saidaBanco_REG2_out_out
+	saidaBanco_REG2_out_out => saidaBanco_REG2_out_out,
+	seletor_out_out => seletor_out_out
 	);
 
 -- CLOCK_50

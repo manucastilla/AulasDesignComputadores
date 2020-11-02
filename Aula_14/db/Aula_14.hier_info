@@ -97,6 +97,9 @@ saidaBanco_REG2_out_out[28] <= processador:processador.saidaBanco_REG2_out[28]
 saidaBanco_REG2_out_out[29] <= processador:processador.saidaBanco_REG2_out[29]
 saidaBanco_REG2_out_out[30] <= processador:processador.saidaBanco_REG2_out[30]
 saidaBanco_REG2_out_out[31] <= processador:processador.saidaBanco_REG2_out[31]
+seletor_out_out[0] <= processador:processador.seletor_out[0]
+seletor_out_out[1] <= processador:processador.seletor_out[1]
+seletor_out_out[2] <= processador:processador.seletor_out[2]
 
 
 |Aula_14|processador:processador
@@ -298,6 +301,9 @@ saidaBanco_REG2_out[28] <= bancoregistradores:bancoRegistrador.saidaB[28]
 saidaBanco_REG2_out[29] <= bancoregistradores:bancoRegistrador.saidaB[29]
 saidaBanco_REG2_out[30] <= bancoregistradores:bancoRegistrador.saidaB[30]
 saidaBanco_REG2_out[31] <= bancoregistradores:bancoRegistrador.saidaB[31]
+seletor_out[0] <= unidadecontrole:UC.palavraControle[4]
+seletor_out[1] <= unidadecontrole:UC.palavraControle[5]
+seletor_out[2] <= unidadecontrole:UC.palavraControle[6]
 
 
 |Aula_14|processador:processador|shftLEFT:LEFT_sinal_externo
@@ -1752,20 +1758,20 @@ entradaB[31] => Add0.IN33
 entradaB[31] => op_and[31].IN1
 entradaB[31] => op_or[31].IN1
 entradaB[31] => Add1.IN1
-seletor[0] => Equal0.IN1
+seletor[0] => Equal0.IN2
 seletor[0] => Equal1.IN2
-seletor[0] => Equal2.IN1
-seletor[0] => Equal3.IN2
-seletor[0] => Equal4.IN2
-seletor[1] => Equal0.IN0
+seletor[0] => Equal2.IN2
+seletor[0] => Equal3.IN0
+seletor[0] => Equal4.IN1
+seletor[1] => Equal0.IN1
 seletor[1] => Equal1.IN1
-seletor[1] => Equal2.IN2
-seletor[1] => Equal3.IN1
-seletor[1] => Equal4.IN1
-seletor[2] => Equal0.IN2
+seletor[1] => Equal2.IN1
+seletor[1] => Equal3.IN2
+seletor[1] => Equal4.IN2
+seletor[2] => Equal0.IN0
 seletor[2] => Equal1.IN0
 seletor[2] => Equal2.IN0
-seletor[2] => Equal3.IN0
+seletor[2] => Equal3.IN1
 seletor[2] => Equal4.IN0
 saida[0] <= saida.DB_MAX_OUTPUT_PORT_TYPE
 saida[1] <= saida.DB_MAX_OUTPUT_PORT_TYPE

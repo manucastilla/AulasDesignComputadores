@@ -1,6 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;    -- Biblioteca IEEE para funções aritméticas
+use ieee.constantesMIPS.all;
 
 entity ULA is
     generic
@@ -34,11 +35,11 @@ architecture comportamento of ULA is
 		-- op_slt    <= subtracao;
 
 
-      saida <= soma when (seletor = "000") else
-          subtracao when (seletor = "001") else
-          op_and when    (seletor = "010") else
-          op_or when     (seletor = "011") else
-			 op_slt when     (seletor = "100") else
+      saida <= soma when (seletor = execAddULA) else
+          subtracao when (seletor = execSubULA) else
+          op_and when    (seletor = execAndULA) else
+          op_or when     (seletor = execOrULA) else
+			 op_slt when     (seletor = execSltULA) else
           entradaA;      -- outra opcao: saida = entradaA
 
       flagZero <= '1' when unsigned(saida) = unsigned(zero) else '0';
