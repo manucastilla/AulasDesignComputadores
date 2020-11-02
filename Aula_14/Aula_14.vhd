@@ -32,7 +32,7 @@ architecture arch_name of Aula_14 is
 	signal PC_out				 : std_logic_vector(31 DOWNTO 0);
 	signal saida_ULA_out : std_logic_vector(31 DOWNTO 0);
 	signal saidaBanco_REG2_out : std_logic_vector(31 DOWNTO 0);
-	signal seletor_out : std_logic_vector(31 DOWNTO 0);
+	signal seletor_out : std_logic_vector(2 DOWNTO 0);
 
   
 begin

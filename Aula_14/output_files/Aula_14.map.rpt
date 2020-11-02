@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Aula_14
-Mon Nov 02 14:01:50 2020
+Mon Nov 02 14:08:56 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Mon Nov 02 14:01:50 2020           ;
+; Analysis & Synthesis Status ; Failed - Mon Nov 02 14:08:56 2020           ;
 ; Quartus Prime Version       ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name               ; Aula_14                                     ;
 ; Top-level Entity Name       ; Aula_14                                     ;
@@ -162,7 +162,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Nov 02 14:01:14 2020
+    Info: Processing started: Mon Nov 02 14:08:29 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Aula_14 -c Aula_14
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file aula_14.vhd
@@ -214,9 +214,9 @@ Info (12128): Elaborating entity "processador" for hierarchy "processador:proces
 Error (10344): VHDL expression error at processador.vhd(239): expression has 3 elements, but must have 32 elements File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/processador.vhd Line: 239
 Error (12152): Can't elaborate user hierarchy "processador:processador" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/Aula_14.vhd Line: 40
 Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 0 warnings
-    Error: Peak virtual memory: 4856 megabytes
-    Error: Processing ended: Mon Nov 02 14:01:50 2020
-    Error: Elapsed time: 00:00:36
-    Error: Total CPU time (on all processors): 00:01:17
+    Error: Peak virtual memory: 4845 megabytes
+    Error: Processing ended: Mon Nov 02 14:08:56 2020
+    Error: Elapsed time: 00:00:27
+    Error: Total CPU time (on all processors): 00:00:57
 
 

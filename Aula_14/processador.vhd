@@ -21,7 +21,7 @@ entity processador is
 	PC_out				: out std_logic_vector(31 DOWNTO 0);
 	saida_ULA_out       : out std_logic_vector(31 DOWNTO 0);
 	saidaBanco_REG2_out : out std_logic_vector(31 DOWNTO 0);
-	seletor_out  : out std_logic_vector(31 DOWNTO 0)
+	seletor_out  : out std_logic_vector(2 DOWNTO 0)
 	
   );
 end entity;
