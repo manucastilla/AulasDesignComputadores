@@ -41,16 +41,18 @@ BEGIN
     seletorMUX_RtRd       <= '1' WHEN opCode = opCodeTipoR ELSE '0';
 	habilitaESCreg3       <= '1' WHEN opCode = opCodeTipoR ELSE '0';
 	seletorMUX_RtImediato <= '1' WHEN opCode = opCodeTipoR ELSE '0';
-	seletorULA_mem		  <='1' WHEN opCode =  opCodeTipoR ELSE '0';
+	seletorULA_mem		  <= '1' WHEN opCode = opCodeTipoR ELSE '0';
 	BEQ 				  <= '1' WHEN opCode = opCodeBEQ ELSE '0'; 
-	habLeituraMEM         <= '0' WHEN opCode = opCodeTipoR ELSE '1';
-	habEscritaMEM         <= '0' WHEN opCode = opCodeTipoR ELSE '1';
+	habLeituraMEM         <= '0' WHEN opCode = opCodeLW ELSE '1';
+	habEscritaMEM         <= '0' WHEN opCode = opCodeSW ELSE '1';
 	operacaoULA           <= execAddULA WHEN opCode = opCodeTipoR AND func = functADD ELSE -- add
-						 execSubULA WHEN opCode = opCodeTipoR AND func = functSUB ELSE -- sub
-						 execAndULA WHEN opCode = opCodeTipoR AND func = functAND ELSE -- and
-						 execOrULA WHEN opCode = opCodeTipoR AND func = functOR ELSE -- or
-						 execSltULA WHEN opCode = opCodeTipoR AND func = functSLT ELSE-- slt
-						 execSubULA WHEN opCode = opCodeBEQ  ELSE
+						     execSubULA WHEN opCode = opCodeTipoR AND func = functSUB ELSE -- sub
+						     execAndULA WHEN opCode = opCodeTipoR AND func = functAND ELSE -- and
+						     execOrULA  WHEN opCode = opCodeTipoR AND func = functOR ELSE -- or
+						     execSltULA WHEN opCode = opCodeTipoR AND func = functSLT ELSE-- slt
+						     execSubULA WHEN opCode = opCodeBEQ  ELSE
+							  execAndULA WHEN opCode = opCodeSW ELSE
+						     execAndULA WHEN opCode = opCodeLW  ELSE --
 						 "000";
 						 
 

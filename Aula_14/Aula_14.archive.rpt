@@ -1,5 +1,5 @@
 Archive Project report for Aula_14
-Thu Oct 29 12:39:50 2020
+Tue Nov 03 15:02:45 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -35,7 +35,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Thu Oct 29 12:39:50 2020 ;
+; Archive Project Status ; Successful - Tue Nov 03 15:02:45 2020 ;
 ; Revision Name          ; Aula_14                               ;
 ; Top-level Entity Name  ; Aula_14                               ;
 ; Family                 ; Cyclone V                             ;
@@ -59,10 +59,10 @@ Info: ----------------------------------------------------------
 Info: Generated report 'Aula_14.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4829 megabytes
-    Info: Processing ended: Thu Oct 29 12:39:50 2020
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4828 megabytes
+    Info: Processing ended: Tue Nov 03 15:02:45 2020
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
 
 
 +--------------------------------------------------------------+
@@ -76,11 +76,14 @@ Info: Quartus Prime Shell was successful. 0 errors, 1 warning
 ; bancoRegistradores.vhd                                       ;
 ; c:/intelfpga_lite/17.1/quartus/bin64/assignment_defaults.qdf ;
 ; constantesMIPS.vhd                                           ;
+; conversorHex7Seg.vhd                                         ;
 ; estendeSinalGenerico.vhd                                     ;
 ; muxGenerico2x1.vhd                                           ;
 ; processador.vhd                                              ;
+; RAMcontent.mif                                               ;
 ; RAMMIPS.vhd                                                  ;
 ; registradorGenerico.vhd                                      ;
+; ROMcontent.mif                                               ;
 ; ROMMIPS.vhd                                                  ;
 ; shftLEFT.vhd                                                 ;
 ; somaConstante.vhd                                            ;
@@ -88,6 +91,7 @@ Info: Quartus Prime Shell was successful. 0 errors, 1 warning
 ; todoList.txt                                                 ;
 ; ULA.vhd                                                      ;
 ; UnidadeControle.vhd                                          ;
+; Waveform1.vwf                                                ;
 +--------------------------------------------------------------+
 
 

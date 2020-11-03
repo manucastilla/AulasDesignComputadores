@@ -230,6 +230,7 @@ instance = comp, \processador|bancoRegistrador|registrador~1067\, processador|ba
 instance = comp, \processador|bancoRegistrador|saidaB[0]~0\, processador|bancoRegistrador|saidaB[0]~0, Aula_14, 1
 instance = comp, \RAM_mips|memRAM~2887\, RAM_mips|memRAM~2887, Aula_14, 1
 instance = comp, \RAM_mips|memRAM~41\, RAM_mips|memRAM~41, Aula_14, 1
+instance = comp, \processador|UC|Equal6~0\, processador|UC|Equal6~0, Aula_14, 1
 instance = comp, \RAM_mips|memRAM~42\, RAM_mips|memRAM~42, Aula_14, 1
 instance = comp, \processador|bancoRegistrador|registrador~74\, processador|bancoRegistrador|registrador~74, Aula_14, 1
 instance = comp, \processador|bancoRegistrador|registrador~42\, processador|bancoRegistrador|registrador~42, Aula_14, 1

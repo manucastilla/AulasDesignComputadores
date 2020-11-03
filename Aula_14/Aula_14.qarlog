@@ -1,7 +1,7 @@
 Quartus Prime Archive log --	C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/Aula_14.qarlog
 
 Archive:	C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/Aula_14.qar
-Date:		Thu Oct 29 12:39:50 2020
+Date:		Tue Nov 03 15:02:45 2020
 Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 	=========== Files Selected: ===========
@@ -9,11 +9,15 @@ C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/Aula_14.qpf
 C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/Aula_14.qsf
 C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/Aula_14.vhd
 C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/RAMMIPS.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/RAMcontent.mif
 C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/ROMMIPS.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/ROMcontent.mif
 C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/ULA.vhd
 C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/UnidadeControle.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/Waveform1.vwf
 C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/bancoRegistradores.vhd
 C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/constantesMIPS.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/conversorHex7Seg.vhd
 C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/estendeSinalGenerico.vhd
 C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/muxGenerico2x1.vhd
 C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/processador.vhd
@@ -23,7 +27,7 @@ C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/somaConstante.vhd
 C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/somadorGenerico.vhd
 C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_14/todoList.txt
 c:/intelfpga_lite/17.1/quartus/bin64/assignment_defaults.qdf
-	======= Total: 18 files to archive =======
+	======= Total: 22 files to archive =======
 
 	================ Status: ===============
 All files archived successfully.

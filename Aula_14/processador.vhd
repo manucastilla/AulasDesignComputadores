@@ -44,7 +44,7 @@ architecture arch_name of processador is
 	--SIGNAL PC_MUX                 : std_logic_vector(31 DOWNTO 0);
 	SIGNAL PC_ROM_INC             : std_logic_vector(31 DOWNTO 0);
 	SIGNAL PC_MUX              : std_logic_vector(31 DOWNTO 0);
-	SIGNAL PC_MUX_JUMP              : std_logic_vector(31 DOWNTO 0);
+	SIGNAL PC_MUX_JUMP            : std_logic_vector(31 DOWNTO 0);
 
 	-- ROM MIPS --
 	SIGNAL ROM_UC                 : std_logic_vector(31 DOWNTO 0);
@@ -55,13 +55,13 @@ architecture arch_name of processador is
 	SIGNAL ULAentradaA_RS         : std_logic_vector(31 DOWNTO 0);
 	SIGNAL saidaBanco_REG2        : std_logic_vector(31 DOWNTO 0);
 	SIGNAL entrada_REG_MUX        : std_logic_vector(31 DOWNTO 0);
-	ALIAS entradaA_RS         	  : std_logic_vector (4 DOWNTO 0) IS ROM_UC(25 DOWNTO 21);
-	ALIAS entradaB_RT         	  : std_logic_vector (4 DOWNTO 0) IS ROM_UC(20 DOWNTO 16);
-	ALIAS entradaC_RD        	  : std_logic_vector (4 DOWNTO 0) IS ROM_UC(15 DOWNTO 11);
+	ALIAS entradaA_RS         	   : std_logic_vector (4 DOWNTO 0) IS ROM_UC(25 DOWNTO 21);
+	ALIAS entradaB_RT         	   : std_logic_vector (4 DOWNTO 0) IS ROM_UC(20 DOWNTO 16);
+	ALIAS entradaC_RD        	   : std_logic_vector (4 DOWNTO 0) IS ROM_UC(15 DOWNTO 11);
 	SIGNAL entrada_REG_MUX0       : std_logic_vector (4 DOWNTO 0);
 
 	-- ULA --
-	SIGNAL ULAentradaB            : std_logic_vector(31 DOWNTO 0);
+	SIGNAL ULAentradaB             : std_logic_vector(31 DOWNTO 0);
 	SIGNAL saida_ULA               : std_logic_vector(31 DOWNTO 0);
 	
 	-- UC --
@@ -69,22 +69,22 @@ architecture arch_name of processador is
 
 	ALIAS seletor_JMP             : std_logic IS palavraControle_out(10);
 	ALIAS seletorMUX_RT_RD        : std_logic IS palavraControle_out(9);
-	ALIAS escreveC				  : std_logic IS palavraControle_out(8);
+	ALIAS escreveC				      : std_logic IS palavraControle_out(8);
 	ALIAS seletorMUX_rt_imediato  : std_logic IS palavraControle_out(7);
-	ALIAS seletor 		          : std_logic_vector(2 DOWNTO 0) IS palavraControle_out(6 DOWNTO 4);
+	ALIAS seletor 		            : std_logic_vector(2 DOWNTO 0) IS palavraControle_out(6 DOWNTO 4);
 	ALIAS seletor_MUX_ULA_MEM     : std_logic IS palavraControle_out(3);
 	ALIAS BEQ                     : std_logic IS palavraControle_out(2);  
 	ALIAS rd                      : STD_LOGIC is palavraControle_out (1);
 	ALIAS wr                      : std_logic is palavraControle_out (0);
  
 
-	ALIAS opcode            	  : std_logic_vector (31 DOWNTO 26) IS ROM_UC(31 DOWNTO 26);
+	ALIAS opcode            	   : std_logic_vector (31 DOWNTO 26) IS ROM_UC(31 DOWNTO 26);
 	ALIAS func            	      : std_logic_vector (5 DOWNTO 0) IS ROM_UC(5 DOWNTO 0);
 	ALIAS imediato                : std_logic_vector (25 DOWNTO 0) IS ROM_UC(25 DOWNTO 0);	
 
 	-- EXTENSAO --
 	SIGNAL MUXentradaB_extensao   : std_logic_vector(31 DOWNTO 0);
-	ALIAS entradaExtensao		  : std_logic_vector (15 DOWNTO 0) IS ROM_UC(15 DOWNTO 0);
+	ALIAS entradaExtensao		   : std_logic_vector (15 DOWNTO 0) IS ROM_UC(15 DOWNTO 0);
 	
 	-- NAO SEI --
 	SIGNAL saidaRegistradorRAM    : std_logic_vector(31 DOWNTO 0);
