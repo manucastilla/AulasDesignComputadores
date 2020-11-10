@@ -6,42 +6,44 @@ entity Aula_16_17 is
 
   port   (
     -- Input ports
-    opcode  :  in  std_logic_vector(5 downto 0);
-    func    :  in std_logic(5 downto 0);
+    func    :  in std_logic_vector(5 downto 0);
     signalB :  in std_logic_vector(31 downto 0);
     signalA :  in std_logic_vector(31 downto 0);
-
-    resultado :  out std_logic_vector(31 downto 0);
-    palavraControle : out std_logic_vector(7 downto 0)
-    
-
+    ULAopIN :  in  std_logic_vector(1 downto 0);
   
-    
+
+    resultado :  out std_logic_vector(31 downto 0) 
   );
 end entity;
 
 
 architecture arch_name of Aula_16_17 is
 
+  signal ulacontrol      : std_logic_vector(2 downto 0);
+  signal saidaula        : std_logic_vector(31 DOWNTO 0);
   
 
 begin
 
-  -- Para instanciar, a atribuição de sinais (e generics) segue a ordem: (nomeSinalArquivoDefinicaoComponente => nomeSinalNesteArquivo)
-  -- regA:  entity work.nome_do_componente generic map (DATA_WIDTH => DATA_WIDTH)
-  --        port map (dataIN => dataIN, dataOUT =>  RegAmuxA, enable =>  habRegA, clk =>  clk, rst => rst);
-   :  entity work.unidadeControleFD 
-        
+UC_ULA   :  entity work.unidadeControleULA
         port map(
+                ULAop   =>  ULAopIN, 
+                func    => func,
                 
+                ULActrl => ulacontrol
                 );
 
 
   
-   : entity work.ULA_final
+ULA   : entity work.ULA_final
         port map(
-               
+                  Binvert  => signalB,
+                  Ainvert  => signalA,
+                  operacao => ulacontrol,
 
+                  result   => saidaula,               
         );
+
+resultado <= saidaula;
 
 end architecture;

@@ -5,7 +5,7 @@ use ieee.constantesMIPS.all;
 
 -- nao esquece de conectar cm o ula
 
-entity unidadeControleFD is
+entity unidadeControleULA is
   
   port   (
     -- Input ports
@@ -18,7 +18,7 @@ entity unidadeControleFD is
 end entity;
 
 
-architecture arch_name of unidadeControleFD is
+architecture arch_name of unidadeControleULA is
 
 
 begin

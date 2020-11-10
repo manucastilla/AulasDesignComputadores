@@ -1,32 +1,90 @@
-Analysis & Synthesis report for Aula_16_17
-Tue Nov 10 10:08:16 2020
-Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Analysis & Elaboration report for Aula_16_17
+Tue Nov 10 15:03:30 2020
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA0|muxGenerico2x1:MUX_invertB
+  5. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA1|muxGenerico2x1:MUX_invertB
+  6. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA2|muxGenerico2x1:MUX_invertB
+  7. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA3|muxGenerico2x1:MUX_invertB
+  8. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA4|muxGenerico2x1:MUX_invertB
+  9. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA5|muxGenerico2x1:MUX_invertB
+ 10. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA6|muxGenerico2x1:MUX_invertB
+ 11. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA7|muxGenerico2x1:MUX_invertB
+ 12. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA8|muxGenerico2x1:MUX_invertB
+ 13. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA9|muxGenerico2x1:MUX_invertB
+ 14. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA10|muxGenerico2x1:MUX_invertB
+ 15. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA11|muxGenerico2x1:MUX_invertB
+ 16. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA12|muxGenerico2x1:MUX_invertB
+ 17. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA13|muxGenerico2x1:MUX_invertB
+ 18. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA14|muxGenerico2x1:MUX_invertB
+ 19. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA15|muxGenerico2x1:MUX_invertB
+ 20. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA16|muxGenerico2x1:MUX_invertB
+ 21. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA17|muxGenerico2x1:MUX_invertB
+ 22. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA18|muxGenerico2x1:MUX_invertB
+ 23. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA19|muxGenerico2x1:MUX_invertB
+ 24. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA20|muxGenerico2x1:MUX_invertB
+ 25. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA21|muxGenerico2x1:MUX_invertB
+ 26. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA22|muxGenerico2x1:MUX_invertB
+ 27. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA23|muxGenerico2x1:MUX_invertB
+ 28. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA24|muxGenerico2x1:MUX_invertB
+ 29. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA25|muxGenerico2x1:MUX_invertB
+ 30. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA26|muxGenerico2x1:MUX_invertB
+ 31. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA27|muxGenerico2x1:MUX_invertB
+ 32. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA28|muxGenerico2x1:MUX_invertB
+ 33. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA29|muxGenerico2x1:MUX_invertB
+ 34. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA30|muxGenerico2x1:MUX_invertB
+ 35. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA31|muxGenerico2x1:MUX_invertB
+ 36. Analysis & Elaboration Settings
+ 37. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA31"
+ 38. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA30"
+ 39. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA29"
+ 40. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA28"
+ 41. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA27"
+ 42. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA26"
+ 43. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA25"
+ 44. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA24"
+ 45. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA23"
+ 46. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA22"
+ 47. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA21"
+ 48. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA20"
+ 49. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA19"
+ 50. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA18"
+ 51. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA17"
+ 52. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA16"
+ 53. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA15"
+ 54. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA14"
+ 55. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA13"
+ 56. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA12"
+ 57. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA11"
+ 58. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA10"
+ 59. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA9"
+ 60. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA8"
+ 61. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA7"
+ 62. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA6"
+ 63. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA5"
+ 64. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA4"
+ 65. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA3"
+ 66. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA2"
+ 67. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA1"
+ 68. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA0"
+ 69. Port Connectivity Checks: "ULA_final:ULA"
+ 70. Analysis & Elaboration Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -36,45 +94,377 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov 10 10:08:16 2020       ;
-; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
-; Revision Name                   ; Aula_16_17                                  ;
-; Top-level Entity Name           ; unidadeControleFD                           ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 11                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Tue Nov 10 15:03:30 2020       ;
+; Quartus Prime Version         ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                 ; Aula_16_17                                  ;
+; Top-level Entity Name         ; Aula_16_17                                  ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA0|muxGenerico2x1:MUX_invertB ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA1|muxGenerico2x1:MUX_invertB ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA2|muxGenerico2x1:MUX_invertB ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA3|muxGenerico2x1:MUX_invertB ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA4|muxGenerico2x1:MUX_invertB ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA5|muxGenerico2x1:MUX_invertB ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA6|muxGenerico2x1:MUX_invertB ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA7|muxGenerico2x1:MUX_invertB ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA8|muxGenerico2x1:MUX_invertB ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA9|muxGenerico2x1:MUX_invertB ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA10|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA11|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA12|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA13|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA14|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA15|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA16|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA17|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA18|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA19|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA20|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA21|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA22|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA23|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA24|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA25|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA26|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA27|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA28|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA29|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA30|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA31|muxGenerico2x1:MUX_invertB ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
+; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CEBA4F23C7        ;                    ;
-; Top-level entity name                                                           ; unidadeControleFD  ; Aula_16_17         ;
+; Top-level entity name                                                           ; Aula_16_17         ; Aula_16_17         ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; VHDL Show LMF Mapping Messages                                                  ; Off                ;                    ;
 ; VHDL Version                                                                    ; VHDL_2008          ; VHDL_1993          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
 ; Enable compact report table                                                     ; Off                ; Off                ;
 ; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
 ; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
@@ -151,163 +541,409 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA31"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; vaium      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                            ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                     ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
-; constantesMIPS.vhd               ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/constantesMIPS.vhd     ;         ;
-; unidadeControleULA.vhd           ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/unidadeControleULA.vhd ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA30"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 4         ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 4         ;
-;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 3         ;
-;     -- 5 input functions                    ; 0         ;
-;     -- 4 input functions                    ; 0         ;
-;     -- <=3 input functions                  ; 1         ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 11        ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; ULActrl~0 ;
-; Maximum fan-out                             ; 3         ;
-; Total fan-out                               ; 35        ;
-; Average fan-out                             ; 1.35      ;
-+---------------------------------------------+-----------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA29"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                          ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name       ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------------+--------------+
-; |unidadeControleFD         ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 11   ; 0            ; |unidadeControleFD  ; unidadeControleFD ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA28"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA27"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |unidadeControleFD|ULActrl ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA26"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 4                           ;
-;     normal            ; 4                           ;
-;         3 data inputs ; 1                           ;
-;         6 data inputs ; 3                           ;
-; boundary_port         ; 11                          ;
-;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.58                        ;
-+-----------------------+-----------------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA25"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:01     ;
-+----------------+--------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA24"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA23"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA22"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA21"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA20"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA19"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA18"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA17"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA16"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA15"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA14"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA13"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA12"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA11"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA10"                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA9"                                                               ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA8"                                                               ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA7"                                                               ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA6"                                                               ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA5"                                                               ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA4"                                                               ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA3"                                                               ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA2"                                                               ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA1"                                                               ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; signalless ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA0"                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA_final:ULA"                                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Nov 10 10:07:45 2020
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Aula_16_17 -c Aula_16_17
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Tue Nov 10 15:03:15 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Aula_16_17 -c Aula_16_17 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 0 entities, in source file constantesmips.vhd
-    Info (12022): Found design unit 1: constantesMIPS File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/constantesMIPS.vhd Line: 5
+    Info (12022): Found design unit 1: constantesMIPS File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/constantesMIPS.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file unidadecontroleula.vhd
-    Info (12022): Found design unit 1: unidadeControleFD-arch_name File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/unidadeControleULA.vhd Line: 21
-    Info (12023): Found entity 1: unidadeControleFD File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/unidadeControleULA.vhd Line: 8
+    Info (12022): Found design unit 1: unidadeControleULA-arch_name File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/unidadeControleULA.vhd Line: 21
+    Info (12023): Found entity 1: unidadeControleULA File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/unidadeControleULA.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file unidadecontrolefd.vhd
-    Info (12022): Found design unit 1: UnidadeControle-arch_name File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/unidadeControleFD.vhd Line: 18
-    Info (12023): Found entity 1: UnidadeControle File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/unidadeControleFD.vhd Line: 6
+    Info (12022): Found design unit 1: UnidadeControleFD-arch_name File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/unidadeControleFD.vhd Line: 18
+    Info (12023): Found entity 1: UnidadeControleFD File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/unidadeControleFD.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file ula1bit.vhd
-    Info (12022): Found design unit 1: ULA1bit-arch_name File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/ULA1bit.vhd Line: 25
-    Info (12023): Found entity 1: ULA1bit File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/ULA1bit.vhd Line: 5
+    Info (12022): Found design unit 1: ULA1bit-arch_name File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/ULA1bit.vhd Line: 25
+    Info (12023): Found entity 1: ULA1bit File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/ULA1bit.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ula_final.vhd
-    Info (12022): Found design unit 1: ULA_final-arch_name File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/ULA_final.vhd Line: 20
-    Info (12023): Found entity 1: ULA_final File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/ULA_final.vhd Line: 5
+    Info (12022): Found design unit 1: ULA_final-arch_name File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/ULA_final.vhd Line: 20
+    Info (12023): Found entity 1: ULA_final File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/ULA_final.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico4x1.vhd
-    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/muxGenerico4x1.vhd Line: 13
-    Info (12023): Found entity 1: muxGenerico4x1 File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/muxGenerico4x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/muxGenerico4x1.vhd Line: 13
+    Info (12023): Found entity 1: muxGenerico4x1 File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/muxGenerico4x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file aula_16_17.vhd
-    Info (12022): Found design unit 1: Aula_16_17-arch_name File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/Aula_16_17.vhd Line: 25
-    Info (12023): Found entity 1: Aula_16_17 File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/Aula_16_17.vhd Line: 5
+    Info (12022): Found design unit 1: Aula_16_17-arch_name File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/Aula_16_17.vhd Line: 20
+    Info (12023): Found entity 1: Aula_16_17 File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/Aula_16_17.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/muxGenerico2x1.vhd Line: 15
-    Info (12023): Found entity 1: muxGenerico2x1 File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/muxGenerico2x1.vhd Line: 5
-Info (12127): Elaborating entity "unidadeControleFD" for the top level hierarchy
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 3 output pins
-    Info (21061): Implemented 4 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4864 megabytes
-    Info: Processing ended: Tue Nov 10 10:08:16 2020
-    Info: Elapsed time: 00:00:31
-    Info: Total CPU time (on all processors): 00:01:10
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/muxGenerico2x1.vhd Line: 15
+    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/muxGenerico2x1.vhd Line: 5
+Info (12127): Elaborating entity "Aula_16_17" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at Aula_16_17.vhd(24): object "sinaloverflow" assigned a value but never read File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/Aula_16_17.vhd Line: 24
+Info (12128): Elaborating entity "unidadeControleULA" for hierarchy "unidadeControleULA:UC_ULA" File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/Aula_16_17.vhd Line: 29
+Info (12128): Elaborating entity "ULA_final" for hierarchy "ULA_final:ULA" File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/Aula_16_17.vhd Line: 39
+Info (12128): Elaborating entity "ULA1bit" for hierarchy "ULA_final:ULA|ULA1bit:ULA0" File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/ULA_final.vhd Line: 33
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "ULA_final:ULA|ULA1bit:ULA0|muxGenerico2x1:MUX_invertB" File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/ULA1bit.vhd Line: 42
+Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "ULA_final:ULA|ULA1bit:ULA0|muxGenerico4x1:MUX_ULA" File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/ULA1bit.vhd Line: 62
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4835 megabytes
+    Info: Processing ended: Tue Nov 10 15:03:30 2020
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:25
 
 

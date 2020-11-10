@@ -3,7 +3,7 @@ USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 USE ieee.constantesMIPS.ALL;
 
-ENTITY UnidadeControle IS
+ENTITY unidadeControleFD IS
     PORT (
         -- Input ports
         clk    : IN std_logic;
@@ -15,7 +15,7 @@ ENTITY UnidadeControle IS
     );
 END ENTITY;
 
-ARCHITECTURE arch_name OF UnidadeControle IS
+ARCHITECTURE arch_name OF unidadeControleFD IS
    
    ALIAS seletorMUX_JMP        : std_logic IS palavraControle(7);
    ALIAS seletorMUX_RtRd       : std_logic IS palavraControle(6);
