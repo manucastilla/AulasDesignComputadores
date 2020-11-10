@@ -1,0 +1,463 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity ULA_final is
+
+  port   (
+    -- Input ports
+    Binvert : in std_logic_vector(31 DOWNTO 0);
+    Ainvert : in std_logic_vector(31 DOWNTO 0);
+    operacao : in std_logic_vector(2 DOWNTO 0);
+
+    result : out std_logic_vector(31 DOWNTO 0);
+    overflow : out std_logic
+
+  );
+end entity;
+
+
+architecture arch_name of ULA_final is
+
+  signal signalSET : std_logic;
+  signal overflowULA : std_logic_vector(31 DOWNTO 0);
+  signal resultULA : std_logic_vector(31 DOWNTO 0);
+  signal SET_ULA   : std_logic_vector(31 DOWNTO 0);
+  signal vaiUMULA   : std_logic_vector(31 DOWNTO 0);
+  
+
+begin
+
+    signalSET <= SET_ULA(31);
+
+    ULA0 :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => operacao(2),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => signalSET,
+            vaiUM    => vaiUMULA(0),
+            overflow => overflowULA(0),
+            set      => SET_ULA(0),
+            saidaULA => resultULA(0)
+
+        );
+ 
+    ULA1  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(0),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(1),
+            overflow => overflowULA(1),
+            set      => SET_ULA(1),
+            saidaULA => resultULA(1)
+
+        );
+    
+    ULA2  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(1),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(2),
+            overflow => overflowULA(2),
+            set      => SET_ULA(2),
+            saidaULA => resultULA(2)
+
+        );
+
+    ULA3  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(2),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(3),
+            overflow => overflowULA(3),
+            set      => SET_ULA(3),
+            saidaULA => resultULA(3)
+
+        );
+
+    ULA4  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(3),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(4),
+            overflow => overflowULA(4),
+            set      => SET_ULA(4),
+            saidaULA => resultULA(4)
+
+        );
+
+    ULA5  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(4),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(5),
+            overflow => overflowULA(5),
+            set      => SET_ULA(5),
+            saidaULA => resultULA(5)
+
+        );
+
+    ULA6  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(5),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(6),
+            overflow => overflowULA(6),
+            set      => SET_ULA(6),
+            saidaULA => resultULA(6)
+
+        );
+
+    ULA7  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(6),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(7),
+            overflow => overflowULA(7),
+            set      => SET_ULA(7),
+            saidaULA => resultULA(7)
+
+        );
+       
+    ULA8  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(7),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(8),
+            overflow => overflowULA(8),
+            set      => SET_ULA(8),
+            saidaULA => resultULA(8)
+
+        );
+
+    ULA9  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(8),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(9),
+            overflow => overflowULA(9),
+            set      => SET_ULA(9),
+            saidaULA => resultULA(9)
+
+        );
+
+    ULA10  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(9),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(10),
+            overflow => overflowULA(10),
+            set      => SET_ULA(10),
+            saidaULA => resultULA(10)
+
+        );
+
+    ULA11  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(10),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(11),
+            overflow => overflowULA(11),
+            set      => SET_ULA(11),
+            saidaULA => resultULA(11)
+        );
+
+    ULA12  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(11),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(12),
+            overflow => overflowULA(12),
+            set      => SET_ULA(12),
+            saidaULA => resultULA(12)
+        );
+    
+    ULA13  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(12),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(13),
+            overflow => overflowULA(13),
+            set      => SET_ULA(13),
+            saidaULA => resultULA(13)
+        );
+
+    ULA14  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(13),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(14),
+            overflow => overflowULA(14),
+            set      => SET_ULA(14),
+            saidaULA => resultULA(14)
+        );
+
+    ULA15  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(14),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(15),
+            overflow => overflowULA(15),
+            set      => SET_ULA(15),
+            saidaULA => resultULA(15)
+        );
+
+    ULA16  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(15),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(16),
+            overflow => overflowULA(16),
+            set      => SET_ULA(16),
+            saidaULA => resultULA(16)
+        );
+
+    ULA17  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(16),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(17),
+            overflow => overflowULA(17),
+            set      => SET_ULA(17),
+            saidaULA => resultULA(17)
+        );
+
+    ULA18  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(17),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(18),
+            overflow => overflowULA(18),
+            set      => SET_ULA(18),
+            saidaULA => resultULA(18)
+        );
+    
+    ULA19  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(18),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(19),
+            overflow => overflowULA(19),
+            set      => SET_ULA(19),
+            saidaULA => resultULA(19)
+        );
+
+    ULA20  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(19),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(20),
+            overflow => overflowULA(20),
+            set      => SET_ULA(20),
+            saidaULA => resultULA(20)
+        );
+
+    ULA21  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(20),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(21),
+            overflow => overflowULA(21),
+            set      => SET_ULA(21),
+            saidaULA => resultULA(21)
+        );
+
+    ULA22  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(21),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(22),
+            overflow => overflowULA(22),
+            set      => SET_ULA(22),
+            saidaULA => resultULA(22)
+        );
+
+    ULA23  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(22),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(23),
+            overflow => overflowULA(23),
+            set      => SET_ULA(23),
+            saidaULA => resultULA(23)
+        );
+
+    ULA24  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(23),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(24),
+            overflow => overflowULA(24),
+            set      => SET_ULA(24),
+            saidaULA => resultULA(24)
+        );
+
+    ULA25  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(24),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(25),
+            overflow => overflowULA(25),
+            set      => SET_ULA(25),
+            saidaULA => resultULA(25)
+        );
+
+    ULA26  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(25),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(26),
+            overflow => overflowULA(26),
+            set      => SET_ULA(26),
+            saidaULA => resultULA(26)
+        );
+
+    ULA27  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(26),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(27),
+            overflow => overflowULA(27),
+            set      => SET_ULA(27),
+            saidaULA => resultULA(27)
+        );
+
+    ULA28  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(27),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(28),
+            overflow => overflowULA(28),
+            set      => SET_ULA(28),
+            saidaULA => resultULA(28)
+        );
+    
+    ULA29  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(28),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(29),
+            overflow => overflowULA(29),
+            set      => SET_ULA(29),
+            saidaULA => resultULA(29)
+        );
+
+    ULA30  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(29),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(30),
+            overflow => overflowULA(30),
+            set      => SET_ULA(30),
+            saidaULA => resultULA(30)
+        );
+
+    ULA31  :  entity work.ULA1bit  
+        port map(
+            seletor => operacao,
+            vemUM   => vaiUMULA(30),
+            signalB => Binvert,
+            signalA => Ainvert, 
+            signalLESS => '0',
+            vaiUM    => vaiUMULA(31),
+            overflow => overflowULA(31),
+            set      => SET_ULA(31),
+            saidaULA => resultULA(31)
+
+        );
+  
+    overflow <= overflowULA(31);
+    result <= resultULA;
+end architecture;

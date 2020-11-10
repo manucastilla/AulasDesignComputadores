@@ -1,0 +1,34 @@
+use ieee.numeric_std.all;
+use ieee.constantesMIPS.all;
+
+-- nao esquece de conectar cm o ula
+
+entity unidadeControleFD is
+  
+  port   (
+    -- Input ports
+    ULAop  :  in  std_logic_vector(1 downto 0);
+    func  : in  std_logic_vector(5 downto 0);
+    
+    ULActrl :  out  std_logic_vector(2 downto 0)
+    
+  );
+end entity;
+
+
+architecture arch_name of unidadeControleFD is
+
+
+begin
+
+    ULActrl <= ctrlADD WHEN ULAop = ADD ELSE
+               ctrlSUB WHEN ULAop = SUB ELSE
+
+               ctrlOR  WHEN  ULAop = functOR ELSE
+               ctrlADD WHEN  ULAop = functADD ELSE
+               ctrlSUB WHEN  ULAop = functSUB ELSE
+               ctrlSLT WHEN  ULAop = functSLT ELSE
+               "000"
+
+end architecture;
+

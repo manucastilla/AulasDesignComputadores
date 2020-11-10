@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ULActrl[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ULActrl[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ULActrl[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ULAop[1]",
+					"strict" : false
+				},
+				{
+					"name" : "func[3]",
+					"strict" : false
+				},
+				{
+					"name" : "func[1]",
+					"strict" : false
+				},
+				{
+					"name" : "func[0]",
+					"strict" : false
+				},
+				{
+					"name" : "func[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ULAop[0]",
+					"strict" : false
+				},
+				{
+					"name" : "func[4]",
+					"strict" : false
+				},
+				{
+					"name" : "func[5]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
