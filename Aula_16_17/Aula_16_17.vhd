@@ -12,9 +12,8 @@ entity Aula_16_17 is
     signalA :  in std_logic_vector(31 downto 0);
 
     resultado :  out std_logic_vector(31 downto 0);
-    palavraControle : out std_logic_vector(7 downto 0);
-    set      : out std_logic;
-    saidaULA : out std_logic
+    palavraControle : out std_logic_vector(7 downto 0)
+    
 
   
     
@@ -39,7 +38,7 @@ begin
 
 
   
-   : entity work.unidadeControleULA
+   : entity work.ULA_final
         port map(
                
 
