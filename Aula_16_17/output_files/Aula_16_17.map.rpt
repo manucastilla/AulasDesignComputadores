@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Aula_16_17
-Wed Nov 11 13:57:34 2020
+Wed Nov 11 14:54:44 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -107,7 +107,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Nov 11 13:57:34 2020       ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 11 14:54:44 2020       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; Aula_16_17                                  ;
 ; Top-level Entity Name           ; Aula_16_17                                  ;
@@ -1094,7 +1094,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -1104,7 +1104,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Nov 11 13:56:59 2020
+    Info: Processing started: Wed Nov 11 14:54:13 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Aula_16_17 -c Aula_16_17
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1135,7 +1135,7 @@ Info (12127): Elaborating entity "Aula_16_17" for the top level hierarchy
 Info (12128): Elaborating entity "unidadeControleULA" for hierarchy "unidadeControleULA:UC_ULA" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/Aula_16_17.vhd Line: 28
 Info (12128): Elaborating entity "ULA_final" for hierarchy "ULA_final:ULA" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/Aula_16_17.vhd Line: 35
 Info (12128): Elaborating entity "ULA1bit" for hierarchy "ULA_final:ULA|ULA1bit:ULA0" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/ULA_final.vhd Line: 33
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "ULA_final:ULA|ULA1bit:ULA0|muxGenerico2x1:MUX_invertB" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/ULA1bit.vhd Line: 42
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "ULA_final:ULA|ULA1bit:ULA0|muxGenerico2x1:MUX_invertB" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/ULA1bit.vhd Line: 41
 Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "ULA_final:ULA|ULA1bit:ULA0|muxGenerico4x1:MUX_ULA" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/ULA1bit.vhd Line: 62
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -1145,9 +1145,9 @@ Info (21057): Implemented 226 device resources after synthesis - the final resou
     Info (21059): Implemented 33 output pins
     Info (21061): Implemented 121 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4858 megabytes
-    Info: Processing ended: Wed Nov 11 13:57:34 2020
-    Info: Elapsed time: 00:00:35
-    Info: Total CPU time (on all processors): 00:01:04
+    Info: Peak virtual memory: 4853 megabytes
+    Info: Processing ended: Wed Nov 11 14:54:44 2020
+    Info: Elapsed time: 00:00:31
+    Info: Total CPU time (on all processors): 00:01:01
 
 

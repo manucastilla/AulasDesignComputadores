@@ -1,0 +1,23 @@
+Quartus Prime Archive log --	C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/Aula_16_17.qarlog
+
+Archive:	C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/Aula_16_17.qar
+Date:		Wed Nov 11 15:07:49 2020
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/Aula_16_17.qpf
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/Aula_16_17.qsf
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/Aula_16_17.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/Aula_16_17_assignment_defaults.qdf
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/ULA1bit.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/ULA_final.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/Waveform.vwf
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/constantesMIPS.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/muxGenerico2x1.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/muxGenerico4x1.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/unidadeControleFD.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/unidadeControleULA.vhd
+	======= Total: 12 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

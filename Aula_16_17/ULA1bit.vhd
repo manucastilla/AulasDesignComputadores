@@ -29,7 +29,6 @@ architecture arch_name of ULA1bit is
   signal signalADDSUB   : std_logic;
   signal signalOR       : std_logic;
   signal signalAND      : std_logic;
-  signal saidaSOMA      : std_logic;
   signal signalvaiUM    : std_logic;
 
   
@@ -50,6 +49,7 @@ begin
   signalAND <= saidaInvertB AND signalA;
   signalOR  <= saidaInvertB OR signalA;
   signalADDSUB <= (saidaInvertB XOR signalA) XOR vemUM;
+  
   
   signalvaiUM <= ((signalA XOR saidaInvertB) AND vemUM) OR (signalA AND saidaInvertB) ;
   
