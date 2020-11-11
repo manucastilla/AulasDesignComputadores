@@ -1,90 +1,96 @@
-Analysis & Elaboration report for Aula_16_17
-Tue Nov 10 15:03:30 2020
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Analysis & Synthesis report for Aula_16_17
+Wed Nov 11 13:57:34 2020
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA0|muxGenerico2x1:MUX_invertB
-  5. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA1|muxGenerico2x1:MUX_invertB
-  6. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA2|muxGenerico2x1:MUX_invertB
-  7. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA3|muxGenerico2x1:MUX_invertB
-  8. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA4|muxGenerico2x1:MUX_invertB
-  9. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA5|muxGenerico2x1:MUX_invertB
- 10. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA6|muxGenerico2x1:MUX_invertB
- 11. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA7|muxGenerico2x1:MUX_invertB
- 12. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA8|muxGenerico2x1:MUX_invertB
- 13. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA9|muxGenerico2x1:MUX_invertB
- 14. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA10|muxGenerico2x1:MUX_invertB
- 15. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA11|muxGenerico2x1:MUX_invertB
- 16. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA12|muxGenerico2x1:MUX_invertB
- 17. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA13|muxGenerico2x1:MUX_invertB
- 18. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA14|muxGenerico2x1:MUX_invertB
- 19. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA15|muxGenerico2x1:MUX_invertB
- 20. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA16|muxGenerico2x1:MUX_invertB
- 21. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA17|muxGenerico2x1:MUX_invertB
- 22. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA18|muxGenerico2x1:MUX_invertB
- 23. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA19|muxGenerico2x1:MUX_invertB
- 24. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA20|muxGenerico2x1:MUX_invertB
- 25. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA21|muxGenerico2x1:MUX_invertB
- 26. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA22|muxGenerico2x1:MUX_invertB
- 27. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA23|muxGenerico2x1:MUX_invertB
- 28. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA24|muxGenerico2x1:MUX_invertB
- 29. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA25|muxGenerico2x1:MUX_invertB
- 30. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA26|muxGenerico2x1:MUX_invertB
- 31. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA27|muxGenerico2x1:MUX_invertB
- 32. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA28|muxGenerico2x1:MUX_invertB
- 33. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA29|muxGenerico2x1:MUX_invertB
- 34. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA30|muxGenerico2x1:MUX_invertB
- 35. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA31|muxGenerico2x1:MUX_invertB
- 36. Analysis & Elaboration Settings
- 37. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA31"
- 38. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA30"
- 39. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA29"
- 40. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA28"
- 41. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA27"
- 42. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA26"
- 43. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA25"
- 44. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA24"
- 45. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA23"
- 46. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA22"
- 47. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA21"
- 48. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA20"
- 49. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA19"
- 50. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA18"
- 51. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA17"
- 52. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA16"
- 53. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA15"
- 54. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA14"
- 55. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA13"
- 56. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA12"
- 57. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA11"
- 58. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA10"
- 59. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA9"
- 60. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA8"
- 61. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA7"
- 62. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA6"
- 63. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA5"
- 64. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA4"
- 65. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA3"
- 66. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA2"
- 67. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA1"
- 68. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA0"
- 69. Port Connectivity Checks: "ULA_final:ULA"
- 70. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA0|muxGenerico2x1:MUX_invertB
+ 11. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA1|muxGenerico2x1:MUX_invertB
+ 12. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA2|muxGenerico2x1:MUX_invertB
+ 13. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA3|muxGenerico2x1:MUX_invertB
+ 14. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA4|muxGenerico2x1:MUX_invertB
+ 15. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA5|muxGenerico2x1:MUX_invertB
+ 16. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA6|muxGenerico2x1:MUX_invertB
+ 17. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA7|muxGenerico2x1:MUX_invertB
+ 18. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA8|muxGenerico2x1:MUX_invertB
+ 19. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA9|muxGenerico2x1:MUX_invertB
+ 20. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA10|muxGenerico2x1:MUX_invertB
+ 21. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA11|muxGenerico2x1:MUX_invertB
+ 22. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA12|muxGenerico2x1:MUX_invertB
+ 23. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA13|muxGenerico2x1:MUX_invertB
+ 24. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA14|muxGenerico2x1:MUX_invertB
+ 25. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA15|muxGenerico2x1:MUX_invertB
+ 26. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA16|muxGenerico2x1:MUX_invertB
+ 27. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA17|muxGenerico2x1:MUX_invertB
+ 28. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA18|muxGenerico2x1:MUX_invertB
+ 29. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA19|muxGenerico2x1:MUX_invertB
+ 30. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA20|muxGenerico2x1:MUX_invertB
+ 31. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA21|muxGenerico2x1:MUX_invertB
+ 32. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA22|muxGenerico2x1:MUX_invertB
+ 33. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA23|muxGenerico2x1:MUX_invertB
+ 34. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA24|muxGenerico2x1:MUX_invertB
+ 35. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA25|muxGenerico2x1:MUX_invertB
+ 36. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA26|muxGenerico2x1:MUX_invertB
+ 37. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA27|muxGenerico2x1:MUX_invertB
+ 38. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA28|muxGenerico2x1:MUX_invertB
+ 39. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA29|muxGenerico2x1:MUX_invertB
+ 40. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA30|muxGenerico2x1:MUX_invertB
+ 41. Parameter Settings for User Entity Instance: ULA_final:ULA|ULA1bit:ULA31|muxGenerico2x1:MUX_invertB
+ 42. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA31"
+ 43. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA30"
+ 44. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA29"
+ 45. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA28"
+ 46. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA27"
+ 47. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA26"
+ 48. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA25"
+ 49. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA24"
+ 50. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA23"
+ 51. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA22"
+ 52. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA21"
+ 53. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA20"
+ 54. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA19"
+ 55. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA18"
+ 56. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA17"
+ 57. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA16"
+ 58. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA15"
+ 59. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA14"
+ 60. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA13"
+ 61. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA12"
+ 62. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA11"
+ 63. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA10"
+ 64. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA9"
+ 65. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA8"
+ 66. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA7"
+ 67. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA6"
+ 68. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA5"
+ 69. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA4"
+ 70. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA3"
+ 71. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA2"
+ 72. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA1"
+ 73. Port Connectivity Checks: "ULA_final:ULA|ULA1bit:ULA0"
+ 74. Post-Synthesis Netlist Statistics for Top Partition
+ 75. Elapsed Time Per Partition
+ 76. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -94,27 +100,119 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Tue Nov 10 15:03:30 2020       ;
-; Quartus Prime Version         ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
-; Revision Name                 ; Aula_16_17                                  ;
-; Top-level Entity Name         ; Aula_16_17                                  ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Wed Nov 11 13:57:34 2020       ;
+; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                   ; Aula_16_17                                  ;
+; Top-level Entity Name           ; Aula_16_17                                  ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 105                                         ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CEBA4F23C7        ;                    ;
+; Top-level entity name                                                           ; Aula_16_17         ; Aula_16_17         ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; VHDL Show LMF Mapping Messages                                                  ; Off                ;                    ;
+; VHDL Version                                                                    ; VHDL_2008          ; VHDL_1993          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
 +------------------------------------------+
@@ -122,7 +220,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
+; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -131,6 +229,175 @@ https://fpgasoftware.intel.com/eula.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 +----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                            ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                     ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
+; constantesMIPS.vhd               ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/constantesMIPS.vhd     ;         ;
+; unidadeControleULA.vhd           ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/unidadeControleULA.vhd ;         ;
+; ULA1bit.vhd                      ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/ULA1bit.vhd            ;         ;
+; ULA_final.vhd                    ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/ULA_final.vhd          ;         ;
+; muxGenerico4x1.vhd               ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/muxGenerico4x1.vhd     ;         ;
+; Aula_16_17.vhd                   ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/Aula_16_17.vhd         ;         ;
+; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/muxGenerico2x1.vhd     ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                  ;
++---------------------------------------------+----------------------------------------------------------------+
+; Resource                                    ; Usage                                                          ;
++---------------------------------------------+----------------------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 74                                                             ;
+;                                             ;                                                                ;
+; Combinational ALUT usage for logic          ; 121                                                            ;
+;     -- 7 input functions                    ; 0                                                              ;
+;     -- 6 input functions                    ; 26                                                             ;
+;     -- 5 input functions                    ; 29                                                             ;
+;     -- 4 input functions                    ; 10                                                             ;
+;     -- <=3 input functions                  ; 56                                                             ;
+;                                             ;                                                                ;
+; Dedicated logic registers                   ; 0                                                              ;
+;                                             ;                                                                ;
+; I/O pins                                    ; 105                                                            ;
+;                                             ;                                                                ;
+; Total DSP Blocks                            ; 0                                                              ;
+;                                             ;                                                                ;
+; Maximum fan-out node                        ; ULA_final:ULA|ULA1bit:ULA25|muxGenerico4x1:MUX_ULA|saida_MUX~0 ;
+; Maximum fan-out                             ; 32                                                             ;
+; Total fan-out                               ; 618                                                            ;
+; Average fan-out                             ; 1.87                                                           ;
++---------------------------------------------+----------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                     ;
++---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                ; Entity Name        ; Library Name ;
++---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------+--------------------+--------------+
+; |Aula_16_17                           ; 121 (0)             ; 0 (0)                     ; 0                 ; 0          ; 105  ; 0            ; |Aula_16_17                                                        ; Aula_16_17         ; work         ;
+;    |ULA_final:ULA|                    ; 115 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA                                          ; ULA_final          ; work         ;
+;       |ULA1bit:ULA0|                  ; 7 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA0                             ; ULA1bit            ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA0|muxGenerico4x1:MUX_ULA      ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA10|                 ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA10                            ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA10|muxGenerico2x1:MUX_invertB ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA10|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA11|                 ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA11                            ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA11|muxGenerico2x1:MUX_invertB ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA11|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA12|                 ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA12                            ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA12|muxGenerico2x1:MUX_invertB ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA12|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA13|                 ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA13                            ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA13|muxGenerico2x1:MUX_invertB ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA13|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA14|                 ; 5 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA14                            ; ULA1bit            ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA14|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA15|                 ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA15                            ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA15|muxGenerico2x1:MUX_invertB ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA15|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA16|                 ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA16                            ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA16|muxGenerico2x1:MUX_invertB ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA16|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA17|                 ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA17                            ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA17|muxGenerico2x1:MUX_invertB ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA17|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA18|                 ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA18                            ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA18|muxGenerico2x1:MUX_invertB ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA18|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA19|                 ; 4 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA19                            ; ULA1bit            ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA19|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA1|                  ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA1                             ; ULA1bit            ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA1|muxGenerico4x1:MUX_ULA      ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA20|                 ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA20                            ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA20|muxGenerico2x1:MUX_invertB ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA20|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA21|                 ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA21                            ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA21|muxGenerico2x1:MUX_invertB ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA21|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA22|                 ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA22                            ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA22|muxGenerico2x1:MUX_invertB ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA22|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA23|                 ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA23                            ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA23|muxGenerico2x1:MUX_invertB ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA23|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA24|                 ; 5 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA24                            ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA24|muxGenerico2x1:MUX_invertB ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA24|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA25|                 ; 5 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA25                            ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA25|muxGenerico2x1:MUX_invertB ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA25|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA26|                 ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA26                            ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA26|muxGenerico2x1:MUX_invertB ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA26|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA27|                 ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA27                            ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA27|muxGenerico2x1:MUX_invertB ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA27|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA28|                 ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA28                            ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA28|muxGenerico2x1:MUX_invertB ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA28|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA29|                 ; 5 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA29                            ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA29|muxGenerico2x1:MUX_invertB ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA29|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA2|                  ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA2                             ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA2|muxGenerico2x1:MUX_invertB  ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA2|muxGenerico4x1:MUX_ULA      ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA30|                 ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA30                            ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA30|muxGenerico2x1:MUX_invertB ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA30|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA31|                 ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA31                            ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA31|muxGenerico2x1:MUX_invertB ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA31|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA3|                  ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA3                             ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA3|muxGenerico2x1:MUX_invertB  ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA3|muxGenerico4x1:MUX_ULA      ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA4|                  ; 5 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA4                             ; ULA1bit            ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA4|muxGenerico4x1:MUX_ULA      ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA5|                  ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA5                             ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA5|muxGenerico2x1:MUX_invertB  ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA5|muxGenerico4x1:MUX_ULA      ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA6|                  ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA6                             ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA6|muxGenerico2x1:MUX_invertB  ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA6|muxGenerico4x1:MUX_ULA      ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA7|                  ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA7                             ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA7|muxGenerico2x1:MUX_invertB  ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA7|muxGenerico4x1:MUX_ULA      ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA8|                  ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA8                             ; ULA1bit            ; work         ;
+;          |muxGenerico2x1:MUX_invertB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA8|muxGenerico2x1:MUX_invertB  ; muxGenerico2x1     ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA8|muxGenerico4x1:MUX_ULA      ; muxGenerico4x1     ; work         ;
+;       |ULA1bit:ULA9|                  ; 5 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA9                             ; ULA1bit            ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA9|muxGenerico4x1:MUX_ULA      ; muxGenerico4x1     ; work         ;
+;    |unidadeControleULA:UC_ULA|        ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula_16_17|unidadeControleULA:UC_ULA                              ; unidadeControleULA ; work         ;
++---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------+--------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------+
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |Aula_16_17|ULA_final:ULA|ULA1bit:ULA25|muxGenerico4x1:MUX_ULA|saida_MUX ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Aula_16_17|unidadeControleULA:UC_ULA|ULActrl[1]                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------+
@@ -451,94 +718,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; larguradados   ; 8     ; Signed Integer                                                             ;
 +----------------+-------+----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                          ; Setting            ; Default Value      ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CEBA4F23C7        ;                    ;
-; Top-level entity name                                                           ; Aula_16_17         ; Aula_16_17         ;
-; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
-; VHDL Show LMF Mapping Messages                                                  ; Off                ;                    ;
-; VHDL Version                                                                    ; VHDL_2008          ; VHDL_1993          ;
-; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
-; Enable compact report table                                                     ; Off                ; Off                ;
-; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
-; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
-; Preserve fewer node names                                                       ; On                 ; On                 ;
-; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
-; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
-; State Machine Processing                                                        ; Auto               ; Auto               ;
-; Safe State Machine                                                              ; Off                ; Off                ;
-; Extract Verilog State Machines                                                  ; On                 ; On                 ;
-; Extract VHDL State Machines                                                     ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
-; Parallel Synthesis                                                              ; On                 ; On                 ;
-; DSP Block Balancing                                                             ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                              ; On                 ; On                 ;
-; Power-Up Don't Care                                                             ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
-; Remove Duplicate Registers                                                      ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
-; Optimization Technique                                                          ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                              ; 70                 ; 70                 ;
-; Auto Carry Chains                                                               ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
-; Auto ROM Replacement                                                            ; On                 ; On                 ;
-; Auto RAM Replacement                                                            ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
-; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
-; Strict RAM Replacement                                                          ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                           ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
-; Report Parameter Settings                                                       ; On                 ; On                 ;
-; Report Source Assignments                                                       ; On                 ; On                 ;
-; Report Connectivity Checks                                                      ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
-; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
-; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
-; HDL message level                                                               ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
-; Clock MUX Protection                                                            ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
-; Block Design Naming                                                             ; Auto               ; Auto               ;
-; SDC constraint protection                                                       ; Off                ; Off                ;
-; Synthesis Effort                                                                ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
-; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -891,59 +1070,84 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ULA_final:ULA"                                                                          ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 121                         ;
+;     normal            ; 121                         ;
+;         2 data inputs ; 29                          ;
+;         3 data inputs ; 27                          ;
+;         4 data inputs ; 10                          ;
+;         5 data inputs ; 29                          ;
+;         6 data inputs ; 26                          ;
+; boundary_port         ; 105                         ;
+;                       ;                             ;
+; Max LUT depth         ; 16.00                       ;
+; Average LUT depth     ; 10.13                       ;
++-----------------------+-----------------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Nov 10 15:03:15 2020
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Aula_16_17 -c Aula_16_17 --analysis_and_elaboration
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Wed Nov 11 13:56:59 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Aula_16_17 -c Aula_16_17
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 0 entities, in source file constantesmips.vhd
-    Info (12022): Found design unit 1: constantesMIPS File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/constantesMIPS.vhd Line: 5
+    Info (12022): Found design unit 1: constantesMIPS File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/constantesMIPS.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file unidadecontroleula.vhd
-    Info (12022): Found design unit 1: unidadeControleULA-arch_name File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/unidadeControleULA.vhd Line: 21
-    Info (12023): Found entity 1: unidadeControleULA File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/unidadeControleULA.vhd Line: 8
+    Info (12022): Found design unit 1: unidadeControleULA-arch_name File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/unidadeControleULA.vhd Line: 21
+    Info (12023): Found entity 1: unidadeControleULA File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/unidadeControleULA.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file unidadecontrolefd.vhd
-    Info (12022): Found design unit 1: UnidadeControleFD-arch_name File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/unidadeControleFD.vhd Line: 18
-    Info (12023): Found entity 1: UnidadeControleFD File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/unidadeControleFD.vhd Line: 6
+    Info (12022): Found design unit 1: unidadeControleFD-arch_name File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/unidadeControleFD.vhd Line: 18
+    Info (12023): Found entity 1: unidadeControleFD File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/unidadeControleFD.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file ula1bit.vhd
-    Info (12022): Found design unit 1: ULA1bit-arch_name File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/ULA1bit.vhd Line: 25
-    Info (12023): Found entity 1: ULA1bit File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/ULA1bit.vhd Line: 5
+    Info (12022): Found design unit 1: ULA1bit-arch_name File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/ULA1bit.vhd Line: 25
+    Info (12023): Found entity 1: ULA1bit File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/ULA1bit.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ula_final.vhd
-    Info (12022): Found design unit 1: ULA_final-arch_name File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/ULA_final.vhd Line: 20
-    Info (12023): Found entity 1: ULA_final File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/ULA_final.vhd Line: 5
+    Info (12022): Found design unit 1: ULA_final-arch_name File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/ULA_final.vhd Line: 20
+    Info (12023): Found entity 1: ULA_final File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/ULA_final.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico4x1.vhd
-    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/muxGenerico4x1.vhd Line: 13
-    Info (12023): Found entity 1: muxGenerico4x1 File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/muxGenerico4x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/muxGenerico4x1.vhd Line: 13
+    Info (12023): Found entity 1: muxGenerico4x1 File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/muxGenerico4x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file aula_16_17.vhd
-    Info (12022): Found design unit 1: Aula_16_17-arch_name File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/Aula_16_17.vhd Line: 20
-    Info (12023): Found entity 1: Aula_16_17 File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/Aula_16_17.vhd Line: 5
+    Info (12022): Found design unit 1: Aula_16_17-arch_name File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/Aula_16_17.vhd Line: 20
+    Info (12023): Found entity 1: Aula_16_17 File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/Aula_16_17.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/muxGenerico2x1.vhd Line: 15
-    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/muxGenerico2x1.vhd Line: 5
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/muxGenerico2x1.vhd Line: 15
+    Info (12023): Found entity 1: muxGenerico2x1 File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/muxGenerico2x1.vhd Line: 5
 Info (12127): Elaborating entity "Aula_16_17" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at Aula_16_17.vhd(24): object "sinaloverflow" assigned a value but never read File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/Aula_16_17.vhd Line: 24
-Info (12128): Elaborating entity "unidadeControleULA" for hierarchy "unidadeControleULA:UC_ULA" File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/Aula_16_17.vhd Line: 29
-Info (12128): Elaborating entity "ULA_final" for hierarchy "ULA_final:ULA" File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/Aula_16_17.vhd Line: 39
-Info (12128): Elaborating entity "ULA1bit" for hierarchy "ULA_final:ULA|ULA1bit:ULA0" File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/ULA_final.vhd Line: 33
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "ULA_final:ULA|ULA1bit:ULA0|muxGenerico2x1:MUX_invertB" File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/ULA1bit.vhd Line: 42
-Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "ULA_final:ULA|ULA1bit:ULA0|muxGenerico4x1:MUX_ULA" File: C:/Users/vitor/OneDrive/햞ea de Trabalho/AulasDesignComputadores/Aula_16_17/ULA1bit.vhd Line: 62
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4835 megabytes
-    Info: Processing ended: Tue Nov 10 15:03:30 2020
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:25
+Info (12128): Elaborating entity "unidadeControleULA" for hierarchy "unidadeControleULA:UC_ULA" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/Aula_16_17.vhd Line: 28
+Info (12128): Elaborating entity "ULA_final" for hierarchy "ULA_final:ULA" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/Aula_16_17.vhd Line: 35
+Info (12128): Elaborating entity "ULA1bit" for hierarchy "ULA_final:ULA|ULA1bit:ULA0" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/ULA_final.vhd Line: 33
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "ULA_final:ULA|ULA1bit:ULA0|muxGenerico2x1:MUX_invertB" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/ULA1bit.vhd Line: 42
+Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "ULA_final:ULA|ULA1bit:ULA0|muxGenerico4x1:MUX_ULA" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/Aula_16_17/ULA1bit.vhd Line: 62
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 226 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 72 input pins
+    Info (21059): Implemented 33 output pins
+    Info (21061): Implemented 121 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4858 megabytes
+    Info: Processing ended: Wed Nov 11 13:57:34 2020
+    Info: Elapsed time: 00:00:35
+    Info: Total CPU time (on all processors): 00:01:04
 
 

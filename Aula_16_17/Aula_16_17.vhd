@@ -11,7 +11,7 @@ entity Aula_16_17 is
     signalA :  in std_logic_vector(31 downto 0);
     ULAopIN :  in  std_logic_vector(1 downto 0);
   
-
+    overflow  :  out std_logic;
     resultado :  out std_logic_vector(31 downto 0) 
   );
 end entity;
@@ -29,19 +29,16 @@ UC_ULA   :  entity work.unidadeControleULA
         port map(
                 ULAop   =>  ULAopIN, 
                 func    => func,
-                
                 ULActrl => ulacontrol
                 );
-
-
   
 ULA   : entity work.ULA_final
         port map(
                   Binvert  => signalB,
                   Ainvert  => signalA,
                   operacao => ulacontrol,
-
-                  result   => saidaula,               
+                  result   => saidaula,
+                  overflow => overflow             
         );
 
 resultado <= saidaula;
