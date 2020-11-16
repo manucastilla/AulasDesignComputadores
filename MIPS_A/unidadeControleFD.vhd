@@ -17,7 +17,7 @@ END ENTITY;
 
 ARCHITECTURE arch_name OF unidadeControleFD IS
    
-	ALIAS ULAop                 : std_logic_vector IS palavraControle(1 downto 0);
+	ALIAS ULAop                 : std_logic_vector(1 DOWNTO 0) IS palavraControle(9 downto 8);
    ALIAS seletorMUX_JMP        : std_logic IS palavraControle(7);
    ALIAS seletorMUX_RtRd       : std_logic IS palavraControle(6);
    ALIAS habilitaESCreg3       : std_logic IS palavraControle(5);

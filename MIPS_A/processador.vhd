@@ -20,8 +20,7 @@ entity processador is
 	
 	PC_out				: out std_logic_vector(31 DOWNTO 0);
 	saida_ULA_out       : out std_logic_vector(31 DOWNTO 0);
-	saidaBanco_REG2_out : out std_logic_vector(31 DOWNTO 0);
-	seletor_out  : out std_logic_vector(2 DOWNTO 0)
+	saidaBanco_REG2_out : out std_logic_vector(31 DOWNTO 0)
 	
   );
 end entity;
@@ -63,15 +62,16 @@ architecture arch_name of processador is
 	-- ULA --
 	SIGNAL ULAentradaB             : std_logic_vector(31 DOWNTO 0);
 	SIGNAL saida_ULA               : std_logic_vector(31 DOWNTO 0);
+	SIGNAL ULActrl                 : std_logic_vector(2 DOWNTO 0);
 	
 	-- UC --
-	SIGNAL palavraControle_out    : std_logic_vector(10 DOWNTO 0);
+	SIGNAL palavraControle_out    : std_logic_vector(9 DOWNTO 0);
 
-	ALIAS seletor_JMP             : std_logic IS palavraControle_out(10);
-	ALIAS seletorMUX_RT_RD        : std_logic IS palavraControle_out(9);
-	ALIAS escreveC				      : std_logic IS palavraControle_out(8);
-	ALIAS seletorMUX_rt_imediato  : std_logic IS palavraControle_out(7);
-	ALIAS seletor 		            : std_logic_vector(2 DOWNTO 0) IS palavraControle_out(6 DOWNTO 4);
+	ALIAS seletor_JMP             : std_logic IS palavraControle_out(9);
+	ALIAS seletorMUX_RT_RD        : std_logic IS palavraControle_out(8);
+	ALIAS escreveC				  : std_logic IS palavraControle_out(7);
+	ALIAS seletorMUX_rt_imediato  : std_logic IS palavraControle_out(6);
+	ALIAS ULAop 		          : std_logic_vector(1 DOWNTO 0) IS palavraControle_out(5 DOWNTO 4);
 	ALIAS seletor_MUX_ULA_MEM     : std_logic IS palavraControle_out(3);
 	ALIAS BEQ                     : std_logic IS palavraControle_out(2);  
 	ALIAS rd                      : STD_LOGIC is palavraControle_out (1);
@@ -79,13 +79,13 @@ architecture arch_name of processador is
  
 
 	ALIAS opcode            	   : std_logic_vector (31 DOWNTO 26) IS ROM_UC(31 DOWNTO 26);
-	ALIAS func            	      : std_logic_vector (5 DOWNTO 0) IS ROM_UC(5 DOWNTO 0);
 	ALIAS imediato                : std_logic_vector (25 DOWNTO 0) IS ROM_UC(25 DOWNTO 0);	
 
 	-- EXTENSAO --
 	SIGNAL MUXentradaB_extensao   : std_logic_vector(31 DOWNTO 0);
 	ALIAS entradaExtensao		   : std_logic_vector (15 DOWNTO 0) IS ROM_UC(15 DOWNTO 0);
-	
+	ALIAS func            	      : std_logic_vector (5 DOWNTO 0) IS entradaExtensao(5 DOWNTO 0);
+
 	-- NAO SEI --
 	SIGNAL saidaRegistradorRAM    : std_logic_vector(31 DOWNTO 0);
 	SIGNAL saidaRAM               : std_logic_vector(31 DOWNTO 0);
@@ -163,11 +163,10 @@ begin
     				saida_MUX    => entrada_REG_MUX0
 				);
 	
-	UC: entity work.UnidadeControle
+	UC: entity work.UnidadeControleFD
 				port map(
 					clk => clk,
 					opCode => opcode,
-					func => func,
 					palavraControle => palavraControle_out
 				);
 
@@ -197,14 +196,20 @@ begin
 					seletor_MUX => seletorMUX_rt_imediato, 
     				saida_MUX    => ULAentradaB
 				);
+				
+	UnidadeControleULA : entity work.unidadeControleULA
+				port map(
+					ULAop  => ULAop,
+					func   => func,
+					ULActrl => ULActrl
+				);
 
-	ULA : entity work.ULA  
-				generic map(larguraDados => 32)
+	ULA : entity work.ULA
 				port map (
 					entradaA => ULAentradaA_RS, 
 					entradaB =>  ULAentradaB,
 					saida => saida_ULA, 
-					seletor => seletor, 
+					seletor => ULActrl, 
 					flagZero => flagZero
 				);
 				
@@ -236,6 +241,5 @@ begin
 	PC_out                   <= PC_ROM_INC;
 	saidaBanco_REG2_out <=	saidaBanco_REG2;
 	saida_ULA_out <= saida_ULA;
-	seletor_out <= seletor;
 	
 	end architecture;

@@ -3,44 +3,67 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity MIPS_A is
+  generic   (
+    DATA_WIDTH  : natural :=  32;
+    ADDR_WIDTH  : natural :=  32
+  );
 
   port   (
-    -- Input ports
-    func    :  in std_logic_vector(5 downto 0);
-    signalB :  in std_logic_vector(31 downto 0);
-    signalA :  in std_logic_vector(31 downto 0);
-    ULAopIN :  in  std_logic_vector(1 downto 0);
-  
-    overflow  :  out std_logic;
-    resultado :  out std_logic_vector(31 downto 0) 
+     CLOCK_50            : in  std_logic;
+	  PC_out_out : out std_logic_vector(31 DOWNTO 0);
+	  saida_ULA_out_out : out std_logic_vector(31 DOWNTO 0);
+	  saidaBanco_REG2_out_out : out std_logic_vector(31 DOWNTO 0)	 
+
   );
 end entity;
 
 
 architecture arch_name of MIPS_A is
+	signal entradaRAM_REG2      : std_logic_vector(31 DOWNTO 0);
+	
+	signal saidaRAM_MUX        : std_logic_vector(31 DOWNTO 0);
+	signal entradaRAM          : std_logic_vector(31 DOWNTO 0);
 
-  signal ulacontrol      : std_logic_vector(2 downto 0);
-  signal saidaula        : std_logic_vector(31 DOWNTO 0);
+	signal palavraControle     : std_logic_vector(31 DOWNTO 0);
+	signal wr                  : std_logic;
+	signal rd                  : STD_LOGIC;
+	signal PC_out				 : std_logic_vector(31 DOWNTO 0);
+	signal saida_ULA_out : std_logic_vector(31 DOWNTO 0);
+	signal saidaBanco_REG2_out : std_logic_vector(31 DOWNTO 0);
+
   
-
 begin
 
-UC_ULA   :  entity work.unidadeControleULA
-        port map(
-                ULAop   =>  ULAopIN, 
-                func    => func,
-                ULActrl => ulacontrol
-                );
-  
-ULA   : entity work.ULA_final
-        port map(
-                  Binvert  => signalB,
-                  Ainvert  => signalA,
-                  operacao => ulacontrol,
-                  result   => saidaula,
-                  overflow => overflow             
-        );
+	processador : entity work.processador
+				port map (
+					clk                      => CLOCK_50,
+					barramento_leituraDados  => saidaRAM_MUX,
+					barramento_endereco      => entradaRAM,
+					barramentoDeEscritaDados => entradaRAM_REG2,
+					habilitaEscrita          => wr,
+					habilitaLeitura          => rd,
+					PC_out => PC_out,
+					saida_ULA_out => saida_ULA_out,
+					saidaBanco_REG2_out => saidaBanco_REG2_out					
+					
+				);
 
-resultado <= saidaula;
+		
+
+
+	RAM_mips : entity work.RAMMIPS
+				port map (
+					clk      => CLOCK_50,
+					Endereco => entradaRAM ,
+					Dado_in  => entradaRAM_REG2 ,
+					Dado_out => saidaRAM_MUX,
+					wr       => wr,
+					rd       => rd
+							);
+							
+							
+	PC_out_out <= PC_out;
+	  saida_ULA_out_out <= saida_ULA_out;
+	  saidaBanco_REG2_out_out <= saidaBanco_REG2_out;
 
 end architecture;

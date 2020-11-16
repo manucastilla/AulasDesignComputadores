@@ -40,7 +40,6 @@ begin
   --        port map (dataIN => dataIN, dataOUT =>  RegAmuxA, enable =>  habRegA, clk =>  clk, rst => rst);
   MUX_invertB :  entity work.muxGenerico2x1  
         port map(
-                 entradaA_MUX => signalB,
                  entradaB_MUX =>  not(signalB),
                  seletor_MUX => seletor(2),
                  saida_MUX => saidaInvertB
