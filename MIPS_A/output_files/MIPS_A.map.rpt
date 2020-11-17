@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS_A
-Mon Nov 16 23:40:39 2020
+Tue Nov 17 14:23:07 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -63,14 +63,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Nov 16 23:40:38 2020       ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov 17 14:23:07 2020       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; MIPS_A                                      ;
 ; Top-level Entity Name           ; MIPS_A                                      ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 2142                                        ;
-; Total pins                      ; 100                                         ;
+; Total pins                      ; 68                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -220,23 +220,23 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Estimate of Logic utilization (ALMs needed) ; 1574           ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 1345           ;
+; Combinational ALUT usage for logic          ; 1281           ;
 ;     -- 7 input functions                    ; 1              ;
 ;     -- 6 input functions                    ; 826            ;
 ;     -- 5 input functions                    ; 115            ;
 ;     -- 4 input functions                    ; 112            ;
-;     -- <=3 input functions                  ; 291            ;
+;     -- <=3 input functions                  ; 227            ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 2142           ;
 ;                                             ;                ;
-; I/O pins                                    ; 100            ;
+; I/O pins                                    ; 68             ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 2142           ;
-; Total fan-out                               ; 13255          ;
-; Average fan-out                             ; 3.60           ;
+; Total fan-out                               ; 13127          ;
+; Average fan-out                             ; 3.69           ;
 +---------------------------------------------+----------------+
 
 
@@ -245,8 +245,8 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                 ; Entity Name         ; Library Name ;
 +---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------+---------------------+--------------+
-; |MIPS_A                                     ; 1345 (0)            ; 2142 (0)                  ; 0                 ; 0          ; 100  ; 0            ; |MIPS_A                                                             ; MIPS_A              ; work         ;
-;    |RAMMIPS:RAM_mips|                       ; 864 (864)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |MIPS_A|RAMMIPS:RAM_mips                                            ; RAMMIPS             ; work         ;
+; |MIPS_A                                     ; 1281 (0)            ; 2142 (0)                  ; 0                 ; 0          ; 68   ; 0            ; |MIPS_A                                                             ; MIPS_A              ; work         ;
+;    |RAMMIPS:RAM_mips|                       ; 800 (800)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |MIPS_A|RAMMIPS:RAM_mips                                            ; RAMMIPS             ; work         ;
 ;    |processador:processador|                ; 481 (16)            ; 94 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |MIPS_A|processador:processador                                     ; processador         ; work         ;
 ;       |ROMMIPS:ROM_mips|                    ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_A|processador:processador|ROMMIPS:ROM_mips                    ; ROMMIPS             ; work         ;
 ;       |ULA:ULA|                             ; 153 (153)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_A|processador:processador|ULA:ULA                             ; ULA                 ; work         ;
@@ -1468,7 +1468,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_ff             ; 2142                        ;
 ;     ENA               ; 2112                        ;
 ;     plain             ; 30                          ;
-; arriav_lcell_comb     ; 1347                        ;
+; arriav_lcell_comb     ; 1283                        ;
 ;     arith             ; 125                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 30                          ;
@@ -1478,18 +1478,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         5 data inputs ; 64                          ;
 ;     extend            ; 1                           ;
 ;         7 data inputs ; 1                           ;
-;     normal            ; 1221                        ;
+;     normal            ; 1157                        ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 65                          ;
+;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 102                         ;
 ;         3 data inputs ; 67                          ;
 ;         4 data inputs ; 109                         ;
 ;         5 data inputs ; 51                          ;
 ;         6 data inputs ; 826                         ;
-; boundary_port         ; 100                         ;
+; boundary_port         ; 68                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 11.80                       ;
-; Average LUT depth     ; 6.32                        ;
+; Average LUT depth     ; 6.35                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1498,7 +1498,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:16     ;
+; Top            ; 00:00:14     ;
 +----------------+--------------+
 
 
@@ -1508,7 +1508,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Nov 16 23:40:01 2020
+    Info: Processing started: Tue Nov 17 14:22:34 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS_A -c MIPS_A
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1516,7 +1516,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
     Info (12022): Found design unit 1: ULA-comportamento File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/ULA.vhd Line: 20
     Info (12023): Found entity 1: ULA File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/ULA.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file mips_a.vhd
-    Info (12022): Found design unit 1: MIPS_A-arch_name File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/MIPS_A.vhd Line: 23
+    Info (12022): Found design unit 1: MIPS_A-arch_name File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/MIPS_A.vhd Line: 22
     Info (12023): Found entity 1: MIPS_A File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/MIPS_A.vhd Line: 5
 Info (12021): Found 1 design units, including 0 entities, in source file constantesmips.vhd
     Info (12022): Found design unit 1: constantesMIPS File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/constantesMIPS.vhd Line: 5
@@ -1542,7 +1542,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file estende
     Info (12022): Found design unit 1: estendeSinalGenerico-comportamento File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/estendeSinalGenerico.vhd Line: 19
     Info (12023): Found entity 1: estendeSinalGenerico File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/estendeSinalGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file processador.vhd
-    Info (12022): Found design unit 1: processador-arch_name File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 30
+    Info (12022): Found design unit 1: processador-arch_name File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 28
     Info (12023): Found entity 1: processador File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file rammips.vhd
     Info (12022): Found design unit 1: RAMMIPS-assincrona File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/RAMMIPS.vhd Line: 19
@@ -1563,24 +1563,24 @@ Info (12021): Found 2 design units, including 1 entities, in source file somador
     Info (12022): Found design unit 1: somadorGenerico-comportamento File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/somadorGenerico.vhd Line: 17
     Info (12023): Found entity 1: somadorGenerico File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/somadorGenerico.vhd Line: 5
 Info (12127): Elaborating entity "MIPS_A" for the top level hierarchy
-Info (12128): Elaborating entity "processador" for hierarchy "processador:processador" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/MIPS_A.vhd Line: 40
-Info (12128): Elaborating entity "shftLEFT" for hierarchy "processador:processador|shftLEFT:LEFT_sinal_externo" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 97
-Info (12128): Elaborating entity "somadorGenerico" for hierarchy "processador:processador|somadorGenerico:somador_somador" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 104
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "processador:processador|muxGenerico2x1:MUX_somador" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 114
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "processador:processador|registradorGenerico:PC" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 134
-Info (12128): Elaborating entity "somaConstante" for hierarchy "processador:processador|somaConstante:somadorPC" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 144
-Info (12128): Elaborating entity "ROMMIPS" for hierarchy "processador:processador|ROMMIPS:ROM_mips" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 151
+Info (12128): Elaborating entity "processador" for hierarchy "processador:processador" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/MIPS_A.vhd Line: 38
+Info (12128): Elaborating entity "shftLEFT" for hierarchy "processador:processador|shftLEFT:LEFT_sinal_externo" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 95
+Info (12128): Elaborating entity "somadorGenerico" for hierarchy "processador:processador|somadorGenerico:somador_somador" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 102
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "processador:processador|muxGenerico2x1:MUX_somador" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 112
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "processador:processador|registradorGenerico:PC" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 132
+Info (12128): Elaborating entity "somaConstante" for hierarchy "processador:processador|somaConstante:somadorPC" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 142
+Info (12128): Elaborating entity "ROMMIPS" for hierarchy "processador:processador|ROMMIPS:ROM_mips" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 149
 Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(18): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/ROMMIPS.vhd Line: 18
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "processador:processador|muxGenerico2x1:MUX0" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 158
-Info (12128): Elaborating entity "unidadeControleFD" for hierarchy "processador:processador|unidadeControleFD:UC" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 167
-Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "processador:processador|bancoRegistradores:bancoRegistrador" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 175
-Info (12128): Elaborating entity "unidadeControleULA" for hierarchy "processador:processador|unidadeControleULA:UC_ULA" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 201
-Info (12128): Elaborating entity "ULA" for hierarchy "processador:processador|ULA:ULA" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 208
-Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "processador:processador|estendeSinalGenerico:extensor" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 228
-Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM_mips" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/MIPS_A.vhd Line: 59
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "processador:processador|muxGenerico2x1:MUX0" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 156
+Info (12128): Elaborating entity "unidadeControleFD" for hierarchy "processador:processador|unidadeControleFD:UC" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 165
+Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "processador:processador|bancoRegistradores:bancoRegistrador" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 173
+Info (12128): Elaborating entity "unidadeControleULA" for hierarchy "processador:processador|unidadeControleULA:UC_ULA" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 199
+Info (12128): Elaborating entity "ULA" for hierarchy "processador:processador|ULA:ULA" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 206
+Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "processador:processador|estendeSinalGenerico:extensor" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 226
+Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM_mips" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/MIPS_A.vhd Line: 55
 Info (276014): Found 3 instances of uninferred RAM logic
     Info (276007): RAM logic "RAMMIPS:RAM_mips|memRAM" is uninferred due to asynchronous read logic File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/RAMMIPS.vhd Line: 22
-    Info (276007): RAM logic "processador:processador|bancoRegistradores:bancoRegistrador|registrador" is uninferred due to asynchronous read logic File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/bancoRegistradores.vhd Line: 36
+    Info (276007): RAM logic "processador:processador|bancoRegistradores:bancoRegistrador|registrador" is uninferred due to asynchronous read logic File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/bancoRegistradores.vhd Line: 50
     Info (276004): RAM logic "processador:processador|ROMMIPS:ROM_mips|memROM" is uninferred due to inappropriate RAM size File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/ROMMIPS.vhd Line: 18
 Warning (113028): 55 out of 64 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/ROMcontent.mif Line: 1
     Warning (113027): Addresses ranging from 9 to 63 are not initialized File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/ROMcontent.mif Line: 1
@@ -1591,14 +1591,14 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 768 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3493 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3461 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 99 output pins
+    Info (21059): Implemented 67 output pins
     Info (21061): Implemented 3393 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4861 megabytes
-    Info: Processing ended: Mon Nov 16 23:40:39 2020
-    Info: Elapsed time: 00:00:38
-    Info: Total CPU time (on all processors): 00:01:04
+    Info: Peak virtual memory: 4864 megabytes
+    Info: Processing ended: Tue Nov 17 14:23:07 2020
+    Info: Elapsed time: 00:00:33
+    Info: Total CPU time (on all processors): 00:00:54
 
 

@@ -124,259 +124,131 @@
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[0]",
+					"name" : "barramentoEndout[0]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[1]",
+					"name" : "barramentoEndout[1]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[2]",
+					"name" : "barramentoEndout[2]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[3]",
+					"name" : "barramentoEndout[3]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[4]",
+					"name" : "barramentoEndout[4]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[5]",
+					"name" : "barramentoEndout[5]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[6]",
+					"name" : "barramentoEndout[6]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[7]",
+					"name" : "barramentoEndout[7]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[8]",
+					"name" : "barramentoEndout[8]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[9]",
+					"name" : "barramentoEndout[9]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[10]",
+					"name" : "barramentoEndout[10]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[11]",
+					"name" : "barramentoEndout[11]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[12]",
+					"name" : "barramentoEndout[12]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[13]",
+					"name" : "barramentoEndout[13]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[14]",
+					"name" : "barramentoEndout[14]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[15]",
+					"name" : "barramentoEndout[15]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[16]",
+					"name" : "barramentoEndout[16]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[17]",
+					"name" : "barramentoEndout[17]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[18]",
+					"name" : "barramentoEndout[18]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[19]",
+					"name" : "barramentoEndout[19]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[20]",
+					"name" : "barramentoEndout[20]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[21]",
+					"name" : "barramentoEndout[21]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[22]",
+					"name" : "barramentoEndout[22]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[23]",
+					"name" : "barramentoEndout[23]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[24]",
+					"name" : "barramentoEndout[24]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[25]",
+					"name" : "barramentoEndout[25]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[26]",
+					"name" : "barramentoEndout[26]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[27]",
+					"name" : "barramentoEndout[27]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[28]",
+					"name" : "barramentoEndout[28]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[29]",
+					"name" : "barramentoEndout[29]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[30]",
+					"name" : "barramentoEndout[30]",
 					"strict" : false
 				},
 				{
-					"name" : "saida_ULA_out_out[31]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[0]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[1]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[2]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[3]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[4]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[5]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[6]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[7]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[8]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[9]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[10]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[11]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[12]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[13]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[14]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[15]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[16]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[17]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[18]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[19]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[20]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[21]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[22]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[23]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[24]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[25]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[26]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[27]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[28]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[29]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[30]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaBanco_REG2_out_out[31]",
+					"name" : "barramentoEndout[31]",
 					"strict" : false
 				},
 				{

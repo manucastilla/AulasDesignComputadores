@@ -19,8 +19,6 @@ entity processador is
 	habilitaLeitura          : out std_logic;
 	
 	PC_out				: out std_logic_vector(31 DOWNTO 0);
-	saida_ULA_out       : out std_logic_vector(31 DOWNTO 0);
-	saidaBanco_REG2_out : out std_logic_vector(31 DOWNTO 0);
 	seletor_out  : out std_logic_vector(2 DOWNTO 0)
 	
   );
@@ -126,7 +124,7 @@ begin
 			generic map(larguraDados => 32)
 			port map(
 				entradaA_MUX => PC_MUX, 
-				entradaB_MUX =>  saida_SOMA_FIXA(31 DOWNTO 28) & imediato  & b"00",
+				entradaB_MUX =>  saida_SOMA_FIXA(31 DOWNTO 28) & imediato  & "00",
 				seletor_MUX => seletorMUX_JMP , 
 				saida_MUX    => PC_MUX_JUMP
 			);
@@ -241,8 +239,7 @@ begin
 	habilitaLeitura          <= rd; 
 	
 	PC_out                   <= PC_ROM_INC;
-	saidaBanco_REG2_out <=	saidaBanco_REG2;
-	saida_ULA_out <= saida_ULA;
+
 	seletor_out <= seletor;
 	
 	end architecture;

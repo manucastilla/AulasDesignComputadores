@@ -1,0 +1,34 @@
+Quartus Prime Archive log --	C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/MIPS_A.qarlog
+
+Archive:	C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/MIPS_A.qar
+Date:		Tue Nov 17 14:35:11 2020
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/MIPS_A.qpf
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/MIPS_A.qsf
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/MIPS_A.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/MIPS_A_assignment_defaults.qdf
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/RAMMIPS.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/RAMcontent.mif
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/ROMMIPS.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/ROMcontent.mif
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/RegistradorGenerico.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/ULA.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/Waveform1.vwf
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/bancoRegistradores.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/constantesMIPS.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/conversorHex7Seg.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/estendeSinalGenerico.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/muxGenerico2x1.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/muxGenerico4x1.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/shftLEFT.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/somaConstante.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/somadorGenerico.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/unidadeControleFD.vhd
+C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/unidadeControleULA.vhd
+	======= Total: 23 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

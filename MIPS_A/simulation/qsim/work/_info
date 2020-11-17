@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/simulation/qsim
 Emips_a
-Z1 w1605580924
+Z1 w1605633834
 Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 YZlobdkPHzE;N99jHfcMc3
 Z3 DPx8 cyclonev 19 cyclonev_components 0 22 WF17oJHHbo`b[5Bl5P6_h0
 Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 dfin^_@l97Ngz6cK0kjS62
@@ -24,18 +24,18 @@ Z11 8MIPS_A.vho
 Z12 FMIPS_A.vho
 l0
 L38
-VW_SNh`VhB6H=0QS>:dbNI1
-!s100 S6[I_o_=5W3LKa2<HIXR23
+V4`PHjJOf74]B?QSzc@EA01
+!s100 8><VPW8B0=hDF5iTZnclc1
 Z13 OV;C;10.5b;63
 32
-!s110 1605580925
+Z14 !s110 1605633836
 !i10b 1
-Z14 !s108 1605580925.000000
-Z15 !s90 -work|work|MIPS_A.vho|
-Z16 !s107 MIPS_A.vho|
+Z15 !s108 1605633836.000000
+Z16 !s90 -work|work|MIPS_A.vho|
+Z17 !s107 MIPS_A.vho|
 !i113 1
-Z17 o-work work
-Z18 tExplicit 1 CvgOpt 0
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
 Astructure
 R2
 R3
@@ -46,57 +46,57 @@ R7
 R8
 R9
 R10
-DEx4 work 6 mips_a 0 22 W_SNh`VhB6H=0QS>:dbNI1
-l6974
-L48
-V7=NnUzGz1`516CH<dg@hc1
-!s100 ah<L>iL_AD5@Do=_=k01e3
+DEx4 work 6 mips_a 0 22 4`PHjJOf74]B?QSzc@EA01
+l6875
+L47
+VJBELT20<lRWSF<47E_TPX2
+!s100 ElS0X?`7C3R:bAX`QUOnb2
 R13
 32
-!s110 1605580926
-!i10b 1
 R14
+!i10b 1
 R15
 R16
-!i113 1
 R17
+!i113 1
 R18
+R19
 Emips_a_vhd_vec_tst
-Z19 w1605580922
+Z20 w1605633832
 R8
 R9
 R0
-Z20 8Waveform1.vwf.vht
-Z21 FWaveform1.vwf.vht
+Z21 8Waveform1.vwf.vht
+Z22 FWaveform1.vwf.vht
 l0
 L31
 V=KU]kmD9RdBHKb`QBS3I62
 !s100 4][PCYfR09zFOS@=?o^Q03
 R13
 32
-Z22 !s110 1605580927
+Z23 !s110 1605633837
 !i10b 1
-Z23 !s108 1605580927.000000
-Z24 !s90 -work|work|Waveform1.vwf.vht|
-Z25 !s107 Waveform1.vwf.vht|
+Z24 !s108 1605633837.000000
+Z25 !s90 -work|work|Waveform1.vwf.vht|
+Z26 !s107 Waveform1.vwf.vht|
 !i113 1
-R17
 R18
+R19
 Amips_a_arch
 R8
 R9
-Z26 DEx4 work 18 mips_a_vhd_vec_tst 0 22 =KU]kmD9RdBHKb`QBS3I62
-l50
+Z27 DEx4 work 18 mips_a_vhd_vec_tst 0 22 =KU]kmD9RdBHKb`QBS3I62
+l48
 L33
-Va2`YYHSH2Cb9R=?Z;5ozG2
-!s100 bX]bKR8k;`:Ek[ZXan[zh3
+Z28 Vz9Whhe;1fdBbTUTfgmMfk1
+Z29 !s100 V=KPW72a97d;ILT]14FnN0
 R13
 32
-R22
-!i10b 1
 R23
+!i10b 1
 R24
 R25
+R26
 !i113 1
-R17
 R18
+R19

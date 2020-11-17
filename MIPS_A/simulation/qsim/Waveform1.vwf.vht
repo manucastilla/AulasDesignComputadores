@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "11/16/2020 23:42:02"
+-- Generated on "11/17/2020 14:23:52"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          MIPS_A
 -- 
@@ -33,17 +33,15 @@ END MIPS_A_vhd_vec_tst;
 ARCHITECTURE MIPS_A_arch OF MIPS_A_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
+SIGNAL barramentoEndout : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL CLOCK_50 : STD_LOGIC;
 SIGNAL PC_out_out : STD_LOGIC_VECTOR(31 DOWNTO 0);
-SIGNAL saida_ULA_out_out : STD_LOGIC_VECTOR(31 DOWNTO 0);
-SIGNAL saidaBanco_REG2_out_out : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL seletor_out_out : STD_LOGIC_VECTOR(2 DOWNTO 0);
 COMPONENT MIPS_A
 	PORT (
+	barramentoEndout : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	CLOCK_50 : IN STD_LOGIC;
 	PC_out_out : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-	saida_ULA_out_out : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-	saidaBanco_REG2_out_out : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	seletor_out_out : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
 	);
 END COMPONENT;
@@ -51,10 +49,9 @@ BEGIN
 	i1 : MIPS_A
 	PORT MAP (
 -- list connections between master ports and signals
+	barramentoEndout => barramentoEndout,
 	CLOCK_50 => CLOCK_50,
 	PC_out_out => PC_out_out,
-	saida_ULA_out_out => saida_ULA_out_out,
-	saidaBanco_REG2_out_out => saidaBanco_REG2_out_out,
 	seletor_out_out => seletor_out_out
 	);
 
