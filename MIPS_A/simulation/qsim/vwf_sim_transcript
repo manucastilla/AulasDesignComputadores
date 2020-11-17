@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS_A -c MIPS_A --vector_source="C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/Waveform.vwf" --testbench_file="C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS_A -c MIPS_A --vector_source="C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/Waveform1.vwf" --testbench_file="C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/simulation/qsim/Waveform1.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,12 +25,12 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Mon Nov 16 20:03:24 2020
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS_A -c MIPS_A --vector_source=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/Waveform.vwf --testbench_file=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/simulation/qsim/Waveform.vwf.vht
+    Info: Processing started: Mon Nov 16 23:42:00 2020
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS_A -c MIPS_A --vector_source=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/Waveform1.vwf --testbench_file=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/simulation/qsim/Waveform1.vwf.vht
 Info (119006): Selected device 5CEBA4F23C7 for design "MIPS_A"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-n "saidaBanco_REG2_out_out[5]" in vector source file when writing test bench files
+pin "saidaBanco_REG2_out_out[5]" in vector source file when writing test bench files
 
 Completed successfully. 
 
@@ -54,16 +54,16 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Mon Nov 16 20:03:27 2020
+    Info: Processing started: Mon Nov 16 23:42:02 2020
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/simulation/qsim/ MIPS_A -c MIPS_A
 Info (119006): Selected device 5CEBA4F23C7 for design "MIPS_A"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file MIPS_A.vho in folder "C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4723 megabytes
-    Info: Processing ended: Mon Nov 16 20:03:30 2020
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 4724 megabytes
+    Info: Processing ended: Mon Nov 16 23:42:04 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 Completed successfully. 
 
@@ -81,16 +81,14 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
-
 # do MIPS_A.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
-
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:03:32 on Nov 16,2020
+# Start time: 23:42:05 on Nov 16,2020
 # vcom -work work MIPS_A.vho 
-# -- Loading package STANDARD
 
+# -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package VITAL_Timing
@@ -103,24 +101,23 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Compiling entity MIPS_A
 # -- Compiling architecture structure of MIPS_A
 
-# End time: 20:03:35 on Nov 16,2020, Elapsed time: 0:00:03
+# End time: 23:42:07 on Nov 16,2020, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:03:35 on Nov 16,2020
-# vcom -work work Waveform.vwf.vht 
+# Start time: 23:42:07 on Nov 16,2020
+# vcom -work work Waveform1.vwf.vht 
 # -- Loading package STANDARD
 
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity MIPS_A_vhd_vec_tst
 # -- Compiling architecture MIPS_A_arch of MIPS_A_vhd_vec_tst
-
-# End time: 20:03:35 on Nov 16,2020, Elapsed time: 0:00:00
+# End time: 23:42:07 on Nov 16,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.MIPS_A_vhd_vec_tst 
-# Start time: 20:03:35 on Nov 16,2020
+# Start time: 23:42:07 on Nov 16,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -138,25 +135,26 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading cyclonev.cyclonev_io_ibuf(arch)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
-# ** Warning: Design size of 664320 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 630031 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
-
 # after#34
 
-# End time: 20:03:40 on Nov 16,2020, Elapsed time: 0:00:05
+# Simulation time: 0 ps
+
+# End time: 23:42:13 on Nov 16,2020, Elapsed time: 0:00:06
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/Waveform.vwf...
+Reading C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/Waveform1.vwf...
 
 Reading C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/simulation/qsim/MIPS_A.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/simulation/qsim/MIPS_A_20201116200341.sim.vwf
+Writing the resulting VWF to C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/simulation/qsim/MIPS_A_20201116234213.sim.vwf
 
 Finished VCD to VWF conversion.
 

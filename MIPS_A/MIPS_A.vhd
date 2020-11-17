@@ -12,7 +12,9 @@ entity MIPS_A is
      CLOCK_50            : in  std_logic;
 	  PC_out_out : out std_logic_vector(31 DOWNTO 0);
 	  saida_ULA_out_out : out std_logic_vector(31 DOWNTO 0);
-	  saidaBanco_REG2_out_out : out std_logic_vector(31 DOWNTO 0)	 
+	  saidaBanco_REG2_out_out : out std_logic_vector(31 DOWNTO 0);
+	  seletor_out_out : out std_logic_vector(2 DOWNTO 0)
+	 
 
   );
 end entity;
@@ -30,6 +32,7 @@ architecture arch_name of MIPS_A is
 	signal PC_out				 : std_logic_vector(31 DOWNTO 0);
 	signal saida_ULA_out : std_logic_vector(31 DOWNTO 0);
 	signal saidaBanco_REG2_out : std_logic_vector(31 DOWNTO 0);
+	signal seletor_out : std_logic_vector(2 DOWNTO 0);
 
   
 begin
@@ -44,7 +47,9 @@ begin
 					habilitaLeitura          => rd,
 					PC_out => PC_out,
 					saida_ULA_out => saida_ULA_out,
-					saidaBanco_REG2_out => saidaBanco_REG2_out					
+					saidaBanco_REG2_out => saidaBanco_REG2_out,
+					seletor_out => seletor_out
+					
 					
 				);
 
@@ -65,5 +70,6 @@ begin
 	PC_out_out <= PC_out;
 	  saida_ULA_out_out <= saida_ULA_out;
 	  saidaBanco_REG2_out_out <= saidaBanco_REG2_out;
+	  seletor_out_out <= seletor_out;
 
 end architecture;

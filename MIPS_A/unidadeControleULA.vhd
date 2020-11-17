@@ -24,14 +24,16 @@ architecture arch_name of unidadeControleULA is
 
 begin
 
-    ULActrl <= ctrlADD WHEN ULAop = opADD ELSE
-               ctrlSUB WHEN ULAop = opSUB ELSE
+    ULActrl <= execAddULA WHEN ULAop = opADD ELSE
+               execSubULA WHEN ULAop = opSUB ELSE
 
-               ctrlOR  WHEN  ULAop = opFUNCT and func = functOR ELSE
-               ctrlADD WHEN  ULAop = opFUNCT and func = functADD ELSE
-               ctrlSUB WHEN  ULAop = opFUNCT and func = functSUB ELSE
-               ctrlSLT WHEN  ULAop = opFUNCT and func = functSLT ELSE
-               "000";
+               execOrULA  WHEN  ULAop = opFUNCT and func = functOR ELSE
+               execAddULA WHEN  ULAop = opFUNCT and func = functADD ELSE
+               execSubULA WHEN  ULAop = opFUNCT and func = functSUB ELSE
+               execSltULA WHEN  ULAop = opFUNCT and func = functSLT ELSE
+					execAndULA WHEN  ULAop = opFUNCT AND func = functAND ELSE
+
+               "111";
 
 end architecture;
 

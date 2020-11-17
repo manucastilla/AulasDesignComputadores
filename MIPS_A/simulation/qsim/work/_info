@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/simulation/qsim
 Emips_a
-Z1 w1605567810
+Z1 w1605580924
 Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 YZlobdkPHzE;N99jHfcMc3
 Z3 DPx8 cyclonev 19 cyclonev_components 0 22 WF17oJHHbo`b[5Bl5P6_h0
 Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 dfin^_@l97Ngz6cK0kjS62
@@ -24,13 +24,13 @@ Z11 8MIPS_A.vho
 Z12 FMIPS_A.vho
 l0
 L38
-VY1Umm;KYc2LI1Jak4C>zR2
-!s100 R2cE[b16M6Y9MVPU9<Nmj1
+VW_SNh`VhB6H=0QS>:dbNI1
+!s100 S6[I_o_=5W3LKa2<HIXR23
 Z13 OV;C;10.5b;63
 32
-!s110 1605567812
+!s110 1605580925
 !i10b 1
-Z14 !s108 1605567812.000000
+Z14 !s108 1605580925.000000
 Z15 !s90 -work|work|MIPS_A.vho|
 Z16 !s107 MIPS_A.vho|
 !i113 1
@@ -46,14 +46,14 @@ R7
 R8
 R9
 R10
-DEx4 work 6 mips_a 0 22 Y1Umm;KYc2LI1Jak4C>zR2
-l7435
-L47
-V>D5Zi4UCYQ3BMRYhNRa8J3
-!s100 E3cE1NMWee5LU0QCCz]Gl2
+DEx4 work 6 mips_a 0 22 W_SNh`VhB6H=0QS>:dbNI1
+l6974
+L48
+V7=NnUzGz1`516CH<dg@hc1
+!s100 ah<L>iL_AD5@Do=_=k01e3
 R13
 32
-!s110 1605567813
+!s110 1605580926
 !i10b 1
 R14
 R15
@@ -62,23 +62,23 @@ R16
 R17
 R18
 Emips_a_vhd_vec_tst
-Z19 w1605567806
+Z19 w1605580922
 R8
 R9
 R0
-Z20 8Waveform.vwf.vht
-Z21 FWaveform.vwf.vht
+Z20 8Waveform1.vwf.vht
+Z21 FWaveform1.vwf.vht
 l0
 L31
 V=KU]kmD9RdBHKb`QBS3I62
 !s100 4][PCYfR09zFOS@=?o^Q03
 R13
 32
-Z22 !s110 1605567815
+Z22 !s110 1605580927
 !i10b 1
-Z23 !s108 1605567815.000000
-Z24 !s90 -work|work|Waveform.vwf.vht|
-Z25 !s107 Waveform.vwf.vht|
+Z23 !s108 1605580927.000000
+Z24 !s90 -work|work|Waveform1.vwf.vht|
+Z25 !s107 Waveform1.vwf.vht|
 !i113 1
 R17
 R18
@@ -86,10 +86,10 @@ Amips_a_arch
 R8
 R9
 Z26 DEx4 work 18 mips_a_vhd_vec_tst 0 22 =KU]kmD9RdBHKb`QBS3I62
-l48
+l50
 L33
-Vd?L4DzhM3i81P1hk]CEEU1
-!s100 64R_o8Fz^Ama4j7W?mRQ;3
+Va2`YYHSH2Cb9R=?Z;5ozG2
+!s100 bX]bKR8k;`:Ek[ZXan[zh3
 R13
 32
 R22
