@@ -1,0 +1,1185 @@
+Analysis & Synthesis report for MIPS_A_project
+Tue Nov 24 21:56:05 2020
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |MIPS_A_project
+ 12. Parameter Settings for User Entity Instance: processador:processador
+ 13. Parameter Settings for User Entity Instance: processador:processador|shftLEFT:LEFT_sinal_externo
+ 14. Parameter Settings for User Entity Instance: processador:processador|somadorGenerico:somador_somador
+ 15. Parameter Settings for User Entity Instance: processador:processador|muxGenerico2x1:MUX_somador
+ 16. Parameter Settings for User Entity Instance: processador:processador|muxGenerico2x1:MUX_jump
+ 17. Parameter Settings for User Entity Instance: processador:processador|registradorGenerico:PC
+ 18. Parameter Settings for User Entity Instance: processador:processador|somaConstante:somadorPC
+ 19. Parameter Settings for User Entity Instance: processador:processador|ROMMIPS:ROM_mips
+ 20. Parameter Settings for User Entity Instance: processador:processador|muxGenerico2x1:MUX0
+ 21. Parameter Settings for User Entity Instance: processador:processador|muxGenerico2x1:MUX_LUI
+ 22. Parameter Settings for User Entity Instance: processador:processador|bancoRegistradores:bancoRegistrador
+ 23. Parameter Settings for User Entity Instance: processador:processador|muxGenerico2x1:MUX1
+ 24. Parameter Settings for User Entity Instance: processador:processador|ULA:ULA
+ 25. Parameter Settings for User Entity Instance: processador:processador|muxGenerico2x1:MUX2
+ 26. Parameter Settings for User Entity Instance: processador:processador|muxGenerico2x1:MUX_ORI
+ 27. Parameter Settings for User Entity Instance: processador:processador|estendeSinalGenerico:extensor
+ 28. Parameter Settings for User Entity Instance: RAMMIPS:RAM_mips
+ 29. Port Connectivity Checks: "processador:processador|muxGenerico2x1:MUX_ORI"
+ 30. Port Connectivity Checks: "processador:processador|muxGenerico2x1:MUX_LUI"
+ 31. Port Connectivity Checks: "processador:processador|registradorGenerico:PC"
+ 32. Port Connectivity Checks: "processador:processador|muxGenerico2x1:MUX_jump"
+ 33. Post-Synthesis Netlist Statistics for Top Partition
+ 34. Elapsed Time Per Partition
+ 35. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Tue Nov 24 21:56:05 2020       ;
+; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                   ; MIPS_A_project                              ;
+; Top-level Entity Name           ; MIPS_A_project                              ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 2590                                        ;
+; Total pins                      ; 133                                         ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CEBA4F23C7        ;                    ;
+; Top-level entity name                                                           ; MIPS_A_project     ; MIPS_A_project     ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; VHDL Show LMF Mapping Messages                                                  ; Off                ;                    ;
+; VHDL Version                                                                    ; VHDL_2008          ; VHDL_1993          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                  ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                           ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------+---------+
+; ULA.vhd                          ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/ULA.vhd                  ;         ;
+; unidadeControleULA.vhd           ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/unidadeControleULA.vhd   ;         ;
+; unidadeControleFD.vhd            ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/unidadeControleFD.vhd    ;         ;
+; somadorGenerico.vhd              ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/somadorGenerico.vhd      ;         ;
+; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/somaConstante.vhd        ;         ;
+; shftLEFT.vhd                     ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/shftLEFT.vhd             ;         ;
+; ROMMIPS.vhd                      ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/ROMMIPS.vhd              ;         ;
+; RegistradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/RegistradorGenerico.vhd  ;         ;
+; RAMMIPS.vhd                      ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/RAMMIPS.vhd              ;         ;
+; processador.vhd                  ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/processador.vhd          ;         ;
+; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/muxGenerico2x1.vhd       ;         ;
+; estendeSinalGenerico.vhd         ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/estendeSinalGenerico.vhd ;         ;
+; constantesMIPS.vhd               ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/constantesMIPS.vhd       ;         ;
+; bancoRegistradores.vhd           ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/bancoRegistradores.vhd   ;         ;
+; MIPS_A_project.vhd               ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/MIPS_A_project.vhd       ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 1970           ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 1661           ;
+;     -- 7 input functions                    ; 2              ;
+;     -- 6 input functions                    ; 1123           ;
+;     -- 5 input functions                    ; 195            ;
+;     -- 4 input functions                    ; 71             ;
+;     -- <=3 input functions                  ; 270            ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 2590           ;
+;                                             ;                ;
+; I/O pins                                    ; 133            ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 2590           ;
+; Total fan-out                               ; 16578          ;
+; Average fan-out                             ; 3.67           ;
++---------------------------------------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                     ;
++---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                         ; Entity Name         ; Library Name ;
++---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------+---------------------+--------------+
+; |MIPS_A_project                             ; 1661 (0)            ; 2590 (0)                  ; 0                 ; 0          ; 133  ; 0            ; |MIPS_A_project                                                             ; MIPS_A_project      ; work         ;
+;    |RAMMIPS:RAM_mips|                       ; 864 (864)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |MIPS_A_project|RAMMIPS:RAM_mips                                            ; RAMMIPS             ; work         ;
+;    |processador:processador|                ; 797 (15)            ; 542 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |MIPS_A_project|processador:processador                                     ; processador         ; work         ;
+;       |ROMMIPS:ROM_mips|                    ; 42 (42)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_A_project|processador:processador|ROMMIPS:ROM_mips                    ; ROMMIPS             ; work         ;
+;       |ULA:ULA|                             ; 136 (136)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_A_project|processador:processador|ULA:ULA                             ; ULA                 ; work         ;
+;       |bancoRegistradores:bancoRegistrador| ; 417 (417)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |MIPS_A_project|processador:processador|bancoRegistradores:bancoRegistrador ; bancoRegistradores  ; work         ;
+;       |muxGenerico2x1:MUX0|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_A_project|processador:processador|muxGenerico2x1:MUX0                 ; muxGenerico2x1      ; work         ;
+;       |muxGenerico2x1:MUX1|                 ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_A_project|processador:processador|muxGenerico2x1:MUX1                 ; muxGenerico2x1      ; work         ;
+;       |muxGenerico2x1:MUX_LUI|              ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_A_project|processador:processador|muxGenerico2x1:MUX_LUI              ; muxGenerico2x1      ; work         ;
+;       |muxGenerico2x1:MUX_jump|             ; 31 (31)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_A_project|processador:processador|muxGenerico2x1:MUX_jump             ; muxGenerico2x1      ; work         ;
+;       |registradorGenerico:PC|              ; 0 (0)               ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |MIPS_A_project|processador:processador|registradorGenerico:PC              ; registradorGenerico ; work         ;
+;       |somaConstante:somadorPC|             ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_A_project|processador:processador|somaConstante:somadorPC             ; somaConstante       ; work         ;
+;       |somadorGenerico:somador_somador|     ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_A_project|processador:processador|somadorGenerico:somador_somador     ; somadorGenerico     ; work         ;
+;       |unidadeControleFD:UC|                ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_A_project|processador:processador|unidadeControleFD:UC                ; unidadeControleFD   ; work         ;
+;       |unidadeControleULA:UC_ULA|           ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_A_project|processador:processador|unidadeControleULA:UC_ULA           ; unidadeControleULA  ; work         ;
++---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                ;
++------------------------------------------------------------------------------+--------------------------------------------------------------------+
+; Register name                                                                ; Reason for Removal                                                 ;
++------------------------------------------------------------------------------+--------------------------------------------------------------------+
+; processador:processador|registradorGenerico:PC|DOUT[0]                       ; Merged with processador:processador|registradorGenerico:PC|DOUT[1] ;
+; processador:processador|registradorGenerico:PC|DOUT[1]                       ; Stuck at GND due to stuck port data_in                             ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~550  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~551  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~552  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~553  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~554  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~555  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~556  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~557  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~558  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~559  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~560  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~561  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~562  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~563  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~564  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~565  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~566  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~567  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~568  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~569  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~570  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~571  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~572  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~573  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~574  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~575  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~576  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~577  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~578  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~579  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~580  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~581  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~582  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~583  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~584  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~585  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~586  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~587  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~588  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~589  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~590  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~591  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~592  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~593  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~594  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~595  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~596  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~597  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~598  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~599  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~600  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~601  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~602  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~603  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~604  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~605  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~606  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~607  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~608  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~609  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~610  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~611  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~612  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~613  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~614  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~615  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~616  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~617  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~618  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~619  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~620  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~621  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~622  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~623  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~624  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~625  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~626  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~627  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~628  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~629  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~630  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~631  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~632  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~633  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~634  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~635  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~636  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~637  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~638  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~639  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~640  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~641  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~642  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~643  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~644  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~645  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~646  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~647  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~648  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~649  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~650  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~651  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~652  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~653  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~654  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~655  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~656  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~657  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~658  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~659  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~660  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~661  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~662  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~663  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~664  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~665  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~666  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~667  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~668  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~669  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~670  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~671  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~672  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~673  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~674  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~675  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~676  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~677  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~678  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~679  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~680  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~681  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~682  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~683  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~684  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~685  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~686  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~687  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~688  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~689  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~690  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~691  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~692  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~693  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~694  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~695  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~696  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~697  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~698  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~699  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~700  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~701  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~702  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~703  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~704  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~705  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~706  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~707  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~708  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~709  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~710  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~711  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~712  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~713  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~714  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~715  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~716  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~717  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~718  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~719  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~720  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~721  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~722  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~723  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~724  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~725  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~726  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~727  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~728  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~729  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~730  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~731  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~732  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~733  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~734  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~735  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~736  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~737  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~738  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~739  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~740  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~741  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~742  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~743  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~744  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~745  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~746  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~747  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~748  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~749  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~750  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~751  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~752  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~753  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~754  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~755  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~756  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~757  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~758  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~759  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~760  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~761  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~762  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~763  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~764  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~765  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~766  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~767  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~768  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~769  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~770  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~771  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~772  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~773  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~774  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~775  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~776  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~777  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~778  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~779  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~780  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~781  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~782  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~783  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~784  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~785  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~786  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~787  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~788  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~789  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~790  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~791  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~792  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~793  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~794  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~795  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~796  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~797  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~798  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~799  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~800  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~801  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~802  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~803  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~804  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~805  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~806  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~807  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~808  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~809  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~810  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~811  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~812  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~813  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~814  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~815  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~816  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~817  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~818  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~819  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~820  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~821  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~822  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~823  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~824  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~825  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~826  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~827  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~828  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~829  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~830  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~831  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~832  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~833  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~834  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~835  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~836  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~837  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~838  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~839  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~840  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~841  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~842  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~843  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~844  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~845  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~846  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~847  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~848  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~849  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~850  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~851  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~852  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~853  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~854  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~855  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~856  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~857  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~858  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~859  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~860  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~861  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~862  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~863  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~864  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~865  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~866  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~867  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~868  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~869  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~870  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~871  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~872  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~873  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~874  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~875  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~876  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~877  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~878  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~879  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~880  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~881  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~882  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~883  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~884  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~885  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~886  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~887  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~888  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~889  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~890  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~891  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~892  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~893  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~894  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~895  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~896  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~897  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~898  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~899  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~900  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~901  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~902  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~903  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~904  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~905  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~906  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~907  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~908  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~909  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~910  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~911  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~912  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~913  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~914  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~915  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~916  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~917  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~918  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~919  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~920  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~921  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~922  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~923  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~924  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~925  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~926  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~927  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~928  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~929  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~930  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~931  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~932  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~933  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~934  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~935  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~936  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~937  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~938  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~939  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~940  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~941  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~942  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~943  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~944  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~945  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~946  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~947  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~948  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~949  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~950  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~951  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~952  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~953  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~954  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~955  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~956  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~957  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~958  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~959  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~960  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~961  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~962  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~963  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~964  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~965  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~966  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~967  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~968  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~969  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~970  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~971  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~972  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~973  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~974  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~975  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~976  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~977  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~978  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~979  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~980  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~981  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~982  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~983  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~984  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~985  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~986  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~987  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~988  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~989  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~990  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~991  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~992  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~993  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~994  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~995  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~996  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~997  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~998  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~999  ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1000 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1001 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1002 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1003 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1004 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1005 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1006 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1007 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1008 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1009 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1010 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1011 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1012 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1013 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1014 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1015 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1016 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1017 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1018 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1019 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1020 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1021 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1022 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1023 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1024 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1025 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1026 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1027 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1028 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1029 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1030 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1031 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1032 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1033 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1034 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1035 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1036 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1037 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1038 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1039 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1040 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1041 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1042 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1043 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1044 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1045 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1046 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1047 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1048 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1049 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1050 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1051 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1052 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1053 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1054 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1055 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1056 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1057 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1058 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1059 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1060 ; Lost fanout                                                        ;
+; processador:processador|bancoRegistradores:bancoRegistrador|registrador~1061 ; Lost fanout                                                        ;
+; Total Number of Removed Registers = 514                                      ;                                                                    ;
++------------------------------------------------------------------------------+--------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 2590  ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 2560  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |MIPS_A_project|processador:processador|registradorGenerico:PC|DOUT[22]      ;
+; 3:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |MIPS_A_project|processador:processador|registradorGenerico:PC|DOUT[3]       ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |MIPS_A_project|processador:processador|muxGenerico2x1:MUX_LUI|saida_MUX[0]  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |MIPS_A_project|processador:processador|muxGenerico2x1:MUX_LUI|saida_MUX[30] ;
+; 8:1                ; 31 bits   ; 155 LEs       ; 124 LEs              ; 31 LEs                 ; No         ; |MIPS_A_project|processador:processador|ULA:ULA|saida[13]                    ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |MIPS_A_project|processador:processador|unidadeControleULA:UC_ULA|ULActrl[2] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |MIPS_A_project ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer                                        ;
+; ADDR_WIDTH     ; 32    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; data_width     ; 32    ; Signed Integer                              ;
+; addr_width     ; 32    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|shftLEFT:LEFT_sinal_externo ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; data_width     ; 32    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|somadorGenerico:somador_somador ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|muxGenerico2x1:MUX_somador ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|muxGenerico2x1:MUX_jump ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|registradorGenerico:PC ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|somaConstante:somadorPC ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                      ;
+; constante      ; 4     ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|ROMMIPS:ROM_mips ;
++-----------------+-------+-------------------------------------------------------------+
+; Parameter Name  ; Value ; Type                                                        ;
++-----------------+-------+-------------------------------------------------------------+
+; datawidth       ; 32    ; Signed Integer                                              ;
+; addrwidth       ; 32    ; Signed Integer                                              ;
+; memoryaddrwidth ; 6     ; Signed Integer                                              ;
++-----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|muxGenerico2x1:MUX0 ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; larguradados   ; 5     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|muxGenerico2x1:MUX_LUI ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|bancoRegistradores:bancoRegistrador ;
++---------------------+-------+----------------------------------------------------------------------------+
+; Parameter Name      ; Value ; Type                                                                       ;
++---------------------+-------+----------------------------------------------------------------------------+
+; larguradados        ; 32    ; Signed Integer                                                             ;
+; larguraendbancoregs ; 5     ; Signed Integer                                                             ;
++---------------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|muxGenerico2x1:MUX1 ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|ULA:ULA ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|muxGenerico2x1:MUX2 ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|muxGenerico2x1:MUX_ORI ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|estendeSinalGenerico:extensor ;
++--------------------+-------+-----------------------------------------------------------------------+
+; Parameter Name     ; Value ; Type                                                                  ;
++--------------------+-------+-----------------------------------------------------------------------+
+; larguradadoentrada ; 16    ; Signed Integer                                                        ;
+; larguradadosaida   ; 32    ; Signed Integer                                                        ;
++--------------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RAMMIPS:RAM_mips ;
++-----------------+-------+-------------------------------------+
+; Parameter Name  ; Value ; Type                                ;
++-----------------+-------+-------------------------------------+
+; datawidth       ; 32    ; Signed Integer                      ;
+; addrwidth       ; 32    ; Signed Integer                      ;
+; memoryaddrwidth ; 6     ; Signed Integer                      ;
++-----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "processador:processador|muxGenerico2x1:MUX_ORI" ;
++----------------------+-------+----------+----------------------------------+
+; Port                 ; Type  ; Severity ; Details                          ;
++----------------------+-------+----------+----------------------------------+
+; entradab_mux[31..16] ; Input ; Info     ; Stuck at GND                     ;
++----------------------+-------+----------+----------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "processador:processador|muxGenerico2x1:MUX_LUI" ;
++---------------------+-------+----------+-----------------------------------+
+; Port                ; Type  ; Severity ; Details                           ;
++---------------------+-------+----------+-----------------------------------+
+; entradab_mux[15..0] ; Input ; Info     ; Stuck at GND                      ;
++---------------------+-------+----------+-----------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "processador:processador|registradorGenerico:PC" ;
++--------+-------+----------+------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                        ;
++--------+-------+----------+------------------------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                                   ;
+; rst    ; Input ; Info     ; Stuck at GND                                   ;
++--------+-------+----------+------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "processador:processador|muxGenerico2x1:MUX_jump" ;
++--------------------+-------+----------+-------------------------------------+
+; Port               ; Type  ; Severity ; Details                             ;
++--------------------+-------+----------+-------------------------------------+
+; entradab_mux[1..0] ; Input ; Info     ; Stuck at GND                        ;
++--------------------+-------+----------+-------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 2590                        ;
+;     ENA               ; 2560                        ;
+;     plain             ; 30                          ;
+; arriav_lcell_comb     ; 1662                        ;
+;     arith             ; 125                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 30                          ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 12                          ;
+;         5 data inputs ; 78                          ;
+;     extend            ; 2                           ;
+;         7 data inputs ; 2                           ;
+;     normal            ; 1535                        ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 77                          ;
+;         2 data inputs ; 147                         ;
+;         3 data inputs ; 11                          ;
+;         4 data inputs ; 59                          ;
+;         5 data inputs ; 117                         ;
+;         6 data inputs ; 1123                        ;
+; boundary_port         ; 133                         ;
+;                       ;                             ;
+; Max LUT depth         ; 12.00                       ;
+; Average LUT depth     ; 7.16                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:21     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Tue Nov 24 21:54:45 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS_A_project -c MIPS_A_project
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
+    Info (12022): Found design unit 1: ULA-comportamento File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/ULA.vhd Line: 20
+    Info (12023): Found entity 1: ULA File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/ULA.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file unidadecontroleula.vhd
+    Info (12022): Found design unit 1: unidadeControleULA-arch_name File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/unidadeControleULA.vhd Line: 22
+    Info (12023): Found entity 1: unidadeControleULA File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/unidadeControleULA.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file unidadecontrolefd.vhd
+    Info (12022): Found design unit 1: unidadeControleFD-arch_name File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/unidadeControleFD.vhd Line: 18
+    Info (12023): Found entity 1: unidadeControleFD File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/unidadeControleFD.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file somadorgenerico.vhd
+    Info (12022): Found design unit 1: somadorGenerico-comportamento File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/somadorGenerico.vhd Line: 17
+    Info (12023): Found entity 1: somadorGenerico File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/somadorGenerico.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file somaconstante.vhd
+    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/somaConstante.vhd Line: 19
+    Info (12023): Found entity 1: somaConstante File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/somaConstante.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file shftleft.vhd
+    Info (12022): Found design unit 1: shftLEFT-arch_name File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/shftLEFT.vhd Line: 18
+    Info (12023): Found entity 1: shftLEFT File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/shftLEFT.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file rommips.vhd
+    Info (12022): Found design unit 1: ROMMIPS-assincrona File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/ROMMIPS.vhd Line: 15
+    Info (12023): Found entity 1: ROMMIPS File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/ROMMIPS.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico.vhd
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/RegistradorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: registradorGenerico File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/RegistradorGenerico.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file rammips.vhd
+    Info (12022): Found design unit 1: RAMMIPS-assincrona File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/RAMMIPS.vhd Line: 19
+    Info (12023): Found entity 1: RAMMIPS File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/RAMMIPS.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file processador.vhd
+    Info (12022): Found design unit 1: processador-arch_name File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/processador.vhd Line: 32
+    Info (12023): Found entity 1: processador File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/processador.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico4x1.vhd
+    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/muxGenerico4x1.vhd Line: 13
+    Info (12023): Found entity 1: muxGenerico4x1 File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/muxGenerico4x1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/muxGenerico2x1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file estendesinalgenerico.vhd
+    Info (12022): Found design unit 1: estendeSinalGenerico-comportamento File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/estendeSinalGenerico.vhd Line: 20
+    Info (12023): Found entity 1: estendeSinalGenerico File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/estendeSinalGenerico.vhd Line: 4
+Info (12021): Found 1 design units, including 0 entities, in source file constantesmips.vhd
+    Info (12022): Found design unit 1: constantesMIPS File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/constantesMIPS.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file bancoregistradores.vhd
+    Info (12022): Found design unit 1: bancoRegistradores-comportamento File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/bancoRegistradores.vhd Line: 30
+    Info (12023): Found entity 1: bancoRegistradores File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/bancoRegistradores.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file mips_a_project.vhd
+    Info (12022): Found design unit 1: MIPS_A_project-arch_name File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/MIPS_A_project.vhd Line: 25
+    Info (12023): Found entity 1: MIPS_A_project File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/MIPS_A_project.vhd Line: 5
+Info (12127): Elaborating entity "MIPS_A_project" for the top level hierarchy
+Info (12128): Elaborating entity "processador" for hierarchy "processador:processador" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/MIPS_A_project.vhd Line: 41
+Info (12128): Elaborating entity "shftLEFT" for hierarchy "processador:processador|shftLEFT:LEFT_sinal_externo" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/processador.vhd Line: 103
+Info (12128): Elaborating entity "somadorGenerico" for hierarchy "processador:processador|somadorGenerico:somador_somador" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/processador.vhd Line: 110
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "processador:processador|muxGenerico2x1:MUX_somador" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/processador.vhd Line: 120
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "processador:processador|registradorGenerico:PC" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/processador.vhd Line: 140
+Info (12128): Elaborating entity "somaConstante" for hierarchy "processador:processador|somaConstante:somadorPC" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/processador.vhd Line: 150
+Info (12128): Elaborating entity "ROMMIPS" for hierarchy "processador:processador|ROMMIPS:ROM_mips" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/processador.vhd Line: 157
+Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(18): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/ROMMIPS.vhd Line: 18
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "processador:processador|muxGenerico2x1:MUX0" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/processador.vhd Line: 164
+Info (12128): Elaborating entity "unidadeControleFD" for hierarchy "processador:processador|unidadeControleFD:UC" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/processador.vhd Line: 173
+Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "processador:processador|bancoRegistradores:bancoRegistrador" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/processador.vhd Line: 191
+Info (12128): Elaborating entity "unidadeControleULA" for hierarchy "processador:processador|unidadeControleULA:UC_ULA" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/processador.vhd Line: 217
+Info (12128): Elaborating entity "ULA" for hierarchy "processador:processador|ULA:ULA" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/processador.vhd Line: 224
+Warning (10036): Verilog HDL or VHDL warning at ULA.vhd(30): object "V" assigned a value but never read File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/ULA.vhd Line: 30
+Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "processador:processador|estendeSinalGenerico:extensor" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/processador.vhd Line: 254
+Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM_mips" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/MIPS_A_project.vhd Line: 60
+Info (276014): Found 3 instances of uninferred RAM logic
+    Info (276007): RAM logic "RAMMIPS:RAM_mips|memRAM" is uninferred due to asynchronous read logic File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/RAMMIPS.vhd Line: 22
+    Info (276007): RAM logic "processador:processador|bancoRegistradores:bancoRegistrador|registrador" is uninferred due to asynchronous read logic File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/bancoRegistradores.vhd Line: 59
+    Info (276004): RAM logic "processador:processador|ROMMIPS:ROM_mips|memROM" is uninferred due to inappropriate RAM size File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/ROMMIPS.vhd Line: 18
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "PC_out_out[0]" is stuck at GND File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/MIPS_A_project.vhd Line: 13
+    Warning (13410): Pin "PC_out_out[1]" is stuck at GND File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/MIPS_A_project.vhd Line: 13
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 512 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 4277 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 132 output pins
+    Info (21061): Implemented 4144 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4864 megabytes
+    Info: Processing ended: Tue Nov 24 21:56:05 2020
+    Info: Elapsed time: 00:01:20
+    Info: Total CPU time (on all processors): 00:01:26
+
+
