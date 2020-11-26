@@ -35,7 +35,11 @@ begin
                execAddULA WHEN  ULAop = opFUNCT and func = functADD ELSE
                execSubULA WHEN  ULAop = opFUNCT and func = functSUB ELSE
                execSltULA WHEN  ULAop = opFUNCT and func = functSLT ELSE
-					     execAndULA WHEN  ULAop = opFUNCT AND func = functAND ELSE
+					execAndULA WHEN  ULAop = opFUNCT AND func = functAND ELSE
+					
+					--execAndULA WHEN  ULAop = opFUNCT AND func = functJR ELSE
+					
+					execSltULA WHEN ULAop = opSLTI ELSE
 
                "000";
 

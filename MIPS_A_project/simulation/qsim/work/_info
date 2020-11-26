@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/simulation/qsim
 Emips_a_project
-Z1 w1606270225
+Z1 w1606399160
 Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 YZlobdkPHzE;N99jHfcMc3
 Z3 DPx8 cyclonev 19 cyclonev_components 0 22 WF17oJHHbo`b[5Bl5P6_h0
 Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 dfin^_@l97Ngz6cK0kjS62
@@ -28,14 +28,14 @@ VeVV_nH@<SFiB__?U5[GYL0
 !s100 35MG?zUOoA5[A:6WYHWI71
 Z13 OV;C;10.5b;63
 32
-!s110 1606270228
+Z14 !s110 1606399162
 !i10b 1
-Z14 !s108 1606270228.000000
-Z15 !s90 -work|work|MIPS_A_project.vho|
-Z16 !s107 MIPS_A_project.vho|
+Z15 !s108 1606399162.000000
+Z16 !s90 -work|work|MIPS_A_project.vho|
+Z17 !s107 MIPS_A_project.vho|
 !i113 1
-Z17 o-work work
-Z18 tExplicit 1 CvgOpt 0
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
 Astructure
 R2
 R3
@@ -47,56 +47,56 @@ R8
 R9
 R10
 DEx4 work 14 mips_a_project 0 22 eVV_nH@<SFiB__?U5[GYL0
-l8548
+l7761
 L50
-VQ6>jBaHiLkSgk;ig_Vmi_2
-!s100 E7H7Ehj[E_S7:2QFmnGTG1
+VJ2X<Ua3bVM=LUZjmYaR=h1
+!s100 cbb0nm03@f4`PNK45^b6W0
 R13
 32
-!s110 1606270229
-!i10b 1
 R14
+!i10b 1
 R15
 R16
-!i113 1
 R17
+!i113 1
 R18
+R19
 Emips_a_project_vhd_vec_tst
-Z19 w1606270218
+Z20 w1606399158
 R8
 R9
 R0
-Z20 8Waveform.vwf.vht
-Z21 FWaveform.vwf.vht
+Z21 8Waveform.vwf.vht
+Z22 FWaveform.vwf.vht
 l0
 L31
 VMzfI_2XzST]n5EfkoU6R92
 !s100 =eZL6?1M1UH;?3<876?KT2
 R13
 32
-Z22 !s110 1606270232
+Z23 !s110 1606399164
 !i10b 1
-Z23 !s108 1606270232.000000
-Z24 !s90 -work|work|Waveform.vwf.vht|
-Z25 !s107 Waveform.vwf.vht|
+Z24 !s108 1606399164.000000
+Z25 !s90 -work|work|Waveform.vwf.vht|
+Z26 !s107 Waveform.vwf.vht|
 !i113 1
-R17
 R18
+R19
 Amips_a_project_arch
 R8
 R9
-Z26 DEx4 work 26 mips_a_project_vhd_vec_tst 0 22 MzfI_2XzST]n5EfkoU6R92
+Z27 DEx4 work 26 mips_a_project_vhd_vec_tst 0 22 MzfI_2XzST]n5EfkoU6R92
 l54
 L33
-Z27 Vai;[OH7glD?ZA2EkQ@@QC2
-Z28 !s100 JiWRH=V?`eImhe]IMV^mb0
+Z28 VW20G^gn4eB=0HZbabf@mS0
+Z29 !s100 TQ[Y]ZBcZK>7GU8Tj1JQ`3
 R13
 32
-R22
-!i10b 1
 R23
+!i10b 1
 R24
 R25
+R26
 !i113 1
-R17
 R18
+R19

@@ -66,22 +66,24 @@ architecture arch_name of processador is
 	-- ULA --
 	SIGNAL ULAentradaB             : std_logic_vector(31 DOWNTO 0);
 	SIGNAL saida_ULA               : std_logic_vector(31 DOWNTO 0);
-	SIGNAL seletor               : std_logic_vector(2 DOWNTO 0);
+	SIGNAL seletor              	 : std_logic_vector(2 DOWNTO 0);
 	
 	-- UC --
-	SIGNAL palavraControle_out    : std_logic_vector(12 DOWNTO 0);
+	SIGNAL palavraControle_out   : std_logic_vector(16 DOWNTO 0);
 
-	ALIAS seletorLUI 			 : std_logic IS palavraControle_out(12);
-	ALIAS seletorORI 			 : std_logic IS palavraControle_out(11);
-	ALIAS ULAop                  : std_logic_vector(2 DOWNTO 0) IS palavraControle_out(10 DOWNTO 8);          
-	ALIAS seletorMUX_JMP         : std_logic IS palavraControle_out(7);    
-	ALIAS seletorMUX_RtRd        : std_logic IS palavraControle_out(6); 
-	ALIAS habilitaESCreg3        : std_logic IS palavraControle_out(5);  
-	ALIAS seletorMUX_RtImediato  : std_logic IS palavraControle_out(4);  
-	ALIAS seletorULA_mem         : std_logic IS palavraControle_out(3);   
+	ALIAS BNE 						  : std_logic IS palavraControle_out(16);
+	ALIAS seletorLUI 				  : std_logic IS palavraControle_out(15);
+	ALIAS seletorORI 				  : std_logic IS palavraControle_out(14);
+	ALIAS ULAop                  : std_logic_vector(2 DOWNTO 0) IS palavraControle_out(13 DOWNTO 11);          
+	ALIAS seletorMUX_JMP         : std_logic_vector(1 DOWNTO 0) IS palavraControle_out(10 DOWNTO 9);
+  
+	ALIAS seletorMUX_RtRd        : std_logic_vector (1 DOWNTO 0) IS palavraControle_out(8 DOWNTO 7); 
+	ALIAS habilitaESCreg3        : std_logic IS palavraControle_out(6);  
+	ALIAS seletorMUX_RtImediato  : std_logic IS palavraControle_out(5);  
+	ALIAS seletorULA_mem         : std_logic_vector(1 DOWNTO 0) IS palavraControle_out(4 DOWNTO 3);   
 	ALIAS BEQ                    : std_logic IS palavraControle_out(2);       
-	ALIAS rd          : std_logic IS palavraControle_out(1);       
-	ALIAS wr          : std_logic IS palavraControle_out(0);       
+	ALIAS rd         				  : std_logic IS palavraControle_out(1);       
+	ALIAS wr        				  : std_logic IS palavraControle_out(0);       
  
 
 	ALIAS opcode            	   : std_logic_vector (31 DOWNTO 26) IS ROM_UC(31 DOWNTO 26);
@@ -115,7 +117,7 @@ begin
 				saida => saida_SUM_MUX
 			);
 
-	selMUX_AND_BEQ <= BEQ AND flagZero;
+	selMUX_AND_BEQ <= (BEQ AND flagZero) OR (BNE AND not(flagZero));
 	
 	MUX_somador : entity work.muxGenerico2x1 				-- mux entre somador e pc
 			generic map(larguraDados => 32)
@@ -128,11 +130,13 @@ begin
 
 	
 
-	MUX_jump  : entity work.muxGenerico2x1 				-- mux JMP
+	MUX_jump  : entity work.muxGenerico4x1 				-- mux JMP
 			generic map(larguraDados => 32)
 			port map(
 				entradaA_MUX => PC_MUX, 
 				entradaB_MUX =>  saida_SOMA_FIXA(31 DOWNTO 28) & imediato  & "00",
+				entradaC_MUX => ULAentradaA_RS,
+				entradaD_MUX => b"00000000000000000000000000000000",
 				seletor_MUX => seletorMUX_JMP , 
 				saida_MUX    => PC_MUX_JUMP
 			);
@@ -161,11 +165,13 @@ begin
 					Dado => ROM_UC
 				);
 
-	MUX0: entity work.muxGenerico2x1 				-- mux entre ROM e banco
+	MUX0: entity work.muxGenerico4x1 				-- mux entre ROM e banco
 				generic map(larguraDados => 5)
 				port map(
 					entradaA_MUX => entradaB_RT, 
 					entradaB_MUX => entradaC_RD ,
+					entradaC_MUX => b"11111",
+					entradaD_MUX => b"00000",
 					seletor_MUX => seletorMUX_RtRd, 
     				saida_MUX    => entrada_REG_MUX0
 				);
@@ -234,11 +240,13 @@ begin
 				inA_ULA <= ULAentradaA_RS;
 				inB_ULA <= ULAentradaB;
 	
-	MUX2 : entity work.muxGenerico2x1 				-- mux entre banco e memoria de dados
+	MUX2 : entity work.muxGenerico4x1 				-- mux entre banco e memoria de dados
 				generic map(larguraDados => 32)
 				port map(
 					entradaA_MUX => saida_ULA, 
 					entradaB_MUX => barramento_leituraDados,
+					entradaC_MUX => saida_SOMA_FIXA,
+					entradaD_MUX => b"00000000000000000000000000000000",
 					seletor_MUX => seletorULA_mem, 
     				saida_MUX    => entrada_REG_MUX
 				);

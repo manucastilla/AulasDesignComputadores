@@ -37,17 +37,25 @@ package constantesMIPS is
     constant functAND   : funct_t := "100100";
     constant functOR    : funct_t := "100101";
     constant functSLT   : funct_t := "101010";
-
+	 constant functJR    : funct_t := "001000";
+	 
     constant opCodeTipoR  : opCode_t := "000000";
     constant opCodeLW     : opCode_t := "100011";
     constant opCodeSW     : opCode_t := "101011";
     constant opCodeBEQ    : opCode_t := "000100";
-    constant opcodeORI    : opCode_t := "001101";
+    constant opCodeBNE    : opCode_t := "000101";
+	 
+	 constant opCodeADDI   : opCode_t := "001000";
+	 constant opCodeSLTI   : opCode_t := "001010";
+	 
+	 constant opcodeORI    : opCode_t := "001101";
     constant opcodeANDI   : opCode_t := "001100";
     
     constant opCodeLUI    : opCode_t := "001111";
 --
     constant opCodeTipoJ  : opCode_t := "000010";
+	 constant opCodeJAL  : opCode_t := "000011";
+
 
 --
 -- Codigos da palavra de controle:
@@ -91,9 +99,10 @@ package constantesMIPS is
     constant opADD : std_logic_vector((ALU_OP_WIDTH -1) DOWNTO 0)   := "000";
     constant opSUB  : std_logic_vector((ALU_OP_WIDTH -1) DOWNTO 0)  := "001";
     constant opFUNCT : std_logic_vector((ALU_OP_WIDTH -1) DOWNTO 0) := "010";
-	constant opORI : std_logic_vector((ALU_OP_WIDTH -1) DOWNTO 0)   := "011";
+	constant opORI : std_logic_vector((ALU_OP_WIDTH -1) DOWNTO 0)    := "011";
     constant opLUI : std_logic_vector((ALU_OP_WIDTH -1) DOWNTO 0)   := "100";
 	constant opANDI : std_logic_vector((ALU_OP_WIDTH -1) DOWNTO 0)   := "101";
+	constant opSLTI : std_logic_vector((ALU_OP_WIDTH -1) DOWNTO 0)   := "110";
 
     constant ctrlAND : ctrlALU_t := "000";
     constant ctrlOR  : ctrlALU_t := "001";

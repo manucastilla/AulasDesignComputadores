@@ -31,7 +31,6 @@ architecture arch_name of MIPS_A_project is
 	signal palavraControle     : std_logic_vector(31 DOWNTO 0);
 	signal wr                  : std_logic;
 	signal rd                  : STD_LOGIC;
-	signal PC_out				 : std_logic_vector(31 DOWNTO 0);
 	signal saidaBanco_REG2_out : std_logic_vector(31 DOWNTO 0);
 	signal seletor_out : std_logic_vector(2 DOWNTO 0);
 
@@ -46,7 +45,7 @@ begin
 					barramentoDeEscritaDados => barramentoEscrita,
 					habilitaEscrita          => wr,
 					habilitaLeitura          => rd,
-					PC_out => PC_out,
+					PC_out => PC_out_out,
 					seletor_out => seletor_out,
 					inA_ULA => inA_ULA,
 	inB_ULA => inB_ULA,
@@ -68,7 +67,6 @@ begin
 							);
 							
 							
-	  PC_out_out <= PC_out;
 	  barramentoEndout <= barramentoEndereco;
 	  seletor_out_out <= seletor_out;
 
