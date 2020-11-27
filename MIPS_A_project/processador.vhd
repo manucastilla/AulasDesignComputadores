@@ -98,6 +98,8 @@ architecture arch_name of processador is
 	-- NAO SEI --
 	SIGNAL saidaRegistradorRAM    : std_logic_vector(31 DOWNTO 0);
 	SIGNAL saidaRAM               : std_logic_vector(31 DOWNTO 0);
+	SIGNAL seletorJR				  : std_logic;
+
 
 
 begin
@@ -180,10 +182,11 @@ begin
 				port map(
 					clk => clk,
 					opCode => opcode,
+					JR     => seletorJR ,
 					palavraControle => palavraControle_out
 				);
 
-	MUX_LUI : entity work.muxGenerico2x1 				-- mux entre ROM e banco
+	MUX_LUI : entity work.muxGenerico2x1 				--  mux lui
 				generic map(larguraDados => 32)
 				port map(
 					entradaA_MUX => entrada_REG_MUX, 
@@ -224,7 +227,8 @@ begin
 				port map(
 					ULAop => ULAop,
 					func => func,
-					ULActrl => seletor
+					ULActrl => seletor,
+					JR_ULA => seletorJR
 				);
 
 	ULA : entity work.ULA  

@@ -12,7 +12,8 @@ entity unidadeControleULA is
     ULAop  :  in  std_logic_vector(2 downto 0);
     func  : in  std_logic_vector(5 downto 0);
     
-	 -- Output ports
+   -- Output ports
+    JR_ULA  :  out  std_logic;
     ULActrl :  out  std_logic_vector(2 downto 0)
     
   );
@@ -36,12 +37,8 @@ begin
                execSubULA WHEN  ULAop = opFUNCT and func = functSUB ELSE
                execSltULA WHEN  ULAop = opFUNCT and func = functSLT ELSE
 					execAndULA WHEN  ULAop = opFUNCT AND func = functAND ELSE
-					
-					--execAndULA WHEN  ULAop = opFUNCT AND func = functJR ELSE
-					
-					execSltULA WHEN ULAop = opSLTI ELSE
+					execSltULA WHEN ULAop = opSLTI ELSE "000";
 
-               "000";
-
+    JR_ULA <= '1' WHEN ULAop = opFUNCT and func = functJR ELSE '0';
 end architecture;
 

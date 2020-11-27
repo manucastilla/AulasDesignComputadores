@@ -2,11 +2,14 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity muxGenerico4x1 is
+  generic(
+			larguraDados  : natural := 32
+  );
  
   port (
-    entradaA_MUX, entradaB_MUX , entradaC_MUX, entradaD_MUX: in std_logic;
+    entradaA_MUX, entradaB_MUX , entradaC_MUX, entradaD_MUX: in std_logic_vector((larguraDados -1) DOWNTO 0);
     seletor_MUX : in std_logic_vector(1 DOWNTO 0);
-    saida_MUX : out std_logic
+    saida_MUX : out std_logic_vector((larguraDados-1) DOWNTO 0)
 	 );
 end entity;
 

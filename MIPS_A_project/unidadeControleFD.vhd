@@ -7,7 +7,8 @@ ENTITY unidadeControleFD IS
     PORT (
         -- Input ports
         clk    : IN std_logic;
-        opCode : IN std_logic_vector(5 DOWNTO 0); 
+		opCode : IN std_logic_vector(5 DOWNTO 0);
+		JR     : in std_logic;
 		
         -- Output ports
      
@@ -23,7 +24,7 @@ ARCHITECTURE arch_name OF unidadeControleFD IS
    ALIAS ULAop                 : std_logic_vector(2 DOWNTO 0) IS palavraControle(13 downto 11);
    
    ALIAS seletorMUX_JMP        : std_logic_vector(1 DOWNTO 0) IS palavraControle(10 DOWNTO 9);
-   ALIAS seletorMUX_RtRd       : std_logic_vector(1 DOWNTO 0) IS palavraControle(8 DOWNTO 6);
+   ALIAS seletorMUX_RtRd       : std_logic_vector(1 DOWNTO 0) IS palavraControle(8 DOWNTO 7);
    ALIAS habilitaESCreg3       : std_logic IS palavraControle(6);
    ALIAS seletorMUX_RtImediato : std_logic IS palavraControle(5);
    ALIAS seletorULA_mem        : std_logic_vector(1 DOWNTO 0) IS palavraControle(4 DOWNTO 3);
@@ -43,12 +44,13 @@ ARCHITECTURE arch_name OF unidadeControleFD IS
 
 BEGIN
 
-    seletorMUX_JMP        <= "01"   WHEN opCode = opCodeTipoJ 
-										ELSE "10" WHEN OpCode = opCodeTipoJ ELSE "00";
+    seletorMUX_JMP        <= "01"   WHEN opCode = opCodeTipoJ OR opCode = opCodeJAL
+										ELSE "10" WHEN OpCode = opCodeTipoR and JR = '1'
+										 ELSE "00";
 										
     lui                   <= '1'   WHEN opCode = opCodeLUI ElSE '0';
     seletorMUX_RtRd       <= "01"   WHEN opCode = opCodeTipoR 
-										ELSE "10" WHEN opCode = opCodeJAL
+										ELSE "10" WHEN opCode = opCodeJAL ELSE
 										"00";
     ori_andi              <= '1'   WHEN opCode = opCodeORI OR opCode = opCodeANDI else '0';   
 	 habilitaESCreg3       <= '1'   WHEN opCode = opCodeTipoR OR opCode = opCodeLW OR
@@ -58,13 +60,11 @@ BEGIN
 													 OR opCode = opCodeSLTI 
 													 OR opCode = opCodeJAL
 													 ELSE '0';
-    seletorMUX_RtImediato <= '1'   WHEN opCode = opCodeSW OR opCode = opCodeLW  OR
-                                        opcode= opcodeORI OR opcode = opcodeANDI 
+	seletorMUX_RtImediato <= '1'   WHEN opCode = opCodeSW OR opCode = opCodeLW OR opcode= opcodeORI 
+													OR opcode = opcodeANDI 
 													 OR opCode = opCodeADDI 
 													 OR opCode = opCodeSLTI ELSE '0';
-    SeletorULA_mem		  <= '"01"   WHEN opCode = opCodelW  
-										ELSE "10" WHEN opCode = opCodeJAL
-										ELSE "00";
+   
     BEQ 		      		  <= '1'   WHEN opCode = opCodeBEQ ELSE '0';                                  
 	 BNE 						  <= '1'   WHEN opCode = opCodeBNE ELSE '0';    
 	 
@@ -83,6 +83,8 @@ BEGIN
 						          "000";
 						 
 
-			
+	SeletorULA_mem		  <= "01"   WHEN opCode = opCodelW  
+								  ELSE "10" WHEN opCode = opCodeJAL
+								  ELSE "00";
 
 END ARCHITECTURE;
