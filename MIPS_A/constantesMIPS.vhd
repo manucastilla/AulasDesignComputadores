@@ -41,6 +41,7 @@ package constantesMIPS is
     constant opCodeLW     : opCode_t := "100011";
     constant opCodeSW     : opCode_t := "101011";
     constant opCodeBEQ    : opCode_t := "000100";
+    constant opcodeORI    : opCode_t := "001101";
 --
     constant opCodeTipoJ  : opCode_t := "000010";
 

@@ -42,10 +42,13 @@ BEGIN
 	seletorMUX_JMP        <= '1'   WHEN opCode = opCodeTipoJ ELSE '0';
 	BEQ 				  <= '1'   WHEN opCode = opCodeBEQ ELSE '0'; 
 	SeletorULA_mem		  <= '1'   WHEN opCode = opCodelW ELSE '0';
-	seletorMUX_RtImediato <= '1'   WHEN opCode = opCodeSW ELSE  '1' WHEN opCode = opCodeLW ELSE '0';
-   seletorMUX_RtRd       <= '1'   WHEN opCode = opCodeTipoR ELSE '0';
-	habilitaESCreg3       <= '1'   WHEN opCode = opCodeTipoR ELSE '1' WHEN opCode = opCodeLW ELSE '0';
-	
+    seletorMUX_RtImediato <= '1'   WHEN opCode = opCodeSW ELSE  '1' WHEN opCode = opCodeLW  ELSE '1'
+                                   WHEN opcode= opcodeORI ELSE '0';
+    seletorMUX_RtRd       <= '1'   WHEN opCode = opCodeTipoR WHEN opCode = ELSE '0';
+    habilitaESCreg3       <= '1'   WHEN opCode = opCodeTipoR ELSE '1' WHEN opCode = opCodeLW ELSE '1' 
+                                        WHEN opcode = opcodeORI ELSE '0';
+    
+                                        
 	habLeituraMEM         <= '1'   WHEN opCode = opCodeLW ELSE '0';
 	habEscritaMEM         <= '1'   WHEN opCode = opCodeSW ELSE '0';
 	ULAop                 <= opADD   WHEN opCode = opCodeSW ELSE 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS_A
-Tue Nov 17 14:23:07 2020
+Tue Nov 17 14:41:08 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov 17 14:23:07 2020       ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov 17 14:41:08 2020       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; MIPS_A                                      ;
 ; Top-level Entity Name           ; MIPS_A                                      ;
@@ -1498,7 +1498,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:14     ;
+; Top            ; 00:00:24     ;
 +----------------+--------------+
 
 
@@ -1508,7 +1508,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Nov 17 14:22:34 2020
+    Info: Processing started: Tue Nov 17 14:40:16 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS_A -c MIPS_A
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1576,6 +1576,7 @@ Info (12128): Elaborating entity "unidadeControleFD" for hierarchy "processador:
 Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "processador:processador|bancoRegistradores:bancoRegistrador" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 173
 Info (12128): Elaborating entity "unidadeControleULA" for hierarchy "processador:processador|unidadeControleULA:UC_ULA" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 199
 Info (12128): Elaborating entity "ULA" for hierarchy "processador:processador|ULA:ULA" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 206
+Warning (10873): Using initial value X (don't care) for net "op_slt[31..1]" at ULA.vhd(27) File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/ULA.vhd Line: 27
 Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "processador:processador|estendeSinalGenerico:extensor" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/processador.vhd Line: 226
 Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM_mips" File: C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A/MIPS_A.vhd Line: 55
 Info (276014): Found 3 instances of uninferred RAM logic
@@ -1595,10 +1596,10 @@ Info (21057): Implemented 3461 device resources after synthesis - the final reso
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 67 output pins
     Info (21061): Implemented 3393 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4864 megabytes
-    Info: Processing ended: Tue Nov 17 14:23:07 2020
-    Info: Elapsed time: 00:00:33
-    Info: Total CPU time (on all processors): 00:00:54
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4874 megabytes
+    Info: Processing ended: Tue Nov 17 14:41:09 2020
+    Info: Elapsed time: 00:00:53
+    Info: Total CPU time (on all processors): 00:01:26
 
 

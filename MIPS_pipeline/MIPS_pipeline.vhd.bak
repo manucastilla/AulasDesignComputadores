@@ -1,0 +1,371 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+
+ENTITY processador IS
+	GENERIC (
+		DATA_WIDTH : NATURAL := 32;
+		ADDR_WIDTH : NATURAL := 32
+	);
+
+	PORT (
+		-- Input ports
+		CLOCK_50 : IN STD_LOGIC;
+		barramento_leituraDados : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+
+		barramento_endereco : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	
+
+		PC_out : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+		
+	);
+END ENTITY;
+ARCHITECTURE arch_name OF processador IS
+
+	-- ULA --
+	SIGNAL flagZero : STD_LOGIC;
+
+	-- MUX SOMADOR --
+	SIGNAL saida_SOMA_FIXA : STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL saida_SUM_MUX : STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL selMUX_AND_BEQ : STD_LOGIC;
+
+	-- SOMADOR VARIVAEL --
+	SIGNAL saidaSHIFT_entradaSUM : STD_LOGIC_VECTOR(31 DOWNTO 0);
+
+	-- SOMADOR PC --
+	--SIGNAL PC_MUX                 : std_logic_vector(31 DOWNTO 0);
+	SIGNAL PC_ROM_INC : STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL PC_MUX : STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL PC_MUX_JUMP : STD_LOGIC_VECTOR(31 DOWNTO 0);
+
+	-- ROM MIPS --
+	SIGNAL ROM_UC : STD_LOGIC_VECTOR(31 DOWNTO 0);
+
+	-- BANCO DE REGISTRADOR --
+	-- ULA --
+	SIGNAL ULAentradaB : STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL saida_ULA : STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL seletor : STD_LOGIC_VECTOR(2 DOWNTO 0);
+
+	-- UC --
+	SIGNAL palavraControle_out : STD_LOGIC_VECTOR(16 DOWNTO 0);
+
+	ALIAS seletorLUI : STD_LOGIC IS palavraControle_out(15);
+	ALIAS seletorORI : STD_LOGIC IS palavraControle_out(14);
+	ALIAS seletorMUX_JMP : STD_LOGIC_VECTOR(1 DOWNTO 0) IS palavraControle_out(10 DOWNTO 9);
+	ALIAS seletorULA_mem : STD_LOGIC_VECTOR(1 DOWNTO 0) IS palavraControle_out(4 DOWNTO 3);
+	-- EXTENSAO --
+	SIGNAL saidaMUX_imediato : STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL saidaextensao : STD_LOGIC_VECTOR(31 DOWNTO 0);
+	ALIAS entradaExtensao : STD_LOGIC_VECTOR (15 DOWNTO 0) IS ROM_UC(15 DOWNTO 0);
+
+	-- NAO SEI --
+	SIGNAL saidaRegistradorRAM : STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL saidaRAM : STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL seletorJR : STD_LOGIC;
+
+	-- IF/ID
+	SIGNAL IFID_OUT : STD_LOGIC_VECTOR(63 DOWNTO 0);
+
+	ALIAS entradaA_RS : STD_LOGIC_VECTOR (4 DOWNTO 0) IS IFID_OUT(25 DOWNTO 21);
+	ALIAS entradaB_RT : STD_LOGIC_VECTOR (4 DOWNTO 0) IS IFID_OUT(20 DOWNTO 16);
+	ALIAS entradaC_RD : STD_LOGIC_VECTOR (4 DOWNTO 0) IS IFID_OUT(15 DOWNTO 11);
+	ALIAS opcode : STD_LOGIC_VECTOR (5 DOWNTO 0) IS IFID_OUT(31 DOWNTO 26);
+	ALIAS func : STD_LOGIC_VECTOR (5 DOWNTO 0) IS IFID_OUT(5 DOWNTO 0);
+	ALIAS imediato : STD_LOGIC_VECTOR (25 DOWNTO 0) IS IFID_OUT(25 DOWNTO 0);
+	ALIAS PC_MAIS4 : STD_LOGIC_VECTOR (31 DOWNTO 0) IS IFID_OUT(63 DOWNTO 32); -- Proximo PC
+
+	SIGNAL saida_LUI_REG : STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL ULAentradaA_RS : STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL saidaBanco_REG2 : STD_LOGIC_VECTOR(31 DOWNTO 0);
+	--SIGNAL entrada_REG_MUX : STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL entrada_REG_MUX0 : STD_LOGIC_VECTOR (4 DOWNTO 0);
+
+	-- ID/EX
+	SIGNAL IDEX_OUT : STD_LOGIC_VECTOR(149 DOWNTO 0);
+
+	-- saidaIDEX_palavraOut
+	-- saidaIDEX_palavraOut
+	-- rd
+	-- wr
+	-- 	muxRdRT: (145 ~ 146)
+	--  habEscritaReg: (144)
+	-- 	rtImediato : (143)
+	--  ulaop (142 - 140)
+	--  beq (139)
+	-- bne (138)
+	ALIAS rd : STD_LOGIC IS IDEX_OUT(148);
+	ALIAS wr : STD_LOGIC IS IDEX_OUT(147);
+	ALIAS seletorMUX_RtRd : STD_LOGIC_VECTOR (1 DOWNTO 0) IS IDEX_OUT(146 DOWNTO 145);
+	ALIAS habilitaESCreg3 : STD_LOGIC IS IDEX_OUT(144);
+	ALIAS seletorMUX_RtImediato : STD_LOGIC IS IDEX_OUT(143);
+	ALIAS ULAop : STD_LOGIC_VECTOR(2 DOWNTO 0) IS IDEX_OUT(142 DOWNTO 140);
+	ALIAS BEQ : STD_LOGIC IS IDEX_OUT(139);
+	ALIAS BNE : STD_LOGIC IS IDEX_OUT(138);
+	ALIAS saidaIDEX_Somador : STD_LOGIC_VECTOR (31 DOWNTO 0) IS IDEX_OUT(137 DOWNTO 106);
+	ALIAS saidaIDEX_ULA : STD_LOGIC_VECTOR (31 DOWNTO 0) IS IDEX_OUT(105 DOWNTO 74);
+	ALIAS saidaIDEX_MUX_imediato : STD_LOGIC_VECTOR (31 DOWNTO 0) IS IDEX_OUT(73 DOWNTO 42);
+	ALIAS saidaIDEX_shiftleft : STD_LOGIC_VECTOR (31 DOWNTO 0) IS IDEX_OUT(41 DOWNTO 10);
+	ALIAS saidaIDEX_ULACONTROL : STD_LOGIC_VECTOR (5 DOWNTO 0) IS IDEX_OUT(15 DOWNTO 10);
+	ALIAS saidaIDEX_RD : STD_LOGIC_VECTOR (4 DOWNTO 0) IS IDEX_OUT(9 DOWNTO 5);
+	ALIAS saidaIDEX_RT : STD_LOGIC_VECTOR (4 DOWNTO 0) IS IDEX_OUT(4 DOWNTO 0);
+
+	-- EX/MEM
+	SIGNAL EXMEM_OUT : STD_LOGIC_VECTOR(136 DOWNTO 0);
+	ALIAS saidaEXMEM_rd : STD_LOGIC IS EXMEM_OUT(136);
+	ALIAS saidaEXMEM_wr : STD_LOGIC IS EXMEM_OUT(135);
+	ALIAS barramentoEnd : STD_LOGIC_VECTOR(31 DOWNTO 0) IS EXMEM_OUT(134 DOWNTO 103);
+	ALIAS barramentoEscrita : STD_LOGIC_VECTOR(31 DOWNTO 0) IS EXMEM_OUT(129 DOWNTO 98);
+	ALIAS habilitaESCreg3_EXMEM_OUT : STD_LOGIC IS EXMEM_OUT(0);
+
+	SIGNAL barramentoLeitura : STD_LOGIC_VECTOR(31 DOWNTO 0);
+
+	SIGNAL EXWB_OUT : STD_LOGIC_VECTOR(64 DOWNTO 0);
+	ALIAS seletorULA_mem : STD_LOGIC IS EXWB_OUT(64);
+	ALIAS entradaA_MemREG : STD_LOGIC_VECTOR(31 DOWNTO 0) IS EXWB_OUT(63 DOWNTO 32);
+	ALIAS entradaB_MemREG : STD_LOGIC_VECTOR(31 DOWNTO 0) IS EXWB_OUT(31 DOWNTO 0);
+	ALIAS entradaC_MemREG : STD_LOGIC_VECTOR(31 DOWNTO 0) IS EXWB_OUT(31 DOWNTO 0);
+	ALIAS rd_MemREG : STD_LOGIC_VECTOR(4 DOWNTO 0) IS EXWB_OUT(4 DOWNTO 0);
+	
+	SIGNAL memREG_Lui : STD_LOGIC_VECTOR(31 DOWNTO 0);
+	
+	SIGNAL clk: std_logic;
+	
+BEGIN
+
+	clk <= CLOCK_50;
+	-- ETAPA BUSCA 
+	MUX_jump : ENTITY work.muxGenerico4x1 -- mux JMP
+		GENERIC MAP(larguraDados => 32)
+		PORT MAP(
+			entradaA_MUX => PC_MUX,
+			entradaB_MUX => saida_SOMA_FIXA(31 DOWNTO 28) & imediato & "00",
+			entradaC_MUX => ULAentradaA_RS,
+			entradaD_MUX => b"00000000000000000000000000000000",
+			seletor_MUX => seletorMUX_JMP,
+			saida_MUX => PC_MUX_JUMP
+		);
+
+	PC : ENTITY work.registradorGenerico
+		GENERIC MAP(larguraDados => 32)
+		PORT MAP(
+			DIN => PC_MUX_JUMP,
+			DOUT => PC_ROM_INC,
+			ENABLE => '1',
+			CLK => clk,
+			RST => '0'
+		);
+
+	somadorPC : ENTITY work.somaConstante
+		GENERIC MAP(larguraDados => 32, constante => 4)
+		PORT MAP(
+			entrada => PC_ROM_INC,
+			saida => saida_SOMA_FIXA
+		);
+
+	ROM_mips : ENTITY work.ROMMIPS
+		PORT MAP(
+			clk => clk,
+			Endereco => PC_ROM_INC,
+			Dado => ROM_UC
+		);
+	-- REGISTRADOR IF/ID
+	etapaBusca : ENTITY work.registradorGenerico
+		GENERIC MAP(
+			larguraDados => 64
+		)
+		PORT MAP(
+			DIN => saida_SOMA_FIXA & ROM_UC,
+			DOUT => IFID_OUT,
+			ENABLE => '1',
+			CLK => clk,
+			RST => '0'
+		);
+
+	-- ETAPA DECODIFICAÇÃO
+
+	UC : ENTITY work.UnidadeControleFD
+		PORT MAP(
+			clk => clk,
+			opCode => opcode,
+			JR => seletorJR,
+			palavraControle => palavraControle_out
+		);
+
+	bancoRegistrador : ENTITY work.bancoRegistradores
+		GENERIC MAP(
+			larguraDados => 32, larguraEndBancoRegs => 5 -- 2^5 = 32 posicoes
+		)
+		PORT MAP(
+			clk => clk,
+			enderecoA => entradaA_RS,
+			enderecoB => entradaB_RT,
+			enderecoC => rd_MemREG,
+			dadoEscritaC => saida_LUI_REG,
+			escreveC => habilitaESCreg3_EXMEM_OUT,
+			saidaA => ULAentradaA_RS,
+			saidaB => saidaBanco_REG2
+		);
+
+	extensor : ENTITY work.estendeSinalGenerico
+		GENERIC MAP(
+			larguraDadoEntrada => 16,
+			larguraDadoSaida => 32
+		)
+		PORT MAP(
+			estendeSinal_IN => entradaExtensao,
+			estendeSinal_OUT => saidaextensao
+		);
+
+	MUX_LUI : ENTITY work.muxGenerico2x1 --  mux lui
+		GENERIC MAP(larguraDados => 32)
+		PORT MAP(
+			entradaA_MUX => memREG_Lui,
+			entradaB_MUX => entradaExtensao & "0000000000000000",
+			seletor_MUX => seletorLUI,
+			saida_MUX => saida_LUI_REG
+		);
+
+
+	MUX_ORI : ENTITY work.muxGenerico2x1
+		GENERIC MAP(larguraDados => 32)
+		PORT MAP(
+			entradaA_MUX => saidaextensao,
+			entradaB_MUX => "0000000000000000" & entradaExtensao,
+			seletor_MUX => seletorORI,
+			saida_MUX => saidaMUX_imediato
+		);
+
+	selMUX_AND_BEQ <= (BEQ AND flagZero) OR (BNE AND NOT(flagZero));
+
+	-- REGISTRADOR ID/EX -- 9 + 32 +32 + 32 + 32 + 5 + 5 
+	-- (9 => muxrtrd(2), habEscritaR, RtImediato, UlaOp(3), BEQ, BNE)
+	REG_ID : ENTITY work.registradorGenerico
+		GENERIC MAP(larguraDados => 150)
+		PORT MAP(
+			DIN => palavraControle_out(11 DOWNTO 0) & PC_MAIS4 & ULAentradaA_RS & saidaBanco_REG2
+			& saidaMUX_imediato & entradaB_RT & entradaC_RD,
+			DOUT => IDEX_OUT,
+			ENABLE => '1',
+			CLK => clk,
+			RST => '0'
+		);
+	-- ETAPA EXECUCAO
+
+	somador_somador : ENTITY work.somadorGenerico
+		GENERIC MAP(larguraDados => 32)
+		PORT MAP(
+			entradaA => saidaIDEX_Somador,
+			entradaB => saidaSHIFT_entradaSUM,
+			saida => saida_SUM_MUX
+		);
+
+	LEFT_sinal_extendido : ENTITY work.shftLEFT
+		PORT MAP(
+			dataIN => saidaIDEX_shiftleft,
+			dataOUT => saidaSHIFT_entradaSUM
+		);
+
+	ULA : ENTITY work.ULA
+		GENERIC MAP(larguraDados => 32)
+		PORT MAP(
+			entradaA => saidaIDEX_ULA,
+			entradaB => ULAentradaB,
+			saida => saida_ULA,
+			seletor => seletor,
+			flagZero => flagZero
+		);
+
+
+	mux_RT_imediato : ENTITY work.muxGenerico2x1 -- mux entre banco de registrador e ula
+		GENERIC MAP(larguraDados => 32)
+		PORT MAP(
+			entradaA_MUX => saidaIDEX_MUX_imediato,
+			entradaB_MUX => saidaIDEX_shiftleft,
+			seletor_MUX => seletorMUX_RtImediato,
+			saida_MUX => ULAentradaB
+		);
+
+	UC_ULA : ENTITY work.unidadeControleULA
+		PORT MAP(
+			ULAop => ULAop,
+			func => saidaIDEX_ULACONTROL,
+			ULActrl => seletor,
+			JR_ULA => seletorJR
+		);
+
+	mux_RT_RD : ENTITY work.muxGenerico4x1 -- mux entre ROM e banco
+		GENERIC MAP(larguraDados => 5)
+		PORT MAP(
+			entradaA_MUX => saidaIDEX_RT,
+			entradaB_MUX => saidaIDEX_RD,
+			entradaC_MUX => b"11111",
+			entradaD_MUX => b"00000",
+			seletor_MUX => seletorMUX_RtRd,
+			saida_MUX => entrada_REG_MUX0
+		);
+
+	MUX_BEQ : ENTITY work.muxGenerico2x1 -- mux beq
+		GENERIC MAP(larguraDados => 32)
+		PORT MAP(
+			entradaA_MUX => saida_SOMA_FIXA,
+			entradaB_MUX => saida_SUM_MUX,
+			seletor_MUX => selMUX_AND_BEQ,
+			saida_MUX => PC_MUX
+		);
+
+	-- REGISTRADOR EX/MEM
+	-- 1 + 1 + 1 + 1 + 32 + 32 + 32 + 32 + 5
+	REG_EX : ENTITY work.registradorGenerico
+		GENERIC MAP(larguraDados => 137)
+		PORT MAP(
+			DIN => wr & rd & habilitaESCreg3 & selMUX_AND_BEQ & saida_SUM_MUX & saidaIDEX_Somador
+			& saida_ULA & saidaIDEX_MUX_imediato & entrada_REG_MUX0,
+			DOUT => EXMEM_OUT,
+			ENABLE => '1',
+			CLK => clk,
+			RST => '0'
+		);
+
+	-- ETAPA MEMORY
+	RAM_mips : ENTITY work.RAMMIPS
+		PORT MAP(
+			clk => Clk,
+			Endereco => barramentoEnd,
+			Dado_in => barramentoEscrita,
+			Dado_out => barramentoLeitura,
+			wr => wr,
+			rd => rd
+		);
+
+	-- registrador MEM/WB
+	-- 1 + 32 + 32 
+	REG_MEM : ENTITY work.registradorGenerico
+		GENERIC MAP(larguraDados => 65)
+		PORT MAP(
+			DIN => barramentoLeitura & barramentoEnd & habilitaESCreg3_EXMEM_OUT,
+			DOUT => EXWB_OUT,
+			ENABLE => '1',
+			CLK => clk,
+			RST => '0'
+		);
+
+	-- ETAPA WRITE BACK
+	MUX_ula_mem : ENTITY work.muxGenerico4x1 -- mux entre banco e RAM
+		GENERIC MAP(larguraDados => 32)
+		PORT MAP(
+			entradaA_MUX => entradaA_MemREG,
+			entradaB_MUX => entradaB_MemREG,
+			entradaC_MUX => entradaC_MemREG,
+			entradaD_MUX => b"00000000000000000000000000000000",
+			seletor_MUX => seletorULA_mem,
+			saida_MUX =>  memREG_Lui
+		);
+
+	barramento_endereco <= saida_ULA;
+	
+	PC_out <= PC_ROM_INC;
+
+
+END ARCHITECTURE;

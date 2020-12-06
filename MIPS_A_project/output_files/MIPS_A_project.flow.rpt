@@ -1,5 +1,5 @@
 Flow report for MIPS_A_project
-Fri Nov 27 15:06:22 2020
+Sun Dec 06 13:45:26 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Fri Nov 27 15:06:22 2020       ;
+; Flow Status                     ; Successful - Sun Dec 06 13:45:26 2020       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; MIPS_A_project                              ;
 ; Top-level Entity Name           ; MIPS_A_project                              ;
@@ -108,7 +108,9 @@ refer to the applicable agreement for further details.
 ; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4728 MB             ; 00:00:03                           ;
 ; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4718 MB             ; 00:00:02                           ;
 ; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4728 MB             ; 00:00:04                           ;
-; Total                ; 00:01:02     ; --                      ; --                  ; 00:01:19                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4718 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4728 MB             ; 00:00:01                           ;
+; Total                ; 00:01:05     ; --                      ; --                  ; 00:01:21                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -124,6 +126,8 @@ refer to the applicable agreement for further details.
 ; EDA Netlist Writer   ; DESKTOP-U5DSIPV  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-U5DSIPV  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-U5DSIPV  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-U5DSIPV  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-U5DSIPV  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -131,6 +135,8 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off MIPS_A_project -c MIPS_A_project
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS_A_project -c MIPS_A_project --vector_source=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/Waveform.vwf --testbench_file=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/simulation/qsim/ MIPS_A_project -c MIPS_A_project
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS_A_project -c MIPS_A_project --vector_source=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/Waveform.vwf --testbench_file=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/simulation/qsim/Waveform.vwf.vht
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/simulation/qsim/ MIPS_A_project -c MIPS_A_project
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS_A_project -c MIPS_A_project --vector_source=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/Waveform.vwf --testbench_file=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/simulation/qsim/Waveform.vwf.vht

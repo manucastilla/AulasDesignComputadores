@@ -25,13 +25,15 @@ architecture comportamento of ULA is
    signal op_and :    STD_LOGIC_VECTOR((larguraDados-1) downto 0);
    signal op_or :     STD_LOGIC_VECTOR((larguraDados-1) downto 0);
    signal op_slt :    STD_LOGIC_VECTOR((larguraDados-1) downto 0) := x"00000000";
+  --  signal op_ori:     STD_LOGIC_VECTOR((larguraDados-1) downto 0);
 
     begin
       soma      <= STD_LOGIC_VECTOR(signed(entradaA) + signed(entradaB));
       subtracao <= STD_LOGIC_VECTOR(signed(entradaA) - signed(entradaB));
       op_and    <= entradaA and entradaB;
       op_or     <= entradaA or entradaB;
-      op_slt(0)    <= subtracao(31);
+      op_slt(0) <= subtracao(31);
+      -- op_ori    <= entradaA or
 		-- op_slt    <= subtracao;
 
 
