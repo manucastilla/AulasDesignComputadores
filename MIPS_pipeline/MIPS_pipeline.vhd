@@ -52,8 +52,8 @@ ARCHITECTURE arch_name OF MIPS_pipeline IS
 	SIGNAL palavraControle_out : STD_LOGIC_VECTOR(16 DOWNTO 0);
 	ALIAS seletorLUI : STD_LOGIC IS palavraControle_out(16);
 	ALIAS seletorORI : STD_LOGIC IS palavraControle_out(15);
-	ALIAS ULAop : STD_LOGIC_VECTOR(2 DOWNTO 0) IS palavraControle_out(14 DOWNTO 12);
-	ALIAS seletorMUX_JMP : STD_LOGIC_VECTOR(1 DOWNTO 0) IS palavraControle_out(11 DOWNTO 10);
+	--ALIAS ULAop : STD_LOGIC_VECTOR(2 DOWNTO 0) IS palavraControle_out(14 DOWNTO 12);
+	ALIAS seletorMUX_JMP : STD_LOGIC_VECTOR(1 DOWNTO 0) IS palavraControle_out(14 DOWNTO 13);
 
 	-- EXTENSAO --
 	SIGNAL saidaMUX_imediato : STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -236,7 +236,7 @@ BEGIN
 	REG_ID : ENTITY work.registradorGenerico
 		GENERIC MAP(larguraDados => 151)
 		PORT MAP(
-			DIN => ULAop & palavraControle_out(9 DOWNTO 0) & PC_MAIS4 & ULAentradaA_RS
+			DIN => palavraControle_out(12 DOWNTO 0) & PC_MAIS4 & ULAentradaA_RS
 			& saidaBanco_REG2 & saidaMUX_imediato & entradaB_RT & entradaC_RD,
 			DOUT => IDEX_OUT,
 			ENABLE => '1',

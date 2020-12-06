@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS_pipeline
-Sun Dec 06 19:39:38 2020
+Sun Dec 06 20:28:07 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -87,7 +87,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Dec 06 19:39:38 2020       ;
+; Analysis & Synthesis Status     ; Successful - Sun Dec 06 20:28:07 2020       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; MIPS_pipeline                               ;
 ; Top-level Entity Name           ; MIPS_pipeline                               ;
@@ -257,11 +257,11 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Estimate of Logic utilization (ALMs needed) ; 324            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 457            ;
+; Combinational ALUT usage for logic          ; 456            ;
 ;     -- 7 input functions                    ; 14             ;
 ;     -- 6 input functions                    ; 130            ;
-;     -- 5 input functions                    ; 110            ;
-;     -- 4 input functions                    ; 111            ;
+;     -- 5 input functions                    ; 108            ;
+;     -- 4 input functions                    ; 112            ;
 ;     -- <=3 input functions                  ; 92             ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 496            ;
@@ -274,7 +274,7 @@ refer to the applicable agreement for further details.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 592            ;
-; Total fan-out                               ; 4489           ;
+; Total fan-out                               ; 4486           ;
 ; Average fan-out                             ; 3.40           ;
 +---------------------------------------------+----------------+
 
@@ -284,7 +284,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                            ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |MIPS_pipeline                            ; 457 (1)             ; 496 (0)                   ; 4096              ; 0          ; 135  ; 0            ; |MIPS_pipeline                                                                                                 ; MIPS_pipeline       ; work         ;
+; |MIPS_pipeline                            ; 456 (1)             ; 496 (0)                   ; 4096              ; 0          ; 135  ; 0            ; |MIPS_pipeline                                                                                                 ; MIPS_pipeline       ; work         ;
 ;    |RAMMIPS:RAM_mips|                     ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |MIPS_pipeline|RAMMIPS:RAM_mips                                                                                ; RAMMIPS             ; work         ;
 ;       |altsyncram:memRAM_rtl_0|           ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |MIPS_pipeline|RAMMIPS:RAM_mips|altsyncram:memRAM_rtl_0                                                        ; altsyncram          ; work         ;
 ;          |altsyncram_3jp1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |MIPS_pipeline|RAMMIPS:RAM_mips|altsyncram:memRAM_rtl_0|altsyncram_3jp1:auto_generated                         ; altsyncram_3jp1     ; work         ;
@@ -298,16 +298,16 @@ refer to the applicable agreement for further details.
 ;    |muxGenerico2x1:MUX_LUI|               ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_pipeline|muxGenerico2x1:MUX_LUI                                                                          ; muxGenerico2x1      ; work         ;
 ;    |muxGenerico2x1:MUX_ORI|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_pipeline|muxGenerico2x1:MUX_ORI                                                                          ; muxGenerico2x1      ; work         ;
 ;    |muxGenerico2x1:mux_RT_imediato|       ; 19 (19)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_pipeline|muxGenerico2x1:mux_RT_imediato                                                                  ; muxGenerico2x1      ; work         ;
-;    |muxGenerico4x1:MUX_jump|              ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_pipeline|muxGenerico4x1:MUX_jump                                                                         ; muxGenerico4x1      ; work         ;
+;    |muxGenerico4x1:MUX_jump|              ; 34 (34)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_pipeline|muxGenerico4x1:MUX_jump                                                                         ; muxGenerico4x1      ; work         ;
 ;    |muxGenerico4x1:mux_RT_RD|             ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_pipeline|muxGenerico4x1:mux_RT_RD                                                                        ; muxGenerico4x1      ; work         ;
-;    |registradorGenerico:PC|               ; 3 (3)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |MIPS_pipeline|registradorGenerico:PC                                                                          ; registradorGenerico ; work         ;
+;    |registradorGenerico:PC|               ; 2 (2)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |MIPS_pipeline|registradorGenerico:PC                                                                          ; registradorGenerico ; work         ;
 ;    |registradorGenerico:REG_EX|           ; 0 (0)               ; 94 (94)                   ; 0                 ; 0          ; 0    ; 0            ; |MIPS_pipeline|registradorGenerico:REG_EX                                                                      ; registradorGenerico ; work         ;
 ;    |registradorGenerico:REG_ID|           ; 0 (0)               ; 114 (114)                 ; 0                 ; 0          ; 0    ; 0            ; |MIPS_pipeline|registradorGenerico:REG_ID                                                                      ; registradorGenerico ; work         ;
 ;    |registradorGenerico:REG_MEM|          ; 0 (0)               ; 61 (61)                   ; 0                 ; 0          ; 0    ; 0            ; |MIPS_pipeline|registradorGenerico:REG_MEM                                                                     ; registradorGenerico ; work         ;
 ;    |registradorGenerico:etapaBusca|       ; 0 (0)               ; 45 (45)                   ; 0                 ; 0          ; 0    ; 0            ; |MIPS_pipeline|registradorGenerico:etapaBusca                                                                  ; registradorGenerico ; work         ;
 ;    |somaConstante:somadorPC|              ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_pipeline|somaConstante:somadorPC                                                                         ; somaConstante       ; work         ;
 ;    |somadorGenerico:somador_somador|      ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_pipeline|somadorGenerico:somador_somador                                                                 ; somadorGenerico     ; work         ;
-;    |unidadeControleFD:UC|                 ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_pipeline|unidadeControleFD:UC                                                                            ; unidadeControleFD   ; work         ;
+;    |unidadeControleFD:UC|                 ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_pipeline|unidadeControleFD:UC                                                                            ; unidadeControleFD   ; work         ;
 ;    |unidadeControleULA:UC_ULA|            ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS_pipeline|unidadeControleULA:UC_ULA                                                                       ; unidadeControleULA  ; work         ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -642,12 +642,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |MIPS_pipeline|registradorGenerico:PC|DOUT[31]      ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |MIPS_pipeline|registradorGenerico:PC|DOUT[0]       ;
 ; 5:1                ; 26 bits   ; 78 LEs        ; 52 LEs               ; 26 LEs                 ; Yes        ; |MIPS_pipeline|registradorGenerico:PC|DOUT[13]      ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |MIPS_pipeline|registradorGenerico:REG_ID|DOUT[149] ;
-; 8:1                ; 31 bits   ; 155 LEs       ; 124 LEs              ; 31 LEs                 ; No         ; |MIPS_pipeline|ULA:ULA|saida[29]                    ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |MIPS_pipeline|unidadeControleULA:UC_ULA|ULActrl[2] ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |MIPS_pipeline|muxGenerico2x1:MUX_LUI|saida_MUX[27] ;
-; 5:1                ; 14 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; No         ; |MIPS_pipeline|muxGenerico2x1:MUX_LUI|saida_MUX[31] ;
-; 5:1                ; 16 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |MIPS_pipeline|muxGenerico2x1:MUX_LUI|saida_MUX[13] ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |MIPS_pipeline|registradorGenerico:REG_ID|DOUT[150] ;
+; 8:1                ; 31 bits   ; 155 LEs       ; 124 LEs              ; 31 LEs                 ; No         ; |MIPS_pipeline|ULA:ULA|saida[27]                    ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |MIPS_pipeline|unidadeControleULA:UC_ULA|ULActrl[1] ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |MIPS_pipeline|muxGenerico2x1:MUX_LUI|saida_MUX[17] ;
+; 5:1                ; 14 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; No         ; |MIPS_pipeline|muxGenerico2x1:MUX_LUI|saida_MUX[23] ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |MIPS_pipeline|muxGenerico2x1:MUX_LUI|saida_MUX[10] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 
 
@@ -1227,7 +1227,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA               ; 2                           ;
 ;     SCLR              ; 2                           ;
 ;     plain             ; 492                         ;
-; arriav_lcell_comb     ; 457                         ;
+; arriav_lcell_comb     ; 456                         ;
 ;     arith             ; 125                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 32                          ;
@@ -1235,11 +1235,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         4 data inputs ; 64                          ;
 ;     extend            ; 14                          ;
 ;         7 data inputs ; 14                          ;
-;     normal            ; 318                         ;
-;         2 data inputs ; 6                           ;
-;         3 data inputs ; 25                          ;
-;         4 data inputs ; 47                          ;
-;         5 data inputs ; 110                         ;
+;     normal            ; 317                         ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 28                          ;
+;         4 data inputs ; 48                          ;
+;         5 data inputs ; 108                         ;
 ;         6 data inputs ; 130                         ;
 ; boundary_port         ; 135                         ;
 ; stratixv_ram_block    ; 96                          ;
@@ -1254,7 +1254,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:07     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -1264,7 +1264,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Sun Dec 06 19:38:49 2020
+    Info: Processing started: Sun Dec 06 20:27:46 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS_pipeline -c MIPS_pipeline
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file mips_pipeline.vhd
@@ -1432,9 +1432,9 @@ Info (21057): Implemented 1060 device resources after synthesis - the final reso
     Info (21061): Implemented 829 logic cells
     Info (21064): Implemented 96 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4885 megabytes
-    Info: Processing ended: Sun Dec 06 19:39:38 2020
-    Info: Elapsed time: 00:00:49
-    Info: Total CPU time (on all processors): 00:01:31
+    Info: Peak virtual memory: 4873 megabytes
+    Info: Processing ended: Sun Dec 06 20:28:07 2020
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:42
 
 

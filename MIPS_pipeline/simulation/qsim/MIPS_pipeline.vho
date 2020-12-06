@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition"
 
--- DATE "12/06/2020 19:40:32"
+-- DATE "12/06/2020 20:28:23"
 
 -- 
 -- Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -598,6 +598,7 @@ SIGNAL \somador_somador|Add0~18\ : std_logic;
 SIGNAL \somador_somador|Add0~22\ : std_logic;
 SIGNAL \somador_somador|Add0~14\ : std_logic;
 SIGNAL \somador_somador|Add0~5_sumout\ : std_logic;
+SIGNAL \ROM_mips|memROM~19_combout\ : std_logic;
 SIGNAL \ROM_mips|memROM~7_combout\ : std_logic;
 SIGNAL \ROM_mips|memROM~12_combout\ : std_logic;
 SIGNAL \ROM_mips|memROM~14_combout\ : std_logic;
@@ -626,39 +627,36 @@ SIGNAL \somador_somador|Add0~78\ : std_logic;
 SIGNAL \somador_somador|Add0~82\ : std_logic;
 SIGNAL \somador_somador|Add0~86\ : std_logic;
 SIGNAL \somador_somador|Add0~90\ : std_logic;
-SIGNAL \somador_somador|Add0~93_sumout\ : std_logic;
-SIGNAL \ROM_mips|memROM~16_combout\ : std_logic;
-SIGNAL \UC|Equal6~0_combout\ : std_logic;
-SIGNAL \ROM_mips|memROM~18_combout\ : std_logic;
-SIGNAL \ROM_mips|memROM~19_combout\ : std_logic;
 SIGNAL \somador_somador|Add0~94\ : std_logic;
-SIGNAL \somador_somador|Add0~98\ : std_logic;
-SIGNAL \somador_somador|Add0~101_sumout\ : std_logic;
-SIGNAL \somador_somador|Add0~61_sumout\ : std_logic;
+SIGNAL \somador_somador|Add0~97_sumout\ : std_logic;
+SIGNAL \ROM_mips|memROM~15_combout\ : std_logic;
+SIGNAL \ROM_mips|memROM~16_combout\ : std_logic;
 SIGNAL \somador_somador|Add0~73_sumout\ : std_logic;
 SIGNAL \somador_somador|Add0~69_sumout\ : std_logic;
 SIGNAL \ROM_mips|memROM~17_combout\ : std_logic;
+SIGNAL \UC|Equal2~1_combout\ : std_logic;
 SIGNAL \somador_somador|Add0~49_sumout\ : std_logic;
+SIGNAL \somador_somador|Add0~61_sumout\ : std_logic;
+SIGNAL \ROM_mips|memROM~18_combout\ : std_logic;
+SIGNAL \somador_somador|Add0~98\ : std_logic;
+SIGNAL \somador_somador|Add0~101_sumout\ : std_logic;
 SIGNAL \somador_somador|Add0~65_sumout\ : std_logic;
 SIGNAL \somador_somador|Add0~53_sumout\ : std_logic;
 SIGNAL \somador_somador|Add0~57_sumout\ : std_logic;
 SIGNAL \somador_somador|Add0~77_sumout\ : std_logic;
 SIGNAL \somador_somador|Add0~81_sumout\ : std_logic;
 SIGNAL \somador_somador|Add0~85_sumout\ : std_logic;
-SIGNAL \ROM_mips|memROM~15_combout\ : std_logic;
-SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a29~portbdataout\ : std_logic;
-SIGNAL \bancoRegistrador|saidaB[29]~29_combout\ : std_logic;
+SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a26~portbdataout\ : std_logic;
+SIGNAL \bancoRegistrador|saidaB[26]~26_combout\ : std_logic;
 SIGNAL \somador_somador|Add0~89_sumout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a24~portbdataout\ : std_logic;
 SIGNAL \bancoRegistrador|saidaA[24]~24_combout\ : std_logic;
-SIGNAL \UC_ULA|ULActrl~5_combout\ : std_logic;
-SIGNAL \UC|Equal10~0_combout\ : std_logic;
-SIGNAL \UC|seletorMUX_JMP~0_combout\ : std_logic;
-SIGNAL \UC|palavraControle[10]~0_combout\ : std_logic;
-SIGNAL \UC|palavraControle[14]~1_combout\ : std_logic;
+SIGNAL \UC|palavraControle[12]~0_combout\ : std_logic;
 SIGNAL \UC_ULA|ULActrl[0]~2_combout\ : std_logic;
+SIGNAL \UC|Equal10~0_combout\ : std_logic;
 SIGNAL \UC_ULA|ULActrl[0]~3_combout\ : std_logic;
 SIGNAL \UC_ULA|ULActrl[0]~4_combout\ : std_logic;
+SIGNAL \UC_ULA|ULActrl~5_combout\ : std_logic;
 SIGNAL \UC_ULA|ULActrl~6_combout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a15~portbdataout\ : std_logic;
 SIGNAL \bancoRegistrador|saidaB[15]~15_combout\ : std_logic;
@@ -704,6 +702,8 @@ SIGNAL \ULA|Add2~22\ : std_logic;
 SIGNAL \ULA|Add2~25_sumout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a2~portbdataout\ : std_logic;
 SIGNAL \bancoRegistrador|saidaA[2]~2_combout\ : std_logic;
+SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a1~portbdataout\ : std_logic;
+SIGNAL \bancoRegistrador|saidaA[1]~1_combout\ : std_logic;
 SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a3~portbdataout\ : std_logic;
 SIGNAL \MUX_LUI|saida_MUX[0]~0_combout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a0~portbdataout\ : std_logic;
@@ -841,6 +841,13 @@ SIGNAL \ULA|saida[5]~100_combout\ : std_logic;
 SIGNAL \ULA|Equal5~2_combout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a30~portbdataout\ : std_logic;
 SIGNAL \bancoRegistrador|saidaB[30]~30_combout\ : std_logic;
+SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a0~portbdataout\ : std_logic;
+SIGNAL \MUX_LUI|saida_MUX[29]~26_combout\ : std_logic;
+SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a29~portbdataout\ : std_logic;
+SIGNAL \bancoRegistrador|saidaB[29]~29_combout\ : std_logic;
+SIGNAL \ULA|Add2~110\ : std_logic;
+SIGNAL \ULA|Add2~114\ : std_logic;
+SIGNAL \ULA|Add2~118\ : std_logic;
 SIGNAL \ULA|Add2~122\ : std_logic;
 SIGNAL \ULA|Add2~125_sumout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a20~portbdataout\ : std_logic;
@@ -909,34 +916,38 @@ SIGNAL \ULA|Add2~5_sumout\ : std_logic;
 SIGNAL \ULA|saida[0]~2_combout\ : std_logic;
 SIGNAL \ULA|Equal5~12_combout\ : std_logic;
 SIGNAL \ULA|Equal5~7_combout\ : std_logic;
-SIGNAL \UC|palavraControle[13]~2_combout\ : std_logic;
+SIGNAL \UC|palavraControle[11]~1_combout\ : std_logic;
+SIGNAL \UC|Equal0~0_combout\ : std_logic;
+SIGNAL \UC|seletorMUX_JMP~0_combout\ : std_logic;
+SIGNAL \UC|seletorMUX_JMP~1_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[0]~0_combout\ : std_logic;
 SIGNAL \PC|DOUT[13]~0_combout\ : std_logic;
-SIGNAL \PC|DOUT[31]~1_combout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[24]~24_combout\ : std_logic;
+SIGNAL \MUX_jump|Equal2~0_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[24]~25_combout\ : std_logic;
 SIGNAL \somadorPC|Add0~30\ : std_logic;
 SIGNAL \somadorPC|Add0~49_sumout\ : std_logic;
 SIGNAL \somador_somador|Add0~25_sumout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[8]~8_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[8]~9_combout\ : std_logic;
 SIGNAL \somadorPC|Add0~50\ : std_logic;
 SIGNAL \somadorPC|Add0~53_sumout\ : std_logic;
 SIGNAL \somador_somador|Add0~29_sumout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[9]~9_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[9]~10_combout\ : std_logic;
 SIGNAL \somadorPC|Add0~54\ : std_logic;
 SIGNAL \somadorPC|Add0~57_sumout\ : std_logic;
 SIGNAL \somador_somador|Add0~33_sumout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[10]~10_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[10]~11_combout\ : std_logic;
 SIGNAL \somadorPC|Add0~58\ : std_logic;
 SIGNAL \somadorPC|Add0~61_sumout\ : std_logic;
 SIGNAL \somador_somador|Add0~37_sumout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[11]~11_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[11]~12_combout\ : std_logic;
 SIGNAL \somadorPC|Add0~62\ : std_logic;
 SIGNAL \somadorPC|Add0~65_sumout\ : std_logic;
 SIGNAL \somador_somador|Add0~41_sumout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[12]~12_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[12]~13_combout\ : std_logic;
 SIGNAL \somadorPC|Add0~66\ : std_logic;
 SIGNAL \somadorPC|Add0~69_sumout\ : std_logic;
 SIGNAL \somador_somador|Add0~45_sumout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[13]~13_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[13]~14_combout\ : std_logic;
 SIGNAL \somadorPC|Add0~70\ : std_logic;
 SIGNAL \somadorPC|Add0~74\ : std_logic;
 SIGNAL \somadorPC|Add0~78\ : std_logic;
@@ -949,26 +960,14 @@ SIGNAL \somadorPC|Add0~102\ : std_logic;
 SIGNAL \somadorPC|Add0~106\ : std_logic;
 SIGNAL \somadorPC|Add0~110\ : std_logic;
 SIGNAL \somadorPC|Add0~113_sumout\ : std_logic;
-SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a26~portbdataout\ : std_logic;
-SIGNAL \bancoRegistrador|saidaA[26]~26_combout\ : std_logic;
+SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a25~portbdataout\ : std_logic;
+SIGNAL \bancoRegistrador|saidaA[25]~25_combout\ : std_logic;
 SIGNAL \ULA|Add2~86\ : std_logic;
 SIGNAL \ULA|Add2~90\ : std_logic;
 SIGNAL \ULA|Add2~94\ : std_logic;
 SIGNAL \ULA|Add2~98\ : std_logic;
 SIGNAL \ULA|Add2~102\ : std_logic;
 SIGNAL \ULA|Add2~106\ : std_logic;
-SIGNAL \ULA|Add2~110\ : std_logic;
-SIGNAL \ULA|Add2~114\ : std_logic;
-SIGNAL \ULA|Add2~118\ : std_logic;
-SIGNAL \ULA|Add2~121_sumout\ : std_logic;
-SIGNAL \ULA|Add0~117_sumout\ : std_logic;
-SIGNAL \mux_RT_imediato|saida_MUX[29]~16_combout\ : std_logic;
-SIGNAL \ULA|saida[29]~86_combout\ : std_logic;
-SIGNAL \ULA|saida[29]~87_combout\ : std_logic;
-SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a29~portbdataout\ : std_logic;
-SIGNAL \MUX_LUI|saida_MUX[26]~34_combout\ : std_logic;
-SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a26~portbdataout\ : std_logic;
-SIGNAL \bancoRegistrador|saidaB[26]~26_combout\ : std_logic;
 SIGNAL \ULA|Add2~109_sumout\ : std_logic;
 SIGNAL \ULA|Add0~105_sumout\ : std_logic;
 SIGNAL \mux_RT_imediato|saida_MUX[26]~13_combout\ : std_logic;
@@ -978,19 +977,19 @@ SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a26~portbdataout\ : std_l
 SIGNAL \MUX_LUI|saida_MUX[23]~46_combout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a23~portbdataout\ : std_logic;
 SIGNAL \bancoRegistrador|saidaA[23]~23_combout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[23]~23_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[23]~24_combout\ : std_logic;
 SIGNAL \somadorPC|Add0~109_sumout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a22~portbdataout\ : std_logic;
 SIGNAL \bancoRegistrador|saidaA[22]~22_combout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[22]~22_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[22]~23_combout\ : std_logic;
 SIGNAL \somadorPC|Add0~105_sumout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a21~portbdataout\ : std_logic;
 SIGNAL \bancoRegistrador|saidaA[21]~21_combout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[21]~21_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[21]~22_combout\ : std_logic;
 SIGNAL \somadorPC|Add0~101_sumout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a16~portbdataout\ : std_logic;
 SIGNAL \bancoRegistrador|saidaA[16]~16_combout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[16]~16_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[16]~17_combout\ : std_logic;
 SIGNAL \somadorPC|Add0~81_sumout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a19~portbdataout\ : std_logic;
 SIGNAL \bancoRegistrador|saidaB[19]~19_combout\ : std_logic;
@@ -1030,8 +1029,8 @@ SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a4~portbdata
 SIGNAL \bancoRegistrador|saidaB[4]~4_combout\ : std_logic;
 SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a4~portbdataout\ : std_logic;
 SIGNAL \MUX_LUI|saida_MUX[1]~1_combout\ : std_logic;
-SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a1~portbdataout\ : std_logic;
-SIGNAL \bancoRegistrador|saidaA[1]~1_combout\ : std_logic;
+SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a1~portbdataout\ : std_logic;
+SIGNAL \bancoRegistrador|saidaB[1]~1_combout\ : std_logic;
 SIGNAL \ULA|Add2~9_sumout\ : std_logic;
 SIGNAL \ULA|saida[1]~8_combout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a18~portbdataout\ : std_logic;
@@ -1040,7 +1039,7 @@ SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a18~portbdataout\ : std_l
 SIGNAL \MUX_LUI|saida_MUX[15]~15_combout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a15~portbdataout\ : std_logic;
 SIGNAL \bancoRegistrador|saidaA[15]~15_combout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[15]~15_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[15]~16_combout\ : std_logic;
 SIGNAL \somadorPC|Add0~77_sumout\ : std_logic;
 SIGNAL \mux_RT_RD|saida_MUX[4]~3_combout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a27~portbdataout\ : std_logic;
@@ -1072,14 +1071,53 @@ SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a21~portbdataout\ : std_l
 SIGNAL \MUX_LUI|saida_MUX[18]~66_combout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a18~portbdataout\ : std_logic;
 SIGNAL \bancoRegistrador|saidaA[18]~18_combout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[18]~18_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[18]~19_combout\ : std_logic;
 SIGNAL \somadorPC|Add0~89_sumout\ : std_logic;
 SIGNAL \mux_RT_RD|saida_MUX[2]~1_combout\ : std_logic;
+SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a30~portbdataout\ : std_logic;
+SIGNAL \MUX_LUI|saida_MUX[27]~17_combout\ : std_logic;
+SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a27~portbdataout\ : std_logic;
+SIGNAL \bancoRegistrador|saidaA[27]~27_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[27]~28_combout\ : std_logic;
+SIGNAL \somadorPC|Add0~114\ : std_logic;
+SIGNAL \somadorPC|Add0~118\ : std_logic;
+SIGNAL \somadorPC|Add0~2\ : std_logic;
+SIGNAL \somadorPC|Add0~21_sumout\ : std_logic;
+SIGNAL \UC|Equal4~0_combout\ : std_logic;
+SIGNAL \UC|Equal9~0_combout\ : std_logic;
+SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a1~portbdataout\ : std_logic;
+SIGNAL \MUX_LUI|saida_MUX[30]~22_combout\ : std_logic;
+SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a30~portbdataout\ : std_logic;
+SIGNAL \bancoRegistrador|saidaA[30]~30_combout\ : std_logic;
+SIGNAL \ULA|Equal5~5_combout\ : std_logic;
+SIGNAL \ULA|saida[15]~104_combout\ : std_logic;
+SIGNAL \ULA|saida[13]~105_combout\ : std_logic;
+SIGNAL \ULA|saida[14]~106_combout\ : std_logic;
+SIGNAL \ULA|Equal5~9_combout\ : std_logic;
+SIGNAL \ULA|Equal5~10_combout\ : std_logic;
+SIGNAL \selMUX_AND_BEQ~0_combout\ : std_logic;
+SIGNAL \somador_somador|Add0~102\ : std_logic;
+SIGNAL \somador_somador|Add0~106\ : std_logic;
+SIGNAL \somador_somador|Add0~110\ : std_logic;
+SIGNAL \somador_somador|Add0~113_sumout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[30]~31_combout\ : std_logic;
+SIGNAL \somadorPC|Add0~22\ : std_logic;
+SIGNAL \somadorPC|Add0~6\ : std_logic;
+SIGNAL \somadorPC|Add0~18\ : std_logic;
+SIGNAL \somadorPC|Add0~13_sumout\ : std_logic;
+SIGNAL \UC|Equal3~0_combout\ : std_logic;
+SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a20~portbdataout\ : std_logic;
+SIGNAL \MUX_LUI|saida_MUX[17]~16_combout\ : std_logic;
+SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a17~portbdataout\ : std_logic;
+SIGNAL \bancoRegistrador|saidaA[17]~17_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[17]~18_combout\ : std_logic;
+SIGNAL \somadorPC|Add0~85_sumout\ : std_logic;
+SIGNAL \mux_RT_RD|saida_MUX[1]~0_combout\ : std_logic;
 SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a17~portbdataout\ : std_logic;
 SIGNAL \MUX_LUI|saida_MUX[14]~14_combout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a14~portbdataout\ : std_logic;
 SIGNAL \bancoRegistrador|saidaA[14]~14_combout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[14]~14_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[14]~15_combout\ : std_logic;
 SIGNAL \somadorPC|Add0~73_sumout\ : std_logic;
 SIGNAL \mux_RT_RD|saida_MUX[3]~2_combout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a28~portbdataout\ : std_logic;
@@ -1111,7 +1149,7 @@ SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a22~portbdataout\ : std_l
 SIGNAL \MUX_LUI|saida_MUX[19]~62_combout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a19~portbdataout\ : std_logic;
 SIGNAL \bancoRegistrador|saidaA[19]~19_combout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[19]~19_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[19]~20_combout\ : std_logic;
 SIGNAL \somadorPC|Add0~93_sumout\ : std_logic;
 SIGNAL \bancoRegistrador|Equal1~0_combout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a23~portbdataout\ : std_logic;
@@ -1125,56 +1163,11 @@ SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a23~portbdataout\ : std_l
 SIGNAL \MUX_LUI|saida_MUX[20]~58_combout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a20~portbdataout\ : std_logic;
 SIGNAL \bancoRegistrador|saidaA[20]~20_combout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[20]~20_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[20]~21_combout\ : std_logic;
 SIGNAL \somadorPC|Add0~97_sumout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador~38_combout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador~39_combout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador~40_combout\ : std_logic;
-SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a1~portbdataout\ : std_logic;
-SIGNAL \bancoRegistrador|saidaB[1]~1_combout\ : std_logic;
-SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a1~portbdataout\ : std_logic;
-SIGNAL \MUX_LUI|saida_MUX[30]~22_combout\ : std_logic;
-SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a30~portbdataout\ : std_logic;
-SIGNAL \bancoRegistrador|saidaA[30]~30_combout\ : std_logic;
-SIGNAL \ULA|Equal5~5_combout\ : std_logic;
-SIGNAL \ULA|saida[15]~104_combout\ : std_logic;
-SIGNAL \ULA|saida[13]~105_combout\ : std_logic;
-SIGNAL \ULA|saida[14]~106_combout\ : std_logic;
-SIGNAL \ULA|Equal5~9_combout\ : std_logic;
-SIGNAL \ULA|Equal5~10_combout\ : std_logic;
-SIGNAL \selMUX_AND_BEQ~0_combout\ : std_logic;
-SIGNAL \somador_somador|Add0~102\ : std_logic;
-SIGNAL \somador_somador|Add0~106\ : std_logic;
-SIGNAL \somador_somador|Add0~110\ : std_logic;
-SIGNAL \somador_somador|Add0~113_sumout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[30]~30_combout\ : std_logic;
-SIGNAL \somadorPC|Add0~114\ : std_logic;
-SIGNAL \somadorPC|Add0~118\ : std_logic;
-SIGNAL \somadorPC|Add0~2\ : std_logic;
-SIGNAL \somadorPC|Add0~14\ : std_logic;
-SIGNAL \somadorPC|Add0~10\ : std_logic;
-SIGNAL \somadorPC|Add0~6\ : std_logic;
-SIGNAL \somadorPC|Add0~21_sumout\ : std_logic;
-SIGNAL \UC|Equal5~0_combout\ : std_logic;
-SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a20~portbdataout\ : std_logic;
-SIGNAL \MUX_LUI|saida_MUX[17]~16_combout\ : std_logic;
-SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a17~portbdataout\ : std_logic;
-SIGNAL \bancoRegistrador|saidaA[17]~17_combout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[17]~17_combout\ : std_logic;
-SIGNAL \somadorPC|Add0~85_sumout\ : std_logic;
-SIGNAL \mux_RT_RD|saida_MUX[1]~0_combout\ : std_logic;
-SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a30~portbdataout\ : std_logic;
-SIGNAL \MUX_LUI|saida_MUX[27]~17_combout\ : std_logic;
-SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a27~portbdataout\ : std_logic;
-SIGNAL \bancoRegistrador|saidaA[27]~27_combout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[27]~27_combout\ : std_logic;
-SIGNAL \somadorPC|Add0~13_sumout\ : std_logic;
-SIGNAL \UC|Equal3~0_combout\ : std_logic;
-SIGNAL \UC|Equal9~0_combout\ : std_logic;
-SIGNAL \UC_ULA|ULActrl[1]~0_combout\ : std_logic;
-SIGNAL \UC_ULA|ULActrl[1]~1_combout\ : std_logic;
-SIGNAL \ULA|saida[13]~53_combout\ : std_logic;
-SIGNAL \UC|palavraControle[12]~3_combout\ : std_logic;
 SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a2~portbdataout\ : std_logic;
 SIGNAL \MUX_LUI|saida_MUX[31]~18_combout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a31~portbdataout\ : std_logic;
@@ -1189,49 +1182,60 @@ SIGNAL \MUX_LUI|saida_MUX[28]~30_combout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a28~portbdataout\ : std_logic;
 SIGNAL \bancoRegistrador|saidaA[28]~28_combout\ : std_logic;
 SIGNAL \somador_somador|Add0~105_sumout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[28]~28_combout\ : std_logic;
-SIGNAL \somadorPC|Add0~9_sumout\ : std_logic;
-SIGNAL \UC|Equal1~0_combout\ : std_logic;
-SIGNAL \UC|Equal1~1_combout\ : std_logic;
-SIGNAL \UC|Equal1~2_combout\ : std_logic;
-SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a0~portbdataout\ : std_logic;
-SIGNAL \MUX_LUI|saida_MUX[29]~26_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[28]~29_combout\ : std_logic;
+SIGNAL \somadorPC|Add0~5_sumout\ : std_logic;
+SIGNAL \UC|Equal2~0_combout\ : std_logic;
+SIGNAL \UC|Equal6~0_combout\ : std_logic;
+SIGNAL \UC_ULA|ULActrl[1]~0_combout\ : std_logic;
+SIGNAL \UC_ULA|ULActrl[1]~1_combout\ : std_logic;
+SIGNAL \ULA|saida[13]~53_combout\ : std_logic;
+SIGNAL \ULA|Add2~121_sumout\ : std_logic;
+SIGNAL \ULA|Add0~117_sumout\ : std_logic;
+SIGNAL \mux_RT_imediato|saida_MUX[29]~16_combout\ : std_logic;
+SIGNAL \ULA|saida[29]~86_combout\ : std_logic;
+SIGNAL \ULA|saida[29]~87_combout\ : std_logic;
+SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a29~portbdataout\ : std_logic;
+SIGNAL \MUX_LUI|saida_MUX[26]~34_combout\ : std_logic;
+SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a26~portbdataout\ : std_logic;
+SIGNAL \bancoRegistrador|saidaA[26]~26_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[26]~27_combout\ : std_logic;
+SIGNAL \somadorPC|Add0~1_sumout\ : std_logic;
+SIGNAL \mux_RT_RD|saida_MUX[0]~4_combout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a29~portbdataout\ : std_logic;
 SIGNAL \bancoRegistrador|saidaA[29]~29_combout\ : std_logic;
 SIGNAL \somador_somador|Add0~109_sumout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[29]~29_combout\ : std_logic;
-SIGNAL \somadorPC|Add0~5_sumout\ : std_logic;
-SIGNAL \mux_RT_RD|saida_MUX[0]~4_combout\ : std_logic;
-SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a25~portbdataout\ : std_logic;
-SIGNAL \bancoRegistrador|saidaA[25]~25_combout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[25]~25_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[29]~30_combout\ : std_logic;
+SIGNAL \somadorPC|Add0~17_sumout\ : std_logic;
+SIGNAL \MUX_ORI|saida_MUX[16]~0_combout\ : std_logic;
+SIGNAL \somador_somador|Add0~93_sumout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[25]~26_combout\ : std_logic;
 SIGNAL \somadorPC|Add0~117_sumout\ : std_logic;
 SIGNAL \bancoRegistrador|Equal0~0_combout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a7~portbdataout\ : std_logic;
 SIGNAL \bancoRegistrador|saidaA[7]~7_combout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[7]~1_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[7]~2_combout\ : std_logic;
 SIGNAL \ROM_mips|memROM~3_combout\ : std_logic;
 SIGNAL \somador_somador|Add0~13_sumout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[6]~3_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[6]~4_combout\ : std_logic;
 SIGNAL \ROM_mips|memROM~21_combout\ : std_logic;
 SIGNAL \somador_somador|Add0~9_sumout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[0]~6_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[0]~7_combout\ : std_logic;
 SIGNAL \ULA|Equal5~8_combout\ : std_logic;
-SIGNAL \PC|DOUT[0]~2_combout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[2]~2_combout\ : std_logic;
+SIGNAL \PC|DOUT[0]~1_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[2]~3_combout\ : std_logic;
 SIGNAL \somadorPC|Add0~34\ : std_logic;
 SIGNAL \somadorPC|Add0~25_sumout\ : std_logic;
 SIGNAL \somador_somador|Add0~1_sumout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[1]~7_combout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[3]~0_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[1]~8_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[3]~1_combout\ : std_logic;
 SIGNAL \somadorPC|Add0~26\ : std_logic;
 SIGNAL \somadorPC|Add0~41_sumout\ : std_logic;
 SIGNAL \somador_somador|Add0~17_sumout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[4]~4_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[4]~5_combout\ : std_logic;
 SIGNAL \somadorPC|Add0~42\ : std_logic;
 SIGNAL \somadorPC|Add0~45_sumout\ : std_logic;
 SIGNAL \somador_somador|Add0~21_sumout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[5]~5_combout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[5]~6_combout\ : std_logic;
 SIGNAL \ROM_mips|memROM~4_combout\ : std_logic;
 SIGNAL \UC_ULA|ULActrl~7_combout\ : std_logic;
 SIGNAL \ULA|saida[2]~12_combout\ : std_logic;
@@ -1242,55 +1246,21 @@ SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a31~portbdat
 SIGNAL \bancoRegistrador|saidaA[31]~31_combout\ : std_logic;
 SIGNAL \somador_somador|Add0~114\ : std_logic;
 SIGNAL \somador_somador|Add0~117_sumout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[31]~31_combout\ : std_logic;
-SIGNAL \somadorPC|Add0~22\ : std_logic;
-SIGNAL \somadorPC|Add0~17_sumout\ : std_logic;
-SIGNAL \UC|Equal2~0_combout\ : std_logic;
-SIGNAL \MUX_ORI|saida_MUX[16]~0_combout\ : std_logic;
-SIGNAL \somador_somador|Add0~97_sumout\ : std_logic;
-SIGNAL \MUX_jump|saida_MUX[26]~26_combout\ : std_logic;
-SIGNAL \somadorPC|Add0~1_sumout\ : std_logic;
+SIGNAL \MUX_jump|saida_MUX[31]~32_combout\ : std_logic;
+SIGNAL \somadorPC|Add0~14\ : std_logic;
+SIGNAL \somadorPC|Add0~9_sumout\ : std_logic;
 SIGNAL \UC|Equal12~0_combout\ : std_logic;
 SIGNAL \ULA|Add2~126\ : std_logic;
 SIGNAL \ULA|Add2~1_sumout\ : std_logic;
 SIGNAL \ULA|saida[0]~3_combout\ : std_logic;
-SIGNAL \UC|palavraControle\ : std_logic_vector(16 DOWNTO 0);
 SIGNAL \etapaBusca|DOUT\ : std_logic_vector(63 DOWNTO 0);
 SIGNAL \PC|DOUT\ : std_logic_vector(31 DOWNTO 0);
 SIGNAL \REG_ID|DOUT\ : std_logic_vector(150 DOWNTO 0);
+SIGNAL \bancoRegistrador|registrador_rtl_1_bypass\ : std_logic_vector(0 TO 74);
 SIGNAL \REG_MEM|DOUT\ : std_logic_vector(103 DOWNTO 0);
 SIGNAL \REG_EX|DOUT\ : std_logic_vector(105 DOWNTO 0);
-SIGNAL \bancoRegistrador|registrador_rtl_1_bypass\ : std_logic_vector(0 TO 74);
+SIGNAL \UC|palavraControle\ : std_logic_vector(16 DOWNTO 0);
 SIGNAL \bancoRegistrador|registrador_rtl_0_bypass\ : std_logic_vector(0 TO 74);
-SIGNAL \ULA|ALT_INV_Add2~17_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add0~9_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add2~13_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add0~5_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add2~9_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add2~5_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add0~1_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add2~1_sumout\ : std_logic;
-SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a17~portbdataout\ : std_logic;
-SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a16~portbdataout\ : std_logic;
-SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a15~portbdataout\ : std_logic;
-SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a14~portbdataout\ : std_logic;
-SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a13~portbdataout\ : std_logic;
-SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a12~portbdataout\ : std_logic;
-SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a11~portbdataout\ : std_logic;
-SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a10~portbdataout\ : std_logic;
-SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a9~portbdataout\ : std_logic;
-SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a8~portbdataout\ : std_logic;
-SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a7~portbdataout\ : std_logic;
-SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a6~portbdataout\ : std_logic;
-SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a5~portbdataout\ : std_logic;
-SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a4~portbdataout\ : std_logic;
-SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a3~portbdataout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add0~125_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add0~121_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add2~125_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add0~117_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add2~121_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add0~113_sumout\ : std_logic;
 SIGNAL \ULA|ALT_INV_Add2~117_sumout\ : std_logic;
 SIGNAL \ULA|ALT_INV_Add0~109_sumout\ : std_logic;
 SIGNAL \ULA|ALT_INV_Add2~113_sumout\ : std_logic;
@@ -1341,24 +1311,14 @@ SIGNAL \ULA|ALT_INV_Add2~25_sumout\ : std_logic;
 SIGNAL \ULA|ALT_INV_Add0~17_sumout\ : std_logic;
 SIGNAL \ULA|ALT_INV_Add2~21_sumout\ : std_logic;
 SIGNAL \ULA|ALT_INV_Add0~13_sumout\ : std_logic;
-SIGNAL \somador_somador|ALT_INV_Add0~5_sumout\ : std_logic;
-SIGNAL \somadorPC|ALT_INV_Add0~29_sumout\ : std_logic;
-SIGNAL \somador_somador|ALT_INV_Add0~1_sumout\ : std_logic;
-SIGNAL \somadorPC|ALT_INV_Add0~25_sumout\ : std_logic;
-SIGNAL \somadorPC|ALT_INV_Add0~21_sumout\ : std_logic;
-SIGNAL \somadorPC|ALT_INV_Add0~17_sumout\ : std_logic;
-SIGNAL \somadorPC|ALT_INV_Add0~13_sumout\ : std_logic;
-SIGNAL \somadorPC|ALT_INV_Add0~9_sumout\ : std_logic;
-SIGNAL \somadorPC|ALT_INV_Add0~5_sumout\ : std_logic;
-SIGNAL \somadorPC|ALT_INV_Add0~1_sumout\ : std_logic;
-SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a31~portbdataout\ : std_logic;
-SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a31~portbdataout\ : std_logic;
-SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a30~portbdataout\ : std_logic;
-SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a30~portbdataout\ : std_logic;
-SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a29~portbdataout\ : std_logic;
-SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a29~portbdataout\ : std_logic;
-SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a28~portbdataout\ : std_logic;
-SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a28~portbdataout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add2~17_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~9_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add2~13_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~5_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add2~9_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add2~5_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~1_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add2~1_sumout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a27~portbdataout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a27~portbdataout\ : std_logic;
 SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a26~portbdataout\ : std_logic;
@@ -1433,8 +1393,27 @@ SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a21~portbdataout\
 SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a20~portbdataout\ : std_logic;
 SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a19~portbdataout\ : std_logic;
 SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a18~portbdataout\ : std_logic;
-SIGNAL \UC_ULA|ALT_INV_ULActrl[1]~0_combout\ : std_logic;
-SIGNAL \REG_ID|ALT_INV_DOUT\ : std_logic_vector(150 DOWNTO 0);
+SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a17~portbdataout\ : std_logic;
+SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a16~portbdataout\ : std_logic;
+SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a15~portbdataout\ : std_logic;
+SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a14~portbdataout\ : std_logic;
+SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a13~portbdataout\ : std_logic;
+SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a12~portbdataout\ : std_logic;
+SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a11~portbdataout\ : std_logic;
+SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a10~portbdataout\ : std_logic;
+SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a9~portbdataout\ : std_logic;
+SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a8~portbdataout\ : std_logic;
+SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a7~portbdataout\ : std_logic;
+SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a6~portbdataout\ : std_logic;
+SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a5~portbdataout\ : std_logic;
+SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a4~portbdataout\ : std_logic;
+SIGNAL \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a3~portbdataout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~125_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~121_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add2~125_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~117_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add2~121_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~113_sumout\ : std_logic;
 SIGNAL \somador_somador|ALT_INV_Add0~117_sumout\ : std_logic;
 SIGNAL \somador_somador|ALT_INV_Add0~113_sumout\ : std_logic;
 SIGNAL \somador_somador|ALT_INV_Add0~109_sumout\ : std_logic;
@@ -1485,21 +1464,25 @@ SIGNAL \somador_somador|ALT_INV_Add0~13_sumout\ : std_logic;
 SIGNAL \somadorPC|ALT_INV_Add0~37_sumout\ : std_logic;
 SIGNAL \somador_somador|ALT_INV_Add0~9_sumout\ : std_logic;
 SIGNAL \somadorPC|ALT_INV_Add0~33_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_saida[19]~67_combout\ : std_logic;
-SIGNAL \ULA|ALT_INV_saida[19]~66_combout\ : std_logic;
-SIGNAL \mux_RT_imediato|ALT_INV_saida_MUX[19]~6_combout\ : std_logic;
-SIGNAL \ULA|ALT_INV_saida[18]~65_combout\ : std_logic;
-SIGNAL \ULA|ALT_INV_saida[18]~64_combout\ : std_logic;
-SIGNAL \mux_RT_imediato|ALT_INV_saida_MUX[18]~5_combout\ : std_logic;
-SIGNAL \ULA|ALT_INV_saida[17]~63_combout\ : std_logic;
-SIGNAL \ULA|ALT_INV_saida[17]~62_combout\ : std_logic;
-SIGNAL \mux_RT_imediato|ALT_INV_saida_MUX[17]~4_combout\ : std_logic;
-SIGNAL \ULA|ALT_INV_saida[16]~61_combout\ : std_logic;
-SIGNAL \ULA|ALT_INV_saida[16]~60_combout\ : std_logic;
-SIGNAL \mux_RT_imediato|ALT_INV_saida_MUX[16]~3_combout\ : std_logic;
-SIGNAL \ULA|ALT_INV_saida[15]~59_combout\ : std_logic;
-SIGNAL \ULA|ALT_INV_saida[15]~58_combout\ : std_logic;
-SIGNAL \mux_RT_imediato|ALT_INV_saida_MUX[15]~2_combout\ : std_logic;
+SIGNAL \somador_somador|ALT_INV_Add0~5_sumout\ : std_logic;
+SIGNAL \somadorPC|ALT_INV_Add0~29_sumout\ : std_logic;
+SIGNAL \somador_somador|ALT_INV_Add0~1_sumout\ : std_logic;
+SIGNAL \somadorPC|ALT_INV_Add0~25_sumout\ : std_logic;
+SIGNAL \somadorPC|ALT_INV_Add0~21_sumout\ : std_logic;
+SIGNAL \somadorPC|ALT_INV_Add0~17_sumout\ : std_logic;
+SIGNAL \somadorPC|ALT_INV_Add0~13_sumout\ : std_logic;
+SIGNAL \somadorPC|ALT_INV_Add0~9_sumout\ : std_logic;
+SIGNAL \somadorPC|ALT_INV_Add0~5_sumout\ : std_logic;
+SIGNAL \somadorPC|ALT_INV_Add0~1_sumout\ : std_logic;
+SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a31~portbdataout\ : std_logic;
+SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a31~portbdataout\ : std_logic;
+SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a30~portbdataout\ : std_logic;
+SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a30~portbdataout\ : std_logic;
+SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a29~portbdataout\ : std_logic;
+SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a29~portbdataout\ : std_logic;
+SIGNAL \bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a28~portbdataout\ : std_logic;
+SIGNAL \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a28~portbdataout\ : std_logic;
+SIGNAL \REG_ID|ALT_INV_DOUT\ : std_logic_vector(150 DOWNTO 0);
 SIGNAL \ULA|ALT_INV_saida[14]~57_combout\ : std_logic;
 SIGNAL \ULA|ALT_INV_saida[14]~56_combout\ : std_logic;
 SIGNAL \mux_RT_imediato|ALT_INV_saida_MUX[14]~1_combout\ : std_logic;
@@ -1554,14 +1537,9 @@ SIGNAL \UC_ULA|ALT_INV_ULActrl[0]~4_combout\ : std_logic;
 SIGNAL \UC_ULA|ALT_INV_ULActrl[0]~3_combout\ : std_logic;
 SIGNAL \UC_ULA|ALT_INV_ULActrl[0]~2_combout\ : std_logic;
 SIGNAL \UC_ULA|ALT_INV_ULActrl[1]~1_combout\ : std_logic;
-SIGNAL \ROM_mips|ALT_INV_memROM~5_combout\ : std_logic;
+SIGNAL \UC_ULA|ALT_INV_ULActrl[1]~0_combout\ : std_logic;
 SIGNAL \REG_MEM|ALT_INV_DOUT\ : std_logic_vector(103 DOWNTO 1);
-SIGNAL \ROM_mips|ALT_INV_memROM~4_combout\ : std_logic;
-SIGNAL \ROM_mips|ALT_INV_memROM~3_combout\ : std_logic;
-SIGNAL \ROM_mips|ALT_INV_memROM~2_combout\ : std_logic;
-SIGNAL \ROM_mips|ALT_INV_memROM~1_combout\ : std_logic;
-SIGNAL \ROM_mips|ALT_INV_memROM~0_combout\ : std_logic;
-SIGNAL \UC|ALT_INV_Equal5~0_combout\ : std_logic;
+SIGNAL \UC|ALT_INV_Equal3~0_combout\ : std_logic;
 SIGNAL \etapaBusca|ALT_INV_DOUT\ : std_logic_vector(63 DOWNTO 32);
 SIGNAL \ULA|ALT_INV_saida[31]~91_combout\ : std_logic;
 SIGNAL \ULA|ALT_INV_saida[31]~90_combout\ : std_logic;
@@ -1599,8 +1577,23 @@ SIGNAL \mux_RT_imediato|ALT_INV_saida_MUX[21]~8_combout\ : std_logic;
 SIGNAL \ULA|ALT_INV_saida[20]~69_combout\ : std_logic;
 SIGNAL \ULA|ALT_INV_saida[20]~68_combout\ : std_logic;
 SIGNAL \mux_RT_imediato|ALT_INV_saida_MUX[20]~7_combout\ : std_logic;
-SIGNAL \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\ : std_logic_vector(74 DOWNTO 0);
+SIGNAL \ULA|ALT_INV_saida[19]~67_combout\ : std_logic;
+SIGNAL \ULA|ALT_INV_saida[19]~66_combout\ : std_logic;
+SIGNAL \mux_RT_imediato|ALT_INV_saida_MUX[19]~6_combout\ : std_logic;
+SIGNAL \ULA|ALT_INV_saida[18]~65_combout\ : std_logic;
+SIGNAL \ULA|ALT_INV_saida[18]~64_combout\ : std_logic;
+SIGNAL \mux_RT_imediato|ALT_INV_saida_MUX[18]~5_combout\ : std_logic;
+SIGNAL \ULA|ALT_INV_saida[17]~63_combout\ : std_logic;
+SIGNAL \ULA|ALT_INV_saida[17]~62_combout\ : std_logic;
+SIGNAL \mux_RT_imediato|ALT_INV_saida_MUX[17]~4_combout\ : std_logic;
+SIGNAL \ULA|ALT_INV_saida[16]~61_combout\ : std_logic;
+SIGNAL \ULA|ALT_INV_saida[16]~60_combout\ : std_logic;
+SIGNAL \mux_RT_imediato|ALT_INV_saida_MUX[16]~3_combout\ : std_logic;
+SIGNAL \ULA|ALT_INV_saida[15]~59_combout\ : std_logic;
+SIGNAL \ULA|ALT_INV_saida[15]~58_combout\ : std_logic;
+SIGNAL \mux_RT_imediato|ALT_INV_saida_MUX[15]~2_combout\ : std_logic;
 SIGNAL \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\ : std_logic_vector(74 DOWNTO 0);
+SIGNAL \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\ : std_logic_vector(74 DOWNTO 0);
 SIGNAL \bancoRegistrador|ALT_INV_Equal0~0_combout\ : std_logic;
 SIGNAL \bancoRegistrador|ALT_INV_registrador~43_combout\ : std_logic;
 SIGNAL \bancoRegistrador|ALT_INV_registrador~42_combout\ : std_logic;
@@ -1609,12 +1602,22 @@ SIGNAL \bancoRegistrador|ALT_INV_Equal1~0_combout\ : std_logic;
 SIGNAL \bancoRegistrador|ALT_INV_registrador~40_combout\ : std_logic;
 SIGNAL \bancoRegistrador|ALT_INV_registrador~39_combout\ : std_logic;
 SIGNAL \bancoRegistrador|ALT_INV_registrador~38_combout\ : std_logic;
-SIGNAL \UC|ALT_INV_Equal3~0_combout\ : std_logic;
-SIGNAL \UC|ALT_INV_Equal1~0_combout\ : std_logic;
-SIGNAL \ROM_mips|ALT_INV_memROM~6_combout\ : std_logic;
+SIGNAL \UC|ALT_INV_Equal4~0_combout\ : std_logic;
 SIGNAL \UC|ALT_INV_Equal2~0_combout\ : std_logic;
-SIGNAL \PC|ALT_INV_DOUT[31]~1_combout\ : std_logic;
+SIGNAL \ROM_mips|ALT_INV_memROM~6_combout\ : std_logic;
+SIGNAL \ROM_mips|ALT_INV_memROM~5_combout\ : std_logic;
+SIGNAL \ROM_mips|ALT_INV_memROM~4_combout\ : std_logic;
+SIGNAL \ROM_mips|ALT_INV_memROM~3_combout\ : std_logic;
+SIGNAL \ROM_mips|ALT_INV_memROM~2_combout\ : std_logic;
+SIGNAL \ROM_mips|ALT_INV_memROM~1_combout\ : std_logic;
+SIGNAL \ROM_mips|ALT_INV_memROM~0_combout\ : std_logic;
+SIGNAL \MUX_jump|ALT_INV_Equal2~0_combout\ : std_logic;
 SIGNAL \PC|ALT_INV_DOUT[13]~0_combout\ : std_logic;
+SIGNAL \MUX_jump|ALT_INV_saida_MUX[0]~0_combout\ : std_logic;
+SIGNAL \UC|ALT_INV_Equal2~1_combout\ : std_logic;
+SIGNAL \UC|ALT_INV_seletorMUX_JMP~1_combout\ : std_logic;
+SIGNAL \UC|ALT_INV_seletorMUX_JMP~0_combout\ : std_logic;
+SIGNAL \UC|ALT_INV_Equal0~0_combout\ : std_logic;
 SIGNAL \ULA|ALT_INV_Equal5~7_combout\ : std_logic;
 SIGNAL \ULA|ALT_INV_Equal5~6_combout\ : std_logic;
 SIGNAL \ULA|ALT_INV_Equal5~5_combout\ : std_logic;
@@ -1635,10 +1638,6 @@ SIGNAL \ULA|ALT_INV_Equal5~0_combout\ : std_logic;
 SIGNAL \ULA|ALT_INV_saida[8]~94_combout\ : std_logic;
 SIGNAL \ULA|ALT_INV_saida[7]~93_combout\ : std_logic;
 SIGNAL \ULA|ALT_INV_saida[9]~92_combout\ : std_logic;
-SIGNAL \UC|ALT_INV_palavraControle[10]~0_combout\ : std_logic;
-SIGNAL \UC|ALT_INV_seletorMUX_JMP~0_combout\ : std_logic;
-SIGNAL \UC|ALT_INV_Equal10~0_combout\ : std_logic;
-SIGNAL \UC|ALT_INV_Equal1~1_combout\ : std_logic;
 SIGNAL \ALT_INV_selMUX_AND_BEQ~0_combout\ : std_logic;
 SIGNAL \ULA|ALT_INV_Equal5~10_combout\ : std_logic;
 SIGNAL \ULA|ALT_INV_Equal5~9_combout\ : std_logic;
@@ -2431,35 +2430,6 @@ ww_devpor <= devpor;
 \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a31_PORTBADDR_bus\ <= (\somadorPC|Add0~97_sumout\ & \somadorPC|Add0~93_sumout\ & \somadorPC|Add0~89_sumout\ & \somadorPC|Add0~85_sumout\ & \somadorPC|Add0~81_sumout\);
 
 \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a31~portbdataout\ <= \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a31_PORTBDATAOUT_bus\(0);
-\ULA|ALT_INV_Add2~17_sumout\ <= NOT \ULA|Add2~17_sumout\;
-\ULA|ALT_INV_Add0~9_sumout\ <= NOT \ULA|Add0~9_sumout\;
-\ULA|ALT_INV_Add2~13_sumout\ <= NOT \ULA|Add2~13_sumout\;
-\ULA|ALT_INV_Add0~5_sumout\ <= NOT \ULA|Add0~5_sumout\;
-\ULA|ALT_INV_Add2~9_sumout\ <= NOT \ULA|Add2~9_sumout\;
-\ULA|ALT_INV_Add2~5_sumout\ <= NOT \ULA|Add2~5_sumout\;
-\ULA|ALT_INV_Add0~1_sumout\ <= NOT \ULA|Add0~1_sumout\;
-\ULA|ALT_INV_Add2~1_sumout\ <= NOT \ULA|Add2~1_sumout\;
-\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a17~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a17~portbdataout\;
-\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a16~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a16~portbdataout\;
-\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a15~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a15~portbdataout\;
-\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a14~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a14~portbdataout\;
-\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a13~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a13~portbdataout\;
-\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a12~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a12~portbdataout\;
-\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a11~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a11~portbdataout\;
-\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a10~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a10~portbdataout\;
-\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a9~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a9~portbdataout\;
-\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a8~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a8~portbdataout\;
-\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a7~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a7~portbdataout\;
-\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a6~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a6~portbdataout\;
-\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a5~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a5~portbdataout\;
-\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a4~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a4~portbdataout\;
-\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a3~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a3~portbdataout\;
-\ULA|ALT_INV_Add0~125_sumout\ <= NOT \ULA|Add0~125_sumout\;
-\ULA|ALT_INV_Add0~121_sumout\ <= NOT \ULA|Add0~121_sumout\;
-\ULA|ALT_INV_Add2~125_sumout\ <= NOT \ULA|Add2~125_sumout\;
-\ULA|ALT_INV_Add0~117_sumout\ <= NOT \ULA|Add0~117_sumout\;
-\ULA|ALT_INV_Add2~121_sumout\ <= NOT \ULA|Add2~121_sumout\;
-\ULA|ALT_INV_Add0~113_sumout\ <= NOT \ULA|Add0~113_sumout\;
 \ULA|ALT_INV_Add2~117_sumout\ <= NOT \ULA|Add2~117_sumout\;
 \ULA|ALT_INV_Add0~109_sumout\ <= NOT \ULA|Add0~109_sumout\;
 \ULA|ALT_INV_Add2~113_sumout\ <= NOT \ULA|Add2~113_sumout\;
@@ -2510,24 +2480,14 @@ ww_devpor <= devpor;
 \ULA|ALT_INV_Add0~17_sumout\ <= NOT \ULA|Add0~17_sumout\;
 \ULA|ALT_INV_Add2~21_sumout\ <= NOT \ULA|Add2~21_sumout\;
 \ULA|ALT_INV_Add0~13_sumout\ <= NOT \ULA|Add0~13_sumout\;
-\somador_somador|ALT_INV_Add0~5_sumout\ <= NOT \somador_somador|Add0~5_sumout\;
-\somadorPC|ALT_INV_Add0~29_sumout\ <= NOT \somadorPC|Add0~29_sumout\;
-\somador_somador|ALT_INV_Add0~1_sumout\ <= NOT \somador_somador|Add0~1_sumout\;
-\somadorPC|ALT_INV_Add0~25_sumout\ <= NOT \somadorPC|Add0~25_sumout\;
-\somadorPC|ALT_INV_Add0~21_sumout\ <= NOT \somadorPC|Add0~21_sumout\;
-\somadorPC|ALT_INV_Add0~17_sumout\ <= NOT \somadorPC|Add0~17_sumout\;
-\somadorPC|ALT_INV_Add0~13_sumout\ <= NOT \somadorPC|Add0~13_sumout\;
-\somadorPC|ALT_INV_Add0~9_sumout\ <= NOT \somadorPC|Add0~9_sumout\;
-\somadorPC|ALT_INV_Add0~5_sumout\ <= NOT \somadorPC|Add0~5_sumout\;
-\somadorPC|ALT_INV_Add0~1_sumout\ <= NOT \somadorPC|Add0~1_sumout\;
-\bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a31~portbdataout\ <= NOT \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a31~portbdataout\;
-\bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a31~portbdataout\ <= NOT \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a31~portbdataout\;
-\bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a30~portbdataout\ <= NOT \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a30~portbdataout\;
-\bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a30~portbdataout\ <= NOT \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a30~portbdataout\;
-\bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a29~portbdataout\ <= NOT \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a29~portbdataout\;
-\bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a29~portbdataout\ <= NOT \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a29~portbdataout\;
-\bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a28~portbdataout\ <= NOT \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a28~portbdataout\;
-\bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a28~portbdataout\ <= NOT \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a28~portbdataout\;
+\ULA|ALT_INV_Add2~17_sumout\ <= NOT \ULA|Add2~17_sumout\;
+\ULA|ALT_INV_Add0~9_sumout\ <= NOT \ULA|Add0~9_sumout\;
+\ULA|ALT_INV_Add2~13_sumout\ <= NOT \ULA|Add2~13_sumout\;
+\ULA|ALT_INV_Add0~5_sumout\ <= NOT \ULA|Add0~5_sumout\;
+\ULA|ALT_INV_Add2~9_sumout\ <= NOT \ULA|Add2~9_sumout\;
+\ULA|ALT_INV_Add2~5_sumout\ <= NOT \ULA|Add2~5_sumout\;
+\ULA|ALT_INV_Add0~1_sumout\ <= NOT \ULA|Add0~1_sumout\;
+\ULA|ALT_INV_Add2~1_sumout\ <= NOT \ULA|Add2~1_sumout\;
 \bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a27~portbdataout\ <= NOT \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a27~portbdataout\;
 \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a27~portbdataout\ <= NOT \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a27~portbdataout\;
 \bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a26~portbdataout\ <= NOT \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a26~portbdataout\;
@@ -2627,15 +2587,27 @@ ww_devpor <= devpor;
 \PC|ALT_INV_DOUT\(7) <= NOT \PC|DOUT\(7);
 \PC|ALT_INV_DOUT\(3) <= NOT \PC|DOUT\(3);
 \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a18~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a18~portbdataout\;
-\UC_ULA|ALT_INV_ULActrl[1]~0_combout\ <= NOT \UC_ULA|ULActrl[1]~0_combout\;
-\REG_ID|ALT_INV_DOUT\(10) <= NOT \REG_ID|DOUT\(10);
-\REG_ID|ALT_INV_DOUT\(12) <= NOT \REG_ID|DOUT\(12);
-\REG_ID|ALT_INV_DOUT\(14) <= NOT \REG_ID|DOUT\(14);
-\REG_ID|ALT_INV_DOUT\(15) <= NOT \REG_ID|DOUT\(15);
-\REG_ID|ALT_INV_DOUT\(140) <= NOT \REG_ID|DOUT\(140);
-\REG_ID|ALT_INV_DOUT\(139) <= NOT \REG_ID|DOUT\(139);
-\REG_ID|ALT_INV_DOUT\(11) <= NOT \REG_ID|DOUT\(11);
-\REG_ID|ALT_INV_DOUT\(13) <= NOT \REG_ID|DOUT\(13);
+\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a17~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a17~portbdataout\;
+\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a16~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a16~portbdataout\;
+\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a15~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a15~portbdataout\;
+\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a14~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a14~portbdataout\;
+\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a13~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a13~portbdataout\;
+\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a12~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a12~portbdataout\;
+\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a11~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a11~portbdataout\;
+\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a10~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a10~portbdataout\;
+\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a9~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a9~portbdataout\;
+\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a8~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a8~portbdataout\;
+\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a7~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a7~portbdataout\;
+\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a6~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a6~portbdataout\;
+\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a5~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a5~portbdataout\;
+\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a4~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a4~portbdataout\;
+\RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a3~portbdataout\ <= NOT \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a3~portbdataout\;
+\ULA|ALT_INV_Add0~125_sumout\ <= NOT \ULA|Add0~125_sumout\;
+\ULA|ALT_INV_Add0~121_sumout\ <= NOT \ULA|Add0~121_sumout\;
+\ULA|ALT_INV_Add2~125_sumout\ <= NOT \ULA|Add2~125_sumout\;
+\ULA|ALT_INV_Add0~117_sumout\ <= NOT \ULA|Add0~117_sumout\;
+\ULA|ALT_INV_Add2~121_sumout\ <= NOT \ULA|Add2~121_sumout\;
+\ULA|ALT_INV_Add0~113_sumout\ <= NOT \ULA|Add0~113_sumout\;
 \somador_somador|ALT_INV_Add0~117_sumout\ <= NOT \somador_somador|Add0~117_sumout\;
 \somador_somador|ALT_INV_Add0~113_sumout\ <= NOT \somador_somador|Add0~113_sumout\;
 \somador_somador|ALT_INV_Add0~109_sumout\ <= NOT \somador_somador|Add0~109_sumout\;
@@ -2686,32 +2658,24 @@ ww_devpor <= devpor;
 \somadorPC|ALT_INV_Add0~37_sumout\ <= NOT \somadorPC|Add0~37_sumout\;
 \somador_somador|ALT_INV_Add0~9_sumout\ <= NOT \somador_somador|Add0~9_sumout\;
 \somadorPC|ALT_INV_Add0~33_sumout\ <= NOT \somadorPC|Add0~33_sumout\;
-\REG_ID|ALT_INV_DOUT\(94) <= NOT \REG_ID|DOUT\(94);
-\ULA|ALT_INV_saida[19]~67_combout\ <= NOT \ULA|saida[19]~67_combout\;
-\ULA|ALT_INV_saida[19]~66_combout\ <= NOT \ULA|saida[19]~66_combout\;
-\mux_RT_imediato|ALT_INV_saida_MUX[19]~6_combout\ <= NOT \mux_RT_imediato|saida_MUX[19]~6_combout\;
-\REG_ID|ALT_INV_DOUT\(61) <= NOT \REG_ID|DOUT\(61);
-\REG_ID|ALT_INV_DOUT\(93) <= NOT \REG_ID|DOUT\(93);
-\ULA|ALT_INV_saida[18]~65_combout\ <= NOT \ULA|saida[18]~65_combout\;
-\ULA|ALT_INV_saida[18]~64_combout\ <= NOT \ULA|saida[18]~64_combout\;
-\mux_RT_imediato|ALT_INV_saida_MUX[18]~5_combout\ <= NOT \mux_RT_imediato|saida_MUX[18]~5_combout\;
-\REG_ID|ALT_INV_DOUT\(60) <= NOT \REG_ID|DOUT\(60);
-\REG_ID|ALT_INV_DOUT\(92) <= NOT \REG_ID|DOUT\(92);
-\ULA|ALT_INV_saida[17]~63_combout\ <= NOT \ULA|saida[17]~63_combout\;
-\ULA|ALT_INV_saida[17]~62_combout\ <= NOT \ULA|saida[17]~62_combout\;
-\mux_RT_imediato|ALT_INV_saida_MUX[17]~4_combout\ <= NOT \mux_RT_imediato|saida_MUX[17]~4_combout\;
-\REG_ID|ALT_INV_DOUT\(59) <= NOT \REG_ID|DOUT\(59);
-\REG_ID|ALT_INV_DOUT\(91) <= NOT \REG_ID|DOUT\(91);
-\ULA|ALT_INV_saida[16]~61_combout\ <= NOT \ULA|saida[16]~61_combout\;
-\ULA|ALT_INV_saida[16]~60_combout\ <= NOT \ULA|saida[16]~60_combout\;
-\mux_RT_imediato|ALT_INV_saida_MUX[16]~3_combout\ <= NOT \mux_RT_imediato|saida_MUX[16]~3_combout\;
-\REG_ID|ALT_INV_DOUT\(58) <= NOT \REG_ID|DOUT\(58);
-\REG_ID|ALT_INV_DOUT\(26) <= NOT \REG_ID|DOUT\(26);
-\REG_ID|ALT_INV_DOUT\(90) <= NOT \REG_ID|DOUT\(90);
-\ULA|ALT_INV_saida[15]~59_combout\ <= NOT \ULA|saida[15]~59_combout\;
-\ULA|ALT_INV_saida[15]~58_combout\ <= NOT \ULA|saida[15]~58_combout\;
-\mux_RT_imediato|ALT_INV_saida_MUX[15]~2_combout\ <= NOT \mux_RT_imediato|saida_MUX[15]~2_combout\;
-\REG_ID|ALT_INV_DOUT\(57) <= NOT \REG_ID|DOUT\(57);
+\somador_somador|ALT_INV_Add0~5_sumout\ <= NOT \somador_somador|Add0~5_sumout\;
+\somadorPC|ALT_INV_Add0~29_sumout\ <= NOT \somadorPC|Add0~29_sumout\;
+\somador_somador|ALT_INV_Add0~1_sumout\ <= NOT \somador_somador|Add0~1_sumout\;
+\somadorPC|ALT_INV_Add0~25_sumout\ <= NOT \somadorPC|Add0~25_sumout\;
+\somadorPC|ALT_INV_Add0~21_sumout\ <= NOT \somadorPC|Add0~21_sumout\;
+\somadorPC|ALT_INV_Add0~17_sumout\ <= NOT \somadorPC|Add0~17_sumout\;
+\somadorPC|ALT_INV_Add0~13_sumout\ <= NOT \somadorPC|Add0~13_sumout\;
+\somadorPC|ALT_INV_Add0~9_sumout\ <= NOT \somadorPC|Add0~9_sumout\;
+\somadorPC|ALT_INV_Add0~5_sumout\ <= NOT \somadorPC|Add0~5_sumout\;
+\somadorPC|ALT_INV_Add0~1_sumout\ <= NOT \somadorPC|Add0~1_sumout\;
+\bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a31~portbdataout\ <= NOT \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a31~portbdataout\;
+\bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a31~portbdataout\ <= NOT \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a31~portbdataout\;
+\bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a30~portbdataout\ <= NOT \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a30~portbdataout\;
+\bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a30~portbdataout\ <= NOT \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a30~portbdataout\;
+\bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a29~portbdataout\ <= NOT \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a29~portbdataout\;
+\bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a29~portbdataout\ <= NOT \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a29~portbdataout\;
+\bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a28~portbdataout\ <= NOT \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a28~portbdataout\;
+\bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a28~portbdataout\ <= NOT \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a28~portbdataout\;
 \REG_ID|ALT_INV_DOUT\(89) <= NOT \REG_ID|DOUT\(89);
 \ULA|ALT_INV_saida[14]~57_combout\ <= NOT \ULA|saida[14]~57_combout\;
 \ULA|ALT_INV_saida[14]~56_combout\ <= NOT \ULA|saida[14]~56_combout\;
@@ -2800,28 +2764,15 @@ ww_devpor <= devpor;
 \UC_ULA|ALT_INV_ULActrl[0]~3_combout\ <= NOT \UC_ULA|ULActrl[0]~3_combout\;
 \UC_ULA|ALT_INV_ULActrl[0]~2_combout\ <= NOT \UC_ULA|ULActrl[0]~2_combout\;
 \UC_ULA|ALT_INV_ULActrl[1]~1_combout\ <= NOT \UC_ULA|ULActrl[1]~1_combout\;
-\ROM_mips|ALT_INV_memROM~5_combout\ <= NOT \ROM_mips|memROM~5_combout\;
-\REG_MEM|ALT_INV_DOUT\(93) <= NOT \REG_MEM|DOUT\(93);
-\REG_MEM|ALT_INV_DOUT\(29) <= NOT \REG_MEM|DOUT\(29);
-\ROM_mips|ALT_INV_memROM~4_combout\ <= NOT \ROM_mips|memROM~4_combout\;
-\REG_MEM|ALT_INV_DOUT\(92) <= NOT \REG_MEM|DOUT\(92);
-\REG_MEM|ALT_INV_DOUT\(28) <= NOT \REG_MEM|DOUT\(28);
-\ROM_mips|ALT_INV_memROM~3_combout\ <= NOT \ROM_mips|memROM~3_combout\;
-\REG_MEM|ALT_INV_DOUT\(94) <= NOT \REG_MEM|DOUT\(94);
-\REG_MEM|ALT_INV_DOUT\(27) <= NOT \REG_MEM|DOUT\(27);
-\ROM_mips|ALT_INV_memROM~2_combout\ <= NOT \ROM_mips|memROM~2_combout\;
-\REG_MEM|ALT_INV_DOUT\(90) <= NOT \REG_MEM|DOUT\(90);
-\REG_MEM|ALT_INV_DOUT\(26) <= NOT \REG_MEM|DOUT\(26);
-\ROM_mips|ALT_INV_memROM~1_combout\ <= NOT \ROM_mips|memROM~1_combout\;
-\REG_MEM|ALT_INV_DOUT\(25) <= NOT \REG_MEM|DOUT\(25);
-\ROM_mips|ALT_INV_memROM~0_combout\ <= NOT \ROM_mips|memROM~0_combout\;
-\REG_MEM|ALT_INV_DOUT\(88) <= NOT \REG_MEM|DOUT\(88);
-\REG_MEM|ALT_INV_DOUT\(24) <= NOT \REG_MEM|DOUT\(24);
-\REG_MEM|ALT_INV_DOUT\(23) <= NOT \REG_MEM|DOUT\(23);
-\REG_MEM|ALT_INV_DOUT\(87) <= NOT \REG_MEM|DOUT\(87);
-\REG_MEM|ALT_INV_DOUT\(22) <= NOT \REG_MEM|DOUT\(22);
-\REG_MEM|ALT_INV_DOUT\(86) <= NOT \REG_MEM|DOUT\(86);
-\REG_MEM|ALT_INV_DOUT\(21) <= NOT \REG_MEM|DOUT\(21);
+\UC_ULA|ALT_INV_ULActrl[1]~0_combout\ <= NOT \UC_ULA|ULActrl[1]~0_combout\;
+\REG_ID|ALT_INV_DOUT\(10) <= NOT \REG_ID|DOUT\(10);
+\REG_ID|ALT_INV_DOUT\(12) <= NOT \REG_ID|DOUT\(12);
+\REG_ID|ALT_INV_DOUT\(14) <= NOT \REG_ID|DOUT\(14);
+\REG_ID|ALT_INV_DOUT\(15) <= NOT \REG_ID|DOUT\(15);
+\REG_ID|ALT_INV_DOUT\(140) <= NOT \REG_ID|DOUT\(140);
+\REG_ID|ALT_INV_DOUT\(139) <= NOT \REG_ID|DOUT\(139);
+\REG_ID|ALT_INV_DOUT\(11) <= NOT \REG_ID|DOUT\(11);
+\REG_ID|ALT_INV_DOUT\(13) <= NOT \REG_ID|DOUT\(13);
 \REG_MEM|ALT_INV_DOUT\(85) <= NOT \REG_MEM|DOUT\(85);
 \REG_MEM|ALT_INV_DOUT\(20) <= NOT \REG_MEM|DOUT\(20);
 \REG_MEM|ALT_INV_DOUT\(19) <= NOT \REG_MEM|DOUT\(19);
@@ -2842,12 +2793,12 @@ ww_devpor <= devpor;
 \REG_MEM|ALT_INV_DOUT\(8) <= NOT \REG_MEM|DOUT\(8);
 \REG_MEM|ALT_INV_DOUT\(72) <= NOT \REG_MEM|DOUT\(72);
 \REG_MEM|ALT_INV_DOUT\(2) <= NOT \REG_MEM|DOUT\(2);
-\UC|ALT_INV_Equal5~0_combout\ <= NOT \UC|Equal5~0_combout\;
+\UC|ALT_INV_Equal3~0_combout\ <= NOT \UC|Equal3~0_combout\;
+\etapaBusca|ALT_INV_DOUT\(59) <= NOT \etapaBusca|DOUT\(59);
+\etapaBusca|ALT_INV_DOUT\(61) <= NOT \etapaBusca|DOUT\(61);
 \etapaBusca|ALT_INV_DOUT\(62) <= NOT \etapaBusca|DOUT\(62);
 \etapaBusca|ALT_INV_DOUT\(63) <= NOT \etapaBusca|DOUT\(63);
-\etapaBusca|ALT_INV_DOUT\(59) <= NOT \etapaBusca|DOUT\(59);
 \etapaBusca|ALT_INV_DOUT\(60) <= NOT \etapaBusca|DOUT\(60);
-\etapaBusca|ALT_INV_DOUT\(61) <= NOT \etapaBusca|DOUT\(61);
 \etapaBusca|ALT_INV_DOUT\(58) <= NOT \etapaBusca|DOUT\(58);
 \REG_MEM|ALT_INV_DOUT\(1) <= NOT \REG_MEM|DOUT\(1);
 \ULA|ALT_INV_saida[31]~91_combout\ <= NOT \ULA|saida[31]~91_combout\;
@@ -2909,24 +2860,32 @@ ww_devpor <= devpor;
 \ULA|ALT_INV_saida[20]~68_combout\ <= NOT \ULA|saida[20]~68_combout\;
 \mux_RT_imediato|ALT_INV_saida_MUX[20]~7_combout\ <= NOT \mux_RT_imediato|saida_MUX[20]~7_combout\;
 \REG_ID|ALT_INV_DOUT\(62) <= NOT \REG_ID|DOUT\(62);
-\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(25) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(25);
-\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(26) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(26);
-\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(25) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(25);
-\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(26) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(26);
-\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(23) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(23);
-\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(24) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(24);
-\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(23) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(23);
-\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(24) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(24);
-\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(21) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(21);
-\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(22) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(22);
-\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(21) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(21);
-\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(22) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(22);
-\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(19) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(19);
-\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(20) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(20);
-\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(19) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(19);
-\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(20) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(20);
-\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(17) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(17);
-\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(18) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(18);
+\REG_ID|ALT_INV_DOUT\(94) <= NOT \REG_ID|DOUT\(94);
+\ULA|ALT_INV_saida[19]~67_combout\ <= NOT \ULA|saida[19]~67_combout\;
+\ULA|ALT_INV_saida[19]~66_combout\ <= NOT \ULA|saida[19]~66_combout\;
+\mux_RT_imediato|ALT_INV_saida_MUX[19]~6_combout\ <= NOT \mux_RT_imediato|saida_MUX[19]~6_combout\;
+\REG_ID|ALT_INV_DOUT\(61) <= NOT \REG_ID|DOUT\(61);
+\REG_ID|ALT_INV_DOUT\(93) <= NOT \REG_ID|DOUT\(93);
+\ULA|ALT_INV_saida[18]~65_combout\ <= NOT \ULA|saida[18]~65_combout\;
+\ULA|ALT_INV_saida[18]~64_combout\ <= NOT \ULA|saida[18]~64_combout\;
+\mux_RT_imediato|ALT_INV_saida_MUX[18]~5_combout\ <= NOT \mux_RT_imediato|saida_MUX[18]~5_combout\;
+\REG_ID|ALT_INV_DOUT\(60) <= NOT \REG_ID|DOUT\(60);
+\REG_ID|ALT_INV_DOUT\(92) <= NOT \REG_ID|DOUT\(92);
+\ULA|ALT_INV_saida[17]~63_combout\ <= NOT \ULA|saida[17]~63_combout\;
+\ULA|ALT_INV_saida[17]~62_combout\ <= NOT \ULA|saida[17]~62_combout\;
+\mux_RT_imediato|ALT_INV_saida_MUX[17]~4_combout\ <= NOT \mux_RT_imediato|saida_MUX[17]~4_combout\;
+\REG_ID|ALT_INV_DOUT\(59) <= NOT \REG_ID|DOUT\(59);
+\REG_ID|ALT_INV_DOUT\(91) <= NOT \REG_ID|DOUT\(91);
+\ULA|ALT_INV_saida[16]~61_combout\ <= NOT \ULA|saida[16]~61_combout\;
+\ULA|ALT_INV_saida[16]~60_combout\ <= NOT \ULA|saida[16]~60_combout\;
+\mux_RT_imediato|ALT_INV_saida_MUX[16]~3_combout\ <= NOT \mux_RT_imediato|saida_MUX[16]~3_combout\;
+\REG_ID|ALT_INV_DOUT\(58) <= NOT \REG_ID|DOUT\(58);
+\REG_ID|ALT_INV_DOUT\(26) <= NOT \REG_ID|DOUT\(26);
+\REG_ID|ALT_INV_DOUT\(90) <= NOT \REG_ID|DOUT\(90);
+\ULA|ALT_INV_saida[15]~59_combout\ <= NOT \ULA|saida[15]~59_combout\;
+\ULA|ALT_INV_saida[15]~58_combout\ <= NOT \ULA|saida[15]~58_combout\;
+\mux_RT_imediato|ALT_INV_saida_MUX[15]~2_combout\ <= NOT \mux_RT_imediato|saida_MUX[15]~2_combout\;
+\REG_ID|ALT_INV_DOUT\(57) <= NOT \REG_ID|DOUT\(57);
 \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(17) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(17);
 \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(18) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(18);
 \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(15) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(15);
@@ -2981,8 +2940,8 @@ ww_devpor <= devpor;
 \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(10) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(10);
 \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(9) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(9);
 \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(12) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(12);
-\UC|ALT_INV_Equal3~0_combout\ <= NOT \UC|Equal3~0_combout\;
-\UC|ALT_INV_Equal1~0_combout\ <= NOT \UC|Equal1~0_combout\;
+\UC|ALT_INV_Equal4~0_combout\ <= NOT \UC|Equal4~0_combout\;
+\UC|ALT_INV_Equal2~0_combout\ <= NOT \UC|Equal2~0_combout\;
 \PC|ALT_INV_DOUT\(31) <= NOT \PC|DOUT\(31);
 \PC|ALT_INV_DOUT\(30) <= NOT \PC|DOUT\(30);
 \PC|ALT_INV_DOUT\(29) <= NOT \PC|DOUT\(29);
@@ -3006,23 +2965,28 @@ ww_devpor <= devpor;
 \REG_MEM|ALT_INV_DOUT\(95) <= NOT \REG_MEM|DOUT\(95);
 \REG_MEM|ALT_INV_DOUT\(31) <= NOT \REG_MEM|DOUT\(31);
 \REG_MEM|ALT_INV_DOUT\(30) <= NOT \REG_MEM|DOUT\(30);
-\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(68) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(68);
-\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(67) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(67);
-\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(68) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(68);
-\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(65) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(65);
-\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(66) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(66);
-\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(65) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(65);
-\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(66) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(66);
-\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(63) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(63);
-\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(64) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(64);
-\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(63) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(63);
-\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(64) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(64);
-\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(61) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(61);
-\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(62) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(62);
-\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(61) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(61);
-\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(62) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(62);
-\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(59) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(59);
-\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(60) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(60);
+\ROM_mips|ALT_INV_memROM~5_combout\ <= NOT \ROM_mips|memROM~5_combout\;
+\REG_MEM|ALT_INV_DOUT\(93) <= NOT \REG_MEM|DOUT\(93);
+\REG_MEM|ALT_INV_DOUT\(29) <= NOT \REG_MEM|DOUT\(29);
+\ROM_mips|ALT_INV_memROM~4_combout\ <= NOT \ROM_mips|memROM~4_combout\;
+\REG_MEM|ALT_INV_DOUT\(92) <= NOT \REG_MEM|DOUT\(92);
+\REG_MEM|ALT_INV_DOUT\(28) <= NOT \REG_MEM|DOUT\(28);
+\ROM_mips|ALT_INV_memROM~3_combout\ <= NOT \ROM_mips|memROM~3_combout\;
+\REG_MEM|ALT_INV_DOUT\(94) <= NOT \REG_MEM|DOUT\(94);
+\REG_MEM|ALT_INV_DOUT\(27) <= NOT \REG_MEM|DOUT\(27);
+\ROM_mips|ALT_INV_memROM~2_combout\ <= NOT \ROM_mips|memROM~2_combout\;
+\REG_MEM|ALT_INV_DOUT\(90) <= NOT \REG_MEM|DOUT\(90);
+\REG_MEM|ALT_INV_DOUT\(26) <= NOT \REG_MEM|DOUT\(26);
+\ROM_mips|ALT_INV_memROM~1_combout\ <= NOT \ROM_mips|memROM~1_combout\;
+\REG_MEM|ALT_INV_DOUT\(25) <= NOT \REG_MEM|DOUT\(25);
+\ROM_mips|ALT_INV_memROM~0_combout\ <= NOT \ROM_mips|memROM~0_combout\;
+\REG_MEM|ALT_INV_DOUT\(88) <= NOT \REG_MEM|DOUT\(88);
+\REG_MEM|ALT_INV_DOUT\(24) <= NOT \REG_MEM|DOUT\(24);
+\REG_MEM|ALT_INV_DOUT\(23) <= NOT \REG_MEM|DOUT\(23);
+\REG_MEM|ALT_INV_DOUT\(87) <= NOT \REG_MEM|DOUT\(87);
+\REG_MEM|ALT_INV_DOUT\(22) <= NOT \REG_MEM|DOUT\(22);
+\REG_MEM|ALT_INV_DOUT\(86) <= NOT \REG_MEM|DOUT\(86);
+\REG_MEM|ALT_INV_DOUT\(21) <= NOT \REG_MEM|DOUT\(21);
 \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(59) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(59);
 \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(60) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(60);
 \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(57) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(57);
@@ -3055,7 +3019,6 @@ ww_devpor <= devpor;
 \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(46) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(46);
 \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(43) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(43);
 \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(44) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(44);
-\UC|ALT_INV_Equal2~0_combout\ <= NOT \UC|Equal2~0_combout\;
 \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(43) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(43);
 \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(44) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(44);
 \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(41) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(41);
@@ -3090,13 +3053,35 @@ ww_devpor <= devpor;
 \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(28) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(28);
 \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(27) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(27);
 \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(28) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(28);
-\etapaBusca|ALT_INV_DOUT\(35) <= NOT \etapaBusca|DOUT\(35);
+\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(25) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(25);
+\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(26) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(26);
+\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(25) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(25);
+\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(26) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(26);
+\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(23) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(23);
+\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(24) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(24);
+\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(23) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(23);
+\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(24) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(24);
+\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(21) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(21);
+\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(22) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(22);
+\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(21) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(21);
+\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(22) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(22);
+\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(19) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(19);
+\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(20) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(20);
+\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(19) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(19);
+\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(20) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(20);
+\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(17) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(17);
+\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(18) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(18);
 \etapaBusca|ALT_INV_DOUT\(34) <= NOT \etapaBusca|DOUT\(34);
 \etapaBusca|ALT_INV_DOUT\(36) <= NOT \etapaBusca|DOUT\(36);
 \etapaBusca|ALT_INV_DOUT\(32) <= NOT \etapaBusca|DOUT\(32);
 \etapaBusca|ALT_INV_DOUT\(37) <= NOT \etapaBusca|DOUT\(37);
-\PC|ALT_INV_DOUT[31]~1_combout\ <= NOT \PC|DOUT[31]~1_combout\;
+\MUX_jump|ALT_INV_Equal2~0_combout\ <= NOT \MUX_jump|Equal2~0_combout\;
 \PC|ALT_INV_DOUT[13]~0_combout\ <= NOT \PC|DOUT[13]~0_combout\;
+\MUX_jump|ALT_INV_saida_MUX[0]~0_combout\ <= NOT \MUX_jump|saida_MUX[0]~0_combout\;
+\UC|ALT_INV_Equal2~1_combout\ <= NOT \UC|Equal2~1_combout\;
+\UC|ALT_INV_seletorMUX_JMP~1_combout\ <= NOT \UC|seletorMUX_JMP~1_combout\;
+\UC|ALT_INV_seletorMUX_JMP~0_combout\ <= NOT \UC|seletorMUX_JMP~0_combout\;
+\UC|ALT_INV_Equal0~0_combout\ <= NOT \UC|Equal0~0_combout\;
 \REG_ID|ALT_INV_DOUT\(149) <= NOT \REG_ID|DOUT\(149);
 \ULA|ALT_INV_Equal5~7_combout\ <= NOT \ULA|Equal5~7_combout\;
 \ULA|ALT_INV_Equal5~6_combout\ <= NOT \ULA|Equal5~6_combout\;
@@ -3119,10 +3104,6 @@ ww_devpor <= devpor;
 \ULA|ALT_INV_saida[7]~93_combout\ <= NOT \ULA|saida[7]~93_combout\;
 \ULA|ALT_INV_saida[9]~92_combout\ <= NOT \ULA|saida[9]~92_combout\;
 \REG_ID|ALT_INV_DOUT\(150) <= NOT \REG_ID|DOUT\(150);
-\UC|ALT_INV_palavraControle[10]~0_combout\ <= NOT \UC|palavraControle[10]~0_combout\;
-\UC|ALT_INV_seletorMUX_JMP~0_combout\ <= NOT \UC|seletorMUX_JMP~0_combout\;
-\UC|ALT_INV_Equal10~0_combout\ <= NOT \UC|Equal10~0_combout\;
-\UC|ALT_INV_Equal1~1_combout\ <= NOT \UC|Equal1~1_combout\;
 \etapaBusca|ALT_INV_DOUT\(33) <= NOT \etapaBusca|DOUT\(33);
 \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(73) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(73);
 \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(74) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(74);
@@ -3137,11 +3118,23 @@ ww_devpor <= devpor;
 \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(69) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(69);
 \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(70) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(70);
 \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(67) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(67);
-\REG_ID|ALT_INV_DOUT\(4) <= NOT \REG_ID|DOUT\(4);
-\REG_ID|ALT_INV_DOUT\(9) <= NOT \REG_ID|DOUT\(9);
-\REG_ID|ALT_INV_DOUT\(3) <= NOT \REG_ID|DOUT\(3);
-\REG_ID|ALT_INV_DOUT\(8) <= NOT \REG_ID|DOUT\(8);
-\REG_ID|ALT_INV_DOUT\(137) <= NOT \REG_ID|DOUT\(137);
+\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(68) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(68);
+\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(67) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(67);
+\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(68) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(68);
+\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(65) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(65);
+\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(66) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(66);
+\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(65) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(65);
+\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(66) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(66);
+\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(63) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(63);
+\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(64) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(64);
+\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(63) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(63);
+\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(64) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(64);
+\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(61) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(61);
+\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(62) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(62);
+\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(61) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(61);
+\bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(62) <= NOT \bancoRegistrador|registrador_rtl_0_bypass\(62);
+\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(59) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(59);
+\bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(60) <= NOT \bancoRegistrador|registrador_rtl_1_bypass\(60);
 \REG_ID|ALT_INV_DOUT\(135) <= NOT \REG_ID|DOUT\(135);
 \REG_ID|ALT_INV_DOUT\(134) <= NOT \REG_ID|DOUT\(134);
 \REG_ID|ALT_INV_DOUT\(133) <= NOT \REG_ID|DOUT\(133);
@@ -3185,12 +3178,18 @@ ww_devpor <= devpor;
 \REG_ID|ALT_INV_DOUT\(107) <= NOT \REG_ID|DOUT\(107);
 \ULA|ALT_INV_Equal5~8_combout\ <= NOT \ULA|Equal5~8_combout\;
 \REG_ID|ALT_INV_DOUT\(106) <= NOT \REG_ID|DOUT\(106);
+\etapaBusca|ALT_INV_DOUT\(35) <= NOT \etapaBusca|DOUT\(35);
 \ROM_mips|ALT_INV_memROM~21_combout\ <= NOT \ROM_mips|memROM~21_combout\;
 \ULA|ALT_INV_Equal5~12_combout\ <= NOT \ULA|Equal5~12_combout\;
 \ULA|ALT_INV_Equal5~11_combout\ <= NOT \ULA|Equal5~11_combout\;
 \ROM_mips|ALT_INV_memROM~7_combout\ <= NOT \ROM_mips|memROM~7_combout\;
 \REG_ID|ALT_INV_DOUT\(0) <= NOT \REG_ID|DOUT\(0);
 \REG_ID|ALT_INV_DOUT\(5) <= NOT \REG_ID|DOUT\(5);
+\REG_ID|ALT_INV_DOUT\(4) <= NOT \REG_ID|DOUT\(4);
+\REG_ID|ALT_INV_DOUT\(9) <= NOT \REG_ID|DOUT\(9);
+\REG_ID|ALT_INV_DOUT\(3) <= NOT \REG_ID|DOUT\(3);
+\REG_ID|ALT_INV_DOUT\(8) <= NOT \REG_ID|DOUT\(8);
+\REG_ID|ALT_INV_DOUT\(137) <= NOT \REG_ID|DOUT\(137);
 
 \barramento_endereco[0]~output\ : cyclonev_io_obuf
 -- pragma translate_off
@@ -5185,6 +5184,52 @@ PORT MAP (
 	sumout => \somador_somador|Add0~5_sumout\,
 	cout => \somador_somador|Add0~6\);
 
+\ROM_mips|memROM~19\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ROM_mips|memROM~19_combout\ = ( !\PC|DOUT\(5) & ( \PC|DOUT\(7) & ( (!\PC|DOUT\(6) & (\PC|DOUT\(4) & (!\PC|DOUT\(3) & !\PC|DOUT\(2)))) # (\PC|DOUT\(6) & (!\PC|DOUT\(4) & (\PC|DOUT\(3) & \PC|DOUT\(2)))) ) ) ) # ( \PC|DOUT\(5) & ( !\PC|DOUT\(7) & ( 
+-- (!\PC|DOUT\(4) & ((!\PC|DOUT\(6) & (!\PC|DOUT\(3) & !\PC|DOUT\(2))) # (\PC|DOUT\(6) & (\PC|DOUT\(3) & \PC|DOUT\(2))))) ) ) ) # ( !\PC|DOUT\(5) & ( !\PC|DOUT\(7) & ( (!\PC|DOUT\(3) & ((!\PC|DOUT\(4)) # (\PC|DOUT\(2)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1100000011110000100000000000010000100000000001000000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \PC|ALT_INV_DOUT\(6),
+	datab => \PC|ALT_INV_DOUT\(4),
+	datac => \PC|ALT_INV_DOUT\(3),
+	datad => \PC|ALT_INV_DOUT\(2),
+	datae => \PC|ALT_INV_DOUT\(5),
+	dataf => \PC|ALT_INV_DOUT\(7),
+	combout => \ROM_mips|memROM~19_combout\);
+
+\etapaBusca|DOUT[26]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \ROM_mips|memROM~19_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \etapaBusca|DOUT\(26));
+
+\REG_ID|DOUT[132]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \etapaBusca|DOUT\(26),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_ID|DOUT\(132));
+
 \ROM_mips|memROM~7\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \ROM_mips|memROM~7_combout\ = (!\PC|DOUT\(3) & !\PC|DOUT\(2))
@@ -5934,6 +5979,96 @@ PORT MAP (
 	sumout => \somador_somador|Add0~93_sumout\,
 	cout => \somador_somador|Add0~94\);
 
+\somador_somador|Add0~97\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \somador_somador|Add0~97_sumout\ = SUM(( \REG_ID|DOUT\(26) ) + ( \REG_ID|DOUT\(132) ) + ( \somador_somador|Add0~94\ ))
+-- \somador_somador|Add0~98\ = CARRY(( \REG_ID|DOUT\(26) ) + ( \REG_ID|DOUT\(132) ) + ( \somador_somador|Add0~94\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111110000000000000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \REG_ID|ALT_INV_DOUT\(26),
+	dataf => \REG_ID|ALT_INV_DOUT\(132),
+	cin => \somador_somador|Add0~94\,
+	sumout => \somador_somador|Add0~97_sumout\,
+	cout => \somador_somador|Add0~98\);
+
+\ROM_mips|memROM~15\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ROM_mips|memROM~15_combout\ = ( \PC|DOUT\(3) & ( (!\PC|DOUT\(4) & (\PC|DOUT\(6) & ((\PC|DOUT\(5))))) # (\PC|DOUT\(4) & (!\PC|DOUT\(5) & ((!\PC|DOUT\(6)) # (!\PC|DOUT\(2))))) ) ) # ( !\PC|DOUT\(3) & ( (!\PC|DOUT\(5) & ((!\PC|DOUT\(4) $ (\PC|DOUT\(2))))) # 
+-- (\PC|DOUT\(5) & ((!\PC|DOUT\(6) & (!\PC|DOUT\(4))) # (\PC|DOUT\(6) & (\PC|DOUT\(4) & !\PC|DOUT\(2))))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1100001110011000001100100100010011000011100110000011001001000100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \PC|ALT_INV_DOUT\(6),
+	datab => \PC|ALT_INV_DOUT\(4),
+	datac => \PC|ALT_INV_DOUT\(2),
+	datad => \PC|ALT_INV_DOUT\(5),
+	datae => \PC|ALT_INV_DOUT\(3),
+	combout => \ROM_mips|memROM~15_combout\);
+
+\etapaBusca|DOUT[29]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \ROM_mips|memROM~15_combout\,
+	sclr => \PC|DOUT\(7),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \etapaBusca|DOUT\(29));
+
+\REG_ID|DOUT[135]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \etapaBusca|DOUT\(29),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_ID|DOUT\(135));
+
+\REG_EX|DOUT[98]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_ID|DOUT\(135),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_EX|DOUT\(98));
+
+\REG_MEM|DOUT[98]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_EX|DOUT\(98),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_MEM|DOUT\(98));
+
 \ROM_mips|memROM~16\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \ROM_mips|memROM~16_combout\ = (!\PC|DOUT\(3) & (!\PC|DOUT\(7) & (!\PC|DOUT\(4) & !\PC|DOUT\(5))))
@@ -6002,249 +6137,6 @@ PORT MAP (
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_MEM|DOUT\(100));
-
-\UC|Equal6~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \UC|Equal6~0_combout\ = (\etapaBusca|DOUT\(58) & (!\etapaBusca|DOUT\(61) & (\etapaBusca|DOUT\(63) & \UC|Equal1~0_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000100000000000000010000000000000001000000000000000100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \etapaBusca|ALT_INV_DOUT\(58),
-	datab => \etapaBusca|ALT_INV_DOUT\(61),
-	datac => \etapaBusca|ALT_INV_DOUT\(63),
-	datad => \UC|ALT_INV_Equal1~0_combout\,
-	combout => \UC|Equal6~0_combout\);
-
-\REG_ID|DOUT[139]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \UC|Equal6~0_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(139));
-
-\ROM_mips|memROM~18\ : cyclonev_lcell_comb
--- Equation(s):
--- \ROM_mips|memROM~18_combout\ = ( \PC|DOUT\(7) & ( \PC|DOUT\(3) & ( (!\PC|DOUT\(4) & (\PC|DOUT\(6) & (\PC|DOUT\(2) & !\PC|DOUT\(5)))) ) ) ) # ( \PC|DOUT\(7) & ( !\PC|DOUT\(3) & ( (\PC|DOUT\(4) & (\PC|DOUT\(6) & (\PC|DOUT\(2) & !\PC|DOUT\(5)))) ) ) ) # ( 
--- !\PC|DOUT\(7) & ( !\PC|DOUT\(3) & ( (!\PC|DOUT\(4) & ((!\PC|DOUT\(5)) # ((!\PC|DOUT\(6) & \PC|DOUT\(2))))) # (\PC|DOUT\(4) & (!\PC|DOUT\(2) $ (((!\PC|DOUT\(6)) # (!\PC|DOUT\(5)))))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1010111100011100000000010000000000000000000000000000001000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \PC|ALT_INV_DOUT\(4),
-	datab => \PC|ALT_INV_DOUT\(6),
-	datac => \PC|ALT_INV_DOUT\(2),
-	datad => \PC|ALT_INV_DOUT\(5),
-	datae => \PC|ALT_INV_DOUT\(7),
-	dataf => \PC|ALT_INV_DOUT\(3),
-	combout => \ROM_mips|memROM~18_combout\);
-
-\etapaBusca|DOUT[27]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \ROM_mips|memROM~18_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \etapaBusca|DOUT\(27));
-
-\REG_ID|DOUT[133]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \etapaBusca|DOUT\(27),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(133));
-
-\ROM_mips|memROM~19\ : cyclonev_lcell_comb
--- Equation(s):
--- \ROM_mips|memROM~19_combout\ = ( !\PC|DOUT\(5) & ( \PC|DOUT\(7) & ( (!\PC|DOUT\(6) & (\PC|DOUT\(4) & (!\PC|DOUT\(3) & !\PC|DOUT\(2)))) # (\PC|DOUT\(6) & (!\PC|DOUT\(4) & (\PC|DOUT\(3) & \PC|DOUT\(2)))) ) ) ) # ( \PC|DOUT\(5) & ( !\PC|DOUT\(7) & ( 
--- (!\PC|DOUT\(4) & ((!\PC|DOUT\(6) & (!\PC|DOUT\(3) & !\PC|DOUT\(2))) # (\PC|DOUT\(6) & (\PC|DOUT\(3) & \PC|DOUT\(2))))) ) ) ) # ( !\PC|DOUT\(5) & ( !\PC|DOUT\(7) & ( (!\PC|DOUT\(3) & ((!\PC|DOUT\(4)) # (\PC|DOUT\(2)))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1100000011110000100000000000010000100000000001000000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \PC|ALT_INV_DOUT\(6),
-	datab => \PC|ALT_INV_DOUT\(4),
-	datac => \PC|ALT_INV_DOUT\(3),
-	datad => \PC|ALT_INV_DOUT\(2),
-	datae => \PC|ALT_INV_DOUT\(5),
-	dataf => \PC|ALT_INV_DOUT\(7),
-	combout => \ROM_mips|memROM~19_combout\);
-
-\etapaBusca|DOUT[26]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \ROM_mips|memROM~19_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \etapaBusca|DOUT\(26));
-
-\REG_ID|DOUT[132]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \etapaBusca|DOUT\(26),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(132));
-
-\somador_somador|Add0~97\ : cyclonev_lcell_comb
--- Equation(s):
--- \somador_somador|Add0~97_sumout\ = SUM(( \REG_ID|DOUT\(26) ) + ( \REG_ID|DOUT\(132) ) + ( \somador_somador|Add0~94\ ))
--- \somador_somador|Add0~98\ = CARRY(( \REG_ID|DOUT\(26) ) + ( \REG_ID|DOUT\(132) ) + ( \somador_somador|Add0~94\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111111110000000000000000000000000000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datad => \REG_ID|ALT_INV_DOUT\(26),
-	dataf => \REG_ID|ALT_INV_DOUT\(132),
-	cin => \somador_somador|Add0~94\,
-	sumout => \somador_somador|Add0~97_sumout\,
-	cout => \somador_somador|Add0~98\);
-
-\somador_somador|Add0~101\ : cyclonev_lcell_comb
--- Equation(s):
--- \somador_somador|Add0~101_sumout\ = SUM(( \REG_ID|DOUT\(26) ) + ( \REG_ID|DOUT\(133) ) + ( \somador_somador|Add0~98\ ))
--- \somador_somador|Add0~102\ = CARRY(( \REG_ID|DOUT\(26) ) + ( \REG_ID|DOUT\(133) ) + ( \somador_somador|Add0~98\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111111110000000000000000000000000000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datad => \REG_ID|ALT_INV_DOUT\(26),
-	dataf => \REG_ID|ALT_INV_DOUT\(133),
-	cin => \somador_somador|Add0~98\,
-	sumout => \somador_somador|Add0~101_sumout\,
-	cout => \somador_somador|Add0~102\);
-
-\REG_ID|DOUT[147]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \UC|Equal1~1_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(147));
-
-\REG_EX|DOUT[104]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \REG_ID|DOUT\(147),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_EX|DOUT\(104));
-
-\REG_MEM|DOUT[102]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \REG_EX|DOUT\(104),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_MEM|DOUT\(102));
-
-\UC|palavraControle[6]\ : cyclonev_lcell_comb
--- Equation(s):
--- \UC|palavraControle\(6) = ( \etapaBusca|DOUT\(63) & ( !\etapaBusca|DOUT\(62) & ( (\etapaBusca|DOUT\(58) & (!\etapaBusca|DOUT\(61) & (!\etapaBusca|DOUT\(60) & \etapaBusca|DOUT\(59)))) ) ) ) # ( !\etapaBusca|DOUT\(63) & ( !\etapaBusca|DOUT\(62) & ( 
--- (!\etapaBusca|DOUT\(60) & (!\etapaBusca|DOUT\(58) $ (((!\etapaBusca|DOUT\(61) & \etapaBusca|DOUT\(59)))))) # (\etapaBusca|DOUT\(60) & (\etapaBusca|DOUT\(61) & ((!\etapaBusca|DOUT\(59)) # (\etapaBusca|DOUT\(58))))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1010001101100001000000000100000000000000000000000000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \etapaBusca|ALT_INV_DOUT\(58),
-	datab => \etapaBusca|ALT_INV_DOUT\(61),
-	datac => \etapaBusca|ALT_INV_DOUT\(60),
-	datad => \etapaBusca|ALT_INV_DOUT\(59),
-	datae => \etapaBusca|ALT_INV_DOUT\(63),
-	dataf => \etapaBusca|ALT_INV_DOUT\(62),
-	combout => \UC|palavraControle\(6));
-
-\REG_ID|DOUT[144]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \UC|palavraControle\(6),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(144));
-
-\REG_EX|DOUT[101]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \REG_ID|DOUT\(144),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_EX|DOUT\(101));
 
 \bancoRegistrador|registrador_rtl_1_bypass[9]\ : dffeas
 -- pragma translate_off
@@ -6396,6 +6288,35 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \REG_MEM|DOUT\(97));
 
+\UC|Equal2~1\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \UC|Equal2~1_combout\ = (!\etapaBusca|DOUT\(63) & (!\etapaBusca|DOUT\(61) & \UC|Equal2~0_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000100000001000000010000000100000001000000010000000100000001000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \etapaBusca|ALT_INV_DOUT\(63),
+	datab => \etapaBusca|ALT_INV_DOUT\(61),
+	datac => \UC|ALT_INV_Equal2~0_combout\,
+	combout => \UC|Equal2~1_combout\);
+
+\REG_ID|DOUT[142]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \UC|Equal2~1_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_ID|DOUT\(142));
+
 \REG_ID|DOUT[8]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -6408,6 +6329,70 @@ PORT MAP (
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_ID|DOUT\(8));
+
+\ROM_mips|memROM~18\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ROM_mips|memROM~18_combout\ = ( \PC|DOUT\(7) & ( \PC|DOUT\(3) & ( (!\PC|DOUT\(4) & (\PC|DOUT\(6) & (\PC|DOUT\(2) & !\PC|DOUT\(5)))) ) ) ) # ( \PC|DOUT\(7) & ( !\PC|DOUT\(3) & ( (\PC|DOUT\(4) & (\PC|DOUT\(6) & (\PC|DOUT\(2) & !\PC|DOUT\(5)))) ) ) ) # ( 
+-- !\PC|DOUT\(7) & ( !\PC|DOUT\(3) & ( (!\PC|DOUT\(4) & ((!\PC|DOUT\(5)) # ((!\PC|DOUT\(6) & \PC|DOUT\(2))))) # (\PC|DOUT\(4) & (!\PC|DOUT\(2) $ (((!\PC|DOUT\(6)) # (!\PC|DOUT\(5)))))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1010111100011100000000010000000000000000000000000000001000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \PC|ALT_INV_DOUT\(4),
+	datab => \PC|ALT_INV_DOUT\(6),
+	datac => \PC|ALT_INV_DOUT\(2),
+	datad => \PC|ALT_INV_DOUT\(5),
+	datae => \PC|ALT_INV_DOUT\(7),
+	dataf => \PC|ALT_INV_DOUT\(3),
+	combout => \ROM_mips|memROM~18_combout\);
+
+\etapaBusca|DOUT[27]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \ROM_mips|memROM~18_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \etapaBusca|DOUT\(27));
+
+\REG_ID|DOUT[133]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \etapaBusca|DOUT\(27),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_ID|DOUT\(133));
+
+\somador_somador|Add0~101\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \somador_somador|Add0~101_sumout\ = SUM(( \REG_ID|DOUT\(26) ) + ( \REG_ID|DOUT\(133) ) + ( \somador_somador|Add0~98\ ))
+-- \somador_somador|Add0~102\ = CARRY(( \REG_ID|DOUT\(26) ) + ( \REG_ID|DOUT\(133) ) + ( \somador_somador|Add0~98\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111110000000000000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \REG_ID|ALT_INV_DOUT\(26),
+	dataf => \REG_ID|ALT_INV_DOUT\(133),
+	cin => \somador_somador|Add0~98\,
+	sumout => \somador_somador|Add0~101_sumout\,
+	cout => \somador_somador|Add0~102\);
 
 \REG_EX|DOUT[90]\ : dffeas
 -- pragma translate_off
@@ -6499,6 +6484,53 @@ PORT MAP (
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_ID|DOUT\(9));
+
+\UC|palavraControle[6]\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \UC|palavraControle\(6) = ( \etapaBusca|DOUT\(61) & ( \etapaBusca|DOUT\(59) & ( (!\etapaBusca|DOUT\(63) & (!\etapaBusca|DOUT\(62) & (!\etapaBusca|DOUT\(58) $ (\etapaBusca|DOUT\(60))))) ) ) ) # ( !\etapaBusca|DOUT\(61) & ( \etapaBusca|DOUT\(59) & ( 
+-- (\etapaBusca|DOUT\(58) & (!\etapaBusca|DOUT\(60) & !\etapaBusca|DOUT\(62))) ) ) ) # ( \etapaBusca|DOUT\(61) & ( !\etapaBusca|DOUT\(59) & ( (!\etapaBusca|DOUT\(63) & (!\etapaBusca|DOUT\(62) & ((!\etapaBusca|DOUT\(58)) # (\etapaBusca|DOUT\(60))))) ) ) ) # ( 
+-- !\etapaBusca|DOUT\(61) & ( !\etapaBusca|DOUT\(59) & ( (!\etapaBusca|DOUT\(58) & (!\etapaBusca|DOUT\(60) & (!\etapaBusca|DOUT\(63) & !\etapaBusca|DOUT\(62)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1000000000000000101100000000000001000100000000001001000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \etapaBusca|ALT_INV_DOUT\(58),
+	datab => \etapaBusca|ALT_INV_DOUT\(60),
+	datac => \etapaBusca|ALT_INV_DOUT\(63),
+	datad => \etapaBusca|ALT_INV_DOUT\(62),
+	datae => \etapaBusca|ALT_INV_DOUT\(61),
+	dataf => \etapaBusca|ALT_INV_DOUT\(59),
+	combout => \UC|palavraControle\(6));
+
+\REG_ID|DOUT[144]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \UC|palavraControle\(6),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_ID|DOUT\(144));
+
+\REG_EX|DOUT[101]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_ID|DOUT\(144),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_EX|DOUT\(101));
 
 \REG_EX|DOUT[37]\ : dffeas
 -- pragma translate_off
@@ -6604,79 +6636,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \REG_MEM|DOUT\(95));
 
-\ROM_mips|memROM~15\ : cyclonev_lcell_comb
--- Equation(s):
--- \ROM_mips|memROM~15_combout\ = ( \PC|DOUT\(3) & ( (!\PC|DOUT\(4) & (\PC|DOUT\(6) & ((\PC|DOUT\(5))))) # (\PC|DOUT\(4) & (!\PC|DOUT\(5) & ((!\PC|DOUT\(6)) # (!\PC|DOUT\(2))))) ) ) # ( !\PC|DOUT\(3) & ( (!\PC|DOUT\(5) & ((!\PC|DOUT\(4) $ (\PC|DOUT\(2))))) # 
--- (\PC|DOUT\(5) & ((!\PC|DOUT\(6) & (!\PC|DOUT\(4))) # (\PC|DOUT\(6) & (\PC|DOUT\(4) & !\PC|DOUT\(2))))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1100001110011000001100100100010011000011100110000011001001000100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \PC|ALT_INV_DOUT\(6),
-	datab => \PC|ALT_INV_DOUT\(4),
-	datac => \PC|ALT_INV_DOUT\(2),
-	datad => \PC|ALT_INV_DOUT\(5),
-	datae => \PC|ALT_INV_DOUT\(3),
-	combout => \ROM_mips|memROM~15_combout\);
-
-\etapaBusca|DOUT[29]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \ROM_mips|memROM~15_combout\,
-	sclr => \PC|DOUT\(7),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \etapaBusca|DOUT\(29));
-
-\REG_ID|DOUT[135]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \etapaBusca|DOUT\(29),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(135));
-
-\REG_EX|DOUT[98]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \REG_ID|DOUT\(135),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_EX|DOUT\(98));
-
-\REG_MEM|DOUT[98]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \REG_EX|DOUT\(98),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_MEM|DOUT\(98));
-
-\bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a29\ : cyclonev_ram_block
+\bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a26\ : cyclonev_ram_block
 -- pragma translate_off
 GENERIC MAP (
 	mem_init0 => "00000000",
@@ -6695,7 +6655,7 @@ GENERIC MAP (
 	port_a_data_out_clock => "none",
 	port_a_data_width => 1,
 	port_a_first_address => 0,
-	port_a_first_bit_number => 29,
+	port_a_first_bit_number => 26,
 	port_a_last_address => 31,
 	port_a_logical_ram_depth => 32,
 	port_a_logical_ram_width => 32,
@@ -6707,7 +6667,7 @@ GENERIC MAP (
 	port_b_data_out_clock => "none",
 	port_b_data_width => 1,
 	port_b_first_address => 0,
-	port_b_first_bit_number => 29,
+	port_b_first_bit_number => 26,
 	port_b_last_address => 31,
 	port_b_logical_ram_depth => 32,
 	port_b_logical_ram_width => 32,
@@ -6721,14 +6681,14 @@ PORT MAP (
 	clk0 => \CLOCK_50~input_o\,
 	clk1 => \CLOCK_50~input_o\,
 	ena0 => \REG_MEM|DOUT\(0),
-	portadatain => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a29_PORTADATAIN_bus\,
-	portaaddr => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a29_PORTAADDR_bus\,
-	portbaddr => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a29_PORTBADDR_bus\,
+	portadatain => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a26_PORTADATAIN_bus\,
+	portaaddr => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a26_PORTAADDR_bus\,
+	portbaddr => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a26_PORTBADDR_bus\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	portbdataout => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a29_PORTBDATAOUT_bus\);
+	portbdataout => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a26_PORTBDATAOUT_bus\);
 
-\bancoRegistrador|registrador_rtl_1_bypass[70]\ : dffeas
+\bancoRegistrador|registrador_rtl_1_bypass[64]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -6739,9 +6699,9 @@ PORT MAP (
 	d => VCC,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \bancoRegistrador|registrador_rtl_1_bypass\(70));
+	q => \bancoRegistrador|registrador_rtl_1_bypass\(64));
 
-\bancoRegistrador|registrador_rtl_1_bypass[69]\ : dffeas
+\bancoRegistrador|registrador_rtl_1_bypass[63]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -6749,16 +6709,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_LUI|saida_MUX[29]~26_combout\,
+	d => \MUX_LUI|saida_MUX[26]~34_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \bancoRegistrador|registrador_rtl_1_bypass\(69));
+	q => \bancoRegistrador|registrador_rtl_1_bypass\(63));
 
-\bancoRegistrador|saidaB[29]~29\ : cyclonev_lcell_comb
+\bancoRegistrador|saidaB[26]~26\ : cyclonev_lcell_comb
 -- Equation(s):
--- \bancoRegistrador|saidaB[29]~29_combout\ = ( \bancoRegistrador|registrador_rtl_1_bypass\(69) & ( (!\bancoRegistrador|Equal1~0_combout\ & (((!\bancoRegistrador|registrador_rtl_1_bypass\(70)) # 
--- (\bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a29~portbdataout\)) # (\bancoRegistrador|registrador~40_combout\))) ) ) # ( !\bancoRegistrador|registrador_rtl_1_bypass\(69) & ( (!\bancoRegistrador|registrador~40_combout\ & 
--- (!\bancoRegistrador|Equal1~0_combout\ & (\bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a29~portbdataout\ & \bancoRegistrador|registrador_rtl_1_bypass\(70)))) ) )
+-- \bancoRegistrador|saidaB[26]~26_combout\ = ( \bancoRegistrador|registrador_rtl_1_bypass\(63) & ( (!\bancoRegistrador|Equal1~0_combout\ & (((!\bancoRegistrador|registrador_rtl_1_bypass\(64)) # 
+-- (\bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a26~portbdataout\)) # (\bancoRegistrador|registrador~40_combout\))) ) ) # ( !\bancoRegistrador|registrador_rtl_1_bypass\(63) & ( (!\bancoRegistrador|registrador~40_combout\ & 
+-- (!\bancoRegistrador|Equal1~0_combout\ & (\bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a26~portbdataout\ & \bancoRegistrador|registrador_rtl_1_bypass\(64)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6769,12 +6729,12 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \bancoRegistrador|ALT_INV_registrador~40_combout\,
 	datab => \bancoRegistrador|ALT_INV_Equal1~0_combout\,
-	datac => \bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a29~portbdataout\,
-	datad => \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(70),
-	datae => \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(69),
-	combout => \bancoRegistrador|saidaB[29]~29_combout\);
+	datac => \bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a26~portbdataout\,
+	datad => \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(64),
+	datae => \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(63),
+	combout => \bancoRegistrador|saidaB[26]~26_combout\);
 
-\REG_ID|DOUT[71]\ : dffeas
+\REG_ID|DOUT[68]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -6782,10 +6742,10 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \bancoRegistrador|saidaB[29]~29_combout\,
+	d => \bancoRegistrador|saidaB[26]~26_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(71));
+	q => \REG_ID|DOUT\(68));
 
 \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a24\ : cyclonev_ram_block
 -- pragma translate_off
@@ -6911,90 +6871,25 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(54));
 
-\UC_ULA|ULActrl~5\ : cyclonev_lcell_comb
+\UC|palavraControle[12]~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \UC_ULA|ULActrl~5_combout\ = ( \REG_ID|DOUT\(140) & ( (!\REG_ID|DOUT\(14) & (!\REG_ID|DOUT\(12) & (!\REG_ID|DOUT\(10) & !\REG_ID|DOUT\(139)))) ) )
+-- \UC|palavraControle[12]~0_combout\ = ( \etapaBusca|DOUT\(61) & ( \etapaBusca|DOUT\(59) & ( (!\etapaBusca|DOUT\(58) & (!\etapaBusca|DOUT\(60) & (!\etapaBusca|DOUT\(63) & !\etapaBusca|DOUT\(62)))) ) ) ) # ( \etapaBusca|DOUT\(61) & ( !\etapaBusca|DOUT\(59) & 
+-- ( (!\etapaBusca|DOUT\(58) & (\etapaBusca|DOUT\(60) & (!\etapaBusca|DOUT\(63) & !\etapaBusca|DOUT\(62)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000100000000000000000000000000000001000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_ID|ALT_INV_DOUT\(14),
-	datab => \REG_ID|ALT_INV_DOUT\(12),
-	datac => \REG_ID|ALT_INV_DOUT\(10),
-	datad => \REG_ID|ALT_INV_DOUT\(139),
-	datae => \REG_ID|ALT_INV_DOUT\(140),
-	combout => \UC_ULA|ULActrl~5_combout\);
-
-\UC|Equal10~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \UC|Equal10~0_combout\ = ( !\etapaBusca|DOUT\(62) & ( (!\etapaBusca|DOUT\(58) & (!\etapaBusca|DOUT\(60) & (!\etapaBusca|DOUT\(59) & !\etapaBusca|DOUT\(63)))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1000000000000000000000000000000010000000000000000000000000000000",
+	lut_mask => "0000000000000000001000000000000000000000000000001000000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \etapaBusca|ALT_INV_DOUT\(58),
 	datab => \etapaBusca|ALT_INV_DOUT\(60),
-	datac => \etapaBusca|ALT_INV_DOUT\(59),
-	datad => \etapaBusca|ALT_INV_DOUT\(63),
-	datae => \etapaBusca|ALT_INV_DOUT\(62),
-	combout => \UC|Equal10~0_combout\);
-
-\UC|seletorMUX_JMP~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \UC|seletorMUX_JMP~0_combout\ = ( !\etapaBusca|DOUT\(61) & ( \UC|Equal10~0_combout\ & ( (!\REG_ID|DOUT\(15) & (\REG_ID|DOUT\(13) & (!\REG_ID|DOUT\(11) & \UC_ULA|ULActrl~5_combout\))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000000000000001000000000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_ID|ALT_INV_DOUT\(15),
-	datab => \REG_ID|ALT_INV_DOUT\(13),
-	datac => \REG_ID|ALT_INV_DOUT\(11),
-	datad => \UC_ULA|ALT_INV_ULActrl~5_combout\,
+	datac => \etapaBusca|ALT_INV_DOUT\(63),
+	datad => \etapaBusca|ALT_INV_DOUT\(62),
 	datae => \etapaBusca|ALT_INV_DOUT\(61),
-	dataf => \UC|ALT_INV_Equal10~0_combout\,
-	combout => \UC|seletorMUX_JMP~0_combout\);
-
-\UC|palavraControle[10]~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \UC|palavraControle[10]~0_combout\ = (!\UC|Equal1~1_combout\ & \UC|seletorMUX_JMP~0_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0010001000100010001000100010001000100010001000100010001000100010",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \UC|ALT_INV_Equal1~1_combout\,
-	datab => \UC|ALT_INV_seletorMUX_JMP~0_combout\,
-	combout => \UC|palavraControle[10]~0_combout\);
-
-\UC|palavraControle[14]~1\ : cyclonev_lcell_comb
--- Equation(s):
--- \UC|palavraControle[14]~1_combout\ = (\etapaBusca|DOUT\(61) & \UC|Equal3~0_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000001100000011000000110000001100000011000000110000001100000011",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datab => \etapaBusca|ALT_INV_DOUT\(61),
-	datac => \UC|ALT_INV_Equal3~0_combout\,
-	combout => \UC|palavraControle[14]~1_combout\);
+	dataf => \etapaBusca|ALT_INV_DOUT\(59),
+	combout => \UC|palavraControle[12]~0_combout\);
 
 \REG_ID|DOUT[150]\ : dffeas
 -- pragma translate_off
@@ -7004,7 +6899,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \UC|palavraControle[14]~1_combout\,
+	d => \UC|palavraControle[12]~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_ID|DOUT\(150));
@@ -7025,6 +6920,35 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(11),
 	datad => \REG_ID|ALT_INV_DOUT\(10),
 	combout => \UC_ULA|ULActrl[0]~2_combout\);
+
+\UC|Equal10~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \UC|Equal10~0_combout\ = (!\etapaBusca|DOUT\(58) & (!\etapaBusca|DOUT\(61) & \UC|Equal4~0_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000100000001000000010000000100000001000000010000000100000001000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \etapaBusca|ALT_INV_DOUT\(58),
+	datab => \etapaBusca|ALT_INV_DOUT\(61),
+	datac => \UC|ALT_INV_Equal4~0_combout\,
+	combout => \UC|Equal10~0_combout\);
+
+\REG_ID|DOUT[140]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \UC|Equal10~0_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_ID|DOUT\(140));
 
 \UC_ULA|ULActrl[0]~3\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -7057,6 +6981,24 @@ PORT MAP (
 	dataa => \UC_ULA|ALT_INV_ULActrl[0]~2_combout\,
 	datab => \UC_ULA|ALT_INV_ULActrl[0]~3_combout\,
 	combout => \UC_ULA|ULActrl[0]~4_combout\);
+
+\UC_ULA|ULActrl~5\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \UC_ULA|ULActrl~5_combout\ = ( \REG_ID|DOUT\(140) & ( (!\REG_ID|DOUT\(14) & (!\REG_ID|DOUT\(12) & (!\REG_ID|DOUT\(10) & !\REG_ID|DOUT\(139)))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000100000000000000000000000000000001000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_ID|ALT_INV_DOUT\(14),
+	datab => \REG_ID|ALT_INV_DOUT\(12),
+	datac => \REG_ID|ALT_INV_DOUT\(10),
+	datad => \REG_ID|ALT_INV_DOUT\(139),
+	datae => \REG_ID|ALT_INV_DOUT\(140),
+	combout => \UC_ULA|ULActrl~5_combout\);
 
 \UC_ULA|ULActrl~6\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -8933,6 +8875,117 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \REG_ID|DOUT\(76));
 
+\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a1\ : cyclonev_ram_block
+-- pragma translate_off
+GENERIC MAP (
+	mem_init0 => "00002600",
+	clk0_core_clock_enable => "ena0",
+	data_interleave_offset_in_bits => 1,
+	data_interleave_width_in_bits => 1,
+	init_file => "db/MIPS_pipeline.ram0_bancoRegistradores_57a36dfc.hdl.mif",
+	init_file_layout => "port_b",
+	logical_ram_name => "bancoRegistradores:bancoRegistrador|altsyncram:registrador_rtl_0|altsyncram_d1p1:auto_generated|ALTSYNCRAM",
+	mixed_port_feed_through_mode => "dont_care",
+	operation_mode => "dual_port",
+	port_a_address_clear => "none",
+	port_a_address_width => 5,
+	port_a_byte_enable_clock => "none",
+	port_a_data_out_clear => "none",
+	port_a_data_out_clock => "none",
+	port_a_data_width => 1,
+	port_a_first_address => 0,
+	port_a_first_bit_number => 1,
+	port_a_last_address => 31,
+	port_a_logical_ram_depth => 32,
+	port_a_logical_ram_width => 32,
+	port_a_read_during_write_mode => "new_data_no_nbe_read",
+	port_b_address_clear => "none",
+	port_b_address_clock => "clock1",
+	port_b_address_width => 5,
+	port_b_data_out_clear => "none",
+	port_b_data_out_clock => "none",
+	port_b_data_width => 1,
+	port_b_first_address => 0,
+	port_b_first_bit_number => 1,
+	port_b_last_address => 31,
+	port_b_logical_ram_depth => 32,
+	port_b_logical_ram_width => 32,
+	port_b_read_during_write_mode => "new_data_no_nbe_read",
+	port_b_read_enable_clock => "clock1",
+	ram_block_type => "M20K")
+-- pragma translate_on
+PORT MAP (
+	portawe => \REG_MEM|DOUT\(0),
+	portbre => VCC,
+	clk0 => \CLOCK_50~input_o\,
+	clk1 => \CLOCK_50~input_o\,
+	ena0 => \REG_MEM|DOUT\(0),
+	portadatain => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a1_PORTADATAIN_bus\,
+	portaaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a1_PORTAADDR_bus\,
+	portbaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a1_PORTBADDR_bus\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	portbdataout => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a1_PORTBDATAOUT_bus\);
+
+\bancoRegistrador|registrador_rtl_0_bypass[14]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => VCC,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \bancoRegistrador|registrador_rtl_0_bypass\(14));
+
+\bancoRegistrador|registrador_rtl_0_bypass[13]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \MUX_LUI|saida_MUX[1]~1_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \bancoRegistrador|registrador_rtl_0_bypass\(13));
+
+\bancoRegistrador|saidaA[1]~1\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \bancoRegistrador|saidaA[1]~1_combout\ = ( \bancoRegistrador|registrador_rtl_0_bypass\(13) & ( (!\bancoRegistrador|Equal0~0_combout\ & (((!\bancoRegistrador|registrador_rtl_0_bypass\(14)) # 
+-- (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a1~portbdataout\)) # (\bancoRegistrador|registrador~43_combout\))) ) ) # ( !\bancoRegistrador|registrador_rtl_0_bypass\(13) & ( (!\bancoRegistrador|registrador~43_combout\ & 
+-- (!\bancoRegistrador|Equal0~0_combout\ & (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a1~portbdataout\ & \bancoRegistrador|registrador_rtl_0_bypass\(14)))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000001000110011000100110000000000000010001100110001001100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \bancoRegistrador|ALT_INV_registrador~43_combout\,
+	datab => \bancoRegistrador|ALT_INV_Equal0~0_combout\,
+	datac => \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a1~portbdataout\,
+	datad => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(14),
+	datae => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(13),
+	combout => \bancoRegistrador|saidaA[1]~1_combout\);
+
+\REG_ID|DOUT[75]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \bancoRegistrador|saidaA[1]~1_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_ID|DOUT\(75));
+
 \REG_EX|DOUT[8]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -9033,10 +9086,10 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[0]~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[0]~0_combout\ = ( \REG_MEM|DOUT\(72) & ( \REG_MEM|DOUT\(8) & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1)) # ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a3~portbdataout\ & !\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(72) & 
--- ( \REG_MEM|DOUT\(8) & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(2)))) # (\REG_MEM|DOUT\(1) & (\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a3~portbdataout\ & !\REG_MEM|DOUT\(2))))) ) ) ) # ( \REG_MEM|DOUT\(72) & ( 
--- !\REG_MEM|DOUT\(8) & ( (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & ((!\REG_MEM|DOUT\(1)) # (\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a3~portbdataout\)))) ) ) ) # ( !\REG_MEM|DOUT\(72) & ( !\REG_MEM|DOUT\(8) & ( 
--- (\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a3~portbdataout\ & (\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & !\REG_MEM|DOUT\(2)))) ) ) )
+-- \MUX_LUI|saida_MUX[0]~0_combout\ = ( \REG_MEM|DOUT\(72) & ( \REG_MEM|DOUT\(8) & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1)) # ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a3~portbdataout\ & !\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(72) & 
+-- ( \REG_MEM|DOUT\(8) & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(2)))) # (\REG_MEM|DOUT\(1) & (\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a3~portbdataout\ & !\REG_MEM|DOUT\(2))))) ) ) ) # ( \REG_MEM|DOUT\(72) & ( 
+-- !\REG_MEM|DOUT\(8) & ( (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & ((!\REG_MEM|DOUT\(1)) # (\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a3~portbdataout\)))) ) ) ) # ( !\REG_MEM|DOUT\(72) & ( !\REG_MEM|DOUT\(8) & ( 
+-- (\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a3~portbdataout\ & (\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & !\REG_MEM|DOUT\(2)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -9047,7 +9100,7 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a3~portbdataout\,
 	datab => \REG_MEM|ALT_INV_DOUT\(1),
-	datac => \UC|ALT_INV_Equal5~0_combout\,
+	datac => \UC|ALT_INV_Equal3~0_combout\,
 	datad => \REG_MEM|ALT_INV_DOUT\(2),
 	datae => \REG_MEM|ALT_INV_DOUT\(72),
 	dataf => \REG_MEM|ALT_INV_DOUT\(8),
@@ -9567,10 +9620,10 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[2]~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[2]~2_combout\ = ( \REG_MEM|DOUT\(74) & ( \REG_MEM|DOUT\(10) & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1)) # ((!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a5~portbdataout\)))) ) ) ) # ( !\REG_MEM|DOUT\(74) 
--- & ( \REG_MEM|DOUT\(10) & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(2))) # (\REG_MEM|DOUT\(1) & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a5~portbdataout\)))) ) ) ) # ( \REG_MEM|DOUT\(74) & ( 
--- !\REG_MEM|DOUT\(10) & ( (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & ((!\REG_MEM|DOUT\(1)) # (\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a5~portbdataout\)))) ) ) ) # ( !\REG_MEM|DOUT\(74) & ( !\REG_MEM|DOUT\(10) & ( (\REG_MEM|DOUT\(1) & 
--- (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a5~portbdataout\))) ) ) )
+-- \MUX_LUI|saida_MUX[2]~2_combout\ = ( \REG_MEM|DOUT\(74) & ( \REG_MEM|DOUT\(10) & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1)) # ((!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a5~portbdataout\)))) ) ) ) # ( !\REG_MEM|DOUT\(74) 
+-- & ( \REG_MEM|DOUT\(10) & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(2))) # (\REG_MEM|DOUT\(1) & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a5~portbdataout\)))) ) ) ) # ( \REG_MEM|DOUT\(74) & ( 
+-- !\REG_MEM|DOUT\(10) & ( (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & ((!\REG_MEM|DOUT\(1)) # (\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a5~portbdataout\)))) ) ) ) # ( !\REG_MEM|DOUT\(74) & ( !\REG_MEM|DOUT\(10) & ( (\REG_MEM|DOUT\(1) & 
+-- (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a5~portbdataout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -9580,7 +9633,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(1),
-	datab => \UC|ALT_INV_Equal5~0_combout\,
+	datab => \UC|ALT_INV_Equal3~0_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(2),
 	datad => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a5~portbdataout\,
 	datae => \REG_MEM|ALT_INV_DOUT\(74),
@@ -9927,10 +9980,10 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[8]~8\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[8]~8_combout\ = ( \REG_MEM|DOUT\(16) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a11~portbdataout\ & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2)))) # (\REG_MEM|DOUT\(1) & 
--- (!\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(16) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a11~portbdataout\ & ( (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(1))))) ) ) ) # ( \REG_MEM|DOUT\(16) & ( 
--- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a11~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(16) & ( 
--- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a11~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & \REG_MEM|DOUT\(84)))) ) ) )
+-- \MUX_LUI|saida_MUX[8]~8_combout\ = ( \REG_MEM|DOUT\(16) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a11~portbdataout\ & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2)))) # (\REG_MEM|DOUT\(1) & 
+-- (!\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(16) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a11~portbdataout\ & ( (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(1))))) ) ) ) # ( \REG_MEM|DOUT\(16) & ( 
+-- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a11~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(16) & ( 
+-- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a11~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & \REG_MEM|DOUT\(84)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -9940,7 +9993,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(1),
-	datab => \UC|ALT_INV_Equal5~0_combout\,
+	datab => \UC|ALT_INV_Equal3~0_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(2),
 	datad => \REG_MEM|ALT_INV_DOUT\(84),
 	datae => \REG_MEM|ALT_INV_DOUT\(16),
@@ -10219,10 +10272,10 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[5]~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[5]~5_combout\ = ( \REG_MEM|DOUT\(13) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a8~portbdataout\ & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2)))) # (\REG_MEM|DOUT\(1) & 
--- (!\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(13) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a8~portbdataout\ & ( (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(1))))) ) ) ) # ( \REG_MEM|DOUT\(13) & ( 
--- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a8~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(13) & ( 
--- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a8~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & \REG_MEM|DOUT\(84)))) ) ) )
+-- \MUX_LUI|saida_MUX[5]~5_combout\ = ( \REG_MEM|DOUT\(13) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a8~portbdataout\ & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2)))) # (\REG_MEM|DOUT\(1) & 
+-- (!\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(13) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a8~portbdataout\ & ( (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(1))))) ) ) ) # ( \REG_MEM|DOUT\(13) & ( 
+-- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a8~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(13) & ( 
+-- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a8~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & \REG_MEM|DOUT\(84)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -10232,7 +10285,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(1),
-	datab => \UC|ALT_INV_Equal5~0_combout\,
+	datab => \UC|ALT_INV_Equal3~0_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(2),
 	datad => \REG_MEM|ALT_INV_DOUT\(84),
 	datae => \REG_MEM|ALT_INV_DOUT\(13),
@@ -10531,10 +10584,10 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[3]~3\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[3]~3_combout\ = ( \REG_MEM|DOUT\(11) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a6~portbdataout\ & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2)))) # (\REG_MEM|DOUT\(1) & 
--- (!\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(11) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a6~portbdataout\ & ( (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(1))))) ) ) ) # ( \REG_MEM|DOUT\(11) & ( 
--- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a6~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(11) & ( 
--- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a6~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & \REG_MEM|DOUT\(84)))) ) ) )
+-- \MUX_LUI|saida_MUX[3]~3_combout\ = ( \REG_MEM|DOUT\(11) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a6~portbdataout\ & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2)))) # (\REG_MEM|DOUT\(1) & 
+-- (!\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(11) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a6~portbdataout\ & ( (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(1))))) ) ) ) # ( \REG_MEM|DOUT\(11) & ( 
+-- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a6~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(11) & ( 
+-- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a6~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & \REG_MEM|DOUT\(84)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -10544,7 +10597,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(1),
-	datab => \UC|ALT_INV_Equal5~0_combout\,
+	datab => \UC|ALT_INV_Equal3~0_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(2),
 	datad => \REG_MEM|ALT_INV_DOUT\(84),
 	datae => \REG_MEM|ALT_INV_DOUT\(11),
@@ -10985,10 +11038,10 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[11]~11\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[11]~11_combout\ = ( \REG_MEM|DOUT\(83) & ( \REG_MEM|DOUT\(19) & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1)) # ((!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a14~portbdataout\)))) ) ) ) # ( 
--- !\REG_MEM|DOUT\(83) & ( \REG_MEM|DOUT\(19) & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(2))) # (\REG_MEM|DOUT\(1) & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a14~portbdataout\)))) ) ) ) # ( 
--- \REG_MEM|DOUT\(83) & ( !\REG_MEM|DOUT\(19) & ( (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & ((!\REG_MEM|DOUT\(1)) # (\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a14~portbdataout\)))) ) ) ) # ( !\REG_MEM|DOUT\(83) & ( !\REG_MEM|DOUT\(19) & ( 
--- (\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a14~portbdataout\))) ) ) )
+-- \MUX_LUI|saida_MUX[11]~11_combout\ = ( \REG_MEM|DOUT\(83) & ( \REG_MEM|DOUT\(19) & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1)) # ((!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a14~portbdataout\)))) ) ) ) # ( 
+-- !\REG_MEM|DOUT\(83) & ( \REG_MEM|DOUT\(19) & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(2))) # (\REG_MEM|DOUT\(1) & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a14~portbdataout\)))) ) ) ) # ( 
+-- \REG_MEM|DOUT\(83) & ( !\REG_MEM|DOUT\(19) & ( (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & ((!\REG_MEM|DOUT\(1)) # (\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a14~portbdataout\)))) ) ) ) # ( !\REG_MEM|DOUT\(83) & ( !\REG_MEM|DOUT\(19) & ( 
+-- (\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a14~portbdataout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -10998,7 +11051,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(1),
-	datab => \UC|ALT_INV_Equal5~0_combout\,
+	datab => \UC|ALT_INV_Equal3~0_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(2),
 	datad => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a14~portbdataout\,
 	datae => \REG_MEM|ALT_INV_DOUT\(83),
@@ -11339,10 +11392,10 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[12]~12\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[12]~12_combout\ = ( \REG_MEM|DOUT\(20) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a15~portbdataout\ & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2)))) # (\REG_MEM|DOUT\(1) & 
--- (!\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(20) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a15~portbdataout\ & ( (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(1))))) ) ) ) # ( \REG_MEM|DOUT\(20) & ( 
--- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a15~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(20) & ( 
--- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a15~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & \REG_MEM|DOUT\(84)))) ) ) )
+-- \MUX_LUI|saida_MUX[12]~12_combout\ = ( \REG_MEM|DOUT\(20) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a15~portbdataout\ & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2)))) # (\REG_MEM|DOUT\(1) & 
+-- (!\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(20) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a15~portbdataout\ & ( (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(1))))) ) ) ) # ( \REG_MEM|DOUT\(20) & ( 
+-- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a15~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(20) & ( 
+-- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a15~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & \REG_MEM|DOUT\(84)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -11352,7 +11405,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(1),
-	datab => \UC|ALT_INV_Equal5~0_combout\,
+	datab => \UC|ALT_INV_Equal3~0_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(2),
 	datad => \REG_MEM|ALT_INV_DOUT\(84),
 	datae => \REG_MEM|ALT_INV_DOUT\(20),
@@ -11631,10 +11684,10 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[9]~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[9]~9_combout\ = ( \REG_MEM|DOUT\(17) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a12~portbdataout\ & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2)))) # (\REG_MEM|DOUT\(1) & 
--- (!\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(17) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a12~portbdataout\ & ( (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(1))))) ) ) ) # ( \REG_MEM|DOUT\(17) & ( 
--- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a12~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(17) & ( 
--- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a12~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & \REG_MEM|DOUT\(84)))) ) ) )
+-- \MUX_LUI|saida_MUX[9]~9_combout\ = ( \REG_MEM|DOUT\(17) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a12~portbdataout\ & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2)))) # (\REG_MEM|DOUT\(1) & 
+-- (!\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(17) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a12~portbdataout\ & ( (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(1))))) ) ) ) # ( \REG_MEM|DOUT\(17) & ( 
+-- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a12~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(17) & ( 
+-- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a12~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & \REG_MEM|DOUT\(84)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -11644,7 +11697,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(1),
-	datab => \UC|ALT_INV_Equal5~0_combout\,
+	datab => \UC|ALT_INV_Equal3~0_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(2),
 	datad => \REG_MEM|ALT_INV_DOUT\(84),
 	datae => \REG_MEM|ALT_INV_DOUT\(17),
@@ -11923,10 +11976,10 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[6]~6\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[6]~6_combout\ = ( \REG_MEM|DOUT\(14) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a9~portbdataout\ & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2)))) # (\REG_MEM|DOUT\(1) & 
--- (!\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(14) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a9~portbdataout\ & ( (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(1))))) ) ) ) # ( \REG_MEM|DOUT\(14) & ( 
--- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a9~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(14) & ( 
--- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a9~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & \REG_MEM|DOUT\(84)))) ) ) )
+-- \MUX_LUI|saida_MUX[6]~6_combout\ = ( \REG_MEM|DOUT\(14) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a9~portbdataout\ & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2)))) # (\REG_MEM|DOUT\(1) & 
+-- (!\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(14) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a9~portbdataout\ & ( (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(1))))) ) ) ) # ( \REG_MEM|DOUT\(14) & ( 
+-- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a9~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(14) & ( 
+-- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a9~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & \REG_MEM|DOUT\(84)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -11936,7 +11989,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(1),
-	datab => \UC|ALT_INV_Equal5~0_combout\,
+	datab => \UC|ALT_INV_Equal3~0_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(2),
 	datad => \REG_MEM|ALT_INV_DOUT\(84),
 	datae => \REG_MEM|ALT_INV_DOUT\(14),
@@ -12575,6 +12628,322 @@ PORT MAP (
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_ID|DOUT\(72));
+
+\REG_EX|DOUT[103]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_ID|DOUT\(142),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_EX|DOUT\(103));
+
+\REG_MEM|DOUT[101]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_EX|DOUT\(103),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_MEM|DOUT\(101));
+
+\REG_EX|DOUT[5]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_ID|DOUT\(42),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_EX|DOUT\(5));
+
+\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a0\ : cyclonev_ram_block
+-- pragma translate_off
+GENERIC MAP (
+	data_interleave_offset_in_bits => 1,
+	data_interleave_width_in_bits => 1,
+	logical_ram_name => "RAMMIPS:RAM_mips|altsyncram:memRAM_rtl_0|altsyncram_3jp1:auto_generated|ALTSYNCRAM",
+	mixed_port_feed_through_mode => "old",
+	operation_mode => "dual_port",
+	port_a_address_clear => "none",
+	port_a_address_width => 6,
+	port_a_byte_enable_clock => "none",
+	port_a_data_out_clear => "none",
+	port_a_data_out_clock => "none",
+	port_a_data_width => 1,
+	port_a_first_address => 0,
+	port_a_first_bit_number => 0,
+	port_a_last_address => 63,
+	port_a_logical_ram_depth => 64,
+	port_a_logical_ram_width => 32,
+	port_a_read_during_write_mode => "new_data_no_nbe_read",
+	port_b_address_clear => "none",
+	port_b_address_clock => "clock0",
+	port_b_address_width => 6,
+	port_b_data_out_clear => "none",
+	port_b_data_out_clock => "none",
+	port_b_data_width => 1,
+	port_b_first_address => 0,
+	port_b_first_bit_number => 0,
+	port_b_last_address => 63,
+	port_b_logical_ram_depth => 64,
+	port_b_logical_ram_width => 32,
+	port_b_read_during_write_mode => "new_data_no_nbe_read",
+	port_b_read_enable_clock => "clock0",
+	ram_block_type => "M20K")
+-- pragma translate_on
+PORT MAP (
+	portawe => \REG_EX|DOUT\(101),
+	portbre => VCC,
+	clk0 => \CLOCK_50~input_o\,
+	portadatain => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a0_PORTADATAIN_bus\,
+	portaaddr => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a0_PORTAADDR_bus\,
+	portbaddr => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a0_PORTBADDR_bus\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	portbdataout => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus\);
+
+\REG_ID|DOUT[106]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_ID|DOUT\(10),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_ID|DOUT\(106));
+
+\REG_EX|DOUT[69]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_ID|DOUT\(106),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_EX|DOUT\(69));
+
+\REG_MEM|DOUT[69]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_EX|DOUT\(69),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_MEM|DOUT\(69));
+
+\MUX_LUI|saida_MUX[29]~26\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MUX_LUI|saida_MUX[29]~26_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal3~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(101))) # (\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(69))))))) # (\UC|Equal3~0_combout\ & (((\ROM_mips|memROM~5_combout\)))) ) ) # ( 
+-- \REG_MEM|DOUT\(2) & ( ((!\UC|Equal3~0_combout\ & (((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a0~portbdataout\ & !\REG_MEM|DOUT\(1))))) # (\UC|Equal3~0_combout\ & (\ROM_mips|memROM~5_combout\))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "on",
+	lut_mask => "0101010100110011000011110011001100001111001100110000000000110011",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_MEM|ALT_INV_DOUT\(101),
+	datab => \ROM_mips|ALT_INV_memROM~5_combout\,
+	datac => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a0~portbdataout\,
+	datad => \UC|ALT_INV_Equal3~0_combout\,
+	datae => \REG_MEM|ALT_INV_DOUT\(2),
+	dataf => \REG_MEM|ALT_INV_DOUT\(1),
+	datag => \REG_MEM|ALT_INV_DOUT\(69),
+	combout => \MUX_LUI|saida_MUX[29]~26_combout\);
+
+\bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a29\ : cyclonev_ram_block
+-- pragma translate_off
+GENERIC MAP (
+	mem_init0 => "00000000",
+	clk0_core_clock_enable => "ena0",
+	data_interleave_offset_in_bits => 1,
+	data_interleave_width_in_bits => 1,
+	init_file => "db/MIPS_pipeline.ram0_bancoRegistradores_57a36dfc.hdl.mif",
+	init_file_layout => "port_b",
+	logical_ram_name => "bancoRegistradores:bancoRegistrador|altsyncram:registrador_rtl_1|altsyncram_d1p1:auto_generated|ALTSYNCRAM",
+	mixed_port_feed_through_mode => "dont_care",
+	operation_mode => "dual_port",
+	port_a_address_clear => "none",
+	port_a_address_width => 5,
+	port_a_byte_enable_clock => "none",
+	port_a_data_out_clear => "none",
+	port_a_data_out_clock => "none",
+	port_a_data_width => 1,
+	port_a_first_address => 0,
+	port_a_first_bit_number => 29,
+	port_a_last_address => 31,
+	port_a_logical_ram_depth => 32,
+	port_a_logical_ram_width => 32,
+	port_a_read_during_write_mode => "new_data_no_nbe_read",
+	port_b_address_clear => "none",
+	port_b_address_clock => "clock1",
+	port_b_address_width => 5,
+	port_b_data_out_clear => "none",
+	port_b_data_out_clock => "none",
+	port_b_data_width => 1,
+	port_b_first_address => 0,
+	port_b_first_bit_number => 29,
+	port_b_last_address => 31,
+	port_b_logical_ram_depth => 32,
+	port_b_logical_ram_width => 32,
+	port_b_read_during_write_mode => "new_data_no_nbe_read",
+	port_b_read_enable_clock => "clock1",
+	ram_block_type => "M20K")
+-- pragma translate_on
+PORT MAP (
+	portawe => \REG_MEM|DOUT\(0),
+	portbre => VCC,
+	clk0 => \CLOCK_50~input_o\,
+	clk1 => \CLOCK_50~input_o\,
+	ena0 => \REG_MEM|DOUT\(0),
+	portadatain => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a29_PORTADATAIN_bus\,
+	portaaddr => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a29_PORTAADDR_bus\,
+	portbaddr => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a29_PORTBADDR_bus\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	portbdataout => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a29_PORTBDATAOUT_bus\);
+
+\bancoRegistrador|registrador_rtl_1_bypass[70]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => VCC,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \bancoRegistrador|registrador_rtl_1_bypass\(70));
+
+\bancoRegistrador|registrador_rtl_1_bypass[69]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \MUX_LUI|saida_MUX[29]~26_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \bancoRegistrador|registrador_rtl_1_bypass\(69));
+
+\bancoRegistrador|saidaB[29]~29\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \bancoRegistrador|saidaB[29]~29_combout\ = ( \bancoRegistrador|registrador_rtl_1_bypass\(69) & ( (!\bancoRegistrador|Equal1~0_combout\ & (((!\bancoRegistrador|registrador_rtl_1_bypass\(70)) # 
+-- (\bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a29~portbdataout\)) # (\bancoRegistrador|registrador~40_combout\))) ) ) # ( !\bancoRegistrador|registrador_rtl_1_bypass\(69) & ( (!\bancoRegistrador|registrador~40_combout\ & 
+-- (!\bancoRegistrador|Equal1~0_combout\ & (\bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a29~portbdataout\ & \bancoRegistrador|registrador_rtl_1_bypass\(70)))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000001000110011000100110000000000000010001100110001001100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \bancoRegistrador|ALT_INV_registrador~40_combout\,
+	datab => \bancoRegistrador|ALT_INV_Equal1~0_combout\,
+	datac => \bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a29~portbdataout\,
+	datad => \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(70),
+	datae => \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(69),
+	combout => \bancoRegistrador|saidaB[29]~29_combout\);
+
+\REG_ID|DOUT[71]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \bancoRegistrador|saidaB[29]~29_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_ID|DOUT\(71));
+
+\ULA|Add2~109\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add2~109_sumout\ = SUM(( (!\REG_ID|DOUT\(138) & ((!\REG_ID|DOUT\(68)))) # (\REG_ID|DOUT\(138) & (!\REG_ID|DOUT\(26))) ) + ( \REG_ID|DOUT\(100) ) + ( \ULA|Add2~106\ ))
+-- \ULA|Add2~110\ = CARRY(( (!\REG_ID|DOUT\(138) & ((!\REG_ID|DOUT\(68)))) # (\REG_ID|DOUT\(138) & (!\REG_ID|DOUT\(26))) ) + ( \REG_ID|DOUT\(100) ) + ( \ULA|Add2~106\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111110000000000000000000000001110111001000100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_ID|ALT_INV_DOUT\(138),
+	datab => \REG_ID|ALT_INV_DOUT\(26),
+	datad => \REG_ID|ALT_INV_DOUT\(68),
+	dataf => \REG_ID|ALT_INV_DOUT\(100),
+	cin => \ULA|Add2~106\,
+	sumout => \ULA|Add2~109_sumout\,
+	cout => \ULA|Add2~110\);
+
+\ULA|Add2~113\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add2~113_sumout\ = SUM(( (!\REG_ID|DOUT\(138) & ((!\REG_ID|DOUT\(69)))) # (\REG_ID|DOUT\(138) & (!\REG_ID|DOUT\(26))) ) + ( \REG_ID|DOUT\(101) ) + ( \ULA|Add2~110\ ))
+-- \ULA|Add2~114\ = CARRY(( (!\REG_ID|DOUT\(138) & ((!\REG_ID|DOUT\(69)))) # (\REG_ID|DOUT\(138) & (!\REG_ID|DOUT\(26))) ) + ( \REG_ID|DOUT\(101) ) + ( \ULA|Add2~110\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111110000000000000000000000001110111001000100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_ID|ALT_INV_DOUT\(138),
+	datab => \REG_ID|ALT_INV_DOUT\(26),
+	datad => \REG_ID|ALT_INV_DOUT\(69),
+	dataf => \REG_ID|ALT_INV_DOUT\(101),
+	cin => \ULA|Add2~110\,
+	sumout => \ULA|Add2~113_sumout\,
+	cout => \ULA|Add2~114\);
+
+\ULA|Add2~117\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add2~117_sumout\ = SUM(( (!\REG_ID|DOUT\(138) & ((!\REG_ID|DOUT\(70)))) # (\REG_ID|DOUT\(138) & (!\REG_ID|DOUT\(26))) ) + ( \REG_ID|DOUT\(102) ) + ( \ULA|Add2~114\ ))
+-- \ULA|Add2~118\ = CARRY(( (!\REG_ID|DOUT\(138) & ((!\REG_ID|DOUT\(70)))) # (\REG_ID|DOUT\(138) & (!\REG_ID|DOUT\(26))) ) + ( \REG_ID|DOUT\(102) ) + ( \ULA|Add2~114\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111110000000000000000000000001110111001000100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_ID|ALT_INV_DOUT\(138),
+	datab => \REG_ID|ALT_INV_DOUT\(26),
+	datad => \REG_ID|ALT_INV_DOUT\(70),
+	dataf => \REG_ID|ALT_INV_DOUT\(102),
+	cin => \ULA|Add2~114\,
+	sumout => \ULA|Add2~117_sumout\,
+	cout => \ULA|Add2~118\);
 
 \ULA|Add2~121\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -13809,24 +14178,26 @@ PORT MAP (
 	dataf => \ULA|ALT_INV_Equal5~12_combout\,
 	combout => \ULA|Equal5~7_combout\);
 
-\UC|palavraControle[13]~2\ : cyclonev_lcell_comb
+\UC|palavraControle[11]~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \UC|palavraControle[13]~2_combout\ = ( \UC|Equal1~0_combout\ & ( (!\etapaBusca|DOUT\(58) & (\etapaBusca|DOUT\(61) & ((!\etapaBusca|DOUT\(63)) # (\UC|Equal3~0_combout\)))) ) ) # ( !\UC|Equal1~0_combout\ & ( (!\etapaBusca|DOUT\(58) & (\etapaBusca|DOUT\(61) 
--- & \UC|Equal3~0_combout\)) ) )
+-- \UC|palavraControle[11]~1_combout\ = ( \etapaBusca|DOUT\(61) & ( \etapaBusca|DOUT\(59) & ( (!\etapaBusca|DOUT\(58) & (!\etapaBusca|DOUT\(60) & (!\etapaBusca|DOUT\(63) & !\etapaBusca|DOUT\(62)))) ) ) ) # ( \etapaBusca|DOUT\(61) & ( !\etapaBusca|DOUT\(59) & 
+-- ( (\etapaBusca|DOUT\(58) & (\etapaBusca|DOUT\(60) & (!\etapaBusca|DOUT\(63) & !\etapaBusca|DOUT\(62)))) ) ) ) # ( !\etapaBusca|DOUT\(61) & ( !\etapaBusca|DOUT\(59) & ( (!\etapaBusca|DOUT\(58) & (!\etapaBusca|DOUT\(60) & (!\etapaBusca|DOUT\(63) & 
+-- !\etapaBusca|DOUT\(62)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000100010001000000010001000000000001000100010000000100010",
+	lut_mask => "1000000000000000000100000000000000000000000000001000000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \etapaBusca|ALT_INV_DOUT\(58),
-	datab => \etapaBusca|ALT_INV_DOUT\(61),
+	datab => \etapaBusca|ALT_INV_DOUT\(60),
 	datac => \etapaBusca|ALT_INV_DOUT\(63),
-	datad => \UC|ALT_INV_Equal3~0_combout\,
-	datae => \UC|ALT_INV_Equal1~0_combout\,
-	combout => \UC|palavraControle[13]~2_combout\);
+	datad => \etapaBusca|ALT_INV_DOUT\(62),
+	datae => \etapaBusca|ALT_INV_DOUT\(61),
+	dataf => \etapaBusca|ALT_INV_DOUT\(59),
+	combout => \UC|palavraControle[11]~1_combout\);
 
 \REG_ID|DOUT[149]\ : dffeas
 -- pragma translate_off
@@ -13836,56 +14207,123 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \UC|palavraControle[13]~2_combout\,
+	d => \UC|palavraControle[11]~1_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_ID|DOUT\(149));
 
+\UC|Equal0~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \UC|Equal0~0_combout\ = (!\etapaBusca|DOUT\(58) & (!\etapaBusca|DOUT\(60) & (!\etapaBusca|DOUT\(63) & !\etapaBusca|DOUT\(62))))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1000000000000000100000000000000010000000000000001000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \etapaBusca|ALT_INV_DOUT\(58),
+	datab => \etapaBusca|ALT_INV_DOUT\(60),
+	datac => \etapaBusca|ALT_INV_DOUT\(63),
+	datad => \etapaBusca|ALT_INV_DOUT\(62),
+	combout => \UC|Equal0~0_combout\);
+
+\UC|seletorMUX_JMP~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \UC|seletorMUX_JMP~0_combout\ = (!\REG_ID|DOUT\(15) & (\REG_ID|DOUT\(13) & (!\REG_ID|DOUT\(11) & \UC_ULA|ULActrl~5_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000100000000000000010000000000000001000000000000000100000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_ID|ALT_INV_DOUT\(15),
+	datab => \REG_ID|ALT_INV_DOUT\(13),
+	datac => \REG_ID|ALT_INV_DOUT\(11),
+	datad => \UC_ULA|ALT_INV_ULActrl~5_combout\,
+	combout => \UC|seletorMUX_JMP~0_combout\);
+
+\UC|seletorMUX_JMP~1\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \UC|seletorMUX_JMP~1_combout\ = (!\etapaBusca|DOUT\(61) & (!\etapaBusca|DOUT\(59) & (\UC|Equal0~0_combout\ & \UC|seletorMUX_JMP~0_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000001000000000000000100000000000000010000000000000001000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \etapaBusca|ALT_INV_DOUT\(61),
+	datab => \etapaBusca|ALT_INV_DOUT\(59),
+	datac => \UC|ALT_INV_Equal0~0_combout\,
+	datad => \UC|ALT_INV_seletorMUX_JMP~0_combout\,
+	combout => \UC|seletorMUX_JMP~1_combout\);
+
+\MUX_jump|saida_MUX[0]~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MUX_jump|saida_MUX[0]~0_combout\ = (!\UC|Equal2~1_combout\ & (((!\etapaBusca|DOUT\(59)) # (!\UC|Equal0~0_combout\)) # (\etapaBusca|DOUT\(61))))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1111110100000000111111010000000011111101000000001111110100000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \etapaBusca|ALT_INV_DOUT\(61),
+	datab => \etapaBusca|ALT_INV_DOUT\(59),
+	datac => \UC|ALT_INV_Equal0~0_combout\,
+	datad => \UC|ALT_INV_Equal2~1_combout\,
+	combout => \MUX_jump|saida_MUX[0]~0_combout\);
+
 \PC|DOUT[13]~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \PC|DOUT[13]~0_combout\ = ( \ULA|Equal5~7_combout\ & ( \REG_ID|DOUT\(149) & ( (!\UC|Equal3~0_combout\ & (((!\ULA|Equal5~3_combout\) # (\REG_ID|DOUT\(150))) # (\UC|palavraControle[10]~0_combout\))) ) ) ) # ( !\ULA|Equal5~7_combout\ & ( \REG_ID|DOUT\(149) & 
--- ( !\UC|Equal3~0_combout\ ) ) ) # ( \ULA|Equal5~7_combout\ & ( !\REG_ID|DOUT\(149) & ( (!\UC|Equal3~0_combout\ & (((\REG_ID|DOUT\(150) & \ULA|Equal5~3_combout\)) # (\UC|palavraControle[10]~0_combout\))) ) ) ) # ( !\ULA|Equal5~7_combout\ & ( 
--- !\REG_ID|DOUT\(149) & ( (!\UC|Equal3~0_combout\ & \UC|palavraControle[10]~0_combout\) ) ) )
+-- \PC|DOUT[13]~0_combout\ = ( \UC|seletorMUX_JMP~1_combout\ & ( \MUX_jump|saida_MUX[0]~0_combout\ ) ) # ( !\UC|seletorMUX_JMP~1_combout\ & ( \MUX_jump|saida_MUX[0]~0_combout\ & ( (!\ULA|Equal5~3_combout\ & (((!\REG_ID|DOUT\(149))))) # 
+-- (\ULA|Equal5~3_combout\ & ((!\ULA|Equal5~7_combout\ & ((!\REG_ID|DOUT\(149)))) # (\ULA|Equal5~7_combout\ & (!\REG_ID|DOUT\(150))))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0010001000100010001000100010101010101010101010101010101000101010",
+	lut_mask => "0000000000000000000000000000000011111110000000101111111111111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \UC|ALT_INV_Equal3~0_combout\,
-	datab => \UC|ALT_INV_palavraControle[10]~0_combout\,
-	datac => \REG_ID|ALT_INV_DOUT\(150),
-	datad => \ULA|ALT_INV_Equal5~3_combout\,
-	datae => \ULA|ALT_INV_Equal5~7_combout\,
-	dataf => \REG_ID|ALT_INV_DOUT\(149),
+	dataa => \REG_ID|ALT_INV_DOUT\(150),
+	datab => \ULA|ALT_INV_Equal5~3_combout\,
+	datac => \ULA|ALT_INV_Equal5~7_combout\,
+	datad => \REG_ID|ALT_INV_DOUT\(149),
+	datae => \UC|ALT_INV_seletorMUX_JMP~1_combout\,
+	dataf => \MUX_jump|ALT_INV_saida_MUX[0]~0_combout\,
 	combout => \PC|DOUT[13]~0_combout\);
 
-\PC|DOUT[31]~1\ : cyclonev_lcell_comb
+\MUX_jump|Equal2~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \PC|DOUT[31]~1_combout\ = (!\UC|Equal3~0_combout\ & !\UC|palavraControle[10]~0_combout\)
+-- \MUX_jump|Equal2~0_combout\ = (!\UC|seletorMUX_JMP~1_combout\ & \MUX_jump|saida_MUX[0]~0_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "1000100010001000100010001000100010001000100010001000100010001000",
+	lut_mask => "0010001000100010001000100010001000100010001000100010001000100010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \UC|ALT_INV_Equal3~0_combout\,
-	datab => \UC|ALT_INV_palavraControle[10]~0_combout\,
-	combout => \PC|DOUT[31]~1_combout\);
+	dataa => \UC|ALT_INV_seletorMUX_JMP~1_combout\,
+	datab => \MUX_jump|ALT_INV_saida_MUX[0]~0_combout\,
+	combout => \MUX_jump|Equal2~0_combout\);
 
-\MUX_jump|saida_MUX[24]~24\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[24]~25\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[24]~24_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~89_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~113_sumout\ ) ) ) # ( 
--- \PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(54) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(98) ) ) )
+-- \MUX_jump|saida_MUX[24]~25_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~113_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~89_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(98) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(54) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -13894,8 +14332,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(98),
 	datad => \etapaBusca|ALT_INV_DOUT\(54),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[24]~24_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[24]~25_combout\);
 
 \PC|DOUT[24]\ : dffeas
 -- pragma translate_off
@@ -13905,7 +14343,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[24]~24_combout\,
+	d => \MUX_jump|saida_MUX[24]~25_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(24));
@@ -13940,15 +14378,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(38));
 
-\MUX_jump|saida_MUX[8]~8\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[8]~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[8]~8_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~25_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~49_sumout\ ) ) ) # ( \PC|DOUT[13]~0_combout\ 
--- & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(38) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(82) ) ) )
+-- \MUX_jump|saida_MUX[8]~9_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~49_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~25_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(82) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(38) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -13957,8 +14395,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(82),
 	datad => \etapaBusca|ALT_INV_DOUT\(38),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[8]~8_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[8]~9_combout\);
 
 \PC|DOUT[8]\ : dffeas
 -- pragma translate_off
@@ -13968,7 +14406,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[8]~8_combout\,
+	d => \MUX_jump|saida_MUX[8]~9_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(8));
@@ -14003,15 +14441,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(39));
 
-\MUX_jump|saida_MUX[9]~9\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[9]~10\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[9]~9_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~29_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~53_sumout\ ) ) ) # ( \PC|DOUT[13]~0_combout\ 
--- & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(39) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(83) ) ) )
+-- \MUX_jump|saida_MUX[9]~10_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~53_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~29_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(83) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(39) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -14020,8 +14458,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(83),
 	datad => \etapaBusca|ALT_INV_DOUT\(39),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[9]~9_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[9]~10_combout\);
 
 \PC|DOUT[9]\ : dffeas
 -- pragma translate_off
@@ -14031,7 +14469,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[9]~9_combout\,
+	d => \MUX_jump|saida_MUX[9]~10_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(9));
@@ -14066,15 +14504,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(40));
 
-\MUX_jump|saida_MUX[10]~10\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[10]~11\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[10]~10_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~33_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~57_sumout\ ) ) ) # ( 
--- \PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(40) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(84) ) ) )
+-- \MUX_jump|saida_MUX[10]~11_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~57_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~33_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(84) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(40) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -14083,8 +14521,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(84),
 	datad => \etapaBusca|ALT_INV_DOUT\(40),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[10]~10_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[10]~11_combout\);
 
 \PC|DOUT[10]\ : dffeas
 -- pragma translate_off
@@ -14094,7 +14532,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[10]~10_combout\,
+	d => \MUX_jump|saida_MUX[10]~11_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(10));
@@ -14129,15 +14567,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(41));
 
-\MUX_jump|saida_MUX[11]~11\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[11]~12\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[11]~11_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~37_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~61_sumout\ ) ) ) # ( 
--- \PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(41) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(85) ) ) )
+-- \MUX_jump|saida_MUX[11]~12_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~61_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~37_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(85) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(41) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -14146,8 +14584,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(85),
 	datad => \etapaBusca|ALT_INV_DOUT\(41),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[11]~11_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[11]~12_combout\);
 
 \PC|DOUT[11]\ : dffeas
 -- pragma translate_off
@@ -14157,7 +14595,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[11]~11_combout\,
+	d => \MUX_jump|saida_MUX[11]~12_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(11));
@@ -14192,15 +14630,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(42));
 
-\MUX_jump|saida_MUX[12]~12\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[12]~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[12]~12_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~41_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~65_sumout\ ) ) ) # ( 
--- \PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(42) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(86) ) ) )
+-- \MUX_jump|saida_MUX[12]~13_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~65_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~41_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(86) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(42) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -14209,8 +14647,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(86),
 	datad => \etapaBusca|ALT_INV_DOUT\(42),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[12]~12_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[12]~13_combout\);
 
 \PC|DOUT[12]\ : dffeas
 -- pragma translate_off
@@ -14220,7 +14658,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[12]~12_combout\,
+	d => \MUX_jump|saida_MUX[12]~13_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(12));
@@ -14255,15 +14693,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(43));
 
-\MUX_jump|saida_MUX[13]~13\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[13]~14\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[13]~13_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~45_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~69_sumout\ ) ) ) # ( 
--- \PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(43) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(87) ) ) )
+-- \MUX_jump|saida_MUX[13]~14_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~69_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~45_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(87) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(43) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -14272,8 +14710,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(87),
 	datad => \etapaBusca|ALT_INV_DOUT\(43),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[13]~13_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[13]~14_combout\);
 
 \PC|DOUT[13]\ : dffeas
 -- pragma translate_off
@@ -14283,7 +14721,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[13]~13_combout\,
+	d => \MUX_jump|saida_MUX[13]~14_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(13));
@@ -14475,7 +14913,7 @@ PORT MAP (
 	sumout => \somadorPC|Add0~113_sumout\,
 	cout => \somadorPC|Add0~114\);
 
-\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a26\ : cyclonev_ram_block
+\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a25\ : cyclonev_ram_block
 -- pragma translate_off
 GENERIC MAP (
 	mem_init0 => "00000000",
@@ -14494,7 +14932,7 @@ GENERIC MAP (
 	port_a_data_out_clock => "none",
 	port_a_data_width => 1,
 	port_a_first_address => 0,
-	port_a_first_bit_number => 26,
+	port_a_first_bit_number => 25,
 	port_a_last_address => 31,
 	port_a_logical_ram_depth => 32,
 	port_a_logical_ram_width => 32,
@@ -14506,7 +14944,7 @@ GENERIC MAP (
 	port_b_data_out_clock => "none",
 	port_b_data_width => 1,
 	port_b_first_address => 0,
-	port_b_first_bit_number => 26,
+	port_b_first_bit_number => 25,
 	port_b_last_address => 31,
 	port_b_logical_ram_depth => 32,
 	port_b_logical_ram_width => 32,
@@ -14520,14 +14958,14 @@ PORT MAP (
 	clk0 => \CLOCK_50~input_o\,
 	clk1 => \CLOCK_50~input_o\,
 	ena0 => \REG_MEM|DOUT\(0),
-	portadatain => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a26_PORTADATAIN_bus\,
-	portaaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a26_PORTAADDR_bus\,
-	portbaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a26_PORTBADDR_bus\,
+	portadatain => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a25_PORTADATAIN_bus\,
+	portaaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a25_PORTAADDR_bus\,
+	portbaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a25_PORTBADDR_bus\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	portbdataout => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a26_PORTBDATAOUT_bus\);
+	portbdataout => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a25_PORTBDATAOUT_bus\);
 
-\bancoRegistrador|registrador_rtl_0_bypass[64]\ : dffeas
+\bancoRegistrador|registrador_rtl_0_bypass[62]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -14538,9 +14976,9 @@ PORT MAP (
 	d => VCC,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \bancoRegistrador|registrador_rtl_0_bypass\(64));
+	q => \bancoRegistrador|registrador_rtl_0_bypass\(62));
 
-\bancoRegistrador|registrador_rtl_0_bypass[63]\ : dffeas
+\bancoRegistrador|registrador_rtl_0_bypass[61]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -14548,16 +14986,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_LUI|saida_MUX[26]~34_combout\,
+	d => \MUX_LUI|saida_MUX[25]~38_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \bancoRegistrador|registrador_rtl_0_bypass\(63));
+	q => \bancoRegistrador|registrador_rtl_0_bypass\(61));
 
-\bancoRegistrador|saidaA[26]~26\ : cyclonev_lcell_comb
+\bancoRegistrador|saidaA[25]~25\ : cyclonev_lcell_comb
 -- Equation(s):
--- \bancoRegistrador|saidaA[26]~26_combout\ = ( \bancoRegistrador|registrador_rtl_0_bypass\(63) & ( (!\bancoRegistrador|Equal0~0_combout\ & (((!\bancoRegistrador|registrador_rtl_0_bypass\(64)) # 
--- (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a26~portbdataout\)) # (\bancoRegistrador|registrador~43_combout\))) ) ) # ( !\bancoRegistrador|registrador_rtl_0_bypass\(63) & ( (!\bancoRegistrador|registrador~43_combout\ & 
--- (!\bancoRegistrador|Equal0~0_combout\ & (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a26~portbdataout\ & \bancoRegistrador|registrador_rtl_0_bypass\(64)))) ) )
+-- \bancoRegistrador|saidaA[25]~25_combout\ = ( \bancoRegistrador|registrador_rtl_0_bypass\(61) & ( (!\bancoRegistrador|Equal0~0_combout\ & (((!\bancoRegistrador|registrador_rtl_0_bypass\(62)) # 
+-- (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a25~portbdataout\)) # (\bancoRegistrador|registrador~43_combout\))) ) ) # ( !\bancoRegistrador|registrador_rtl_0_bypass\(61) & ( (!\bancoRegistrador|registrador~43_combout\ & 
+-- (!\bancoRegistrador|Equal0~0_combout\ & (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a25~portbdataout\ & \bancoRegistrador|registrador_rtl_0_bypass\(62)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -14568,12 +15006,12 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \bancoRegistrador|ALT_INV_registrador~43_combout\,
 	datab => \bancoRegistrador|ALT_INV_Equal0~0_combout\,
-	datac => \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a26~portbdataout\,
-	datad => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(64),
-	datae => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(63),
-	combout => \bancoRegistrador|saidaA[26]~26_combout\);
+	datac => \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a25~portbdataout\,
+	datad => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(62),
+	datae => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(61),
+	combout => \bancoRegistrador|saidaA[25]~25_combout\);
 
-\REG_ID|DOUT[100]\ : dffeas
+\REG_ID|DOUT[99]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -14581,10 +15019,10 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \bancoRegistrador|saidaA[26]~26_combout\,
+	d => \bancoRegistrador|saidaA[25]~25_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(100));
+	q => \REG_ID|DOUT\(99));
 
 \ULA|Add2~89\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -14685,339 +15123,6 @@ PORT MAP (
 	cin => \ULA|Add2~102\,
 	sumout => \ULA|Add2~105_sumout\,
 	cout => \ULA|Add2~106\);
-
-\ULA|Add2~109\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|Add2~109_sumout\ = SUM(( (!\REG_ID|DOUT\(138) & ((!\REG_ID|DOUT\(68)))) # (\REG_ID|DOUT\(138) & (!\REG_ID|DOUT\(26))) ) + ( \REG_ID|DOUT\(100) ) + ( \ULA|Add2~106\ ))
--- \ULA|Add2~110\ = CARRY(( (!\REG_ID|DOUT\(138) & ((!\REG_ID|DOUT\(68)))) # (\REG_ID|DOUT\(138) & (!\REG_ID|DOUT\(26))) ) + ( \REG_ID|DOUT\(100) ) + ( \ULA|Add2~106\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111111110000000000000000000000001110111001000100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_ID|ALT_INV_DOUT\(138),
-	datab => \REG_ID|ALT_INV_DOUT\(26),
-	datad => \REG_ID|ALT_INV_DOUT\(68),
-	dataf => \REG_ID|ALT_INV_DOUT\(100),
-	cin => \ULA|Add2~106\,
-	sumout => \ULA|Add2~109_sumout\,
-	cout => \ULA|Add2~110\);
-
-\ULA|Add2~113\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|Add2~113_sumout\ = SUM(( (!\REG_ID|DOUT\(138) & ((!\REG_ID|DOUT\(69)))) # (\REG_ID|DOUT\(138) & (!\REG_ID|DOUT\(26))) ) + ( \REG_ID|DOUT\(101) ) + ( \ULA|Add2~110\ ))
--- \ULA|Add2~114\ = CARRY(( (!\REG_ID|DOUT\(138) & ((!\REG_ID|DOUT\(69)))) # (\REG_ID|DOUT\(138) & (!\REG_ID|DOUT\(26))) ) + ( \REG_ID|DOUT\(101) ) + ( \ULA|Add2~110\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111111110000000000000000000000001110111001000100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_ID|ALT_INV_DOUT\(138),
-	datab => \REG_ID|ALT_INV_DOUT\(26),
-	datad => \REG_ID|ALT_INV_DOUT\(69),
-	dataf => \REG_ID|ALT_INV_DOUT\(101),
-	cin => \ULA|Add2~110\,
-	sumout => \ULA|Add2~113_sumout\,
-	cout => \ULA|Add2~114\);
-
-\ULA|Add2~117\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|Add2~117_sumout\ = SUM(( (!\REG_ID|DOUT\(138) & ((!\REG_ID|DOUT\(70)))) # (\REG_ID|DOUT\(138) & (!\REG_ID|DOUT\(26))) ) + ( \REG_ID|DOUT\(102) ) + ( \ULA|Add2~114\ ))
--- \ULA|Add2~118\ = CARRY(( (!\REG_ID|DOUT\(138) & ((!\REG_ID|DOUT\(70)))) # (\REG_ID|DOUT\(138) & (!\REG_ID|DOUT\(26))) ) + ( \REG_ID|DOUT\(102) ) + ( \ULA|Add2~114\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111111110000000000000000000000001110111001000100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_ID|ALT_INV_DOUT\(138),
-	datab => \REG_ID|ALT_INV_DOUT\(26),
-	datad => \REG_ID|ALT_INV_DOUT\(70),
-	dataf => \REG_ID|ALT_INV_DOUT\(102),
-	cin => \ULA|Add2~114\,
-	sumout => \ULA|Add2~117_sumout\,
-	cout => \ULA|Add2~118\);
-
-\mux_RT_imediato|saida_MUX[29]~16\ : cyclonev_lcell_comb
--- Equation(s):
--- \mux_RT_imediato|saida_MUX[29]~16_combout\ = (!\REG_ID|DOUT\(138) & ((\REG_ID|DOUT\(71)))) # (\REG_ID|DOUT\(138) & (\REG_ID|DOUT\(26)))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0001101100011011000110110001101100011011000110110001101100011011",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_ID|ALT_INV_DOUT\(138),
-	datab => \REG_ID|ALT_INV_DOUT\(26),
-	datac => \REG_ID|ALT_INV_DOUT\(71),
-	combout => \mux_RT_imediato|saida_MUX[29]~16_combout\);
-
-\ULA|saida[29]~86\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|saida[29]~86_combout\ = ( \UC_ULA|ULActrl~6_combout\ & ( \mux_RT_imediato|saida_MUX[29]~16_combout\ & ( (\REG_ID|DOUT\(103) & (\REG_ID|DOUT\(13) & (!\UC_ULA|ULActrl[1]~1_combout\ & !\UC_ULA|ULActrl[0]~4_combout\))) ) ) ) # ( 
--- !\UC_ULA|ULActrl~6_combout\ & ( \mux_RT_imediato|saida_MUX[29]~16_combout\ & ( ((\REG_ID|DOUT\(103) & !\UC_ULA|ULActrl[1]~1_combout\)) # (\UC_ULA|ULActrl[0]~4_combout\) ) ) ) # ( !\UC_ULA|ULActrl~6_combout\ & ( !\mux_RT_imediato|saida_MUX[29]~16_combout\ 
--- & ( (\REG_ID|DOUT\(103) & \UC_ULA|ULActrl[0]~4_combout\) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000001010101000000000000000001010000111111110001000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_ID|ALT_INV_DOUT\(103),
-	datab => \REG_ID|ALT_INV_DOUT\(13),
-	datac => \UC_ULA|ALT_INV_ULActrl[1]~1_combout\,
-	datad => \UC_ULA|ALT_INV_ULActrl[0]~4_combout\,
-	datae => \UC_ULA|ALT_INV_ULActrl~6_combout\,
-	dataf => \mux_RT_imediato|ALT_INV_saida_MUX[29]~16_combout\,
-	combout => \ULA|saida[29]~86_combout\);
-
-\ULA|saida[29]~87\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|saida[29]~87_combout\ = ( \ULA|saida[29]~86_combout\ ) # ( !\ULA|saida[29]~86_combout\ & ( (!\UC_ULA|ULActrl~7_combout\ & (\ULA|saida[13]~53_combout\ & ((\ULA|Add0~117_sumout\)))) # (\UC_ULA|ULActrl~7_combout\ & (((\ULA|saida[13]~53_combout\ & 
--- \ULA|Add0~117_sumout\)) # (\ULA|Add2~121_sumout\))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000010100110111111111111111111100000101001101111111111111111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \UC_ULA|ALT_INV_ULActrl~7_combout\,
-	datab => \ULA|ALT_INV_saida[13]~53_combout\,
-	datac => \ULA|ALT_INV_Add2~121_sumout\,
-	datad => \ULA|ALT_INV_Add0~117_sumout\,
-	datae => \ULA|ALT_INV_saida[29]~86_combout\,
-	combout => \ULA|saida[29]~87_combout\);
-
-\REG_EX|DOUT[66]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \ULA|saida[29]~87_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_EX|DOUT\(66));
-
-\REG_MEM|DOUT[34]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \REG_EX|DOUT\(66),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_MEM|DOUT\(34));
-
-\REG_EX|DOUT[34]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \REG_ID|DOUT\(71),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_EX|DOUT\(34));
-
-\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a29\ : cyclonev_ram_block
--- pragma translate_off
-GENERIC MAP (
-	data_interleave_offset_in_bits => 1,
-	data_interleave_width_in_bits => 1,
-	logical_ram_name => "RAMMIPS:RAM_mips|altsyncram:memRAM_rtl_0|altsyncram_3jp1:auto_generated|ALTSYNCRAM",
-	mixed_port_feed_through_mode => "old",
-	operation_mode => "dual_port",
-	port_a_address_clear => "none",
-	port_a_address_width => 6,
-	port_a_byte_enable_clock => "none",
-	port_a_data_out_clear => "none",
-	port_a_data_out_clock => "none",
-	port_a_data_width => 1,
-	port_a_first_address => 0,
-	port_a_first_bit_number => 29,
-	port_a_last_address => 63,
-	port_a_logical_ram_depth => 64,
-	port_a_logical_ram_width => 32,
-	port_a_read_during_write_mode => "new_data_no_nbe_read",
-	port_b_address_clear => "none",
-	port_b_address_clock => "clock0",
-	port_b_address_width => 6,
-	port_b_data_out_clear => "none",
-	port_b_data_out_clock => "none",
-	port_b_data_width => 1,
-	port_b_first_address => 0,
-	port_b_first_bit_number => 29,
-	port_b_last_address => 63,
-	port_b_logical_ram_depth => 64,
-	port_b_logical_ram_width => 32,
-	port_b_read_during_write_mode => "new_data_no_nbe_read",
-	port_b_read_enable_clock => "clock0",
-	ram_block_type => "M20K")
--- pragma translate_on
-PORT MAP (
-	portawe => \REG_EX|DOUT\(101),
-	portbre => VCC,
-	clk0 => \CLOCK_50~input_o\,
-	portadatain => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a29_PORTADATAIN_bus\,
-	portaaddr => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a29_PORTAADDR_bus\,
-	portbaddr => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a29_PORTBADDR_bus\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	portbdataout => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a29_PORTBDATAOUT_bus\);
-
-\MUX_LUI|saida_MUX[26]~34\ : cyclonev_lcell_comb
--- Equation(s):
--- \MUX_LUI|saida_MUX[26]~34_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal5~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(98))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a29~portbdataout\)))))) # (\UC|Equal5~0_combout\ 
--- & (((\ROM_mips|memROM~5_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal5~0_combout\ & (((\REG_MEM|DOUT\(34) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal5~0_combout\ & (\ROM_mips|memROM~5_combout\))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "on",
-	lut_mask => "0101010100110011000011110011001100001111001100110000000000110011",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_MEM|ALT_INV_DOUT\(98),
-	datab => \ROM_mips|ALT_INV_memROM~5_combout\,
-	datac => \REG_MEM|ALT_INV_DOUT\(34),
-	datad => \UC|ALT_INV_Equal5~0_combout\,
-	datae => \REG_MEM|ALT_INV_DOUT\(2),
-	dataf => \REG_MEM|ALT_INV_DOUT\(1),
-	datag => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a29~portbdataout\,
-	combout => \MUX_LUI|saida_MUX[26]~34_combout\);
-
-\bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a26\ : cyclonev_ram_block
--- pragma translate_off
-GENERIC MAP (
-	mem_init0 => "00000000",
-	clk0_core_clock_enable => "ena0",
-	data_interleave_offset_in_bits => 1,
-	data_interleave_width_in_bits => 1,
-	init_file => "db/MIPS_pipeline.ram0_bancoRegistradores_57a36dfc.hdl.mif",
-	init_file_layout => "port_b",
-	logical_ram_name => "bancoRegistradores:bancoRegistrador|altsyncram:registrador_rtl_1|altsyncram_d1p1:auto_generated|ALTSYNCRAM",
-	mixed_port_feed_through_mode => "dont_care",
-	operation_mode => "dual_port",
-	port_a_address_clear => "none",
-	port_a_address_width => 5,
-	port_a_byte_enable_clock => "none",
-	port_a_data_out_clear => "none",
-	port_a_data_out_clock => "none",
-	port_a_data_width => 1,
-	port_a_first_address => 0,
-	port_a_first_bit_number => 26,
-	port_a_last_address => 31,
-	port_a_logical_ram_depth => 32,
-	port_a_logical_ram_width => 32,
-	port_a_read_during_write_mode => "new_data_no_nbe_read",
-	port_b_address_clear => "none",
-	port_b_address_clock => "clock1",
-	port_b_address_width => 5,
-	port_b_data_out_clear => "none",
-	port_b_data_out_clock => "none",
-	port_b_data_width => 1,
-	port_b_first_address => 0,
-	port_b_first_bit_number => 26,
-	port_b_last_address => 31,
-	port_b_logical_ram_depth => 32,
-	port_b_logical_ram_width => 32,
-	port_b_read_during_write_mode => "new_data_no_nbe_read",
-	port_b_read_enable_clock => "clock1",
-	ram_block_type => "M20K")
--- pragma translate_on
-PORT MAP (
-	portawe => \REG_MEM|DOUT\(0),
-	portbre => VCC,
-	clk0 => \CLOCK_50~input_o\,
-	clk1 => \CLOCK_50~input_o\,
-	ena0 => \REG_MEM|DOUT\(0),
-	portadatain => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a26_PORTADATAIN_bus\,
-	portaaddr => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a26_PORTAADDR_bus\,
-	portbaddr => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a26_PORTBADDR_bus\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	portbdataout => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a26_PORTBDATAOUT_bus\);
-
-\bancoRegistrador|registrador_rtl_1_bypass[64]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => VCC,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \bancoRegistrador|registrador_rtl_1_bypass\(64));
-
-\bancoRegistrador|registrador_rtl_1_bypass[63]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \MUX_LUI|saida_MUX[26]~34_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \bancoRegistrador|registrador_rtl_1_bypass\(63));
-
-\bancoRegistrador|saidaB[26]~26\ : cyclonev_lcell_comb
--- Equation(s):
--- \bancoRegistrador|saidaB[26]~26_combout\ = ( \bancoRegistrador|registrador_rtl_1_bypass\(63) & ( (!\bancoRegistrador|Equal1~0_combout\ & (((!\bancoRegistrador|registrador_rtl_1_bypass\(64)) # 
--- (\bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a26~portbdataout\)) # (\bancoRegistrador|registrador~40_combout\))) ) ) # ( !\bancoRegistrador|registrador_rtl_1_bypass\(63) & ( (!\bancoRegistrador|registrador~40_combout\ & 
--- (!\bancoRegistrador|Equal1~0_combout\ & (\bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a26~portbdataout\ & \bancoRegistrador|registrador_rtl_1_bypass\(64)))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000001000110011000100110000000000000010001100110001001100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \bancoRegistrador|ALT_INV_registrador~40_combout\,
-	datab => \bancoRegistrador|ALT_INV_Equal1~0_combout\,
-	datac => \bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a26~portbdataout\,
-	datad => \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(64),
-	datae => \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(63),
-	combout => \bancoRegistrador|saidaB[26]~26_combout\);
-
-\REG_ID|DOUT[68]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \bancoRegistrador|saidaB[26]~26_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(68));
 
 \mux_RT_imediato|saida_MUX[26]~13\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -15162,8 +15267,8 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[23]~46\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[23]~46_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal5~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(95))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a26~portbdataout\)))))) # (\UC|Equal5~0_combout\ 
--- & (((\ROM_mips|memROM~5_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal5~0_combout\ & (((\REG_MEM|DOUT\(31) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal5~0_combout\ & (\ROM_mips|memROM~5_combout\))) ) )
+-- \MUX_LUI|saida_MUX[23]~46_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal3~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(95))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a26~portbdataout\)))))) # (\UC|Equal3~0_combout\ 
+-- & (((\ROM_mips|memROM~5_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal3~0_combout\ & (((\REG_MEM|DOUT\(31) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal3~0_combout\ & (\ROM_mips|memROM~5_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -15175,7 +15280,7 @@ PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(95),
 	datab => \ROM_mips|ALT_INV_memROM~5_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(31),
-	datad => \UC|ALT_INV_Equal5~0_combout\,
+	datad => \UC|ALT_INV_Equal3~0_combout\,
 	datae => \REG_MEM|ALT_INV_DOUT\(2),
 	dataf => \REG_MEM|ALT_INV_DOUT\(1),
 	datag => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a26~portbdataout\,
@@ -15305,15 +15410,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(53));
 
-\MUX_jump|saida_MUX[23]~23\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[23]~24\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[23]~23_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~85_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~109_sumout\ ) ) ) # ( 
--- \PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(53) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(97) ) ) )
+-- \MUX_jump|saida_MUX[23]~24_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~109_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~85_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(97) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(53) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -15322,8 +15427,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(97),
 	datad => \etapaBusca|ALT_INV_DOUT\(53),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[23]~23_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[23]~24_combout\);
 
 \PC|DOUT[23]\ : dffeas
 -- pragma translate_off
@@ -15333,7 +15438,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[23]~23_combout\,
+	d => \MUX_jump|saida_MUX[23]~24_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(23));
@@ -15449,15 +15554,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \REG_ID|DOUT\(96));
 
-\MUX_jump|saida_MUX[22]~22\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[22]~23\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[22]~22_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~81_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~105_sumout\ ) ) ) # ( 
--- \PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(52) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(96) ) ) )
+-- \MUX_jump|saida_MUX[22]~23_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~105_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~81_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(96) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(52) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -15466,8 +15571,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(96),
 	datad => \etapaBusca|ALT_INV_DOUT\(52),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[22]~22_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[22]~23_combout\);
 
 \PC|DOUT[22]\ : dffeas
 -- pragma translate_off
@@ -15477,7 +15582,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[22]~22_combout\,
+	d => \MUX_jump|saida_MUX[22]~23_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(22));
@@ -15593,15 +15698,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \REG_ID|DOUT\(95));
 
-\MUX_jump|saida_MUX[21]~21\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[21]~22\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[21]~21_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~77_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~101_sumout\ ) ) ) # ( 
--- \PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(51) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(95) ) ) )
+-- \MUX_jump|saida_MUX[21]~22_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~101_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~77_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(95) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(51) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -15610,8 +15715,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(95),
 	datad => \etapaBusca|ALT_INV_DOUT\(51),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[21]~21_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[21]~22_combout\);
 
 \PC|DOUT[21]\ : dffeas
 -- pragma translate_off
@@ -15621,7 +15726,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[21]~21_combout\,
+	d => \MUX_jump|saida_MUX[21]~22_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(21));
@@ -15737,15 +15842,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \REG_ID|DOUT\(90));
 
-\MUX_jump|saida_MUX[16]~16\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[16]~17\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[16]~16_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~57_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~81_sumout\ ) ) ) # ( 
--- \PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(46) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(90) ) ) )
+-- \MUX_jump|saida_MUX[16]~17_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~81_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~57_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(90) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(46) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -15754,8 +15859,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(90),
 	datad => \etapaBusca|ALT_INV_DOUT\(46),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[16]~16_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[16]~17_combout\);
 
 \PC|DOUT[16]\ : dffeas
 -- pragma translate_off
@@ -15765,7 +15870,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[16]~16_combout\,
+	d => \MUX_jump|saida_MUX[16]~17_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(16));
@@ -16024,8 +16129,8 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[16]~70\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[16]~70_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal5~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(88))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a19~portbdataout\)))))) # (\UC|Equal5~0_combout\ 
--- & (((\ROM_mips|memROM~21_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal5~0_combout\ & (((\REG_MEM|DOUT\(24) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal5~0_combout\ & (\ROM_mips|memROM~21_combout\))) ) )
+-- \MUX_LUI|saida_MUX[16]~70_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal3~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(88))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a19~portbdataout\)))))) # (\UC|Equal3~0_combout\ 
+-- & (((\ROM_mips|memROM~21_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal3~0_combout\ & (((\REG_MEM|DOUT\(24) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal3~0_combout\ & (\ROM_mips|memROM~21_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -16037,7 +16142,7 @@ PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(88),
 	datab => \ROM_mips|ALT_INV_memROM~21_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(24),
-	datad => \UC|ALT_INV_Equal5~0_combout\,
+	datad => \UC|ALT_INV_Equal3~0_combout\,
 	datae => \REG_MEM|ALT_INV_DOUT\(2),
 	dataf => \REG_MEM|ALT_INV_DOUT\(1),
 	datag => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a19~portbdataout\,
@@ -16267,10 +16372,10 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[13]~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[13]~13_combout\ = ( \REG_MEM|DOUT\(85) & ( \REG_MEM|DOUT\(21) & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1)) # ((!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a16~portbdataout\)))) ) ) ) # ( 
--- !\REG_MEM|DOUT\(85) & ( \REG_MEM|DOUT\(21) & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(2))) # (\REG_MEM|DOUT\(1) & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a16~portbdataout\)))) ) ) ) # ( 
--- \REG_MEM|DOUT\(85) & ( !\REG_MEM|DOUT\(21) & ( (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & ((!\REG_MEM|DOUT\(1)) # (\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a16~portbdataout\)))) ) ) ) # ( !\REG_MEM|DOUT\(85) & ( !\REG_MEM|DOUT\(21) & ( 
--- (\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a16~portbdataout\))) ) ) )
+-- \MUX_LUI|saida_MUX[13]~13_combout\ = ( \REG_MEM|DOUT\(85) & ( \REG_MEM|DOUT\(21) & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1)) # ((!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a16~portbdataout\)))) ) ) ) # ( 
+-- !\REG_MEM|DOUT\(85) & ( \REG_MEM|DOUT\(21) & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(2))) # (\REG_MEM|DOUT\(1) & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a16~portbdataout\)))) ) ) ) # ( 
+-- \REG_MEM|DOUT\(85) & ( !\REG_MEM|DOUT\(21) & ( (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & ((!\REG_MEM|DOUT\(1)) # (\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a16~portbdataout\)))) ) ) ) # ( !\REG_MEM|DOUT\(85) & ( !\REG_MEM|DOUT\(21) & ( 
+-- (\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a16~portbdataout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -16280,7 +16385,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(1),
-	datab => \UC|ALT_INV_Equal5~0_combout\,
+	datab => \UC|ALT_INV_Equal3~0_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(2),
 	datad => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a16~portbdataout\,
 	datae => \REG_MEM|ALT_INV_DOUT\(85),
@@ -16541,10 +16646,10 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[10]~10\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[10]~10_combout\ = ( \REG_MEM|DOUT\(18) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a13~portbdataout\ & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2)))) # (\REG_MEM|DOUT\(1) & 
--- (!\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(18) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a13~portbdataout\ & ( (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(1))))) ) ) ) # ( \REG_MEM|DOUT\(18) & ( 
--- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a13~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(18) & ( 
--- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a13~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & \REG_MEM|DOUT\(84)))) ) ) )
+-- \MUX_LUI|saida_MUX[10]~10_combout\ = ( \REG_MEM|DOUT\(18) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a13~portbdataout\ & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2)))) # (\REG_MEM|DOUT\(1) & 
+-- (!\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(18) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a13~portbdataout\ & ( (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(1))))) ) ) ) # ( \REG_MEM|DOUT\(18) & ( 
+-- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a13~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(18) & ( 
+-- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a13~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & \REG_MEM|DOUT\(84)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -16554,7 +16659,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(1),
-	datab => \UC|ALT_INV_Equal5~0_combout\,
+	datab => \UC|ALT_INV_Equal3~0_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(2),
 	datad => \REG_MEM|ALT_INV_DOUT\(84),
 	datae => \REG_MEM|ALT_INV_DOUT\(18),
@@ -16778,10 +16883,10 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[7]~7\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[7]~7_combout\ = ( \REG_MEM|DOUT\(15) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a10~portbdataout\ & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2)))) # (\REG_MEM|DOUT\(1) & 
--- (!\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(15) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a10~portbdataout\ & ( (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(1))))) ) ) ) # ( \REG_MEM|DOUT\(15) & ( 
--- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a10~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(15) & ( 
--- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a10~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & \REG_MEM|DOUT\(84)))) ) ) )
+-- \MUX_LUI|saida_MUX[7]~7_combout\ = ( \REG_MEM|DOUT\(15) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a10~portbdataout\ & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2)))) # (\REG_MEM|DOUT\(1) & 
+-- (!\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(15) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a10~portbdataout\ & ( (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(1))))) ) ) ) # ( \REG_MEM|DOUT\(15) & ( 
+-- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a10~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(15) & ( 
+-- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a10~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & \REG_MEM|DOUT\(84)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -16791,7 +16896,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(1),
-	datab => \UC|ALT_INV_Equal5~0_combout\,
+	datab => \UC|ALT_INV_Equal3~0_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(2),
 	datad => \REG_MEM|ALT_INV_DOUT\(84),
 	datae => \REG_MEM|ALT_INV_DOUT\(15),
@@ -17015,10 +17120,10 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[4]~4\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[4]~4_combout\ = ( \REG_MEM|DOUT\(12) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a7~portbdataout\ & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2)))) # (\REG_MEM|DOUT\(1) & 
--- (!\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(12) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a7~portbdataout\ & ( (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(1))))) ) ) ) # ( \REG_MEM|DOUT\(12) & ( 
--- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a7~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(12) & ( 
--- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a7~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & \REG_MEM|DOUT\(84)))) ) ) )
+-- \MUX_LUI|saida_MUX[4]~4_combout\ = ( \REG_MEM|DOUT\(12) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a7~portbdataout\ & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2)))) # (\REG_MEM|DOUT\(1) & 
+-- (!\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(12) & ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a7~portbdataout\ & ( (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(1))))) ) ) ) # ( \REG_MEM|DOUT\(12) & ( 
+-- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a7~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & ((\REG_MEM|DOUT\(84)) # (\REG_MEM|DOUT\(2))))) ) ) ) # ( !\REG_MEM|DOUT\(12) & ( 
+-- !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a7~portbdataout\ & ( (!\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & \REG_MEM|DOUT\(84)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -17028,7 +17133,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(1),
-	datab => \UC|ALT_INV_Equal5~0_combout\,
+	datab => \UC|ALT_INV_Equal3~0_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(2),
 	datad => \REG_MEM|ALT_INV_DOUT\(84),
 	datae => \REG_MEM|ALT_INV_DOUT\(12),
@@ -17246,10 +17351,10 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[1]~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[1]~1_combout\ = ( \REG_MEM|DOUT\(73) & ( \REG_MEM|DOUT\(9) & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1)) # ((!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a4~portbdataout\)))) ) ) ) # ( !\REG_MEM|DOUT\(73) & 
--- ( \REG_MEM|DOUT\(9) & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(2))) # (\REG_MEM|DOUT\(1) & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a4~portbdataout\)))) ) ) ) # ( \REG_MEM|DOUT\(73) & ( 
--- !\REG_MEM|DOUT\(9) & ( (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & ((!\REG_MEM|DOUT\(1)) # (\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a4~portbdataout\)))) ) ) ) # ( !\REG_MEM|DOUT\(73) & ( !\REG_MEM|DOUT\(9) & ( (\REG_MEM|DOUT\(1) & 
--- (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a4~portbdataout\))) ) ) )
+-- \MUX_LUI|saida_MUX[1]~1_combout\ = ( \REG_MEM|DOUT\(73) & ( \REG_MEM|DOUT\(9) & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1)) # ((!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a4~portbdataout\)))) ) ) ) # ( !\REG_MEM|DOUT\(73) & 
+-- ( \REG_MEM|DOUT\(9) & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(2))) # (\REG_MEM|DOUT\(1) & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a4~portbdataout\)))) ) ) ) # ( \REG_MEM|DOUT\(73) & ( 
+-- !\REG_MEM|DOUT\(9) & ( (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & ((!\REG_MEM|DOUT\(1)) # (\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a4~portbdataout\)))) ) ) ) # ( !\REG_MEM|DOUT\(73) & ( !\REG_MEM|DOUT\(9) & ( (\REG_MEM|DOUT\(1) & 
+-- (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a4~portbdataout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -17259,14 +17364,14 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(1),
-	datab => \UC|ALT_INV_Equal5~0_combout\,
+	datab => \UC|ALT_INV_Equal3~0_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(2),
 	datad => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a4~portbdataout\,
 	datae => \REG_MEM|ALT_INV_DOUT\(73),
 	dataf => \REG_MEM|ALT_INV_DOUT\(9),
 	combout => \MUX_LUI|saida_MUX[1]~1_combout\);
 
-\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a1\ : cyclonev_ram_block
+\bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a1\ : cyclonev_ram_block
 -- pragma translate_off
 GENERIC MAP (
 	mem_init0 => "00002600",
@@ -17275,7 +17380,7 @@ GENERIC MAP (
 	data_interleave_width_in_bits => 1,
 	init_file => "db/MIPS_pipeline.ram0_bancoRegistradores_57a36dfc.hdl.mif",
 	init_file_layout => "port_b",
-	logical_ram_name => "bancoRegistradores:bancoRegistrador|altsyncram:registrador_rtl_0|altsyncram_d1p1:auto_generated|ALTSYNCRAM",
+	logical_ram_name => "bancoRegistradores:bancoRegistrador|altsyncram:registrador_rtl_1|altsyncram_d1p1:auto_generated|ALTSYNCRAM",
 	mixed_port_feed_through_mode => "dont_care",
 	operation_mode => "dual_port",
 	port_a_address_clear => "none",
@@ -17311,14 +17416,14 @@ PORT MAP (
 	clk0 => \CLOCK_50~input_o\,
 	clk1 => \CLOCK_50~input_o\,
 	ena0 => \REG_MEM|DOUT\(0),
-	portadatain => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a1_PORTADATAIN_bus\,
-	portaaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a1_PORTAADDR_bus\,
-	portbaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a1_PORTBADDR_bus\,
+	portadatain => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a1_PORTADATAIN_bus\,
+	portaaddr => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a1_PORTAADDR_bus\,
+	portbaddr => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a1_PORTBADDR_bus\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	portbdataout => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a1_PORTBDATAOUT_bus\);
+	portbdataout => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a1_PORTBDATAOUT_bus\);
 
-\bancoRegistrador|registrador_rtl_0_bypass[14]\ : dffeas
+\bancoRegistrador|registrador_rtl_1_bypass[14]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -17329,9 +17434,9 @@ PORT MAP (
 	d => VCC,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \bancoRegistrador|registrador_rtl_0_bypass\(14));
+	q => \bancoRegistrador|registrador_rtl_1_bypass\(14));
 
-\bancoRegistrador|registrador_rtl_0_bypass[13]\ : dffeas
+\bancoRegistrador|registrador_rtl_1_bypass[13]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -17342,13 +17447,13 @@ PORT MAP (
 	d => \MUX_LUI|saida_MUX[1]~1_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \bancoRegistrador|registrador_rtl_0_bypass\(13));
+	q => \bancoRegistrador|registrador_rtl_1_bypass\(13));
 
-\bancoRegistrador|saidaA[1]~1\ : cyclonev_lcell_comb
+\bancoRegistrador|saidaB[1]~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \bancoRegistrador|saidaA[1]~1_combout\ = ( \bancoRegistrador|registrador_rtl_0_bypass\(13) & ( (!\bancoRegistrador|Equal0~0_combout\ & (((!\bancoRegistrador|registrador_rtl_0_bypass\(14)) # 
--- (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a1~portbdataout\)) # (\bancoRegistrador|registrador~43_combout\))) ) ) # ( !\bancoRegistrador|registrador_rtl_0_bypass\(13) & ( (!\bancoRegistrador|registrador~43_combout\ & 
--- (!\bancoRegistrador|Equal0~0_combout\ & (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a1~portbdataout\ & \bancoRegistrador|registrador_rtl_0_bypass\(14)))) ) )
+-- \bancoRegistrador|saidaB[1]~1_combout\ = ( \bancoRegistrador|registrador_rtl_1_bypass\(13) & ( (!\bancoRegistrador|Equal1~0_combout\ & (((!\bancoRegistrador|registrador_rtl_1_bypass\(14)) # 
+-- (\bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a1~portbdataout\)) # (\bancoRegistrador|registrador~40_combout\))) ) ) # ( !\bancoRegistrador|registrador_rtl_1_bypass\(13) & ( (!\bancoRegistrador|registrador~40_combout\ & 
+-- (!\bancoRegistrador|Equal1~0_combout\ & (\bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a1~portbdataout\ & \bancoRegistrador|registrador_rtl_1_bypass\(14)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -17357,14 +17462,14 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \bancoRegistrador|ALT_INV_registrador~43_combout\,
-	datab => \bancoRegistrador|ALT_INV_Equal0~0_combout\,
-	datac => \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a1~portbdataout\,
-	datad => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(14),
-	datae => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(13),
-	combout => \bancoRegistrador|saidaA[1]~1_combout\);
+	dataa => \bancoRegistrador|ALT_INV_registrador~40_combout\,
+	datab => \bancoRegistrador|ALT_INV_Equal1~0_combout\,
+	datac => \bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a1~portbdataout\,
+	datad => \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(14),
+	datae => \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(13),
+	combout => \bancoRegistrador|saidaB[1]~1_combout\);
 
-\REG_ID|DOUT[75]\ : dffeas
+\REG_ID|DOUT[43]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -17372,10 +17477,10 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \bancoRegistrador|saidaA[1]~1_combout\,
+	d => \bancoRegistrador|saidaB[1]~1_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(75));
+	q => \REG_ID|DOUT\(43));
 
 \ULA|saida[1]~8\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -17646,10 +17751,10 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[15]~15\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[15]~15_combout\ = ( \REG_MEM|DOUT\(87) & ( \REG_MEM|DOUT\(23) & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1)) # ((!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a18~portbdataout\)))) ) ) ) # ( 
--- !\REG_MEM|DOUT\(87) & ( \REG_MEM|DOUT\(23) & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(2))) # (\REG_MEM|DOUT\(1) & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a18~portbdataout\)))) ) ) ) # ( 
--- \REG_MEM|DOUT\(87) & ( !\REG_MEM|DOUT\(23) & ( (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & ((!\REG_MEM|DOUT\(1)) # (\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a18~portbdataout\)))) ) ) ) # ( !\REG_MEM|DOUT\(87) & ( !\REG_MEM|DOUT\(23) & ( 
--- (\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a18~portbdataout\))) ) ) )
+-- \MUX_LUI|saida_MUX[15]~15_combout\ = ( \REG_MEM|DOUT\(87) & ( \REG_MEM|DOUT\(23) & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1)) # ((!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a18~portbdataout\)))) ) ) ) # ( 
+-- !\REG_MEM|DOUT\(87) & ( \REG_MEM|DOUT\(23) & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(2))) # (\REG_MEM|DOUT\(1) & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a18~portbdataout\)))) ) ) ) # ( 
+-- \REG_MEM|DOUT\(87) & ( !\REG_MEM|DOUT\(23) & ( (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & ((!\REG_MEM|DOUT\(1)) # (\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a18~portbdataout\)))) ) ) ) # ( !\REG_MEM|DOUT\(87) & ( !\REG_MEM|DOUT\(23) & ( 
+-- (\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a18~portbdataout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -17659,7 +17764,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(1),
-	datab => \UC|ALT_INV_Equal5~0_combout\,
+	datab => \UC|ALT_INV_Equal3~0_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(2),
 	datad => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a18~portbdataout\,
 	datae => \REG_MEM|ALT_INV_DOUT\(87),
@@ -17790,15 +17895,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(45));
 
-\MUX_jump|saida_MUX[15]~15\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[15]~16\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[15]~15_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~53_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~77_sumout\ ) ) ) # ( 
--- \PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(45) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(89) ) ) )
+-- \MUX_jump|saida_MUX[15]~16_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~77_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~53_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(89) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(45) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -17807,8 +17912,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(89),
 	datad => \etapaBusca|ALT_INV_DOUT\(45),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[15]~15_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[15]~16_combout\);
 
 \PC|DOUT[15]\ : dffeas
 -- pragma translate_off
@@ -17818,7 +17923,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[15]~15_combout\,
+	d => \MUX_jump|saida_MUX[15]~16_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(15));
@@ -18146,8 +18251,8 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[24]~42\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[24]~42_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal5~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(96))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a27~portbdataout\)))))) # (\UC|Equal5~0_combout\ 
--- & (((\ROM_mips|memROM~5_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal5~0_combout\ & (((\REG_MEM|DOUT\(32) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal5~0_combout\ & (\ROM_mips|memROM~5_combout\))) ) )
+-- \MUX_LUI|saida_MUX[24]~42_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal3~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(96))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a27~portbdataout\)))))) # (\UC|Equal3~0_combout\ 
+-- & (((\ROM_mips|memROM~5_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal3~0_combout\ & (((\REG_MEM|DOUT\(32) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal3~0_combout\ & (\ROM_mips|memROM~5_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -18159,7 +18264,7 @@ PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(96),
 	datab => \ROM_mips|ALT_INV_memROM~5_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(32),
-	datad => \UC|ALT_INV_Equal5~0_combout\,
+	datad => \UC|ALT_INV_Equal3~0_combout\,
 	datae => \REG_MEM|ALT_INV_DOUT\(2),
 	dataf => \REG_MEM|ALT_INV_DOUT\(1),
 	datag => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a27~portbdataout\,
@@ -18419,8 +18524,8 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[21]~54\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[21]~54_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal5~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(93))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a24~portbdataout\)))))) # (\UC|Equal5~0_combout\ 
--- & (((\ROM_mips|memROM~4_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal5~0_combout\ & (((\REG_MEM|DOUT\(29) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal5~0_combout\ & (\ROM_mips|memROM~4_combout\))) ) )
+-- \MUX_LUI|saida_MUX[21]~54_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal3~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(93))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a24~portbdataout\)))))) # (\UC|Equal3~0_combout\ 
+-- & (((\ROM_mips|memROM~4_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal3~0_combout\ & (((\REG_MEM|DOUT\(29) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal3~0_combout\ & (\ROM_mips|memROM~4_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -18432,7 +18537,7 @@ PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(93),
 	datab => \ROM_mips|ALT_INV_memROM~4_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(29),
-	datad => \UC|ALT_INV_Equal5~0_combout\,
+	datad => \UC|ALT_INV_Equal3~0_combout\,
 	datae => \REG_MEM|ALT_INV_DOUT\(2),
 	dataf => \REG_MEM|ALT_INV_DOUT\(1),
 	datag => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a24~portbdataout\,
@@ -18692,8 +18797,8 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[18]~66\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[18]~66_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal5~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(90))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a21~portbdataout\)))))) # (\UC|Equal5~0_combout\ 
--- & (((\ROM_mips|memROM~1_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal5~0_combout\ & (((\REG_MEM|DOUT\(26) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal5~0_combout\ & (\ROM_mips|memROM~1_combout\))) ) )
+-- \MUX_LUI|saida_MUX[18]~66_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal3~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(90))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a21~portbdataout\)))))) # (\UC|Equal3~0_combout\ 
+-- & (((\ROM_mips|memROM~1_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal3~0_combout\ & (((\REG_MEM|DOUT\(26) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal3~0_combout\ & (\ROM_mips|memROM~1_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -18705,7 +18810,7 @@ PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(90),
 	datab => \ROM_mips|ALT_INV_memROM~1_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(26),
-	datad => \UC|ALT_INV_Equal5~0_combout\,
+	datad => \UC|ALT_INV_Equal3~0_combout\,
 	datae => \REG_MEM|ALT_INV_DOUT\(2),
 	dataf => \REG_MEM|ALT_INV_DOUT\(1),
 	datag => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a21~portbdataout\,
@@ -18835,15 +18940,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(48));
 
-\MUX_jump|saida_MUX[18]~18\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[18]~19\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[18]~18_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~65_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~89_sumout\ ) ) ) # ( 
--- \PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(48) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(92) ) ) )
+-- \MUX_jump|saida_MUX[18]~19_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~89_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~65_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(92) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(48) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -18852,8 +18957,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(92),
 	datad => \etapaBusca|ALT_INV_DOUT\(48),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[18]~18_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[18]~19_combout\);
 
 \PC|DOUT[18]\ : dffeas
 -- pragma translate_off
@@ -18863,7 +18968,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[18]~18_combout\,
+	d => \MUX_jump|saida_MUX[18]~19_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(18));
@@ -18949,6 +19054,1280 @@ PORT MAP (
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_MEM|DOUT\(2));
+
+\REG_EX|DOUT[35]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_ID|DOUT\(72),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_EX|DOUT\(35));
+
+\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a30\ : cyclonev_ram_block
+-- pragma translate_off
+GENERIC MAP (
+	data_interleave_offset_in_bits => 1,
+	data_interleave_width_in_bits => 1,
+	logical_ram_name => "RAMMIPS:RAM_mips|altsyncram:memRAM_rtl_0|altsyncram_3jp1:auto_generated|ALTSYNCRAM",
+	mixed_port_feed_through_mode => "old",
+	operation_mode => "dual_port",
+	port_a_address_clear => "none",
+	port_a_address_width => 6,
+	port_a_byte_enable_clock => "none",
+	port_a_data_out_clear => "none",
+	port_a_data_out_clock => "none",
+	port_a_data_width => 1,
+	port_a_first_address => 0,
+	port_a_first_bit_number => 30,
+	port_a_last_address => 63,
+	port_a_logical_ram_depth => 64,
+	port_a_logical_ram_width => 32,
+	port_a_read_during_write_mode => "new_data_no_nbe_read",
+	port_b_address_clear => "none",
+	port_b_address_clock => "clock0",
+	port_b_address_width => 6,
+	port_b_data_out_clear => "none",
+	port_b_data_out_clock => "none",
+	port_b_data_width => 1,
+	port_b_first_address => 0,
+	port_b_first_bit_number => 30,
+	port_b_last_address => 63,
+	port_b_logical_ram_depth => 64,
+	port_b_logical_ram_width => 32,
+	port_b_read_during_write_mode => "new_data_no_nbe_read",
+	port_b_read_enable_clock => "clock0",
+	ram_block_type => "M20K")
+-- pragma translate_on
+PORT MAP (
+	portawe => \REG_EX|DOUT\(101),
+	portbre => VCC,
+	clk0 => \CLOCK_50~input_o\,
+	portadatain => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a30_PORTADATAIN_bus\,
+	portaaddr => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a30_PORTAADDR_bus\,
+	portbaddr => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a30_PORTBADDR_bus\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	portbdataout => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a30_PORTBDATAOUT_bus\);
+
+\REG_EX|DOUT[67]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \ULA|saida[30]~89_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_EX|DOUT\(67));
+
+\REG_MEM|DOUT[35]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_EX|DOUT\(67),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_MEM|DOUT\(35));
+
+\MUX_LUI|saida_MUX[27]~17\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MUX_LUI|saida_MUX[27]~17_combout\ = ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a30~portbdataout\ & ( \REG_MEM|DOUT\(35) & ( (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(1) $ ((!\REG_MEM|DOUT\(2))))) # (\UC|Equal3~0_combout\ & 
+-- (((\ROM_mips|memROM~5_combout\)))) ) ) ) # ( !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a30~portbdataout\ & ( \REG_MEM|DOUT\(35) & ( (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(2)))) # (\UC|Equal3~0_combout\ & 
+-- (((\ROM_mips|memROM~5_combout\)))) ) ) ) # ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a30~portbdataout\ & ( !\REG_MEM|DOUT\(35) & ( (!\UC|Equal3~0_combout\ & (\REG_MEM|DOUT\(1) & (!\REG_MEM|DOUT\(2)))) # (\UC|Equal3~0_combout\ & 
+-- (((\ROM_mips|memROM~5_combout\)))) ) ) ) # ( !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a30~portbdataout\ & ( !\REG_MEM|DOUT\(35) & ( (\UC|Equal3~0_combout\ & \ROM_mips|memROM~5_combout\) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000110011010000000111001100001000001110110100100001111011",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_MEM|ALT_INV_DOUT\(1),
+	datab => \UC|ALT_INV_Equal3~0_combout\,
+	datac => \REG_MEM|ALT_INV_DOUT\(2),
+	datad => \ROM_mips|ALT_INV_memROM~5_combout\,
+	datae => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a30~portbdataout\,
+	dataf => \REG_MEM|ALT_INV_DOUT\(35),
+	combout => \MUX_LUI|saida_MUX[27]~17_combout\);
+
+\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a27\ : cyclonev_ram_block
+-- pragma translate_off
+GENERIC MAP (
+	mem_init0 => "00000000",
+	clk0_core_clock_enable => "ena0",
+	data_interleave_offset_in_bits => 1,
+	data_interleave_width_in_bits => 1,
+	init_file => "db/MIPS_pipeline.ram0_bancoRegistradores_57a36dfc.hdl.mif",
+	init_file_layout => "port_b",
+	logical_ram_name => "bancoRegistradores:bancoRegistrador|altsyncram:registrador_rtl_0|altsyncram_d1p1:auto_generated|ALTSYNCRAM",
+	mixed_port_feed_through_mode => "dont_care",
+	operation_mode => "dual_port",
+	port_a_address_clear => "none",
+	port_a_address_width => 5,
+	port_a_byte_enable_clock => "none",
+	port_a_data_out_clear => "none",
+	port_a_data_out_clock => "none",
+	port_a_data_width => 1,
+	port_a_first_address => 0,
+	port_a_first_bit_number => 27,
+	port_a_last_address => 31,
+	port_a_logical_ram_depth => 32,
+	port_a_logical_ram_width => 32,
+	port_a_read_during_write_mode => "new_data_no_nbe_read",
+	port_b_address_clear => "none",
+	port_b_address_clock => "clock1",
+	port_b_address_width => 5,
+	port_b_data_out_clear => "none",
+	port_b_data_out_clock => "none",
+	port_b_data_width => 1,
+	port_b_first_address => 0,
+	port_b_first_bit_number => 27,
+	port_b_last_address => 31,
+	port_b_logical_ram_depth => 32,
+	port_b_logical_ram_width => 32,
+	port_b_read_during_write_mode => "new_data_no_nbe_read",
+	port_b_read_enable_clock => "clock1",
+	ram_block_type => "M20K")
+-- pragma translate_on
+PORT MAP (
+	portawe => \REG_MEM|DOUT\(0),
+	portbre => VCC,
+	clk0 => \CLOCK_50~input_o\,
+	clk1 => \CLOCK_50~input_o\,
+	ena0 => \REG_MEM|DOUT\(0),
+	portadatain => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a27_PORTADATAIN_bus\,
+	portaaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a27_PORTAADDR_bus\,
+	portbaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a27_PORTBADDR_bus\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	portbdataout => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a27_PORTBDATAOUT_bus\);
+
+\bancoRegistrador|registrador_rtl_0_bypass[66]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => VCC,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \bancoRegistrador|registrador_rtl_0_bypass\(66));
+
+\bancoRegistrador|registrador_rtl_0_bypass[65]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \MUX_LUI|saida_MUX[27]~17_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \bancoRegistrador|registrador_rtl_0_bypass\(65));
+
+\bancoRegistrador|saidaA[27]~27\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \bancoRegistrador|saidaA[27]~27_combout\ = ( \bancoRegistrador|registrador_rtl_0_bypass\(65) & ( (!\bancoRegistrador|Equal0~0_combout\ & (((!\bancoRegistrador|registrador_rtl_0_bypass\(66)) # 
+-- (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a27~portbdataout\)) # (\bancoRegistrador|registrador~43_combout\))) ) ) # ( !\bancoRegistrador|registrador_rtl_0_bypass\(65) & ( (!\bancoRegistrador|registrador~43_combout\ & 
+-- (!\bancoRegistrador|Equal0~0_combout\ & (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a27~portbdataout\ & \bancoRegistrador|registrador_rtl_0_bypass\(66)))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000001000110011000100110000000000000010001100110001001100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \bancoRegistrador|ALT_INV_registrador~43_combout\,
+	datab => \bancoRegistrador|ALT_INV_Equal0~0_combout\,
+	datac => \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a27~portbdataout\,
+	datad => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(66),
+	datae => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(65),
+	combout => \bancoRegistrador|saidaA[27]~27_combout\);
+
+\REG_ID|DOUT[101]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \bancoRegistrador|saidaA[27]~27_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_ID|DOUT\(101));
+
+\MUX_jump|saida_MUX[27]~28\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MUX_jump|saida_MUX[27]~28_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~21_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~101_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(101) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(57) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \somadorPC|ALT_INV_Add0~21_sumout\,
+	datab => \somador_somador|ALT_INV_Add0~101_sumout\,
+	datac => \REG_ID|ALT_INV_DOUT\(101),
+	datad => \etapaBusca|ALT_INV_DOUT\(57),
+	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[27]~28_combout\);
+
+\PC|DOUT[27]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \MUX_jump|saida_MUX[27]~28_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(27));
+
+\somadorPC|Add0~117\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \somadorPC|Add0~117_sumout\ = SUM(( \PC|DOUT\(25) ) + ( GND ) + ( \somadorPC|Add0~114\ ))
+-- \somadorPC|Add0~118\ = CARRY(( \PC|DOUT\(25) ) + ( GND ) + ( \somadorPC|Add0~114\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(25),
+	cin => \somadorPC|Add0~114\,
+	sumout => \somadorPC|Add0~117_sumout\,
+	cout => \somadorPC|Add0~118\);
+
+\somadorPC|Add0~1\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \somadorPC|Add0~1_sumout\ = SUM(( \PC|DOUT\(26) ) + ( GND ) + ( \somadorPC|Add0~118\ ))
+-- \somadorPC|Add0~2\ = CARRY(( \PC|DOUT\(26) ) + ( GND ) + ( \somadorPC|Add0~118\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(26),
+	cin => \somadorPC|Add0~118\,
+	sumout => \somadorPC|Add0~1_sumout\,
+	cout => \somadorPC|Add0~2\);
+
+\somadorPC|Add0~21\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \somadorPC|Add0~21_sumout\ = SUM(( \PC|DOUT\(27) ) + ( GND ) + ( \somadorPC|Add0~2\ ))
+-- \somadorPC|Add0~22\ = CARRY(( \PC|DOUT\(27) ) + ( GND ) + ( \somadorPC|Add0~2\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(27),
+	cin => \somadorPC|Add0~2\,
+	sumout => \somadorPC|Add0~21_sumout\,
+	cout => \somadorPC|Add0~22\);
+
+\etapaBusca|DOUT[59]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \somadorPC|Add0~21_sumout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \etapaBusca|DOUT\(59));
+
+\UC|Equal4~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \UC|Equal4~0_combout\ = (\etapaBusca|DOUT\(60) & (!\etapaBusca|DOUT\(63) & (!\etapaBusca|DOUT\(62) & !\etapaBusca|DOUT\(59))))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0100000000000000010000000000000001000000000000000100000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \etapaBusca|ALT_INV_DOUT\(60),
+	datab => \etapaBusca|ALT_INV_DOUT\(63),
+	datac => \etapaBusca|ALT_INV_DOUT\(62),
+	datad => \etapaBusca|ALT_INV_DOUT\(59),
+	combout => \UC|Equal4~0_combout\);
+
+\UC|Equal9~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \UC|Equal9~0_combout\ = (\etapaBusca|DOUT\(58) & (!\etapaBusca|DOUT\(61) & \UC|Equal4~0_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000010000000100000001000000010000000100000001000000010000000100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \etapaBusca|ALT_INV_DOUT\(58),
+	datab => \etapaBusca|ALT_INV_DOUT\(61),
+	datac => \UC|ALT_INV_Equal4~0_combout\,
+	combout => \UC|Equal9~0_combout\);
+
+\REG_ID|DOUT[147]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \UC|Equal9~0_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_ID|DOUT\(147));
+
+\REG_EX|DOUT[104]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_ID|DOUT\(147),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_EX|DOUT\(104));
+
+\REG_MEM|DOUT[102]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_EX|DOUT\(104),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_MEM|DOUT\(102));
+
+\REG_EX|DOUT[6]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_ID|DOUT\(43),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_EX|DOUT\(6));
+
+\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a1\ : cyclonev_ram_block
+-- pragma translate_off
+GENERIC MAP (
+	data_interleave_offset_in_bits => 1,
+	data_interleave_width_in_bits => 1,
+	logical_ram_name => "RAMMIPS:RAM_mips|altsyncram:memRAM_rtl_0|altsyncram_3jp1:auto_generated|ALTSYNCRAM",
+	mixed_port_feed_through_mode => "old",
+	operation_mode => "dual_port",
+	port_a_address_clear => "none",
+	port_a_address_width => 6,
+	port_a_byte_enable_clock => "none",
+	port_a_data_out_clear => "none",
+	port_a_data_out_clock => "none",
+	port_a_data_width => 1,
+	port_a_first_address => 0,
+	port_a_first_bit_number => 1,
+	port_a_last_address => 63,
+	port_a_logical_ram_depth => 64,
+	port_a_logical_ram_width => 32,
+	port_a_read_during_write_mode => "new_data_no_nbe_read",
+	port_b_address_clear => "none",
+	port_b_address_clock => "clock0",
+	port_b_address_width => 6,
+	port_b_data_out_clear => "none",
+	port_b_data_out_clock => "none",
+	port_b_data_width => 1,
+	port_b_first_address => 0,
+	port_b_first_bit_number => 1,
+	port_b_last_address => 63,
+	port_b_logical_ram_depth => 64,
+	port_b_logical_ram_width => 32,
+	port_b_read_during_write_mode => "new_data_no_nbe_read",
+	port_b_read_enable_clock => "clock0",
+	ram_block_type => "M20K")
+-- pragma translate_on
+PORT MAP (
+	portawe => \REG_EX|DOUT\(101),
+	portbre => VCC,
+	clk0 => \CLOCK_50~input_o\,
+	portadatain => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a1_PORTADATAIN_bus\,
+	portaaddr => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a1_PORTAADDR_bus\,
+	portbaddr => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a1_PORTBADDR_bus\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	portbdataout => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a1_PORTBDATAOUT_bus\);
+
+\REG_ID|DOUT[107]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_ID|DOUT\(11),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_ID|DOUT\(107));
+
+\REG_EX|DOUT[70]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_ID|DOUT\(107),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_EX|DOUT\(70));
+
+\REG_MEM|DOUT[70]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_EX|DOUT\(70),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_MEM|DOUT\(70));
+
+\MUX_LUI|saida_MUX[30]~22\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MUX_LUI|saida_MUX[30]~22_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal3~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(102))) # (\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(70))))))) # (\UC|Equal3~0_combout\ & (((\ROM_mips|memROM~6_combout\)))) ) ) # ( 
+-- \REG_MEM|DOUT\(2) & ( ((!\UC|Equal3~0_combout\ & (((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a1~portbdataout\ & !\REG_MEM|DOUT\(1))))) # (\UC|Equal3~0_combout\ & (\ROM_mips|memROM~6_combout\))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "on",
+	lut_mask => "0101010100110011000011110011001100001111001100110000000000110011",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_MEM|ALT_INV_DOUT\(102),
+	datab => \ROM_mips|ALT_INV_memROM~6_combout\,
+	datac => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a1~portbdataout\,
+	datad => \UC|ALT_INV_Equal3~0_combout\,
+	datae => \REG_MEM|ALT_INV_DOUT\(2),
+	dataf => \REG_MEM|ALT_INV_DOUT\(1),
+	datag => \REG_MEM|ALT_INV_DOUT\(70),
+	combout => \MUX_LUI|saida_MUX[30]~22_combout\);
+
+\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a30\ : cyclonev_ram_block
+-- pragma translate_off
+GENERIC MAP (
+	mem_init0 => "00000000",
+	clk0_core_clock_enable => "ena0",
+	data_interleave_offset_in_bits => 1,
+	data_interleave_width_in_bits => 1,
+	init_file => "db/MIPS_pipeline.ram0_bancoRegistradores_57a36dfc.hdl.mif",
+	init_file_layout => "port_b",
+	logical_ram_name => "bancoRegistradores:bancoRegistrador|altsyncram:registrador_rtl_0|altsyncram_d1p1:auto_generated|ALTSYNCRAM",
+	mixed_port_feed_through_mode => "dont_care",
+	operation_mode => "dual_port",
+	port_a_address_clear => "none",
+	port_a_address_width => 5,
+	port_a_byte_enable_clock => "none",
+	port_a_data_out_clear => "none",
+	port_a_data_out_clock => "none",
+	port_a_data_width => 1,
+	port_a_first_address => 0,
+	port_a_first_bit_number => 30,
+	port_a_last_address => 31,
+	port_a_logical_ram_depth => 32,
+	port_a_logical_ram_width => 32,
+	port_a_read_during_write_mode => "new_data_no_nbe_read",
+	port_b_address_clear => "none",
+	port_b_address_clock => "clock1",
+	port_b_address_width => 5,
+	port_b_data_out_clear => "none",
+	port_b_data_out_clock => "none",
+	port_b_data_width => 1,
+	port_b_first_address => 0,
+	port_b_first_bit_number => 30,
+	port_b_last_address => 31,
+	port_b_logical_ram_depth => 32,
+	port_b_logical_ram_width => 32,
+	port_b_read_during_write_mode => "new_data_no_nbe_read",
+	port_b_read_enable_clock => "clock1",
+	ram_block_type => "M20K")
+-- pragma translate_on
+PORT MAP (
+	portawe => \REG_MEM|DOUT\(0),
+	portbre => VCC,
+	clk0 => \CLOCK_50~input_o\,
+	clk1 => \CLOCK_50~input_o\,
+	ena0 => \REG_MEM|DOUT\(0),
+	portadatain => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a30_PORTADATAIN_bus\,
+	portaaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a30_PORTAADDR_bus\,
+	portbaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a30_PORTBADDR_bus\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	portbdataout => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a30_PORTBDATAOUT_bus\);
+
+\bancoRegistrador|registrador_rtl_0_bypass[72]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => VCC,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \bancoRegistrador|registrador_rtl_0_bypass\(72));
+
+\bancoRegistrador|registrador_rtl_0_bypass[71]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \MUX_LUI|saida_MUX[30]~22_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \bancoRegistrador|registrador_rtl_0_bypass\(71));
+
+\bancoRegistrador|saidaA[30]~30\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \bancoRegistrador|saidaA[30]~30_combout\ = ( \bancoRegistrador|registrador_rtl_0_bypass\(71) & ( (!\bancoRegistrador|Equal0~0_combout\ & (((!\bancoRegistrador|registrador_rtl_0_bypass\(72)) # 
+-- (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a30~portbdataout\)) # (\bancoRegistrador|registrador~43_combout\))) ) ) # ( !\bancoRegistrador|registrador_rtl_0_bypass\(71) & ( (!\bancoRegistrador|registrador~43_combout\ & 
+-- (!\bancoRegistrador|Equal0~0_combout\ & (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a30~portbdataout\ & \bancoRegistrador|registrador_rtl_0_bypass\(72)))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000001000110011000100110000000000000010001100110001001100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \bancoRegistrador|ALT_INV_registrador~43_combout\,
+	datab => \bancoRegistrador|ALT_INV_Equal0~0_combout\,
+	datac => \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a30~portbdataout\,
+	datad => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(72),
+	datae => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(71),
+	combout => \bancoRegistrador|saidaA[30]~30_combout\);
+
+\REG_ID|DOUT[104]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \bancoRegistrador|saidaA[30]~30_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_ID|DOUT\(104));
+
+\ULA|Equal5~5\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Equal5~5_combout\ = ( !\ULA|saida[21]~71_combout\ & ( \ULA|Equal5~4_combout\ & ( (!\ULA|saida[0]~2_combout\ & (!\ULA|saida[22]~73_combout\ & ((!\ULA|Add2~1_sumout\) # (!\ULA|saida[0]~0_combout\)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000000000000000000011100000000000000000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ULA|ALT_INV_Add2~1_sumout\,
+	datab => \ULA|ALT_INV_saida[0]~0_combout\,
+	datac => \ULA|ALT_INV_saida[0]~2_combout\,
+	datad => \ULA|ALT_INV_saida[22]~73_combout\,
+	datae => \ULA|ALT_INV_saida[21]~71_combout\,
+	dataf => \ULA|ALT_INV_Equal5~4_combout\,
+	combout => \ULA|Equal5~5_combout\);
+
+\ULA|saida[15]~104\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|saida[15]~104_combout\ = ( \ULA|Add2~65_sumout\ & ( \ULA|Add0~61_sumout\ & ( (!\REG_ID|DOUT\(13) & (((\UC_ULA|ULActrl[1]~1_combout\ & !\UC_ULA|ULActrl[0]~4_combout\)) # (\UC_ULA|ULActrl~6_combout\))) # (\REG_ID|DOUT\(13) & 
+-- (\UC_ULA|ULActrl[1]~1_combout\ & (!\UC_ULA|ULActrl[0]~4_combout\))) ) ) ) # ( !\ULA|Add2~65_sumout\ & ( \ULA|Add0~61_sumout\ & ( (\UC_ULA|ULActrl[1]~1_combout\ & (!\UC_ULA|ULActrl[0]~4_combout\ & ((!\UC_ULA|ULActrl~6_combout\) # (\REG_ID|DOUT\(13))))) ) ) 
+-- ) # ( \ULA|Add2~65_sumout\ & ( !\ULA|Add0~61_sumout\ & ( (!\REG_ID|DOUT\(13) & \UC_ULA|ULActrl~6_combout\) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000000000001010101000110000000100000011000010111010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_ID|ALT_INV_DOUT\(13),
+	datab => \UC_ULA|ALT_INV_ULActrl[1]~1_combout\,
+	datac => \UC_ULA|ALT_INV_ULActrl[0]~4_combout\,
+	datad => \UC_ULA|ALT_INV_ULActrl~6_combout\,
+	datae => \ULA|ALT_INV_Add2~65_sumout\,
+	dataf => \ULA|ALT_INV_Add0~61_sumout\,
+	combout => \ULA|saida[15]~104_combout\);
+
+\ULA|saida[13]~105\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|saida[13]~105_combout\ = ( \ULA|Add2~57_sumout\ & ( \ULA|Add0~53_sumout\ & ( (!\REG_ID|DOUT\(13) & (((\UC_ULA|ULActrl[1]~1_combout\ & !\UC_ULA|ULActrl[0]~4_combout\)) # (\UC_ULA|ULActrl~6_combout\))) # (\REG_ID|DOUT\(13) & 
+-- (\UC_ULA|ULActrl[1]~1_combout\ & (!\UC_ULA|ULActrl[0]~4_combout\))) ) ) ) # ( !\ULA|Add2~57_sumout\ & ( \ULA|Add0~53_sumout\ & ( (\UC_ULA|ULActrl[1]~1_combout\ & (!\UC_ULA|ULActrl[0]~4_combout\ & ((!\UC_ULA|ULActrl~6_combout\) # (\REG_ID|DOUT\(13))))) ) ) 
+-- ) # ( \ULA|Add2~57_sumout\ & ( !\ULA|Add0~53_sumout\ & ( (!\REG_ID|DOUT\(13) & \UC_ULA|ULActrl~6_combout\) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000000000001010101000110000000100000011000010111010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_ID|ALT_INV_DOUT\(13),
+	datab => \UC_ULA|ALT_INV_ULActrl[1]~1_combout\,
+	datac => \UC_ULA|ALT_INV_ULActrl[0]~4_combout\,
+	datad => \UC_ULA|ALT_INV_ULActrl~6_combout\,
+	datae => \ULA|ALT_INV_Add2~57_sumout\,
+	dataf => \ULA|ALT_INV_Add0~53_sumout\,
+	combout => \ULA|saida[13]~105_combout\);
+
+\ULA|saida[14]~106\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|saida[14]~106_combout\ = ( \ULA|Add2~61_sumout\ & ( \ULA|Add0~57_sumout\ & ( (!\REG_ID|DOUT\(13) & (((\UC_ULA|ULActrl[1]~1_combout\ & !\UC_ULA|ULActrl[0]~4_combout\)) # (\UC_ULA|ULActrl~6_combout\))) # (\REG_ID|DOUT\(13) & 
+-- (\UC_ULA|ULActrl[1]~1_combout\ & (!\UC_ULA|ULActrl[0]~4_combout\))) ) ) ) # ( !\ULA|Add2~61_sumout\ & ( \ULA|Add0~57_sumout\ & ( (\UC_ULA|ULActrl[1]~1_combout\ & (!\UC_ULA|ULActrl[0]~4_combout\ & ((!\UC_ULA|ULActrl~6_combout\) # (\REG_ID|DOUT\(13))))) ) ) 
+-- ) # ( \ULA|Add2~61_sumout\ & ( !\ULA|Add0~57_sumout\ & ( (!\REG_ID|DOUT\(13) & \UC_ULA|ULActrl~6_combout\) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000000000001010101000110000000100000011000010111010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_ID|ALT_INV_DOUT\(13),
+	datab => \UC_ULA|ALT_INV_ULActrl[1]~1_combout\,
+	datac => \UC_ULA|ALT_INV_ULActrl[0]~4_combout\,
+	datad => \UC_ULA|ALT_INV_ULActrl~6_combout\,
+	datae => \ULA|ALT_INV_Add2~61_sumout\,
+	dataf => \ULA|ALT_INV_Add0~57_sumout\,
+	combout => \ULA|saida[14]~106_combout\);
+
+\ULA|Equal5~9\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Equal5~9_combout\ = ( !\ULA|saida[14]~56_combout\ & ( !\ULA|saida[14]~106_combout\ & ( (!\ULA|saida[15]~58_combout\ & (!\ULA|saida[15]~104_combout\ & (!\ULA|saida[13]~54_combout\ & !\ULA|saida[13]~105_combout\))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1000000000000000000000000000000000000000000000000000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ULA|ALT_INV_saida[15]~58_combout\,
+	datab => \ULA|ALT_INV_saida[15]~104_combout\,
+	datac => \ULA|ALT_INV_saida[13]~54_combout\,
+	datad => \ULA|ALT_INV_saida[13]~105_combout\,
+	datae => \ULA|ALT_INV_saida[14]~56_combout\,
+	dataf => \ULA|ALT_INV_saida[14]~106_combout\,
+	combout => \ULA|Equal5~9_combout\);
+
+\ULA|Equal5~10\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Equal5~10_combout\ = ( !\ULA|saida[19]~67_combout\ & ( \ULA|Equal5~9_combout\ & ( (!\ULA|saida[26]~81_combout\ & (!\ULA|saida[25]~79_combout\ & (!\ULA|saida[24]~77_combout\ & !\ULA|saida[20]~69_combout\))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000000000000000000010000000000000000000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ULA|ALT_INV_saida[26]~81_combout\,
+	datab => \ULA|ALT_INV_saida[25]~79_combout\,
+	datac => \ULA|ALT_INV_saida[24]~77_combout\,
+	datad => \ULA|ALT_INV_saida[20]~69_combout\,
+	datae => \ULA|ALT_INV_saida[19]~67_combout\,
+	dataf => \ULA|ALT_INV_Equal5~9_combout\,
+	combout => \ULA|Equal5~10_combout\);
+
+\selMUX_AND_BEQ~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \selMUX_AND_BEQ~0_combout\ = ( \ULA|Equal5~10_combout\ & ( \REG_ID|DOUT\(149) & ( ((!\ULA|Equal5~3_combout\) # ((!\ULA|Equal5~5_combout\) # (\ULA|saida[31]~91_combout\))) # (\REG_ID|DOUT\(150)) ) ) ) # ( !\ULA|Equal5~10_combout\ & ( \REG_ID|DOUT\(149) ) ) 
+-- # ( \ULA|Equal5~10_combout\ & ( !\REG_ID|DOUT\(149) & ( (\REG_ID|DOUT\(150) & (\ULA|Equal5~3_combout\ & (\ULA|Equal5~5_combout\ & !\ULA|saida[31]~91_combout\))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000000000010000000011111111111111111111110111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_ID|ALT_INV_DOUT\(150),
+	datab => \ULA|ALT_INV_Equal5~3_combout\,
+	datac => \ULA|ALT_INV_Equal5~5_combout\,
+	datad => \ULA|ALT_INV_saida[31]~91_combout\,
+	datae => \ULA|ALT_INV_Equal5~10_combout\,
+	dataf => \REG_ID|ALT_INV_DOUT\(149),
+	combout => \selMUX_AND_BEQ~0_combout\);
+
+\somador_somador|Add0~105\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \somador_somador|Add0~105_sumout\ = SUM(( \REG_ID|DOUT\(26) ) + ( \REG_ID|DOUT\(134) ) + ( \somador_somador|Add0~102\ ))
+-- \somador_somador|Add0~106\ = CARRY(( \REG_ID|DOUT\(26) ) + ( \REG_ID|DOUT\(134) ) + ( \somador_somador|Add0~102\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111110000000000000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \REG_ID|ALT_INV_DOUT\(26),
+	dataf => \REG_ID|ALT_INV_DOUT\(134),
+	cin => \somador_somador|Add0~102\,
+	sumout => \somador_somador|Add0~105_sumout\,
+	cout => \somador_somador|Add0~106\);
+
+\somador_somador|Add0~109\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \somador_somador|Add0~109_sumout\ = SUM(( \REG_ID|DOUT\(26) ) + ( \REG_ID|DOUT\(135) ) + ( \somador_somador|Add0~106\ ))
+-- \somador_somador|Add0~110\ = CARRY(( \REG_ID|DOUT\(26) ) + ( \REG_ID|DOUT\(135) ) + ( \somador_somador|Add0~106\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111110000000000000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \REG_ID|ALT_INV_DOUT\(26),
+	dataf => \REG_ID|ALT_INV_DOUT\(135),
+	cin => \somador_somador|Add0~106\,
+	sumout => \somador_somador|Add0~109_sumout\,
+	cout => \somador_somador|Add0~110\);
+
+\somador_somador|Add0~113\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \somador_somador|Add0~113_sumout\ = SUM(( \REG_ID|DOUT\(26) ) + ( GND ) + ( \somador_somador|Add0~110\ ))
+-- \somador_somador|Add0~114\ = CARRY(( \REG_ID|DOUT\(26) ) + ( GND ) + ( \somador_somador|Add0~110\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \REG_ID|ALT_INV_DOUT\(26),
+	cin => \somador_somador|Add0~110\,
+	sumout => \somador_somador|Add0~113_sumout\,
+	cout => \somador_somador|Add0~114\);
+
+\MUX_jump|saida_MUX[30]~31\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MUX_jump|saida_MUX[30]~31_combout\ = ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~113_sumout\ & ( (!\UC|seletorMUX_JMP~1_combout\ & (((\selMUX_AND_BEQ~0_combout\) # (\somadorPC|Add0~13_sumout\)))) # (\UC|seletorMUX_JMP~1_combout\ & 
+-- (\REG_ID|DOUT\(104))) ) ) ) # ( !\MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~113_sumout\ & ( (!\UC|seletorMUX_JMP~1_combout\ & ((\somadorPC|Add0~13_sumout\))) # (\UC|seletorMUX_JMP~1_combout\ & (\REG_ID|DOUT\(104))) ) ) ) # ( 
+-- \MUX_jump|Equal2~0_combout\ & ( !\somador_somador|Add0~113_sumout\ & ( (!\UC|seletorMUX_JMP~1_combout\ & (((\somadorPC|Add0~13_sumout\ & !\selMUX_AND_BEQ~0_combout\)))) # (\UC|seletorMUX_JMP~1_combout\ & (\REG_ID|DOUT\(104))) ) ) ) # ( 
+-- !\MUX_jump|Equal2~0_combout\ & ( !\somador_somador|Add0~113_sumout\ & ( (!\UC|seletorMUX_JMP~1_combout\ & ((\somadorPC|Add0~13_sumout\))) # (\UC|seletorMUX_JMP~1_combout\ & (\REG_ID|DOUT\(104))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0011001101010101001100000101010100110011010101010011111101010101",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_ID|ALT_INV_DOUT\(104),
+	datab => \somadorPC|ALT_INV_Add0~13_sumout\,
+	datac => \ALT_INV_selMUX_AND_BEQ~0_combout\,
+	datad => \UC|ALT_INV_seletorMUX_JMP~1_combout\,
+	datae => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	dataf => \somador_somador|ALT_INV_Add0~113_sumout\,
+	combout => \MUX_jump|saida_MUX[30]~31_combout\);
+
+\PC|DOUT[30]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \MUX_jump|saida_MUX[30]~31_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(30));
+
+\somadorPC|Add0~5\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \somadorPC|Add0~5_sumout\ = SUM(( \PC|DOUT\(28) ) + ( GND ) + ( \somadorPC|Add0~22\ ))
+-- \somadorPC|Add0~6\ = CARRY(( \PC|DOUT\(28) ) + ( GND ) + ( \somadorPC|Add0~22\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(28),
+	cin => \somadorPC|Add0~22\,
+	sumout => \somadorPC|Add0~5_sumout\,
+	cout => \somadorPC|Add0~6\);
+
+\somadorPC|Add0~17\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \somadorPC|Add0~17_sumout\ = SUM(( \PC|DOUT\(29) ) + ( GND ) + ( \somadorPC|Add0~6\ ))
+-- \somadorPC|Add0~18\ = CARRY(( \PC|DOUT\(29) ) + ( GND ) + ( \somadorPC|Add0~6\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(29),
+	cin => \somadorPC|Add0~6\,
+	sumout => \somadorPC|Add0~17_sumout\,
+	cout => \somadorPC|Add0~18\);
+
+\somadorPC|Add0~13\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \somadorPC|Add0~13_sumout\ = SUM(( \PC|DOUT\(30) ) + ( GND ) + ( \somadorPC|Add0~18\ ))
+-- \somadorPC|Add0~14\ = CARRY(( \PC|DOUT\(30) ) + ( GND ) + ( \somadorPC|Add0~18\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(30),
+	cin => \somadorPC|Add0~18\,
+	sumout => \somadorPC|Add0~13_sumout\,
+	cout => \somadorPC|Add0~14\);
+
+\etapaBusca|DOUT[62]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \somadorPC|Add0~13_sumout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \etapaBusca|DOUT\(62));
+
+\UC|Equal3~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \UC|Equal3~0_combout\ = ( \etapaBusca|DOUT\(61) & ( \etapaBusca|DOUT\(59) & ( (\etapaBusca|DOUT\(58) & (\etapaBusca|DOUT\(60) & (!\etapaBusca|DOUT\(63) & !\etapaBusca|DOUT\(62)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000000000000000000000000000000000000001000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \etapaBusca|ALT_INV_DOUT\(58),
+	datab => \etapaBusca|ALT_INV_DOUT\(60),
+	datac => \etapaBusca|ALT_INV_DOUT\(63),
+	datad => \etapaBusca|ALT_INV_DOUT\(62),
+	datae => \etapaBusca|ALT_INV_DOUT\(61),
+	dataf => \etapaBusca|ALT_INV_DOUT\(59),
+	combout => \UC|Equal3~0_combout\);
+
+\REG_EX|DOUT[25]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_ID|DOUT\(62),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_EX|DOUT\(25));
+
+\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a20\ : cyclonev_ram_block
+-- pragma translate_off
+GENERIC MAP (
+	data_interleave_offset_in_bits => 1,
+	data_interleave_width_in_bits => 1,
+	logical_ram_name => "RAMMIPS:RAM_mips|altsyncram:memRAM_rtl_0|altsyncram_3jp1:auto_generated|ALTSYNCRAM",
+	mixed_port_feed_through_mode => "old",
+	operation_mode => "dual_port",
+	port_a_address_clear => "none",
+	port_a_address_width => 6,
+	port_a_byte_enable_clock => "none",
+	port_a_data_out_clear => "none",
+	port_a_data_out_clock => "none",
+	port_a_data_width => 1,
+	port_a_first_address => 0,
+	port_a_first_bit_number => 20,
+	port_a_last_address => 63,
+	port_a_logical_ram_depth => 64,
+	port_a_logical_ram_width => 32,
+	port_a_read_during_write_mode => "new_data_no_nbe_read",
+	port_b_address_clear => "none",
+	port_b_address_clock => "clock0",
+	port_b_address_width => 6,
+	port_b_data_out_clear => "none",
+	port_b_data_out_clock => "none",
+	port_b_data_width => 1,
+	port_b_first_address => 0,
+	port_b_first_bit_number => 20,
+	port_b_last_address => 63,
+	port_b_logical_ram_depth => 64,
+	port_b_logical_ram_width => 32,
+	port_b_read_during_write_mode => "new_data_no_nbe_read",
+	port_b_read_enable_clock => "clock0",
+	ram_block_type => "M20K")
+-- pragma translate_on
+PORT MAP (
+	portawe => \REG_EX|DOUT\(101),
+	portbre => VCC,
+	clk0 => \CLOCK_50~input_o\,
+	portadatain => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a20_PORTADATAIN_bus\,
+	portaaddr => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a20_PORTAADDR_bus\,
+	portbaddr => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a20_PORTBADDR_bus\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	portbdataout => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a20_PORTBDATAOUT_bus\);
+
+\REG_EX|DOUT[57]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \ULA|saida[20]~69_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_EX|DOUT\(57));
+
+\REG_MEM|DOUT[25]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_EX|DOUT\(57),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_MEM|DOUT\(25));
+
+\MUX_LUI|saida_MUX[17]~16\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MUX_LUI|saida_MUX[17]~16_combout\ = ( \ROM_mips|memROM~0_combout\ & ( \REG_MEM|DOUT\(25) & ( ((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(2))) # (\REG_MEM|DOUT\(1) & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a20~portbdataout\))) # 
+-- (\UC|Equal3~0_combout\) ) ) ) # ( !\ROM_mips|memROM~0_combout\ & ( \REG_MEM|DOUT\(25) & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(2))) # (\REG_MEM|DOUT\(1) & (!\REG_MEM|DOUT\(2) & 
+-- \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a20~portbdataout\)))) ) ) ) # ( \ROM_mips|memROM~0_combout\ & ( !\REG_MEM|DOUT\(25) & ( ((\REG_MEM|DOUT\(1) & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a20~portbdataout\))) # 
+-- (\UC|Equal3~0_combout\) ) ) ) # ( !\ROM_mips|memROM~0_combout\ & ( !\REG_MEM|DOUT\(25) & ( (\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a20~portbdataout\))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000001000000001100110111001100001000010010000011101101111011",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_MEM|ALT_INV_DOUT\(1),
+	datab => \UC|ALT_INV_Equal3~0_combout\,
+	datac => \REG_MEM|ALT_INV_DOUT\(2),
+	datad => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a20~portbdataout\,
+	datae => \ROM_mips|ALT_INV_memROM~0_combout\,
+	dataf => \REG_MEM|ALT_INV_DOUT\(25),
+	combout => \MUX_LUI|saida_MUX[17]~16_combout\);
+
+\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a17\ : cyclonev_ram_block
+-- pragma translate_off
+GENERIC MAP (
+	mem_init0 => "00000000",
+	clk0_core_clock_enable => "ena0",
+	data_interleave_offset_in_bits => 1,
+	data_interleave_width_in_bits => 1,
+	init_file => "db/MIPS_pipeline.ram0_bancoRegistradores_57a36dfc.hdl.mif",
+	init_file_layout => "port_b",
+	logical_ram_name => "bancoRegistradores:bancoRegistrador|altsyncram:registrador_rtl_0|altsyncram_d1p1:auto_generated|ALTSYNCRAM",
+	mixed_port_feed_through_mode => "dont_care",
+	operation_mode => "dual_port",
+	port_a_address_clear => "none",
+	port_a_address_width => 5,
+	port_a_byte_enable_clock => "none",
+	port_a_data_out_clear => "none",
+	port_a_data_out_clock => "none",
+	port_a_data_width => 1,
+	port_a_first_address => 0,
+	port_a_first_bit_number => 17,
+	port_a_last_address => 31,
+	port_a_logical_ram_depth => 32,
+	port_a_logical_ram_width => 32,
+	port_a_read_during_write_mode => "new_data_no_nbe_read",
+	port_b_address_clear => "none",
+	port_b_address_clock => "clock1",
+	port_b_address_width => 5,
+	port_b_data_out_clear => "none",
+	port_b_data_out_clock => "none",
+	port_b_data_width => 1,
+	port_b_first_address => 0,
+	port_b_first_bit_number => 17,
+	port_b_last_address => 31,
+	port_b_logical_ram_depth => 32,
+	port_b_logical_ram_width => 32,
+	port_b_read_during_write_mode => "new_data_no_nbe_read",
+	port_b_read_enable_clock => "clock1",
+	ram_block_type => "M20K")
+-- pragma translate_on
+PORT MAP (
+	portawe => \REG_MEM|DOUT\(0),
+	portbre => VCC,
+	clk0 => \CLOCK_50~input_o\,
+	clk1 => \CLOCK_50~input_o\,
+	ena0 => \REG_MEM|DOUT\(0),
+	portadatain => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a17_PORTADATAIN_bus\,
+	portaaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a17_PORTAADDR_bus\,
+	portbaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a17_PORTBADDR_bus\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	portbdataout => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a17_PORTBDATAOUT_bus\);
+
+\bancoRegistrador|registrador_rtl_0_bypass[46]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => VCC,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \bancoRegistrador|registrador_rtl_0_bypass\(46));
+
+\bancoRegistrador|registrador_rtl_0_bypass[45]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \MUX_LUI|saida_MUX[17]~16_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \bancoRegistrador|registrador_rtl_0_bypass\(45));
+
+\bancoRegistrador|saidaA[17]~17\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \bancoRegistrador|saidaA[17]~17_combout\ = ( \bancoRegistrador|registrador_rtl_0_bypass\(45) & ( (!\bancoRegistrador|Equal0~0_combout\ & (((!\bancoRegistrador|registrador_rtl_0_bypass\(46)) # 
+-- (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a17~portbdataout\)) # (\bancoRegistrador|registrador~43_combout\))) ) ) # ( !\bancoRegistrador|registrador_rtl_0_bypass\(45) & ( (!\bancoRegistrador|registrador~43_combout\ & 
+-- (!\bancoRegistrador|Equal0~0_combout\ & (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a17~portbdataout\ & \bancoRegistrador|registrador_rtl_0_bypass\(46)))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000001000110011000100110000000000000010001100110001001100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \bancoRegistrador|ALT_INV_registrador~43_combout\,
+	datab => \bancoRegistrador|ALT_INV_Equal0~0_combout\,
+	datac => \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a17~portbdataout\,
+	datad => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(46),
+	datae => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(45),
+	combout => \bancoRegistrador|saidaA[17]~17_combout\);
+
+\REG_ID|DOUT[91]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \bancoRegistrador|saidaA[17]~17_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_ID|DOUT\(91));
+
+\MUX_jump|saida_MUX[17]~18\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MUX_jump|saida_MUX[17]~18_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~85_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~61_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(91) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(47) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \somadorPC|ALT_INV_Add0~85_sumout\,
+	datab => \somador_somador|ALT_INV_Add0~61_sumout\,
+	datac => \REG_ID|ALT_INV_DOUT\(91),
+	datad => \etapaBusca|ALT_INV_DOUT\(47),
+	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[17]~18_combout\);
+
+\PC|DOUT[17]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \MUX_jump|saida_MUX[17]~18_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(17));
+
+\etapaBusca|DOUT[49]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \somadorPC|Add0~85_sumout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \etapaBusca|DOUT\(49));
+
+\REG_ID|DOUT[6]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \etapaBusca|DOUT\(49),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_ID|DOUT\(6));
+
+\etapaBusca|DOUT[44]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \somadorPC|Add0~65_sumout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \etapaBusca|DOUT\(44));
+
+\REG_ID|DOUT[1]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \etapaBusca|DOUT\(44),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_ID|DOUT\(1));
+
+\mux_RT_RD|saida_MUX[1]~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \mux_RT_RD|saida_MUX[1]~0_combout\ = (!\REG_ID|DOUT\(143) & ((!\REG_ID|DOUT\(142) & ((\REG_ID|DOUT\(1)))) # (\REG_ID|DOUT\(142) & (\REG_ID|DOUT\(6))))) # (\REG_ID|DOUT\(143) & (((!\REG_ID|DOUT\(142)))))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0011010011110100001101001111010000110100111101000011010011110100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_ID|ALT_INV_DOUT\(6),
+	datab => \REG_ID|ALT_INV_DOUT\(143),
+	datac => \REG_ID|ALT_INV_DOUT\(142),
+	datad => \REG_ID|ALT_INV_DOUT\(1),
+	combout => \mux_RT_RD|saida_MUX[1]~0_combout\);
+
+\REG_EX|DOUT[1]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \mux_RT_RD|saida_MUX[1]~0_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_EX|DOUT\(1));
+
+\REG_MEM|DOUT[1]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_EX|DOUT\(1),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_MEM|DOUT\(1));
 
 \REG_EX|DOUT[22]\ : dffeas
 -- pragma translate_off
@@ -19063,10 +20442,10 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[14]~14\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[14]~14_combout\ = ( \REG_MEM|DOUT\(86) & ( \REG_MEM|DOUT\(22) & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1)) # ((!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a17~portbdataout\)))) ) ) ) # ( 
--- !\REG_MEM|DOUT\(86) & ( \REG_MEM|DOUT\(22) & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(2))) # (\REG_MEM|DOUT\(1) & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a17~portbdataout\)))) ) ) ) # ( 
--- \REG_MEM|DOUT\(86) & ( !\REG_MEM|DOUT\(22) & ( (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & ((!\REG_MEM|DOUT\(1)) # (\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a17~portbdataout\)))) ) ) ) # ( !\REG_MEM|DOUT\(86) & ( !\REG_MEM|DOUT\(22) & ( 
--- (\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a17~portbdataout\))) ) ) )
+-- \MUX_LUI|saida_MUX[14]~14_combout\ = ( \REG_MEM|DOUT\(86) & ( \REG_MEM|DOUT\(22) & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1)) # ((!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a17~portbdataout\)))) ) ) ) # ( 
+-- !\REG_MEM|DOUT\(86) & ( \REG_MEM|DOUT\(22) & ( (!\UC|Equal3~0_combout\ & ((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(2))) # (\REG_MEM|DOUT\(1) & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a17~portbdataout\)))) ) ) ) # ( 
+-- \REG_MEM|DOUT\(86) & ( !\REG_MEM|DOUT\(22) & ( (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & ((!\REG_MEM|DOUT\(1)) # (\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a17~portbdataout\)))) ) ) ) # ( !\REG_MEM|DOUT\(86) & ( !\REG_MEM|DOUT\(22) & ( 
+-- (\REG_MEM|DOUT\(1) & (!\UC|Equal3~0_combout\ & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a17~portbdataout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -19076,7 +20455,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(1),
-	datab => \UC|ALT_INV_Equal5~0_combout\,
+	datab => \UC|ALT_INV_Equal3~0_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(2),
 	datad => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a17~portbdataout\,
 	datae => \REG_MEM|ALT_INV_DOUT\(86),
@@ -19194,28 +20573,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \REG_ID|DOUT\(88));
 
-\etapaBusca|DOUT[44]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \somadorPC|Add0~65_sumout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \etapaBusca|DOUT\(44));
-
-\MUX_jump|saida_MUX[14]~14\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[14]~15\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[14]~14_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~49_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~73_sumout\ ) ) ) # ( 
--- \PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(44) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(88) ) ) )
+-- \MUX_jump|saida_MUX[14]~15_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~73_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~49_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(88) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(44) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -19224,8 +20590,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(88),
 	datad => \etapaBusca|ALT_INV_DOUT\(44),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[14]~14_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[14]~15_combout\);
 
 \PC|DOUT[14]\ : dffeas
 -- pragma translate_off
@@ -19235,7 +20601,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[14]~14_combout\,
+	d => \MUX_jump|saida_MUX[14]~15_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(14));
@@ -19563,8 +20929,8 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[25]~38\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[25]~38_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal5~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(97))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a28~portbdataout\)))))) # (\UC|Equal5~0_combout\ 
--- & (((\ROM_mips|memROM~5_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal5~0_combout\ & (((\REG_MEM|DOUT\(33) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal5~0_combout\ & (\ROM_mips|memROM~5_combout\))) ) )
+-- \MUX_LUI|saida_MUX[25]~38_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal3~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(97))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a28~portbdataout\)))))) # (\UC|Equal3~0_combout\ 
+-- & (((\ROM_mips|memROM~5_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal3~0_combout\ & (((\REG_MEM|DOUT\(33) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal3~0_combout\ & (\ROM_mips|memROM~5_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -19576,7 +20942,7 @@ PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(97),
 	datab => \ROM_mips|ALT_INV_memROM~5_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(33),
-	datad => \UC|ALT_INV_Equal5~0_combout\,
+	datad => \UC|ALT_INV_Equal3~0_combout\,
 	datae => \REG_MEM|ALT_INV_DOUT\(2),
 	dataf => \REG_MEM|ALT_INV_DOUT\(1),
 	datag => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a28~portbdataout\,
@@ -19836,8 +21202,8 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[22]~50\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[22]~50_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal5~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(94))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a25~portbdataout\)))))) # (\UC|Equal5~0_combout\ 
--- & (((\ROM_mips|memROM~5_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal5~0_combout\ & (((\REG_MEM|DOUT\(30) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal5~0_combout\ & (\ROM_mips|memROM~5_combout\))) ) )
+-- \MUX_LUI|saida_MUX[22]~50_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal3~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(94))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a25~portbdataout\)))))) # (\UC|Equal3~0_combout\ 
+-- & (((\ROM_mips|memROM~5_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal3~0_combout\ & (((\REG_MEM|DOUT\(30) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal3~0_combout\ & (\ROM_mips|memROM~5_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -19849,7 +21215,7 @@ PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(94),
 	datab => \ROM_mips|ALT_INV_memROM~5_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(30),
-	datad => \UC|ALT_INV_Equal5~0_combout\,
+	datad => \UC|ALT_INV_Equal3~0_combout\,
 	datae => \REG_MEM|ALT_INV_DOUT\(2),
 	dataf => \REG_MEM|ALT_INV_DOUT\(1),
 	datag => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a25~portbdataout\,
@@ -20109,8 +21475,8 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[19]~62\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[19]~62_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal5~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(94))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a22~portbdataout\)))))) # (\UC|Equal5~0_combout\ 
--- & (((\ROM_mips|memROM~2_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal5~0_combout\ & (((\REG_MEM|DOUT\(27) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal5~0_combout\ & (\ROM_mips|memROM~2_combout\))) ) )
+-- \MUX_LUI|saida_MUX[19]~62_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal3~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(94))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a22~portbdataout\)))))) # (\UC|Equal3~0_combout\ 
+-- & (((\ROM_mips|memROM~2_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal3~0_combout\ & (((\REG_MEM|DOUT\(27) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal3~0_combout\ & (\ROM_mips|memROM~2_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -20122,7 +21488,7 @@ PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(94),
 	datab => \ROM_mips|ALT_INV_memROM~2_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(27),
-	datad => \UC|ALT_INV_Equal5~0_combout\,
+	datad => \UC|ALT_INV_Equal3~0_combout\,
 	datae => \REG_MEM|ALT_INV_DOUT\(2),
 	dataf => \REG_MEM|ALT_INV_DOUT\(1),
 	datag => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a22~portbdataout\,
@@ -20239,15 +21605,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \REG_ID|DOUT\(93));
 
-\MUX_jump|saida_MUX[19]~19\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[19]~20\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[19]~19_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~69_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~93_sumout\ ) ) ) # ( 
--- \PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(49) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(93) ) ) )
+-- \MUX_jump|saida_MUX[19]~20_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~93_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~69_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(93) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(49) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -20256,8 +21622,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(93),
 	datad => \etapaBusca|ALT_INV_DOUT\(49),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[19]~19_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[19]~20_combout\);
 
 \PC|DOUT[19]\ : dffeas
 -- pragma translate_off
@@ -20267,7 +21633,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[19]~19_combout\,
+	d => \MUX_jump|saida_MUX[19]~20_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(19));
@@ -20557,8 +21923,8 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[20]~58\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[20]~58_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal5~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(92))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a23~portbdataout\)))))) # (\UC|Equal5~0_combout\ 
--- & (((\ROM_mips|memROM~3_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal5~0_combout\ & (((\REG_MEM|DOUT\(28) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal5~0_combout\ & (\ROM_mips|memROM~3_combout\))) ) )
+-- \MUX_LUI|saida_MUX[20]~58_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal3~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(92))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a23~portbdataout\)))))) # (\UC|Equal3~0_combout\ 
+-- & (((\ROM_mips|memROM~3_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal3~0_combout\ & (((\REG_MEM|DOUT\(28) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal3~0_combout\ & (\ROM_mips|memROM~3_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -20570,7 +21936,7 @@ PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(92),
 	datab => \ROM_mips|ALT_INV_memROM~3_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(28),
-	datad => \UC|ALT_INV_Equal5~0_combout\,
+	datad => \UC|ALT_INV_Equal3~0_combout\,
 	datae => \REG_MEM|ALT_INV_DOUT\(2),
 	dataf => \REG_MEM|ALT_INV_DOUT\(1),
 	datag => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a23~portbdataout\,
@@ -20687,15 +22053,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \REG_ID|DOUT\(94));
 
-\MUX_jump|saida_MUX[20]~20\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[20]~21\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[20]~20_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~73_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~97_sumout\ ) ) ) # ( 
--- \PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(50) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(94) ) ) )
+-- \MUX_jump|saida_MUX[20]~21_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~97_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~73_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(94) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(50) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -20704,8 +22070,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(94),
 	datad => \etapaBusca|ALT_INV_DOUT\(50),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[20]~20_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[20]~21_combout\);
 
 \PC|DOUT[20]\ : dffeas
 -- pragma translate_off
@@ -20715,7 +22081,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[20]~20_combout\,
+	d => \MUX_jump|saida_MUX[20]~21_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(20));
@@ -20905,1424 +22271,6 @@ PORT MAP (
 	datad => \bancoRegistrador|ALT_INV_registrador~39_combout\,
 	combout => \bancoRegistrador|registrador~40_combout\);
 
-\bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a1\ : cyclonev_ram_block
--- pragma translate_off
-GENERIC MAP (
-	mem_init0 => "00002600",
-	clk0_core_clock_enable => "ena0",
-	data_interleave_offset_in_bits => 1,
-	data_interleave_width_in_bits => 1,
-	init_file => "db/MIPS_pipeline.ram0_bancoRegistradores_57a36dfc.hdl.mif",
-	init_file_layout => "port_b",
-	logical_ram_name => "bancoRegistradores:bancoRegistrador|altsyncram:registrador_rtl_1|altsyncram_d1p1:auto_generated|ALTSYNCRAM",
-	mixed_port_feed_through_mode => "dont_care",
-	operation_mode => "dual_port",
-	port_a_address_clear => "none",
-	port_a_address_width => 5,
-	port_a_byte_enable_clock => "none",
-	port_a_data_out_clear => "none",
-	port_a_data_out_clock => "none",
-	port_a_data_width => 1,
-	port_a_first_address => 0,
-	port_a_first_bit_number => 1,
-	port_a_last_address => 31,
-	port_a_logical_ram_depth => 32,
-	port_a_logical_ram_width => 32,
-	port_a_read_during_write_mode => "new_data_no_nbe_read",
-	port_b_address_clear => "none",
-	port_b_address_clock => "clock1",
-	port_b_address_width => 5,
-	port_b_data_out_clear => "none",
-	port_b_data_out_clock => "none",
-	port_b_data_width => 1,
-	port_b_first_address => 0,
-	port_b_first_bit_number => 1,
-	port_b_last_address => 31,
-	port_b_logical_ram_depth => 32,
-	port_b_logical_ram_width => 32,
-	port_b_read_during_write_mode => "new_data_no_nbe_read",
-	port_b_read_enable_clock => "clock1",
-	ram_block_type => "M20K")
--- pragma translate_on
-PORT MAP (
-	portawe => \REG_MEM|DOUT\(0),
-	portbre => VCC,
-	clk0 => \CLOCK_50~input_o\,
-	clk1 => \CLOCK_50~input_o\,
-	ena0 => \REG_MEM|DOUT\(0),
-	portadatain => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a1_PORTADATAIN_bus\,
-	portaaddr => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a1_PORTAADDR_bus\,
-	portbaddr => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a1_PORTBADDR_bus\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	portbdataout => \bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a1_PORTBDATAOUT_bus\);
-
-\bancoRegistrador|registrador_rtl_1_bypass[14]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => VCC,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \bancoRegistrador|registrador_rtl_1_bypass\(14));
-
-\bancoRegistrador|registrador_rtl_1_bypass[13]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \MUX_LUI|saida_MUX[1]~1_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \bancoRegistrador|registrador_rtl_1_bypass\(13));
-
-\bancoRegistrador|saidaB[1]~1\ : cyclonev_lcell_comb
--- Equation(s):
--- \bancoRegistrador|saidaB[1]~1_combout\ = ( \bancoRegistrador|registrador_rtl_1_bypass\(13) & ( (!\bancoRegistrador|Equal1~0_combout\ & (((!\bancoRegistrador|registrador_rtl_1_bypass\(14)) # 
--- (\bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a1~portbdataout\)) # (\bancoRegistrador|registrador~40_combout\))) ) ) # ( !\bancoRegistrador|registrador_rtl_1_bypass\(13) & ( (!\bancoRegistrador|registrador~40_combout\ & 
--- (!\bancoRegistrador|Equal1~0_combout\ & (\bancoRegistrador|registrador_rtl_1|auto_generated|ram_block1a1~portbdataout\ & \bancoRegistrador|registrador_rtl_1_bypass\(14)))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000001000110011000100110000000000000010001100110001001100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \bancoRegistrador|ALT_INV_registrador~40_combout\,
-	datab => \bancoRegistrador|ALT_INV_Equal1~0_combout\,
-	datac => \bancoRegistrador|registrador_rtl_1|auto_generated|ALT_INV_ram_block1a1~portbdataout\,
-	datad => \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(14),
-	datae => \bancoRegistrador|ALT_INV_registrador_rtl_1_bypass\(13),
-	combout => \bancoRegistrador|saidaB[1]~1_combout\);
-
-\REG_ID|DOUT[43]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \bancoRegistrador|saidaB[1]~1_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(43));
-
-\REG_EX|DOUT[6]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \REG_ID|DOUT\(43),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_EX|DOUT\(6));
-
-\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a1\ : cyclonev_ram_block
--- pragma translate_off
-GENERIC MAP (
-	data_interleave_offset_in_bits => 1,
-	data_interleave_width_in_bits => 1,
-	logical_ram_name => "RAMMIPS:RAM_mips|altsyncram:memRAM_rtl_0|altsyncram_3jp1:auto_generated|ALTSYNCRAM",
-	mixed_port_feed_through_mode => "old",
-	operation_mode => "dual_port",
-	port_a_address_clear => "none",
-	port_a_address_width => 6,
-	port_a_byte_enable_clock => "none",
-	port_a_data_out_clear => "none",
-	port_a_data_out_clock => "none",
-	port_a_data_width => 1,
-	port_a_first_address => 0,
-	port_a_first_bit_number => 1,
-	port_a_last_address => 63,
-	port_a_logical_ram_depth => 64,
-	port_a_logical_ram_width => 32,
-	port_a_read_during_write_mode => "new_data_no_nbe_read",
-	port_b_address_clear => "none",
-	port_b_address_clock => "clock0",
-	port_b_address_width => 6,
-	port_b_data_out_clear => "none",
-	port_b_data_out_clock => "none",
-	port_b_data_width => 1,
-	port_b_first_address => 0,
-	port_b_first_bit_number => 1,
-	port_b_last_address => 63,
-	port_b_logical_ram_depth => 64,
-	port_b_logical_ram_width => 32,
-	port_b_read_during_write_mode => "new_data_no_nbe_read",
-	port_b_read_enable_clock => "clock0",
-	ram_block_type => "M20K")
--- pragma translate_on
-PORT MAP (
-	portawe => \REG_EX|DOUT\(101),
-	portbre => VCC,
-	clk0 => \CLOCK_50~input_o\,
-	portadatain => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a1_PORTADATAIN_bus\,
-	portaaddr => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a1_PORTAADDR_bus\,
-	portbaddr => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a1_PORTBADDR_bus\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	portbdataout => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a1_PORTBDATAOUT_bus\);
-
-\REG_ID|DOUT[107]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \REG_ID|DOUT\(11),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(107));
-
-\REG_EX|DOUT[70]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \REG_ID|DOUT\(107),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_EX|DOUT\(70));
-
-\REG_MEM|DOUT[70]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \REG_EX|DOUT\(70),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_MEM|DOUT\(70));
-
-\MUX_LUI|saida_MUX[30]~22\ : cyclonev_lcell_comb
--- Equation(s):
--- \MUX_LUI|saida_MUX[30]~22_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal5~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(102))) # (\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(70))))))) # (\UC|Equal5~0_combout\ & (((\ROM_mips|memROM~6_combout\)))) ) ) # ( 
--- \REG_MEM|DOUT\(2) & ( ((!\UC|Equal5~0_combout\ & (((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a1~portbdataout\ & !\REG_MEM|DOUT\(1))))) # (\UC|Equal5~0_combout\ & (\ROM_mips|memROM~6_combout\))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "on",
-	lut_mask => "0101010100110011000011110011001100001111001100110000000000110011",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_MEM|ALT_INV_DOUT\(102),
-	datab => \ROM_mips|ALT_INV_memROM~6_combout\,
-	datac => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a1~portbdataout\,
-	datad => \UC|ALT_INV_Equal5~0_combout\,
-	datae => \REG_MEM|ALT_INV_DOUT\(2),
-	dataf => \REG_MEM|ALT_INV_DOUT\(1),
-	datag => \REG_MEM|ALT_INV_DOUT\(70),
-	combout => \MUX_LUI|saida_MUX[30]~22_combout\);
-
-\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a30\ : cyclonev_ram_block
--- pragma translate_off
-GENERIC MAP (
-	mem_init0 => "00000000",
-	clk0_core_clock_enable => "ena0",
-	data_interleave_offset_in_bits => 1,
-	data_interleave_width_in_bits => 1,
-	init_file => "db/MIPS_pipeline.ram0_bancoRegistradores_57a36dfc.hdl.mif",
-	init_file_layout => "port_b",
-	logical_ram_name => "bancoRegistradores:bancoRegistrador|altsyncram:registrador_rtl_0|altsyncram_d1p1:auto_generated|ALTSYNCRAM",
-	mixed_port_feed_through_mode => "dont_care",
-	operation_mode => "dual_port",
-	port_a_address_clear => "none",
-	port_a_address_width => 5,
-	port_a_byte_enable_clock => "none",
-	port_a_data_out_clear => "none",
-	port_a_data_out_clock => "none",
-	port_a_data_width => 1,
-	port_a_first_address => 0,
-	port_a_first_bit_number => 30,
-	port_a_last_address => 31,
-	port_a_logical_ram_depth => 32,
-	port_a_logical_ram_width => 32,
-	port_a_read_during_write_mode => "new_data_no_nbe_read",
-	port_b_address_clear => "none",
-	port_b_address_clock => "clock1",
-	port_b_address_width => 5,
-	port_b_data_out_clear => "none",
-	port_b_data_out_clock => "none",
-	port_b_data_width => 1,
-	port_b_first_address => 0,
-	port_b_first_bit_number => 30,
-	port_b_last_address => 31,
-	port_b_logical_ram_depth => 32,
-	port_b_logical_ram_width => 32,
-	port_b_read_during_write_mode => "new_data_no_nbe_read",
-	port_b_read_enable_clock => "clock1",
-	ram_block_type => "M20K")
--- pragma translate_on
-PORT MAP (
-	portawe => \REG_MEM|DOUT\(0),
-	portbre => VCC,
-	clk0 => \CLOCK_50~input_o\,
-	clk1 => \CLOCK_50~input_o\,
-	ena0 => \REG_MEM|DOUT\(0),
-	portadatain => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a30_PORTADATAIN_bus\,
-	portaaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a30_PORTAADDR_bus\,
-	portbaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a30_PORTBADDR_bus\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	portbdataout => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a30_PORTBDATAOUT_bus\);
-
-\bancoRegistrador|registrador_rtl_0_bypass[72]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => VCC,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \bancoRegistrador|registrador_rtl_0_bypass\(72));
-
-\bancoRegistrador|registrador_rtl_0_bypass[71]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \MUX_LUI|saida_MUX[30]~22_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \bancoRegistrador|registrador_rtl_0_bypass\(71));
-
-\bancoRegistrador|saidaA[30]~30\ : cyclonev_lcell_comb
--- Equation(s):
--- \bancoRegistrador|saidaA[30]~30_combout\ = ( \bancoRegistrador|registrador_rtl_0_bypass\(71) & ( (!\bancoRegistrador|Equal0~0_combout\ & (((!\bancoRegistrador|registrador_rtl_0_bypass\(72)) # 
--- (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a30~portbdataout\)) # (\bancoRegistrador|registrador~43_combout\))) ) ) # ( !\bancoRegistrador|registrador_rtl_0_bypass\(71) & ( (!\bancoRegistrador|registrador~43_combout\ & 
--- (!\bancoRegistrador|Equal0~0_combout\ & (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a30~portbdataout\ & \bancoRegistrador|registrador_rtl_0_bypass\(72)))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000001000110011000100110000000000000010001100110001001100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \bancoRegistrador|ALT_INV_registrador~43_combout\,
-	datab => \bancoRegistrador|ALT_INV_Equal0~0_combout\,
-	datac => \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a30~portbdataout\,
-	datad => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(72),
-	datae => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(71),
-	combout => \bancoRegistrador|saidaA[30]~30_combout\);
-
-\REG_ID|DOUT[104]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \bancoRegistrador|saidaA[30]~30_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(104));
-
-\ULA|Equal5~5\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|Equal5~5_combout\ = ( !\ULA|saida[21]~71_combout\ & ( \ULA|Equal5~4_combout\ & ( (!\ULA|saida[0]~2_combout\ & (!\ULA|saida[22]~73_combout\ & ((!\ULA|Add2~1_sumout\) # (!\ULA|saida[0]~0_combout\)))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000011100000000000000000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ULA|ALT_INV_Add2~1_sumout\,
-	datab => \ULA|ALT_INV_saida[0]~0_combout\,
-	datac => \ULA|ALT_INV_saida[0]~2_combout\,
-	datad => \ULA|ALT_INV_saida[22]~73_combout\,
-	datae => \ULA|ALT_INV_saida[21]~71_combout\,
-	dataf => \ULA|ALT_INV_Equal5~4_combout\,
-	combout => \ULA|Equal5~5_combout\);
-
-\ULA|saida[15]~104\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|saida[15]~104_combout\ = ( \ULA|Add2~65_sumout\ & ( \ULA|Add0~61_sumout\ & ( (!\REG_ID|DOUT\(13) & (((\UC_ULA|ULActrl[1]~1_combout\ & !\UC_ULA|ULActrl[0]~4_combout\)) # (\UC_ULA|ULActrl~6_combout\))) # (\REG_ID|DOUT\(13) & 
--- (\UC_ULA|ULActrl[1]~1_combout\ & (!\UC_ULA|ULActrl[0]~4_combout\))) ) ) ) # ( !\ULA|Add2~65_sumout\ & ( \ULA|Add0~61_sumout\ & ( (\UC_ULA|ULActrl[1]~1_combout\ & (!\UC_ULA|ULActrl[0]~4_combout\ & ((!\UC_ULA|ULActrl~6_combout\) # (\REG_ID|DOUT\(13))))) ) ) 
--- ) # ( \ULA|Add2~65_sumout\ & ( !\ULA|Add0~61_sumout\ & ( (!\REG_ID|DOUT\(13) & \UC_ULA|ULActrl~6_combout\) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000000000001010101000110000000100000011000010111010",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_ID|ALT_INV_DOUT\(13),
-	datab => \UC_ULA|ALT_INV_ULActrl[1]~1_combout\,
-	datac => \UC_ULA|ALT_INV_ULActrl[0]~4_combout\,
-	datad => \UC_ULA|ALT_INV_ULActrl~6_combout\,
-	datae => \ULA|ALT_INV_Add2~65_sumout\,
-	dataf => \ULA|ALT_INV_Add0~61_sumout\,
-	combout => \ULA|saida[15]~104_combout\);
-
-\ULA|saida[13]~105\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|saida[13]~105_combout\ = ( \ULA|Add2~57_sumout\ & ( \ULA|Add0~53_sumout\ & ( (!\REG_ID|DOUT\(13) & (((\UC_ULA|ULActrl[1]~1_combout\ & !\UC_ULA|ULActrl[0]~4_combout\)) # (\UC_ULA|ULActrl~6_combout\))) # (\REG_ID|DOUT\(13) & 
--- (\UC_ULA|ULActrl[1]~1_combout\ & (!\UC_ULA|ULActrl[0]~4_combout\))) ) ) ) # ( !\ULA|Add2~57_sumout\ & ( \ULA|Add0~53_sumout\ & ( (\UC_ULA|ULActrl[1]~1_combout\ & (!\UC_ULA|ULActrl[0]~4_combout\ & ((!\UC_ULA|ULActrl~6_combout\) # (\REG_ID|DOUT\(13))))) ) ) 
--- ) # ( \ULA|Add2~57_sumout\ & ( !\ULA|Add0~53_sumout\ & ( (!\REG_ID|DOUT\(13) & \UC_ULA|ULActrl~6_combout\) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000000000001010101000110000000100000011000010111010",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_ID|ALT_INV_DOUT\(13),
-	datab => \UC_ULA|ALT_INV_ULActrl[1]~1_combout\,
-	datac => \UC_ULA|ALT_INV_ULActrl[0]~4_combout\,
-	datad => \UC_ULA|ALT_INV_ULActrl~6_combout\,
-	datae => \ULA|ALT_INV_Add2~57_sumout\,
-	dataf => \ULA|ALT_INV_Add0~53_sumout\,
-	combout => \ULA|saida[13]~105_combout\);
-
-\ULA|saida[14]~106\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|saida[14]~106_combout\ = ( \ULA|Add2~61_sumout\ & ( \ULA|Add0~57_sumout\ & ( (!\REG_ID|DOUT\(13) & (((\UC_ULA|ULActrl[1]~1_combout\ & !\UC_ULA|ULActrl[0]~4_combout\)) # (\UC_ULA|ULActrl~6_combout\))) # (\REG_ID|DOUT\(13) & 
--- (\UC_ULA|ULActrl[1]~1_combout\ & (!\UC_ULA|ULActrl[0]~4_combout\))) ) ) ) # ( !\ULA|Add2~61_sumout\ & ( \ULA|Add0~57_sumout\ & ( (\UC_ULA|ULActrl[1]~1_combout\ & (!\UC_ULA|ULActrl[0]~4_combout\ & ((!\UC_ULA|ULActrl~6_combout\) # (\REG_ID|DOUT\(13))))) ) ) 
--- ) # ( \ULA|Add2~61_sumout\ & ( !\ULA|Add0~57_sumout\ & ( (!\REG_ID|DOUT\(13) & \UC_ULA|ULActrl~6_combout\) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000000000001010101000110000000100000011000010111010",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_ID|ALT_INV_DOUT\(13),
-	datab => \UC_ULA|ALT_INV_ULActrl[1]~1_combout\,
-	datac => \UC_ULA|ALT_INV_ULActrl[0]~4_combout\,
-	datad => \UC_ULA|ALT_INV_ULActrl~6_combout\,
-	datae => \ULA|ALT_INV_Add2~61_sumout\,
-	dataf => \ULA|ALT_INV_Add0~57_sumout\,
-	combout => \ULA|saida[14]~106_combout\);
-
-\ULA|Equal5~9\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|Equal5~9_combout\ = ( !\ULA|saida[14]~56_combout\ & ( !\ULA|saida[14]~106_combout\ & ( (!\ULA|saida[15]~58_combout\ & (!\ULA|saida[15]~104_combout\ & (!\ULA|saida[13]~54_combout\ & !\ULA|saida[13]~105_combout\))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1000000000000000000000000000000000000000000000000000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ULA|ALT_INV_saida[15]~58_combout\,
-	datab => \ULA|ALT_INV_saida[15]~104_combout\,
-	datac => \ULA|ALT_INV_saida[13]~54_combout\,
-	datad => \ULA|ALT_INV_saida[13]~105_combout\,
-	datae => \ULA|ALT_INV_saida[14]~56_combout\,
-	dataf => \ULA|ALT_INV_saida[14]~106_combout\,
-	combout => \ULA|Equal5~9_combout\);
-
-\ULA|Equal5~10\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|Equal5~10_combout\ = ( !\ULA|saida[19]~67_combout\ & ( \ULA|Equal5~9_combout\ & ( (!\ULA|saida[26]~81_combout\ & (!\ULA|saida[25]~79_combout\ & (!\ULA|saida[24]~77_combout\ & !\ULA|saida[20]~69_combout\))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000010000000000000000000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ULA|ALT_INV_saida[26]~81_combout\,
-	datab => \ULA|ALT_INV_saida[25]~79_combout\,
-	datac => \ULA|ALT_INV_saida[24]~77_combout\,
-	datad => \ULA|ALT_INV_saida[20]~69_combout\,
-	datae => \ULA|ALT_INV_saida[19]~67_combout\,
-	dataf => \ULA|ALT_INV_Equal5~9_combout\,
-	combout => \ULA|Equal5~10_combout\);
-
-\selMUX_AND_BEQ~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \selMUX_AND_BEQ~0_combout\ = ( \ULA|Equal5~10_combout\ & ( \REG_ID|DOUT\(149) & ( ((!\ULA|Equal5~3_combout\) # ((!\ULA|Equal5~5_combout\) # (\ULA|saida[31]~91_combout\))) # (\REG_ID|DOUT\(150)) ) ) ) # ( !\ULA|Equal5~10_combout\ & ( \REG_ID|DOUT\(149) ) ) 
--- # ( \ULA|Equal5~10_combout\ & ( !\REG_ID|DOUT\(149) & ( (\REG_ID|DOUT\(150) & (\ULA|Equal5~3_combout\ & (\ULA|Equal5~5_combout\ & !\ULA|saida[31]~91_combout\))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000000000010000000011111111111111111111110111111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_ID|ALT_INV_DOUT\(150),
-	datab => \ULA|ALT_INV_Equal5~3_combout\,
-	datac => \ULA|ALT_INV_Equal5~5_combout\,
-	datad => \ULA|ALT_INV_saida[31]~91_combout\,
-	datae => \ULA|ALT_INV_Equal5~10_combout\,
-	dataf => \REG_ID|ALT_INV_DOUT\(149),
-	combout => \selMUX_AND_BEQ~0_combout\);
-
-\somador_somador|Add0~105\ : cyclonev_lcell_comb
--- Equation(s):
--- \somador_somador|Add0~105_sumout\ = SUM(( \REG_ID|DOUT\(26) ) + ( \REG_ID|DOUT\(134) ) + ( \somador_somador|Add0~102\ ))
--- \somador_somador|Add0~106\ = CARRY(( \REG_ID|DOUT\(26) ) + ( \REG_ID|DOUT\(134) ) + ( \somador_somador|Add0~102\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111111110000000000000000000000000000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datad => \REG_ID|ALT_INV_DOUT\(26),
-	dataf => \REG_ID|ALT_INV_DOUT\(134),
-	cin => \somador_somador|Add0~102\,
-	sumout => \somador_somador|Add0~105_sumout\,
-	cout => \somador_somador|Add0~106\);
-
-\somador_somador|Add0~109\ : cyclonev_lcell_comb
--- Equation(s):
--- \somador_somador|Add0~109_sumout\ = SUM(( \REG_ID|DOUT\(26) ) + ( \REG_ID|DOUT\(135) ) + ( \somador_somador|Add0~106\ ))
--- \somador_somador|Add0~110\ = CARRY(( \REG_ID|DOUT\(26) ) + ( \REG_ID|DOUT\(135) ) + ( \somador_somador|Add0~106\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111111110000000000000000000000000000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datad => \REG_ID|ALT_INV_DOUT\(26),
-	dataf => \REG_ID|ALT_INV_DOUT\(135),
-	cin => \somador_somador|Add0~106\,
-	sumout => \somador_somador|Add0~109_sumout\,
-	cout => \somador_somador|Add0~110\);
-
-\somador_somador|Add0~113\ : cyclonev_lcell_comb
--- Equation(s):
--- \somador_somador|Add0~113_sumout\ = SUM(( \REG_ID|DOUT\(26) ) + ( GND ) + ( \somador_somador|Add0~110\ ))
--- \somador_somador|Add0~114\ = CARRY(( \REG_ID|DOUT\(26) ) + ( GND ) + ( \somador_somador|Add0~110\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datad => \REG_ID|ALT_INV_DOUT\(26),
-	cin => \somador_somador|Add0~110\,
-	sumout => \somador_somador|Add0~113_sumout\,
-	cout => \somador_somador|Add0~114\);
-
-\MUX_jump|saida_MUX[30]~30\ : cyclonev_lcell_comb
--- Equation(s):
--- \MUX_jump|saida_MUX[30]~30_combout\ = ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~113_sumout\ & ( (!\UC|Equal3~0_combout\ & (((\selMUX_AND_BEQ~0_combout\) # (\somadorPC|Add0~21_sumout\)))) # (\UC|Equal3~0_combout\ & (\REG_ID|DOUT\(104))) ) ) ) # ( 
--- !\PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~113_sumout\ & ( (!\UC|Equal3~0_combout\ & ((\somadorPC|Add0~21_sumout\))) # (\UC|Equal3~0_combout\ & (\REG_ID|DOUT\(104))) ) ) ) # ( \PC|DOUT[31]~1_combout\ & ( !\somador_somador|Add0~113_sumout\ & ( 
--- (!\UC|Equal3~0_combout\ & (((\somadorPC|Add0~21_sumout\ & !\selMUX_AND_BEQ~0_combout\)))) # (\UC|Equal3~0_combout\ & (\REG_ID|DOUT\(104))) ) ) ) # ( !\PC|DOUT[31]~1_combout\ & ( !\somador_somador|Add0~113_sumout\ & ( (!\UC|Equal3~0_combout\ & 
--- ((\somadorPC|Add0~21_sumout\))) # (\UC|Equal3~0_combout\ & (\REG_ID|DOUT\(104))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0001110100011101000111010001000100011101000111010001110111011101",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_ID|ALT_INV_DOUT\(104),
-	datab => \UC|ALT_INV_Equal3~0_combout\,
-	datac => \somadorPC|ALT_INV_Add0~21_sumout\,
-	datad => \ALT_INV_selMUX_AND_BEQ~0_combout\,
-	datae => \PC|ALT_INV_DOUT[31]~1_combout\,
-	dataf => \somador_somador|ALT_INV_Add0~113_sumout\,
-	combout => \MUX_jump|saida_MUX[30]~30_combout\);
-
-\PC|DOUT[30]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[30]~30_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \PC|DOUT\(30));
-
-\somadorPC|Add0~117\ : cyclonev_lcell_comb
--- Equation(s):
--- \somadorPC|Add0~117_sumout\ = SUM(( \PC|DOUT\(25) ) + ( GND ) + ( \somadorPC|Add0~114\ ))
--- \somadorPC|Add0~118\ = CARRY(( \PC|DOUT\(25) ) + ( GND ) + ( \somadorPC|Add0~114\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datad => \PC|ALT_INV_DOUT\(25),
-	cin => \somadorPC|Add0~114\,
-	sumout => \somadorPC|Add0~117_sumout\,
-	cout => \somadorPC|Add0~118\);
-
-\somadorPC|Add0~1\ : cyclonev_lcell_comb
--- Equation(s):
--- \somadorPC|Add0~1_sumout\ = SUM(( \PC|DOUT\(26) ) + ( GND ) + ( \somadorPC|Add0~118\ ))
--- \somadorPC|Add0~2\ = CARRY(( \PC|DOUT\(26) ) + ( GND ) + ( \somadorPC|Add0~118\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datad => \PC|ALT_INV_DOUT\(26),
-	cin => \somadorPC|Add0~118\,
-	sumout => \somadorPC|Add0~1_sumout\,
-	cout => \somadorPC|Add0~2\);
-
-\somadorPC|Add0~13\ : cyclonev_lcell_comb
--- Equation(s):
--- \somadorPC|Add0~13_sumout\ = SUM(( \PC|DOUT\(27) ) + ( GND ) + ( \somadorPC|Add0~2\ ))
--- \somadorPC|Add0~14\ = CARRY(( \PC|DOUT\(27) ) + ( GND ) + ( \somadorPC|Add0~2\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datad => \PC|ALT_INV_DOUT\(27),
-	cin => \somadorPC|Add0~2\,
-	sumout => \somadorPC|Add0~13_sumout\,
-	cout => \somadorPC|Add0~14\);
-
-\somadorPC|Add0~9\ : cyclonev_lcell_comb
--- Equation(s):
--- \somadorPC|Add0~9_sumout\ = SUM(( \PC|DOUT\(28) ) + ( GND ) + ( \somadorPC|Add0~14\ ))
--- \somadorPC|Add0~10\ = CARRY(( \PC|DOUT\(28) ) + ( GND ) + ( \somadorPC|Add0~14\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datad => \PC|ALT_INV_DOUT\(28),
-	cin => \somadorPC|Add0~14\,
-	sumout => \somadorPC|Add0~9_sumout\,
-	cout => \somadorPC|Add0~10\);
-
-\somadorPC|Add0~5\ : cyclonev_lcell_comb
--- Equation(s):
--- \somadorPC|Add0~5_sumout\ = SUM(( \PC|DOUT\(29) ) + ( GND ) + ( \somadorPC|Add0~10\ ))
--- \somadorPC|Add0~6\ = CARRY(( \PC|DOUT\(29) ) + ( GND ) + ( \somadorPC|Add0~10\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datad => \PC|ALT_INV_DOUT\(29),
-	cin => \somadorPC|Add0~10\,
-	sumout => \somadorPC|Add0~5_sumout\,
-	cout => \somadorPC|Add0~6\);
-
-\somadorPC|Add0~21\ : cyclonev_lcell_comb
--- Equation(s):
--- \somadorPC|Add0~21_sumout\ = SUM(( \PC|DOUT\(30) ) + ( GND ) + ( \somadorPC|Add0~6\ ))
--- \somadorPC|Add0~22\ = CARRY(( \PC|DOUT\(30) ) + ( GND ) + ( \somadorPC|Add0~6\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datad => \PC|ALT_INV_DOUT\(30),
-	cin => \somadorPC|Add0~6\,
-	sumout => \somadorPC|Add0~21_sumout\,
-	cout => \somadorPC|Add0~22\);
-
-\etapaBusca|DOUT[62]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \somadorPC|Add0~21_sumout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \etapaBusca|DOUT\(62));
-
-\UC|Equal5~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \UC|Equal5~0_combout\ = ( !\etapaBusca|DOUT\(63) & ( !\etapaBusca|DOUT\(62) & ( (\etapaBusca|DOUT\(58) & (!\etapaBusca|DOUT\(61) & (\etapaBusca|DOUT\(60) & !\etapaBusca|DOUT\(59)))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000010000000000000000000000000000000000000000000000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \etapaBusca|ALT_INV_DOUT\(58),
-	datab => \etapaBusca|ALT_INV_DOUT\(61),
-	datac => \etapaBusca|ALT_INV_DOUT\(60),
-	datad => \etapaBusca|ALT_INV_DOUT\(59),
-	datae => \etapaBusca|ALT_INV_DOUT\(63),
-	dataf => \etapaBusca|ALT_INV_DOUT\(62),
-	combout => \UC|Equal5~0_combout\);
-
-\REG_EX|DOUT[25]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \REG_ID|DOUT\(62),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_EX|DOUT\(25));
-
-\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a20\ : cyclonev_ram_block
--- pragma translate_off
-GENERIC MAP (
-	data_interleave_offset_in_bits => 1,
-	data_interleave_width_in_bits => 1,
-	logical_ram_name => "RAMMIPS:RAM_mips|altsyncram:memRAM_rtl_0|altsyncram_3jp1:auto_generated|ALTSYNCRAM",
-	mixed_port_feed_through_mode => "old",
-	operation_mode => "dual_port",
-	port_a_address_clear => "none",
-	port_a_address_width => 6,
-	port_a_byte_enable_clock => "none",
-	port_a_data_out_clear => "none",
-	port_a_data_out_clock => "none",
-	port_a_data_width => 1,
-	port_a_first_address => 0,
-	port_a_first_bit_number => 20,
-	port_a_last_address => 63,
-	port_a_logical_ram_depth => 64,
-	port_a_logical_ram_width => 32,
-	port_a_read_during_write_mode => "new_data_no_nbe_read",
-	port_b_address_clear => "none",
-	port_b_address_clock => "clock0",
-	port_b_address_width => 6,
-	port_b_data_out_clear => "none",
-	port_b_data_out_clock => "none",
-	port_b_data_width => 1,
-	port_b_first_address => 0,
-	port_b_first_bit_number => 20,
-	port_b_last_address => 63,
-	port_b_logical_ram_depth => 64,
-	port_b_logical_ram_width => 32,
-	port_b_read_during_write_mode => "new_data_no_nbe_read",
-	port_b_read_enable_clock => "clock0",
-	ram_block_type => "M20K")
--- pragma translate_on
-PORT MAP (
-	portawe => \REG_EX|DOUT\(101),
-	portbre => VCC,
-	clk0 => \CLOCK_50~input_o\,
-	portadatain => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a20_PORTADATAIN_bus\,
-	portaaddr => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a20_PORTAADDR_bus\,
-	portbaddr => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a20_PORTBADDR_bus\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	portbdataout => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a20_PORTBDATAOUT_bus\);
-
-\REG_EX|DOUT[57]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \ULA|saida[20]~69_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_EX|DOUT\(57));
-
-\REG_MEM|DOUT[25]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \REG_EX|DOUT\(57),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_MEM|DOUT\(25));
-
-\MUX_LUI|saida_MUX[17]~16\ : cyclonev_lcell_comb
--- Equation(s):
--- \MUX_LUI|saida_MUX[17]~16_combout\ = ( \ROM_mips|memROM~0_combout\ & ( \REG_MEM|DOUT\(25) & ( ((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(2))) # (\REG_MEM|DOUT\(1) & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a20~portbdataout\))) # 
--- (\UC|Equal5~0_combout\) ) ) ) # ( !\ROM_mips|memROM~0_combout\ & ( \REG_MEM|DOUT\(25) & ( (!\UC|Equal5~0_combout\ & ((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(2))) # (\REG_MEM|DOUT\(1) & (!\REG_MEM|DOUT\(2) & 
--- \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a20~portbdataout\)))) ) ) ) # ( \ROM_mips|memROM~0_combout\ & ( !\REG_MEM|DOUT\(25) & ( ((\REG_MEM|DOUT\(1) & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a20~portbdataout\))) # 
--- (\UC|Equal5~0_combout\) ) ) ) # ( !\ROM_mips|memROM~0_combout\ & ( !\REG_MEM|DOUT\(25) & ( (\REG_MEM|DOUT\(1) & (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(2) & \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a20~portbdataout\))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000001000000001100110111001100001000010010000011101101111011",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_MEM|ALT_INV_DOUT\(1),
-	datab => \UC|ALT_INV_Equal5~0_combout\,
-	datac => \REG_MEM|ALT_INV_DOUT\(2),
-	datad => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a20~portbdataout\,
-	datae => \ROM_mips|ALT_INV_memROM~0_combout\,
-	dataf => \REG_MEM|ALT_INV_DOUT\(25),
-	combout => \MUX_LUI|saida_MUX[17]~16_combout\);
-
-\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a17\ : cyclonev_ram_block
--- pragma translate_off
-GENERIC MAP (
-	mem_init0 => "00000000",
-	clk0_core_clock_enable => "ena0",
-	data_interleave_offset_in_bits => 1,
-	data_interleave_width_in_bits => 1,
-	init_file => "db/MIPS_pipeline.ram0_bancoRegistradores_57a36dfc.hdl.mif",
-	init_file_layout => "port_b",
-	logical_ram_name => "bancoRegistradores:bancoRegistrador|altsyncram:registrador_rtl_0|altsyncram_d1p1:auto_generated|ALTSYNCRAM",
-	mixed_port_feed_through_mode => "dont_care",
-	operation_mode => "dual_port",
-	port_a_address_clear => "none",
-	port_a_address_width => 5,
-	port_a_byte_enable_clock => "none",
-	port_a_data_out_clear => "none",
-	port_a_data_out_clock => "none",
-	port_a_data_width => 1,
-	port_a_first_address => 0,
-	port_a_first_bit_number => 17,
-	port_a_last_address => 31,
-	port_a_logical_ram_depth => 32,
-	port_a_logical_ram_width => 32,
-	port_a_read_during_write_mode => "new_data_no_nbe_read",
-	port_b_address_clear => "none",
-	port_b_address_clock => "clock1",
-	port_b_address_width => 5,
-	port_b_data_out_clear => "none",
-	port_b_data_out_clock => "none",
-	port_b_data_width => 1,
-	port_b_first_address => 0,
-	port_b_first_bit_number => 17,
-	port_b_last_address => 31,
-	port_b_logical_ram_depth => 32,
-	port_b_logical_ram_width => 32,
-	port_b_read_during_write_mode => "new_data_no_nbe_read",
-	port_b_read_enable_clock => "clock1",
-	ram_block_type => "M20K")
--- pragma translate_on
-PORT MAP (
-	portawe => \REG_MEM|DOUT\(0),
-	portbre => VCC,
-	clk0 => \CLOCK_50~input_o\,
-	clk1 => \CLOCK_50~input_o\,
-	ena0 => \REG_MEM|DOUT\(0),
-	portadatain => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a17_PORTADATAIN_bus\,
-	portaaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a17_PORTAADDR_bus\,
-	portbaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a17_PORTBADDR_bus\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	portbdataout => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a17_PORTBDATAOUT_bus\);
-
-\bancoRegistrador|registrador_rtl_0_bypass[46]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => VCC,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \bancoRegistrador|registrador_rtl_0_bypass\(46));
-
-\bancoRegistrador|registrador_rtl_0_bypass[45]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \MUX_LUI|saida_MUX[17]~16_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \bancoRegistrador|registrador_rtl_0_bypass\(45));
-
-\bancoRegistrador|saidaA[17]~17\ : cyclonev_lcell_comb
--- Equation(s):
--- \bancoRegistrador|saidaA[17]~17_combout\ = ( \bancoRegistrador|registrador_rtl_0_bypass\(45) & ( (!\bancoRegistrador|Equal0~0_combout\ & (((!\bancoRegistrador|registrador_rtl_0_bypass\(46)) # 
--- (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a17~portbdataout\)) # (\bancoRegistrador|registrador~43_combout\))) ) ) # ( !\bancoRegistrador|registrador_rtl_0_bypass\(45) & ( (!\bancoRegistrador|registrador~43_combout\ & 
--- (!\bancoRegistrador|Equal0~0_combout\ & (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a17~portbdataout\ & \bancoRegistrador|registrador_rtl_0_bypass\(46)))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000001000110011000100110000000000000010001100110001001100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \bancoRegistrador|ALT_INV_registrador~43_combout\,
-	datab => \bancoRegistrador|ALT_INV_Equal0~0_combout\,
-	datac => \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a17~portbdataout\,
-	datad => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(46),
-	datae => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(45),
-	combout => \bancoRegistrador|saidaA[17]~17_combout\);
-
-\REG_ID|DOUT[91]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \bancoRegistrador|saidaA[17]~17_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(91));
-
-\MUX_jump|saida_MUX[17]~17\ : cyclonev_lcell_comb
--- Equation(s):
--- \MUX_jump|saida_MUX[17]~17_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~61_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~85_sumout\ ) ) ) # ( 
--- \PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(47) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(91) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \somadorPC|ALT_INV_Add0~85_sumout\,
-	datab => \somador_somador|ALT_INV_Add0~61_sumout\,
-	datac => \REG_ID|ALT_INV_DOUT\(91),
-	datad => \etapaBusca|ALT_INV_DOUT\(47),
-	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[17]~17_combout\);
-
-\PC|DOUT[17]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[17]~17_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \PC|DOUT\(17));
-
-\etapaBusca|DOUT[49]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \somadorPC|Add0~85_sumout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \etapaBusca|DOUT\(49));
-
-\REG_ID|DOUT[6]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \etapaBusca|DOUT\(49),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(6));
-
-\REG_ID|DOUT[1]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \etapaBusca|DOUT\(44),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(1));
-
-\mux_RT_RD|saida_MUX[1]~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \mux_RT_RD|saida_MUX[1]~0_combout\ = (!\REG_ID|DOUT\(143) & ((!\REG_ID|DOUT\(142) & ((\REG_ID|DOUT\(1)))) # (\REG_ID|DOUT\(142) & (\REG_ID|DOUT\(6))))) # (\REG_ID|DOUT\(143) & (((!\REG_ID|DOUT\(142)))))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0011010011110100001101001111010000110100111101000011010011110100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_ID|ALT_INV_DOUT\(6),
-	datab => \REG_ID|ALT_INV_DOUT\(143),
-	datac => \REG_ID|ALT_INV_DOUT\(142),
-	datad => \REG_ID|ALT_INV_DOUT\(1),
-	combout => \mux_RT_RD|saida_MUX[1]~0_combout\);
-
-\REG_EX|DOUT[1]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \mux_RT_RD|saida_MUX[1]~0_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_EX|DOUT\(1));
-
-\REG_MEM|DOUT[1]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \REG_EX|DOUT\(1),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_MEM|DOUT\(1));
-
-\REG_EX|DOUT[35]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \REG_ID|DOUT\(72),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_EX|DOUT\(35));
-
-\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a30\ : cyclonev_ram_block
--- pragma translate_off
-GENERIC MAP (
-	data_interleave_offset_in_bits => 1,
-	data_interleave_width_in_bits => 1,
-	logical_ram_name => "RAMMIPS:RAM_mips|altsyncram:memRAM_rtl_0|altsyncram_3jp1:auto_generated|ALTSYNCRAM",
-	mixed_port_feed_through_mode => "old",
-	operation_mode => "dual_port",
-	port_a_address_clear => "none",
-	port_a_address_width => 6,
-	port_a_byte_enable_clock => "none",
-	port_a_data_out_clear => "none",
-	port_a_data_out_clock => "none",
-	port_a_data_width => 1,
-	port_a_first_address => 0,
-	port_a_first_bit_number => 30,
-	port_a_last_address => 63,
-	port_a_logical_ram_depth => 64,
-	port_a_logical_ram_width => 32,
-	port_a_read_during_write_mode => "new_data_no_nbe_read",
-	port_b_address_clear => "none",
-	port_b_address_clock => "clock0",
-	port_b_address_width => 6,
-	port_b_data_out_clear => "none",
-	port_b_data_out_clock => "none",
-	port_b_data_width => 1,
-	port_b_first_address => 0,
-	port_b_first_bit_number => 30,
-	port_b_last_address => 63,
-	port_b_logical_ram_depth => 64,
-	port_b_logical_ram_width => 32,
-	port_b_read_during_write_mode => "new_data_no_nbe_read",
-	port_b_read_enable_clock => "clock0",
-	ram_block_type => "M20K")
--- pragma translate_on
-PORT MAP (
-	portawe => \REG_EX|DOUT\(101),
-	portbre => VCC,
-	clk0 => \CLOCK_50~input_o\,
-	portadatain => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a30_PORTADATAIN_bus\,
-	portaaddr => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a30_PORTAADDR_bus\,
-	portbaddr => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a30_PORTBADDR_bus\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	portbdataout => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a30_PORTBDATAOUT_bus\);
-
-\REG_EX|DOUT[67]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \ULA|saida[30]~89_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_EX|DOUT\(67));
-
-\REG_MEM|DOUT[35]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \REG_EX|DOUT\(67),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_MEM|DOUT\(35));
-
-\MUX_LUI|saida_MUX[27]~17\ : cyclonev_lcell_comb
--- Equation(s):
--- \MUX_LUI|saida_MUX[27]~17_combout\ = ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a30~portbdataout\ & ( \REG_MEM|DOUT\(35) & ( (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(1) $ ((!\REG_MEM|DOUT\(2))))) # (\UC|Equal5~0_combout\ & 
--- (((\ROM_mips|memROM~5_combout\)))) ) ) ) # ( !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a30~portbdataout\ & ( \REG_MEM|DOUT\(35) & ( (!\UC|Equal5~0_combout\ & (!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(2)))) # (\UC|Equal5~0_combout\ & 
--- (((\ROM_mips|memROM~5_combout\)))) ) ) ) # ( \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a30~portbdataout\ & ( !\REG_MEM|DOUT\(35) & ( (!\UC|Equal5~0_combout\ & (\REG_MEM|DOUT\(1) & (!\REG_MEM|DOUT\(2)))) # (\UC|Equal5~0_combout\ & 
--- (((\ROM_mips|memROM~5_combout\)))) ) ) ) # ( !\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a30~portbdataout\ & ( !\REG_MEM|DOUT\(35) & ( (\UC|Equal5~0_combout\ & \ROM_mips|memROM~5_combout\) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000110011010000000111001100001000001110110100100001111011",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_MEM|ALT_INV_DOUT\(1),
-	datab => \UC|ALT_INV_Equal5~0_combout\,
-	datac => \REG_MEM|ALT_INV_DOUT\(2),
-	datad => \ROM_mips|ALT_INV_memROM~5_combout\,
-	datae => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a30~portbdataout\,
-	dataf => \REG_MEM|ALT_INV_DOUT\(35),
-	combout => \MUX_LUI|saida_MUX[27]~17_combout\);
-
-\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a27\ : cyclonev_ram_block
--- pragma translate_off
-GENERIC MAP (
-	mem_init0 => "00000000",
-	clk0_core_clock_enable => "ena0",
-	data_interleave_offset_in_bits => 1,
-	data_interleave_width_in_bits => 1,
-	init_file => "db/MIPS_pipeline.ram0_bancoRegistradores_57a36dfc.hdl.mif",
-	init_file_layout => "port_b",
-	logical_ram_name => "bancoRegistradores:bancoRegistrador|altsyncram:registrador_rtl_0|altsyncram_d1p1:auto_generated|ALTSYNCRAM",
-	mixed_port_feed_through_mode => "dont_care",
-	operation_mode => "dual_port",
-	port_a_address_clear => "none",
-	port_a_address_width => 5,
-	port_a_byte_enable_clock => "none",
-	port_a_data_out_clear => "none",
-	port_a_data_out_clock => "none",
-	port_a_data_width => 1,
-	port_a_first_address => 0,
-	port_a_first_bit_number => 27,
-	port_a_last_address => 31,
-	port_a_logical_ram_depth => 32,
-	port_a_logical_ram_width => 32,
-	port_a_read_during_write_mode => "new_data_no_nbe_read",
-	port_b_address_clear => "none",
-	port_b_address_clock => "clock1",
-	port_b_address_width => 5,
-	port_b_data_out_clear => "none",
-	port_b_data_out_clock => "none",
-	port_b_data_width => 1,
-	port_b_first_address => 0,
-	port_b_first_bit_number => 27,
-	port_b_last_address => 31,
-	port_b_logical_ram_depth => 32,
-	port_b_logical_ram_width => 32,
-	port_b_read_during_write_mode => "new_data_no_nbe_read",
-	port_b_read_enable_clock => "clock1",
-	ram_block_type => "M20K")
--- pragma translate_on
-PORT MAP (
-	portawe => \REG_MEM|DOUT\(0),
-	portbre => VCC,
-	clk0 => \CLOCK_50~input_o\,
-	clk1 => \CLOCK_50~input_o\,
-	ena0 => \REG_MEM|DOUT\(0),
-	portadatain => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a27_PORTADATAIN_bus\,
-	portaaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a27_PORTAADDR_bus\,
-	portbaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a27_PORTBADDR_bus\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	portbdataout => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a27_PORTBDATAOUT_bus\);
-
-\bancoRegistrador|registrador_rtl_0_bypass[66]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => VCC,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \bancoRegistrador|registrador_rtl_0_bypass\(66));
-
-\bancoRegistrador|registrador_rtl_0_bypass[65]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \MUX_LUI|saida_MUX[27]~17_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \bancoRegistrador|registrador_rtl_0_bypass\(65));
-
-\bancoRegistrador|saidaA[27]~27\ : cyclonev_lcell_comb
--- Equation(s):
--- \bancoRegistrador|saidaA[27]~27_combout\ = ( \bancoRegistrador|registrador_rtl_0_bypass\(65) & ( (!\bancoRegistrador|Equal0~0_combout\ & (((!\bancoRegistrador|registrador_rtl_0_bypass\(66)) # 
--- (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a27~portbdataout\)) # (\bancoRegistrador|registrador~43_combout\))) ) ) # ( !\bancoRegistrador|registrador_rtl_0_bypass\(65) & ( (!\bancoRegistrador|registrador~43_combout\ & 
--- (!\bancoRegistrador|Equal0~0_combout\ & (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a27~portbdataout\ & \bancoRegistrador|registrador_rtl_0_bypass\(66)))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000001000110011000100110000000000000010001100110001001100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \bancoRegistrador|ALT_INV_registrador~43_combout\,
-	datab => \bancoRegistrador|ALT_INV_Equal0~0_combout\,
-	datac => \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a27~portbdataout\,
-	datad => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(66),
-	datae => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(65),
-	combout => \bancoRegistrador|saidaA[27]~27_combout\);
-
-\REG_ID|DOUT[101]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \bancoRegistrador|saidaA[27]~27_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(101));
-
-\MUX_jump|saida_MUX[27]~27\ : cyclonev_lcell_comb
--- Equation(s):
--- \MUX_jump|saida_MUX[27]~27_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~101_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~13_sumout\ ) ) ) # ( 
--- \PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(57) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(101) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \somadorPC|ALT_INV_Add0~13_sumout\,
-	datab => \somador_somador|ALT_INV_Add0~101_sumout\,
-	datac => \REG_ID|ALT_INV_DOUT\(101),
-	datad => \etapaBusca|ALT_INV_DOUT\(57),
-	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[27]~27_combout\);
-
-\PC|DOUT[27]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[27]~27_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \PC|DOUT\(27));
-
-\etapaBusca|DOUT[59]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \somadorPC|Add0~13_sumout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \etapaBusca|DOUT\(59));
-
-\UC|Equal3~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \UC|Equal3~0_combout\ = (\etapaBusca|DOUT\(60) & (!\etapaBusca|DOUT\(59) & (!\etapaBusca|DOUT\(63) & !\etapaBusca|DOUT\(62))))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0100000000000000010000000000000001000000000000000100000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \etapaBusca|ALT_INV_DOUT\(60),
-	datab => \etapaBusca|ALT_INV_DOUT\(59),
-	datac => \etapaBusca|ALT_INV_DOUT\(63),
-	datad => \etapaBusca|ALT_INV_DOUT\(62),
-	combout => \UC|Equal3~0_combout\);
-
-\UC|Equal9~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \UC|Equal9~0_combout\ = (!\etapaBusca|DOUT\(58) & (!\etapaBusca|DOUT\(61) & \UC|Equal3~0_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000100000001000000010000000100000001000000010000000100000001000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \etapaBusca|ALT_INV_DOUT\(58),
-	datab => \etapaBusca|ALT_INV_DOUT\(61),
-	datac => \UC|ALT_INV_Equal3~0_combout\,
-	combout => \UC|Equal9~0_combout\);
-
-\REG_ID|DOUT[140]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \UC|Equal9~0_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(140));
-
-\UC_ULA|ULActrl[1]~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \UC_ULA|ULActrl[1]~0_combout\ = (\REG_ID|DOUT\(15) & (!\REG_ID|DOUT\(14) & (!\REG_ID|DOUT\(12) & !\REG_ID|DOUT\(10))))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0100000000000000010000000000000001000000000000000100000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_ID|ALT_INV_DOUT\(15),
-	datab => \REG_ID|ALT_INV_DOUT\(14),
-	datac => \REG_ID|ALT_INV_DOUT\(12),
-	datad => \REG_ID|ALT_INV_DOUT\(10),
-	combout => \UC_ULA|ULActrl[1]~0_combout\);
-
-\UC_ULA|ULActrl[1]~1\ : cyclonev_lcell_comb
--- Equation(s):
--- \UC_ULA|ULActrl[1]~1_combout\ = ( \UC_ULA|ULActrl[1]~0_combout\ & ( (!\REG_ID|DOUT\(139) & ((!\REG_ID|DOUT\(13)) # ((!\REG_ID|DOUT\(140)) # (\REG_ID|DOUT\(11))))) ) ) # ( !\UC_ULA|ULActrl[1]~0_combout\ & ( (!\REG_ID|DOUT\(139) & !\REG_ID|DOUT\(140)) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1111000000000000111100001011000011110000000000001111000010110000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_ID|ALT_INV_DOUT\(13),
-	datab => \REG_ID|ALT_INV_DOUT\(11),
-	datac => \REG_ID|ALT_INV_DOUT\(139),
-	datad => \REG_ID|ALT_INV_DOUT\(140),
-	datae => \UC_ULA|ALT_INV_ULActrl[1]~0_combout\,
-	combout => \UC_ULA|ULActrl[1]~1_combout\);
-
-\ULA|saida[13]~53\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|saida[13]~53_combout\ = (\UC_ULA|ULActrl[1]~1_combout\ & (!\UC_ULA|ULActrl[0]~4_combout\ & ((!\UC_ULA|ULActrl~6_combout\) # (\REG_ID|DOUT\(13)))))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0011000000010000001100000001000000110000000100000011000000010000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_ID|ALT_INV_DOUT\(13),
-	datab => \UC_ULA|ALT_INV_ULActrl[1]~1_combout\,
-	datac => \UC_ULA|ALT_INV_ULActrl[0]~4_combout\,
-	datad => \UC_ULA|ALT_INV_ULActrl~6_combout\,
-	combout => \ULA|saida[13]~53_combout\);
-
-\UC|palavraControle[12]~3\ : cyclonev_lcell_comb
--- Equation(s):
--- \UC|palavraControle[12]~3_combout\ = ( !\etapaBusca|DOUT\(63) & ( !\etapaBusca|DOUT\(62) & ( (!\etapaBusca|DOUT\(58) & (!\etapaBusca|DOUT\(60) & (!\etapaBusca|DOUT\(61) $ (\etapaBusca|DOUT\(59))))) # (\etapaBusca|DOUT\(58) & (\etapaBusca|DOUT\(61) & 
--- (\etapaBusca|DOUT\(60) & !\etapaBusca|DOUT\(59)))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1000000100100000000000000000000000000000000000000000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \etapaBusca|ALT_INV_DOUT\(58),
-	datab => \etapaBusca|ALT_INV_DOUT\(61),
-	datac => \etapaBusca|ALT_INV_DOUT\(60),
-	datad => \etapaBusca|ALT_INV_DOUT\(59),
-	datae => \etapaBusca|ALT_INV_DOUT\(63),
-	dataf => \etapaBusca|ALT_INV_DOUT\(62),
-	combout => \UC|palavraControle[12]~3_combout\);
-
 \REG_ID|DOUT[148]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -22331,7 +22279,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \UC|palavraControle[12]~3_combout\,
+	d => \UC|Equal4~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_ID|DOUT\(148));
@@ -22449,8 +22397,8 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[31]~18\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[31]~18_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal5~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(103))) # (\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(71))))))) # (\UC|Equal5~0_combout\ & (((\ROM_mips|memROM~5_combout\)))) ) ) # ( 
--- \REG_MEM|DOUT\(2) & ( ((!\UC|Equal5~0_combout\ & (((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a2~portbdataout\ & !\REG_MEM|DOUT\(1))))) # (\UC|Equal5~0_combout\ & (\ROM_mips|memROM~5_combout\))) ) )
+-- \MUX_LUI|saida_MUX[31]~18_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal3~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(103))) # (\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(71))))))) # (\UC|Equal3~0_combout\ & (((\ROM_mips|memROM~5_combout\)))) ) ) # ( 
+-- \REG_MEM|DOUT\(2) & ( ((!\UC|Equal3~0_combout\ & (((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a2~portbdataout\ & !\REG_MEM|DOUT\(1))))) # (\UC|Equal3~0_combout\ & (\ROM_mips|memROM~5_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -22462,7 +22410,7 @@ PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(103),
 	datab => \ROM_mips|ALT_INV_memROM~5_combout\,
 	datac => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a2~portbdataout\,
-	datad => \UC|ALT_INV_Equal5~0_combout\,
+	datad => \UC|ALT_INV_Equal3~0_combout\,
 	datae => \REG_MEM|ALT_INV_DOUT\(2),
 	dataf => \REG_MEM|ALT_INV_DOUT\(1),
 	datag => \REG_MEM|ALT_INV_DOUT\(71),
@@ -22740,8 +22688,8 @@ PORT MAP (
 
 \MUX_LUI|saida_MUX[28]~30\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[28]~30_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal5~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(100))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a31~portbdataout\)))))) # 
--- (\UC|Equal5~0_combout\ & (((\ROM_mips|memROM~5_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal5~0_combout\ & (((\REG_MEM|DOUT\(36) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal5~0_combout\ & (\ROM_mips|memROM~5_combout\))) ) )
+-- \MUX_LUI|saida_MUX[28]~30_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal3~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(100))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a31~portbdataout\)))))) # 
+-- (\UC|Equal3~0_combout\ & (((\ROM_mips|memROM~5_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal3~0_combout\ & (((\REG_MEM|DOUT\(36) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal3~0_combout\ & (\ROM_mips|memROM~5_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -22753,7 +22701,7 @@ PORT MAP (
 	dataa => \REG_MEM|ALT_INV_DOUT\(100),
 	datab => \ROM_mips|ALT_INV_memROM~5_combout\,
 	datac => \REG_MEM|ALT_INV_DOUT\(36),
-	datad => \UC|ALT_INV_Equal5~0_combout\,
+	datad => \UC|ALT_INV_Equal3~0_combout\,
 	datae => \REG_MEM|ALT_INV_DOUT\(2),
 	dataf => \REG_MEM|ALT_INV_DOUT\(1),
 	datag => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a31~portbdataout\,
@@ -22870,27 +22818,27 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \REG_ID|DOUT\(102));
 
-\MUX_jump|saida_MUX[28]~28\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[28]~29\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[28]~28_combout\ = ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~105_sumout\ & ( (!\UC|Equal3~0_combout\ & (((\selMUX_AND_BEQ~0_combout\) # (\somadorPC|Add0~9_sumout\)))) # (\UC|Equal3~0_combout\ & (\REG_ID|DOUT\(102))) ) ) ) # ( 
--- !\PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~105_sumout\ & ( (!\UC|Equal3~0_combout\ & ((\somadorPC|Add0~9_sumout\))) # (\UC|Equal3~0_combout\ & (\REG_ID|DOUT\(102))) ) ) ) # ( \PC|DOUT[31]~1_combout\ & ( !\somador_somador|Add0~105_sumout\ & ( 
--- (!\UC|Equal3~0_combout\ & (((\somadorPC|Add0~9_sumout\ & !\selMUX_AND_BEQ~0_combout\)))) # (\UC|Equal3~0_combout\ & (\REG_ID|DOUT\(102))) ) ) ) # ( !\PC|DOUT[31]~1_combout\ & ( !\somador_somador|Add0~105_sumout\ & ( (!\UC|Equal3~0_combout\ & 
--- ((\somadorPC|Add0~9_sumout\))) # (\UC|Equal3~0_combout\ & (\REG_ID|DOUT\(102))) ) ) )
+-- \MUX_jump|saida_MUX[28]~29_combout\ = ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~105_sumout\ & ( (!\UC|seletorMUX_JMP~1_combout\ & (((\selMUX_AND_BEQ~0_combout\) # (\somadorPC|Add0~5_sumout\)))) # (\UC|seletorMUX_JMP~1_combout\ & 
+-- (\REG_ID|DOUT\(102))) ) ) ) # ( !\MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~105_sumout\ & ( (!\UC|seletorMUX_JMP~1_combout\ & ((\somadorPC|Add0~5_sumout\))) # (\UC|seletorMUX_JMP~1_combout\ & (\REG_ID|DOUT\(102))) ) ) ) # ( 
+-- \MUX_jump|Equal2~0_combout\ & ( !\somador_somador|Add0~105_sumout\ & ( (!\UC|seletorMUX_JMP~1_combout\ & (((\somadorPC|Add0~5_sumout\ & !\selMUX_AND_BEQ~0_combout\)))) # (\UC|seletorMUX_JMP~1_combout\ & (\REG_ID|DOUT\(102))) ) ) ) # ( 
+-- !\MUX_jump|Equal2~0_combout\ & ( !\somador_somador|Add0~105_sumout\ & ( (!\UC|seletorMUX_JMP~1_combout\ & ((\somadorPC|Add0~5_sumout\))) # (\UC|seletorMUX_JMP~1_combout\ & (\REG_ID|DOUT\(102))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001110100011101000111010001000100011101000111010001110111011101",
+	lut_mask => "0011001101010101001100000101010100110011010101010011111101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \REG_ID|ALT_INV_DOUT\(102),
-	datab => \UC|ALT_INV_Equal3~0_combout\,
-	datac => \somadorPC|ALT_INV_Add0~9_sumout\,
-	datad => \ALT_INV_selMUX_AND_BEQ~0_combout\,
-	datae => \PC|ALT_INV_DOUT[31]~1_combout\,
+	datab => \somadorPC|ALT_INV_Add0~5_sumout\,
+	datac => \ALT_INV_selMUX_AND_BEQ~0_combout\,
+	datad => \UC|ALT_INV_seletorMUX_JMP~1_combout\,
+	datae => \MUX_jump|ALT_INV_Equal2~0_combout\,
 	dataf => \somador_somador|ALT_INV_Add0~105_sumout\,
-	combout => \MUX_jump|saida_MUX[28]~28_combout\);
+	combout => \MUX_jump|saida_MUX[28]~29_combout\);
 
 \PC|DOUT[28]\ : dffeas
 -- pragma translate_off
@@ -22900,7 +22848,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[28]~28_combout\,
+	d => \MUX_jump|saida_MUX[28]~29_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(28));
@@ -22913,59 +22861,45 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \somadorPC|Add0~9_sumout\,
+	d => \somadorPC|Add0~5_sumout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(60));
 
-\UC|Equal1~0\ : cyclonev_lcell_comb
+\UC|Equal2~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \UC|Equal1~0_combout\ = (!\etapaBusca|DOUT\(60) & (\etapaBusca|DOUT\(59) & !\etapaBusca|DOUT\(62)))
+-- \UC|Equal2~0_combout\ = (\etapaBusca|DOUT\(58) & (!\etapaBusca|DOUT\(60) & (!\etapaBusca|DOUT\(62) & \etapaBusca|DOUT\(59))))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0010000000100000001000000010000000100000001000000010000000100000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \etapaBusca|ALT_INV_DOUT\(60),
-	datab => \etapaBusca|ALT_INV_DOUT\(59),
-	datac => \etapaBusca|ALT_INV_DOUT\(62),
-	combout => \UC|Equal1~0_combout\);
-
-\UC|Equal1~1\ : cyclonev_lcell_comb
--- Equation(s):
--- \UC|Equal1~1_combout\ = (!\etapaBusca|DOUT\(61) & (!\etapaBusca|DOUT\(63) & \UC|Equal1~0_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000100000001000000010000000100000001000000010000000100000001000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \etapaBusca|ALT_INV_DOUT\(61),
-	datab => \etapaBusca|ALT_INV_DOUT\(63),
-	datac => \UC|ALT_INV_Equal1~0_combout\,
-	combout => \UC|Equal1~1_combout\);
-
-\UC|Equal1~2\ : cyclonev_lcell_comb
--- Equation(s):
--- \UC|Equal1~2_combout\ = (\etapaBusca|DOUT\(58) & \UC|Equal1~1_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
+	lut_mask => "0000000001000000000000000100000000000000010000000000000001000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \etapaBusca|ALT_INV_DOUT\(58),
-	datab => \UC|ALT_INV_Equal1~1_combout\,
-	combout => \UC|Equal1~2_combout\);
+	datab => \etapaBusca|ALT_INV_DOUT\(60),
+	datac => \etapaBusca|ALT_INV_DOUT\(62),
+	datad => \etapaBusca|ALT_INV_DOUT\(59),
+	combout => \UC|Equal2~0_combout\);
 
-\REG_ID|DOUT[142]\ : dffeas
+\UC|Equal6~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \UC|Equal6~0_combout\ = (\etapaBusca|DOUT\(63) & (!\etapaBusca|DOUT\(61) & \UC|Equal2~0_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000010000000100000001000000010000000100000001000000010000000100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \etapaBusca|ALT_INV_DOUT\(63),
+	datab => \etapaBusca|ALT_INV_DOUT\(61),
+	datac => \UC|ALT_INV_Equal2~0_combout\,
+	combout => \UC|Equal6~0_combout\);
+
+\REG_ID|DOUT[139]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -22973,12 +22907,120 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \UC|Equal1~2_combout\,
+	d => \UC|Equal6~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(142));
+	q => \REG_ID|DOUT\(139));
 
-\REG_EX|DOUT[103]\ : dffeas
+\UC_ULA|ULActrl[1]~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \UC_ULA|ULActrl[1]~0_combout\ = (\REG_ID|DOUT\(15) & (!\REG_ID|DOUT\(14) & (!\REG_ID|DOUT\(12) & !\REG_ID|DOUT\(10))))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0100000000000000010000000000000001000000000000000100000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_ID|ALT_INV_DOUT\(15),
+	datab => \REG_ID|ALT_INV_DOUT\(14),
+	datac => \REG_ID|ALT_INV_DOUT\(12),
+	datad => \REG_ID|ALT_INV_DOUT\(10),
+	combout => \UC_ULA|ULActrl[1]~0_combout\);
+
+\UC_ULA|ULActrl[1]~1\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \UC_ULA|ULActrl[1]~1_combout\ = ( \UC_ULA|ULActrl[1]~0_combout\ & ( (!\REG_ID|DOUT\(139) & ((!\REG_ID|DOUT\(13)) # ((!\REG_ID|DOUT\(140)) # (\REG_ID|DOUT\(11))))) ) ) # ( !\UC_ULA|ULActrl[1]~0_combout\ & ( (!\REG_ID|DOUT\(139) & !\REG_ID|DOUT\(140)) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1111000000000000111100001011000011110000000000001111000010110000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_ID|ALT_INV_DOUT\(13),
+	datab => \REG_ID|ALT_INV_DOUT\(11),
+	datac => \REG_ID|ALT_INV_DOUT\(139),
+	datad => \REG_ID|ALT_INV_DOUT\(140),
+	datae => \UC_ULA|ALT_INV_ULActrl[1]~0_combout\,
+	combout => \UC_ULA|ULActrl[1]~1_combout\);
+
+\ULA|saida[13]~53\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|saida[13]~53_combout\ = (\UC_ULA|ULActrl[1]~1_combout\ & (!\UC_ULA|ULActrl[0]~4_combout\ & ((!\UC_ULA|ULActrl~6_combout\) # (\REG_ID|DOUT\(13)))))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0011000000010000001100000001000000110000000100000011000000010000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_ID|ALT_INV_DOUT\(13),
+	datab => \UC_ULA|ALT_INV_ULActrl[1]~1_combout\,
+	datac => \UC_ULA|ALT_INV_ULActrl[0]~4_combout\,
+	datad => \UC_ULA|ALT_INV_ULActrl~6_combout\,
+	combout => \ULA|saida[13]~53_combout\);
+
+\mux_RT_imediato|saida_MUX[29]~16\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \mux_RT_imediato|saida_MUX[29]~16_combout\ = (!\REG_ID|DOUT\(138) & ((\REG_ID|DOUT\(71)))) # (\REG_ID|DOUT\(138) & (\REG_ID|DOUT\(26)))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0001101100011011000110110001101100011011000110110001101100011011",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_ID|ALT_INV_DOUT\(138),
+	datab => \REG_ID|ALT_INV_DOUT\(26),
+	datac => \REG_ID|ALT_INV_DOUT\(71),
+	combout => \mux_RT_imediato|saida_MUX[29]~16_combout\);
+
+\ULA|saida[29]~86\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|saida[29]~86_combout\ = ( \UC_ULA|ULActrl~6_combout\ & ( \mux_RT_imediato|saida_MUX[29]~16_combout\ & ( (\REG_ID|DOUT\(103) & (\REG_ID|DOUT\(13) & (!\UC_ULA|ULActrl[1]~1_combout\ & !\UC_ULA|ULActrl[0]~4_combout\))) ) ) ) # ( 
+-- !\UC_ULA|ULActrl~6_combout\ & ( \mux_RT_imediato|saida_MUX[29]~16_combout\ & ( ((\REG_ID|DOUT\(103) & !\UC_ULA|ULActrl[1]~1_combout\)) # (\UC_ULA|ULActrl[0]~4_combout\) ) ) ) # ( !\UC_ULA|ULActrl~6_combout\ & ( !\mux_RT_imediato|saida_MUX[29]~16_combout\ 
+-- & ( (\REG_ID|DOUT\(103) & \UC_ULA|ULActrl[0]~4_combout\) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000001010101000000000000000001010000111111110001000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_ID|ALT_INV_DOUT\(103),
+	datab => \REG_ID|ALT_INV_DOUT\(13),
+	datac => \UC_ULA|ALT_INV_ULActrl[1]~1_combout\,
+	datad => \UC_ULA|ALT_INV_ULActrl[0]~4_combout\,
+	datae => \UC_ULA|ALT_INV_ULActrl~6_combout\,
+	dataf => \mux_RT_imediato|ALT_INV_saida_MUX[29]~16_combout\,
+	combout => \ULA|saida[29]~86_combout\);
+
+\ULA|saida[29]~87\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|saida[29]~87_combout\ = ( \ULA|saida[29]~86_combout\ ) # ( !\ULA|saida[29]~86_combout\ & ( (!\UC_ULA|ULActrl~7_combout\ & (\ULA|saida[13]~53_combout\ & ((\ULA|Add0~117_sumout\)))) # (\UC_ULA|ULActrl~7_combout\ & (((\ULA|saida[13]~53_combout\ & 
+-- \ULA|Add0~117_sumout\)) # (\ULA|Add2~121_sumout\))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000010100110111111111111111111100000101001101111111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \UC_ULA|ALT_INV_ULActrl~7_combout\,
+	datab => \ULA|ALT_INV_saida[13]~53_combout\,
+	datac => \ULA|ALT_INV_Add2~121_sumout\,
+	datad => \ULA|ALT_INV_Add0~117_sumout\,
+	datae => \ULA|ALT_INV_saida[29]~86_combout\,
+	combout => \ULA|saida[29]~87_combout\);
+
+\REG_EX|DOUT[66]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -22986,12 +23028,12 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \REG_ID|DOUT\(142),
+	d => \ULA|saida[29]~87_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \REG_EX|DOUT\(103));
+	q => \REG_EX|DOUT\(66));
 
-\REG_MEM|DOUT[101]\ : dffeas
+\REG_MEM|DOUT[34]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -22999,12 +23041,12 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \REG_EX|DOUT\(103),
+	d => \REG_EX|DOUT\(66),
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \REG_MEM|DOUT\(101));
+	q => \REG_MEM|DOUT\(34));
 
-\REG_EX|DOUT[5]\ : dffeas
+\REG_EX|DOUT[34]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -23012,12 +23054,12 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \REG_ID|DOUT\(42),
+	d => \REG_ID|DOUT\(71),
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \REG_EX|DOUT\(5));
+	q => \REG_EX|DOUT\(34));
 
-\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a0\ : cyclonev_ram_block
+\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a29\ : cyclonev_ram_block
 -- pragma translate_off
 GENERIC MAP (
 	data_interleave_offset_in_bits => 1,
@@ -23032,7 +23074,7 @@ GENERIC MAP (
 	port_a_data_out_clock => "none",
 	port_a_data_width => 1,
 	port_a_first_address => 0,
-	port_a_first_bit_number => 0,
+	port_a_first_bit_number => 29,
 	port_a_last_address => 63,
 	port_a_logical_ram_depth => 64,
 	port_a_logical_ram_width => 32,
@@ -23044,7 +23086,7 @@ GENERIC MAP (
 	port_b_data_out_clock => "none",
 	port_b_data_width => 1,
 	port_b_first_address => 0,
-	port_b_first_bit_number => 0,
+	port_b_first_bit_number => 29,
 	port_b_last_address => 63,
 	port_b_logical_ram_depth => 64,
 	port_b_logical_ram_width => 32,
@@ -23056,56 +23098,17 @@ PORT MAP (
 	portawe => \REG_EX|DOUT\(101),
 	portbre => VCC,
 	clk0 => \CLOCK_50~input_o\,
-	portadatain => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a0_PORTADATAIN_bus\,
-	portaaddr => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a0_PORTAADDR_bus\,
-	portbaddr => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a0_PORTBADDR_bus\,
+	portadatain => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a29_PORTADATAIN_bus\,
+	portaaddr => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a29_PORTAADDR_bus\,
+	portbaddr => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a29_PORTBADDR_bus\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	portbdataout => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus\);
+	portbdataout => \RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a29_PORTBDATAOUT_bus\);
 
-\REG_ID|DOUT[106]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \REG_ID|DOUT\(10),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(106));
-
-\REG_EX|DOUT[69]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \REG_ID|DOUT\(106),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_EX|DOUT\(69));
-
-\REG_MEM|DOUT[69]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \REG_EX|DOUT\(69),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_MEM|DOUT\(69));
-
-\MUX_LUI|saida_MUX[29]~26\ : cyclonev_lcell_comb
+\MUX_LUI|saida_MUX[26]~34\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_LUI|saida_MUX[29]~26_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal5~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(101))) # (\REG_MEM|DOUT\(1) & ((\REG_MEM|DOUT\(69))))))) # (\UC|Equal5~0_combout\ & (((\ROM_mips|memROM~5_combout\)))) ) ) # ( 
--- \REG_MEM|DOUT\(2) & ( ((!\UC|Equal5~0_combout\ & (((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a0~portbdataout\ & !\REG_MEM|DOUT\(1))))) # (\UC|Equal5~0_combout\ & (\ROM_mips|memROM~5_combout\))) ) )
+-- \MUX_LUI|saida_MUX[26]~34_combout\ = ( !\REG_MEM|DOUT\(2) & ( (!\UC|Equal3~0_combout\ & (((!\REG_MEM|DOUT\(1) & (\REG_MEM|DOUT\(98))) # (\REG_MEM|DOUT\(1) & ((\RAM_mips|memRAM_rtl_0|auto_generated|ram_block1a29~portbdataout\)))))) # (\UC|Equal3~0_combout\ 
+-- & (((\ROM_mips|memROM~5_combout\)))) ) ) # ( \REG_MEM|DOUT\(2) & ( ((!\UC|Equal3~0_combout\ & (((\REG_MEM|DOUT\(34) & !\REG_MEM|DOUT\(1))))) # (\UC|Equal3~0_combout\ & (\ROM_mips|memROM~5_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -23114,14 +23117,287 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \REG_MEM|ALT_INV_DOUT\(101),
+	dataa => \REG_MEM|ALT_INV_DOUT\(98),
 	datab => \ROM_mips|ALT_INV_memROM~5_combout\,
-	datac => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a0~portbdataout\,
-	datad => \UC|ALT_INV_Equal5~0_combout\,
+	datac => \REG_MEM|ALT_INV_DOUT\(34),
+	datad => \UC|ALT_INV_Equal3~0_combout\,
 	datae => \REG_MEM|ALT_INV_DOUT\(2),
 	dataf => \REG_MEM|ALT_INV_DOUT\(1),
-	datag => \REG_MEM|ALT_INV_DOUT\(69),
-	combout => \MUX_LUI|saida_MUX[29]~26_combout\);
+	datag => \RAM_mips|memRAM_rtl_0|auto_generated|ALT_INV_ram_block1a29~portbdataout\,
+	combout => \MUX_LUI|saida_MUX[26]~34_combout\);
+
+\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a26\ : cyclonev_ram_block
+-- pragma translate_off
+GENERIC MAP (
+	mem_init0 => "00000000",
+	clk0_core_clock_enable => "ena0",
+	data_interleave_offset_in_bits => 1,
+	data_interleave_width_in_bits => 1,
+	init_file => "db/MIPS_pipeline.ram0_bancoRegistradores_57a36dfc.hdl.mif",
+	init_file_layout => "port_b",
+	logical_ram_name => "bancoRegistradores:bancoRegistrador|altsyncram:registrador_rtl_0|altsyncram_d1p1:auto_generated|ALTSYNCRAM",
+	mixed_port_feed_through_mode => "dont_care",
+	operation_mode => "dual_port",
+	port_a_address_clear => "none",
+	port_a_address_width => 5,
+	port_a_byte_enable_clock => "none",
+	port_a_data_out_clear => "none",
+	port_a_data_out_clock => "none",
+	port_a_data_width => 1,
+	port_a_first_address => 0,
+	port_a_first_bit_number => 26,
+	port_a_last_address => 31,
+	port_a_logical_ram_depth => 32,
+	port_a_logical_ram_width => 32,
+	port_a_read_during_write_mode => "new_data_no_nbe_read",
+	port_b_address_clear => "none",
+	port_b_address_clock => "clock1",
+	port_b_address_width => 5,
+	port_b_data_out_clear => "none",
+	port_b_data_out_clock => "none",
+	port_b_data_width => 1,
+	port_b_first_address => 0,
+	port_b_first_bit_number => 26,
+	port_b_last_address => 31,
+	port_b_logical_ram_depth => 32,
+	port_b_logical_ram_width => 32,
+	port_b_read_during_write_mode => "new_data_no_nbe_read",
+	port_b_read_enable_clock => "clock1",
+	ram_block_type => "M20K")
+-- pragma translate_on
+PORT MAP (
+	portawe => \REG_MEM|DOUT\(0),
+	portbre => VCC,
+	clk0 => \CLOCK_50~input_o\,
+	clk1 => \CLOCK_50~input_o\,
+	ena0 => \REG_MEM|DOUT\(0),
+	portadatain => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a26_PORTADATAIN_bus\,
+	portaaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a26_PORTAADDR_bus\,
+	portbaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a26_PORTBADDR_bus\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	portbdataout => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a26_PORTBDATAOUT_bus\);
+
+\bancoRegistrador|registrador_rtl_0_bypass[64]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => VCC,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \bancoRegistrador|registrador_rtl_0_bypass\(64));
+
+\bancoRegistrador|registrador_rtl_0_bypass[63]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \MUX_LUI|saida_MUX[26]~34_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \bancoRegistrador|registrador_rtl_0_bypass\(63));
+
+\bancoRegistrador|saidaA[26]~26\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \bancoRegistrador|saidaA[26]~26_combout\ = ( \bancoRegistrador|registrador_rtl_0_bypass\(63) & ( (!\bancoRegistrador|Equal0~0_combout\ & (((!\bancoRegistrador|registrador_rtl_0_bypass\(64)) # 
+-- (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a26~portbdataout\)) # (\bancoRegistrador|registrador~43_combout\))) ) ) # ( !\bancoRegistrador|registrador_rtl_0_bypass\(63) & ( (!\bancoRegistrador|registrador~43_combout\ & 
+-- (!\bancoRegistrador|Equal0~0_combout\ & (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a26~portbdataout\ & \bancoRegistrador|registrador_rtl_0_bypass\(64)))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000001000110011000100110000000000000010001100110001001100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \bancoRegistrador|ALT_INV_registrador~43_combout\,
+	datab => \bancoRegistrador|ALT_INV_Equal0~0_combout\,
+	datac => \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a26~portbdataout\,
+	datad => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(64),
+	datae => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(63),
+	combout => \bancoRegistrador|saidaA[26]~26_combout\);
+
+\REG_ID|DOUT[100]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \bancoRegistrador|saidaA[26]~26_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_ID|DOUT\(100));
+
+\etapaBusca|DOUT[56]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \somadorPC|Add0~113_sumout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \etapaBusca|DOUT\(56));
+
+\MUX_jump|saida_MUX[26]~27\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MUX_jump|saida_MUX[26]~27_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~1_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~97_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(100) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(56) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \somadorPC|ALT_INV_Add0~1_sumout\,
+	datab => \somador_somador|ALT_INV_Add0~97_sumout\,
+	datac => \REG_ID|ALT_INV_DOUT\(100),
+	datad => \etapaBusca|ALT_INV_DOUT\(56),
+	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[26]~27_combout\);
+
+\PC|DOUT[26]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \MUX_jump|saida_MUX[26]~27_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(26));
+
+\etapaBusca|DOUT[58]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \somadorPC|Add0~1_sumout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \etapaBusca|DOUT\(58));
+
+\UC|palavraControle[5]\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \UC|palavraControle\(5) = ( \etapaBusca|DOUT\(61) & ( \etapaBusca|DOUT\(59) & ( (!\etapaBusca|DOUT\(60) & (!\etapaBusca|DOUT\(62) & (!\etapaBusca|DOUT\(58) $ (\etapaBusca|DOUT\(63))))) ) ) ) # ( !\etapaBusca|DOUT\(61) & ( \etapaBusca|DOUT\(59) & ( 
+-- (\etapaBusca|DOUT\(58) & (!\etapaBusca|DOUT\(60) & (\etapaBusca|DOUT\(63) & !\etapaBusca|DOUT\(62)))) ) ) ) # ( \etapaBusca|DOUT\(61) & ( !\etapaBusca|DOUT\(59) & ( (!\etapaBusca|DOUT\(63) & (!\etapaBusca|DOUT\(62) & ((!\etapaBusca|DOUT\(58)) # 
+-- (\etapaBusca|DOUT\(60))))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000101100000000000000000100000000001000010000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \etapaBusca|ALT_INV_DOUT\(58),
+	datab => \etapaBusca|ALT_INV_DOUT\(60),
+	datac => \etapaBusca|ALT_INV_DOUT\(63),
+	datad => \etapaBusca|ALT_INV_DOUT\(62),
+	datae => \etapaBusca|ALT_INV_DOUT\(61),
+	dataf => \etapaBusca|ALT_INV_DOUT\(59),
+	combout => \UC|palavraControle\(5));
+
+\REG_ID|DOUT[143]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \UC|palavraControle\(5),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_ID|DOUT\(143));
+
+\REG_ID|DOUT[5]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \etapaBusca|DOUT\(48),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_ID|DOUT\(5));
+
+\REG_ID|DOUT[0]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \etapaBusca|DOUT\(43),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_ID|DOUT\(0));
+
+\mux_RT_RD|saida_MUX[0]~4\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \mux_RT_RD|saida_MUX[0]~4_combout\ = (!\REG_ID|DOUT\(143) & ((!\REG_ID|DOUT\(142) & ((\REG_ID|DOUT\(0)))) # (\REG_ID|DOUT\(142) & (\REG_ID|DOUT\(5))))) # (\REG_ID|DOUT\(143) & (!\REG_ID|DOUT\(142)))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0100011011001110010001101100111001000110110011100100011011001110",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \REG_ID|ALT_INV_DOUT\(143),
+	datab => \REG_ID|ALT_INV_DOUT\(142),
+	datac => \REG_ID|ALT_INV_DOUT\(5),
+	datad => \REG_ID|ALT_INV_DOUT\(0),
+	combout => \mux_RT_RD|saida_MUX[0]~4_combout\);
+
+\REG_EX|DOUT[0]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \mux_RT_RD|saida_MUX[0]~4_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_EX|DOUT\(0));
+
+\REG_MEM|DOUT[0]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \REG_EX|DOUT\(0),
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_MEM|DOUT\(0));
 
 \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a29\ : cyclonev_ram_block
 -- pragma translate_off
@@ -23234,27 +23510,27 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \REG_ID|DOUT\(103));
 
-\MUX_jump|saida_MUX[29]~29\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[29]~30\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[29]~29_combout\ = ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~109_sumout\ & ( (!\UC|Equal3~0_combout\ & (((\selMUX_AND_BEQ~0_combout\) # (\somadorPC|Add0~5_sumout\)))) # (\UC|Equal3~0_combout\ & (\REG_ID|DOUT\(103))) ) ) ) # ( 
--- !\PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~109_sumout\ & ( (!\UC|Equal3~0_combout\ & ((\somadorPC|Add0~5_sumout\))) # (\UC|Equal3~0_combout\ & (\REG_ID|DOUT\(103))) ) ) ) # ( \PC|DOUT[31]~1_combout\ & ( !\somador_somador|Add0~109_sumout\ & ( 
--- (!\UC|Equal3~0_combout\ & (((\somadorPC|Add0~5_sumout\ & !\selMUX_AND_BEQ~0_combout\)))) # (\UC|Equal3~0_combout\ & (\REG_ID|DOUT\(103))) ) ) ) # ( !\PC|DOUT[31]~1_combout\ & ( !\somador_somador|Add0~109_sumout\ & ( (!\UC|Equal3~0_combout\ & 
--- ((\somadorPC|Add0~5_sumout\))) # (\UC|Equal3~0_combout\ & (\REG_ID|DOUT\(103))) ) ) )
+-- \MUX_jump|saida_MUX[29]~30_combout\ = ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~109_sumout\ & ( (!\UC|seletorMUX_JMP~1_combout\ & (((\selMUX_AND_BEQ~0_combout\) # (\somadorPC|Add0~17_sumout\)))) # (\UC|seletorMUX_JMP~1_combout\ & 
+-- (\REG_ID|DOUT\(103))) ) ) ) # ( !\MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~109_sumout\ & ( (!\UC|seletorMUX_JMP~1_combout\ & ((\somadorPC|Add0~17_sumout\))) # (\UC|seletorMUX_JMP~1_combout\ & (\REG_ID|DOUT\(103))) ) ) ) # ( 
+-- \MUX_jump|Equal2~0_combout\ & ( !\somador_somador|Add0~109_sumout\ & ( (!\UC|seletorMUX_JMP~1_combout\ & (((\somadorPC|Add0~17_sumout\ & !\selMUX_AND_BEQ~0_combout\)))) # (\UC|seletorMUX_JMP~1_combout\ & (\REG_ID|DOUT\(103))) ) ) ) # ( 
+-- !\MUX_jump|Equal2~0_combout\ & ( !\somador_somador|Add0~109_sumout\ & ( (!\UC|seletorMUX_JMP~1_combout\ & ((\somadorPC|Add0~17_sumout\))) # (\UC|seletorMUX_JMP~1_combout\ & (\REG_ID|DOUT\(103))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001110100011101000111010001000100011101000111010001110111011101",
+	lut_mask => "0011001101010101001100000101010100110011010101010011111101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \REG_ID|ALT_INV_DOUT\(103),
-	datab => \UC|ALT_INV_Equal3~0_combout\,
-	datac => \somadorPC|ALT_INV_Add0~5_sumout\,
-	datad => \ALT_INV_selMUX_AND_BEQ~0_combout\,
-	datae => \PC|ALT_INV_DOUT[31]~1_combout\,
+	datab => \somadorPC|ALT_INV_Add0~17_sumout\,
+	datac => \ALT_INV_selMUX_AND_BEQ~0_combout\,
+	datad => \UC|ALT_INV_seletorMUX_JMP~1_combout\,
+	datae => \MUX_jump|ALT_INV_Equal2~0_combout\,
 	dataf => \somador_somador|ALT_INV_Add0~109_sumout\,
-	combout => \MUX_jump|saida_MUX[29]~29_combout\);
+	combout => \MUX_jump|saida_MUX[29]~30_combout\);
 
 \PC|DOUT[29]\ : dffeas
 -- pragma translate_off
@@ -23264,7 +23540,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[29]~29_combout\,
+	d => \MUX_jump|saida_MUX[29]~30_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(29));
@@ -23277,32 +23553,28 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \somadorPC|Add0~5_sumout\,
+	d => \somadorPC|Add0~17_sumout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(61));
 
-\UC|palavraControle[5]\ : cyclonev_lcell_comb
+\MUX_ORI|saida_MUX[16]~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \UC|palavraControle\(5) = ( \etapaBusca|DOUT\(63) & ( !\etapaBusca|DOUT\(62) & ( (\etapaBusca|DOUT\(58) & (!\etapaBusca|DOUT\(60) & \etapaBusca|DOUT\(59))) ) ) ) # ( !\etapaBusca|DOUT\(63) & ( !\etapaBusca|DOUT\(62) & ( (\etapaBusca|DOUT\(61) & 
--- ((!\etapaBusca|DOUT\(60) & (!\etapaBusca|DOUT\(58))) # (\etapaBusca|DOUT\(60) & ((!\etapaBusca|DOUT\(59)))))) ) ) )
+-- \MUX_ORI|saida_MUX[16]~0_combout\ = (\ROM_mips|memROM~5_combout\ & ((!\etapaBusca|DOUT\(61)) # (!\UC|Equal4~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0010001100100000000000000101000000000000000000000000000000000000",
+	lut_mask => "0000111100001100000011110000110000001111000011000000111100001100",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \etapaBusca|ALT_INV_DOUT\(58),
 	datab => \etapaBusca|ALT_INV_DOUT\(61),
-	datac => \etapaBusca|ALT_INV_DOUT\(60),
-	datad => \etapaBusca|ALT_INV_DOUT\(59),
-	datae => \etapaBusca|ALT_INV_DOUT\(63),
-	dataf => \etapaBusca|ALT_INV_DOUT\(62),
-	combout => \UC|palavraControle\(5));
+	datac => \ROM_mips|ALT_INV_memROM~5_combout\,
+	datad => \UC|ALT_INV_Equal4~0_combout\,
+	combout => \MUX_ORI|saida_MUX[16]~0_combout\);
 
-\REG_ID|DOUT[143]\ : dffeas
+\REG_ID|DOUT[26]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -23310,190 +23582,10 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \UC|palavraControle\(5),
+	d => \MUX_ORI|saida_MUX[16]~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(143));
-
-\REG_ID|DOUT[5]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \etapaBusca|DOUT\(48),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(5));
-
-\REG_ID|DOUT[0]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \etapaBusca|DOUT\(43),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(0));
-
-\mux_RT_RD|saida_MUX[0]~4\ : cyclonev_lcell_comb
--- Equation(s):
--- \mux_RT_RD|saida_MUX[0]~4_combout\ = (!\REG_ID|DOUT\(143) & ((!\REG_ID|DOUT\(142) & ((\REG_ID|DOUT\(0)))) # (\REG_ID|DOUT\(142) & (\REG_ID|DOUT\(5))))) # (\REG_ID|DOUT\(143) & (!\REG_ID|DOUT\(142)))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0100011011001110010001101100111001000110110011100100011011001110",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \REG_ID|ALT_INV_DOUT\(143),
-	datab => \REG_ID|ALT_INV_DOUT\(142),
-	datac => \REG_ID|ALT_INV_DOUT\(5),
-	datad => \REG_ID|ALT_INV_DOUT\(0),
-	combout => \mux_RT_RD|saida_MUX[0]~4_combout\);
-
-\REG_EX|DOUT[0]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \mux_RT_RD|saida_MUX[0]~4_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_EX|DOUT\(0));
-
-\REG_MEM|DOUT[0]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \REG_EX|DOUT\(0),
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_MEM|DOUT\(0));
-
-\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a25\ : cyclonev_ram_block
--- pragma translate_off
-GENERIC MAP (
-	mem_init0 => "00000000",
-	clk0_core_clock_enable => "ena0",
-	data_interleave_offset_in_bits => 1,
-	data_interleave_width_in_bits => 1,
-	init_file => "db/MIPS_pipeline.ram0_bancoRegistradores_57a36dfc.hdl.mif",
-	init_file_layout => "port_b",
-	logical_ram_name => "bancoRegistradores:bancoRegistrador|altsyncram:registrador_rtl_0|altsyncram_d1p1:auto_generated|ALTSYNCRAM",
-	mixed_port_feed_through_mode => "dont_care",
-	operation_mode => "dual_port",
-	port_a_address_clear => "none",
-	port_a_address_width => 5,
-	port_a_byte_enable_clock => "none",
-	port_a_data_out_clear => "none",
-	port_a_data_out_clock => "none",
-	port_a_data_width => 1,
-	port_a_first_address => 0,
-	port_a_first_bit_number => 25,
-	port_a_last_address => 31,
-	port_a_logical_ram_depth => 32,
-	port_a_logical_ram_width => 32,
-	port_a_read_during_write_mode => "new_data_no_nbe_read",
-	port_b_address_clear => "none",
-	port_b_address_clock => "clock1",
-	port_b_address_width => 5,
-	port_b_data_out_clear => "none",
-	port_b_data_out_clock => "none",
-	port_b_data_width => 1,
-	port_b_first_address => 0,
-	port_b_first_bit_number => 25,
-	port_b_last_address => 31,
-	port_b_logical_ram_depth => 32,
-	port_b_logical_ram_width => 32,
-	port_b_read_during_write_mode => "new_data_no_nbe_read",
-	port_b_read_enable_clock => "clock1",
-	ram_block_type => "M20K")
--- pragma translate_on
-PORT MAP (
-	portawe => \REG_MEM|DOUT\(0),
-	portbre => VCC,
-	clk0 => \CLOCK_50~input_o\,
-	clk1 => \CLOCK_50~input_o\,
-	ena0 => \REG_MEM|DOUT\(0),
-	portadatain => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a25_PORTADATAIN_bus\,
-	portaaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a25_PORTAADDR_bus\,
-	portbaddr => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a25_PORTBADDR_bus\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	portbdataout => \bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a25_PORTBDATAOUT_bus\);
-
-\bancoRegistrador|registrador_rtl_0_bypass[62]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => VCC,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \bancoRegistrador|registrador_rtl_0_bypass\(62));
-
-\bancoRegistrador|registrador_rtl_0_bypass[61]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \MUX_LUI|saida_MUX[25]~38_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \bancoRegistrador|registrador_rtl_0_bypass\(61));
-
-\bancoRegistrador|saidaA[25]~25\ : cyclonev_lcell_comb
--- Equation(s):
--- \bancoRegistrador|saidaA[25]~25_combout\ = ( \bancoRegistrador|registrador_rtl_0_bypass\(61) & ( (!\bancoRegistrador|Equal0~0_combout\ & (((!\bancoRegistrador|registrador_rtl_0_bypass\(62)) # 
--- (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a25~portbdataout\)) # (\bancoRegistrador|registrador~43_combout\))) ) ) # ( !\bancoRegistrador|registrador_rtl_0_bypass\(61) & ( (!\bancoRegistrador|registrador~43_combout\ & 
--- (!\bancoRegistrador|Equal0~0_combout\ & (\bancoRegistrador|registrador_rtl_0|auto_generated|ram_block1a25~portbdataout\ & \bancoRegistrador|registrador_rtl_0_bypass\(62)))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000001000110011000100110000000000000010001100110001001100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \bancoRegistrador|ALT_INV_registrador~43_combout\,
-	datab => \bancoRegistrador|ALT_INV_Equal0~0_combout\,
-	datac => \bancoRegistrador|registrador_rtl_0|auto_generated|ALT_INV_ram_block1a25~portbdataout\,
-	datad => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(62),
-	datae => \bancoRegistrador|ALT_INV_registrador_rtl_0_bypass\(61),
-	combout => \bancoRegistrador|saidaA[25]~25_combout\);
-
-\REG_ID|DOUT[99]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \bancoRegistrador|saidaA[25]~25_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(99));
+	q => \REG_ID|DOUT\(26));
 
 \etapaBusca|DOUT[55]\ : dffeas
 -- pragma translate_off
@@ -23508,15 +23600,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(55));
 
-\MUX_jump|saida_MUX[25]~25\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[25]~26\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[25]~25_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~93_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~117_sumout\ ) ) ) # ( 
--- \PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(55) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(99) ) ) )
+-- \MUX_jump|saida_MUX[25]~26_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~117_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~93_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(99) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(55) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -23525,8 +23617,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(99),
 	datad => \etapaBusca|ALT_INV_DOUT\(55),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[25]~25_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[25]~26_combout\);
 
 \PC|DOUT[25]\ : dffeas
 -- pragma translate_off
@@ -23536,7 +23628,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[25]~25_combout\,
+	d => \MUX_jump|saida_MUX[25]~26_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(25));
@@ -23553,19 +23645,6 @@ PORT MAP (
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(57));
-
-\etapaBusca|DOUT[56]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \somadorPC|Add0~113_sumout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \etapaBusca|DOUT\(56));
 
 \bancoRegistrador|Equal0~0\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -23709,15 +23788,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(37));
 
-\MUX_jump|saida_MUX[7]~1\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[7]~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[7]~1_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~5_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~29_sumout\ ) ) ) # ( \PC|DOUT[13]~0_combout\ & 
--- ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(37) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(81) ) ) )
+-- \MUX_jump|saida_MUX[7]~2_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~29_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~5_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(81) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(37) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -23726,8 +23805,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(81),
 	datad => \etapaBusca|ALT_INV_DOUT\(37),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[7]~1_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[7]~2_combout\);
 
 \PC|DOUT[7]\ : dffeas
 -- pragma translate_off
@@ -23737,7 +23816,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[7]~1_combout\,
+	d => \MUX_jump|saida_MUX[7]~2_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(7));
@@ -23789,15 +23868,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(36));
 
-\MUX_jump|saida_MUX[6]~3\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[6]~4\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[6]~3_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~13_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~37_sumout\ ) ) ) # ( \PC|DOUT[13]~0_combout\ 
--- & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(36) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(80) ) ) )
+-- \MUX_jump|saida_MUX[6]~4_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~37_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~13_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(80) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(36) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -23806,8 +23885,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(80),
 	datad => \etapaBusca|ALT_INV_DOUT\(36),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[6]~3_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[6]~4_combout\);
 
 \PC|DOUT[6]\ : dffeas
 -- pragma translate_off
@@ -23817,7 +23896,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[6]~3_combout\,
+	d => \MUX_jump|saida_MUX[6]~4_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(6));
@@ -23855,22 +23934,22 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \REG_ID|DOUT\(10));
 
-\MUX_jump|saida_MUX[0]~6\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[0]~7\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[0]~6_combout\ = (!\UC|seletorMUX_JMP~0_combout\ & ((!\UC|Equal3~0_combout\ & ((\REG_ID|DOUT\(106)))) # (\UC|Equal3~0_combout\ & (\REG_ID|DOUT\(74)))))
+-- \MUX_jump|saida_MUX[0]~7_combout\ = (\MUX_jump|saida_MUX[0]~0_combout\ & ((!\UC|seletorMUX_JMP~1_combout\ & ((\REG_ID|DOUT\(106)))) # (\UC|seletorMUX_JMP~1_combout\ & (\REG_ID|DOUT\(74)))))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001000011010000000100001101000000010000110100000001000011010000",
+	lut_mask => "0000000100001101000000010000110100000001000011010000000100001101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \REG_ID|ALT_INV_DOUT\(74),
-	datab => \UC|ALT_INV_Equal3~0_combout\,
-	datac => \UC|ALT_INV_seletorMUX_JMP~0_combout\,
+	datab => \UC|ALT_INV_seletorMUX_JMP~1_combout\,
+	datac => \MUX_jump|ALT_INV_saida_MUX[0]~0_combout\,
 	datad => \REG_ID|ALT_INV_DOUT\(106),
-	combout => \MUX_jump|saida_MUX[0]~6_combout\);
+	combout => \MUX_jump|saida_MUX[0]~7_combout\);
 
 \ULA|Equal5~8\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -23890,10 +23969,10 @@ PORT MAP (
 	datae => \ULA|ALT_INV_Equal5~6_combout\,
 	combout => \ULA|Equal5~8_combout\);
 
-\PC|DOUT[0]~2\ : cyclonev_lcell_comb
+\PC|DOUT[0]~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \PC|DOUT[0]~2_combout\ = ( \REG_ID|DOUT\(149) & ( \PC|DOUT[31]~1_combout\ & ( ((!\ULA|Equal5~3_combout\) # ((!\ULA|Equal5~5_combout\) # (!\ULA|Equal5~8_combout\))) # (\REG_ID|DOUT\(150)) ) ) ) # ( !\REG_ID|DOUT\(149) & ( \PC|DOUT[31]~1_combout\ & ( 
--- (\REG_ID|DOUT\(150) & (\ULA|Equal5~3_combout\ & (\ULA|Equal5~5_combout\ & \ULA|Equal5~8_combout\))) ) ) ) # ( \REG_ID|DOUT\(149) & ( !\PC|DOUT[31]~1_combout\ ) ) # ( !\REG_ID|DOUT\(149) & ( !\PC|DOUT[31]~1_combout\ ) )
+-- \PC|DOUT[0]~1_combout\ = ( \REG_ID|DOUT\(149) & ( \MUX_jump|Equal2~0_combout\ & ( ((!\ULA|Equal5~3_combout\) # ((!\ULA|Equal5~5_combout\) # (!\ULA|Equal5~8_combout\))) # (\REG_ID|DOUT\(150)) ) ) ) # ( !\REG_ID|DOUT\(149) & ( \MUX_jump|Equal2~0_combout\ & 
+-- ( (\REG_ID|DOUT\(150) & (\ULA|Equal5~3_combout\ & (\ULA|Equal5~5_combout\ & \ULA|Equal5~8_combout\))) ) ) ) # ( \REG_ID|DOUT\(149) & ( !\MUX_jump|Equal2~0_combout\ ) ) # ( !\REG_ID|DOUT\(149) & ( !\MUX_jump|Equal2~0_combout\ ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -23907,8 +23986,8 @@ PORT MAP (
 	datac => \ULA|ALT_INV_Equal5~5_combout\,
 	datad => \ULA|ALT_INV_Equal5~8_combout\,
 	datae => \REG_ID|ALT_INV_DOUT\(149),
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \PC|DOUT[0]~2_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \PC|DOUT[0]~1_combout\);
 
 \PC|DOUT[0]\ : dffeas
 -- pragma translate_off
@@ -23918,8 +23997,8 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[0]~6_combout\,
-	ena => \PC|DOUT[0]~2_combout\,
+	d => \MUX_jump|saida_MUX[0]~7_combout\,
+	ena => \PC|DOUT[0]~1_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(0));
@@ -23937,15 +24016,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(32));
 
-\MUX_jump|saida_MUX[2]~2\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[2]~3\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[2]~2_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~9_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~33_sumout\ ) ) ) # ( \PC|DOUT[13]~0_combout\ & 
--- ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(32) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(76) ) ) )
+-- \MUX_jump|saida_MUX[2]~3_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~33_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~9_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(76) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(32) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -23954,8 +24033,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(76),
 	datad => \etapaBusca|ALT_INV_DOUT\(32),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[2]~2_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[2]~3_combout\);
 
 \PC|DOUT[2]\ : dffeas
 -- pragma translate_off
@@ -23965,7 +24044,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[2]~2_combout\,
+	d => \MUX_jump|saida_MUX[2]~3_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(2));
@@ -23987,22 +24066,22 @@ PORT MAP (
 	sumout => \somadorPC|Add0~25_sumout\,
 	cout => \somadorPC|Add0~26\);
 
-\MUX_jump|saida_MUX[1]~7\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[1]~8\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[1]~7_combout\ = (!\UC|palavraControle[10]~0_combout\ & ((!\UC|Equal3~0_combout\ & ((\REG_ID|DOUT\(107)))) # (\UC|Equal3~0_combout\ & (\REG_ID|DOUT\(75)))))
+-- \MUX_jump|saida_MUX[1]~8_combout\ = (\MUX_jump|saida_MUX[0]~0_combout\ & ((!\UC|seletorMUX_JMP~1_combout\ & ((\REG_ID|DOUT\(107)))) # (\UC|seletorMUX_JMP~1_combout\ & (\REG_ID|DOUT\(75)))))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001000011010000000100001101000000010000110100000001000011010000",
+	lut_mask => "0000000100001101000000010000110100000001000011010000000100001101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \REG_ID|ALT_INV_DOUT\(75),
-	datab => \UC|ALT_INV_Equal3~0_combout\,
-	datac => \UC|ALT_INV_palavraControle[10]~0_combout\,
+	datab => \UC|ALT_INV_seletorMUX_JMP~1_combout\,
+	datac => \MUX_jump|ALT_INV_saida_MUX[0]~0_combout\,
 	datad => \REG_ID|ALT_INV_DOUT\(107),
-	combout => \MUX_jump|saida_MUX[1]~7_combout\);
+	combout => \MUX_jump|saida_MUX[1]~8_combout\);
 
 \PC|DOUT[1]\ : dffeas
 -- pragma translate_off
@@ -24012,8 +24091,8 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[1]~7_combout\,
-	ena => \PC|DOUT[0]~2_combout\,
+	d => \MUX_jump|saida_MUX[1]~8_combout\,
+	ena => \PC|DOUT[0]~1_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(1));
@@ -24031,15 +24110,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(33));
 
-\MUX_jump|saida_MUX[3]~0\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[3]~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[3]~0_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~1_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~25_sumout\ ) ) ) # ( \PC|DOUT[13]~0_combout\ & 
--- ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(33) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(77) ) ) )
+-- \MUX_jump|saida_MUX[3]~1_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~25_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~1_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(77) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(33) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -24048,8 +24127,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(77),
 	datad => \etapaBusca|ALT_INV_DOUT\(33),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[3]~0_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[3]~1_combout\);
 
 \PC|DOUT[3]\ : dffeas
 -- pragma translate_off
@@ -24059,7 +24138,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[3]~0_combout\,
+	d => \MUX_jump|saida_MUX[3]~1_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(3));
@@ -24094,15 +24173,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(34));
 
-\MUX_jump|saida_MUX[4]~4\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[4]~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[4]~4_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~17_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~41_sumout\ ) ) ) # ( \PC|DOUT[13]~0_combout\ 
--- & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(34) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(78) ) ) )
+-- \MUX_jump|saida_MUX[4]~5_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~41_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~17_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(78) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(34) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -24111,8 +24190,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(78),
 	datad => \etapaBusca|ALT_INV_DOUT\(34),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[4]~4_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[4]~5_combout\);
 
 \PC|DOUT[4]\ : dffeas
 -- pragma translate_off
@@ -24122,7 +24201,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[4]~4_combout\,
+	d => \MUX_jump|saida_MUX[4]~5_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(4));
@@ -24140,15 +24219,15 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(35));
 
-\MUX_jump|saida_MUX[5]~5\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[5]~6\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[5]~5_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~21_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~45_sumout\ ) ) ) # ( \PC|DOUT[13]~0_combout\ 
--- & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(35) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(79) ) ) )
+-- \MUX_jump|saida_MUX[5]~6_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somadorPC|Add0~45_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~21_sumout\ ) ) ) # ( 
+-- \PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \REG_ID|DOUT\(79) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\MUX_jump|Equal2~0_combout\ & ( \etapaBusca|DOUT\(35) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
+	lut_mask => "0000000011111111000011110000111100110011001100110101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -24157,8 +24236,8 @@ PORT MAP (
 	datac => \REG_ID|ALT_INV_DOUT\(79),
 	datad => \etapaBusca|ALT_INV_DOUT\(35),
 	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[5]~5_combout\);
+	dataf => \MUX_jump|ALT_INV_Equal2~0_combout\,
+	combout => \MUX_jump|saida_MUX[5]~6_combout\);
 
 \PC|DOUT[5]\ : dffeas
 -- pragma translate_off
@@ -24168,7 +24247,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[5]~5_combout\,
+	d => \MUX_jump|saida_MUX[5]~6_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(5));
@@ -24593,27 +24672,27 @@ PORT MAP (
 	cin => \somador_somador|Add0~114\,
 	sumout => \somador_somador|Add0~117_sumout\);
 
-\MUX_jump|saida_MUX[31]~31\ : cyclonev_lcell_comb
+\MUX_jump|saida_MUX[31]~32\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX_jump|saida_MUX[31]~31_combout\ = ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~117_sumout\ & ( (!\UC|Equal3~0_combout\ & (((\selMUX_AND_BEQ~0_combout\) # (\somadorPC|Add0~17_sumout\)))) # (\UC|Equal3~0_combout\ & (\REG_ID|DOUT\(105))) ) ) ) # ( 
--- !\PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~117_sumout\ & ( (!\UC|Equal3~0_combout\ & ((\somadorPC|Add0~17_sumout\))) # (\UC|Equal3~0_combout\ & (\REG_ID|DOUT\(105))) ) ) ) # ( \PC|DOUT[31]~1_combout\ & ( !\somador_somador|Add0~117_sumout\ & ( 
--- (!\UC|Equal3~0_combout\ & (((\somadorPC|Add0~17_sumout\ & !\selMUX_AND_BEQ~0_combout\)))) # (\UC|Equal3~0_combout\ & (\REG_ID|DOUT\(105))) ) ) ) # ( !\PC|DOUT[31]~1_combout\ & ( !\somador_somador|Add0~117_sumout\ & ( (!\UC|Equal3~0_combout\ & 
--- ((\somadorPC|Add0~17_sumout\))) # (\UC|Equal3~0_combout\ & (\REG_ID|DOUT\(105))) ) ) )
+-- \MUX_jump|saida_MUX[31]~32_combout\ = ( \MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~117_sumout\ & ( (!\UC|seletorMUX_JMP~1_combout\ & (((\selMUX_AND_BEQ~0_combout\) # (\somadorPC|Add0~9_sumout\)))) # (\UC|seletorMUX_JMP~1_combout\ & 
+-- (\REG_ID|DOUT\(105))) ) ) ) # ( !\MUX_jump|Equal2~0_combout\ & ( \somador_somador|Add0~117_sumout\ & ( (!\UC|seletorMUX_JMP~1_combout\ & ((\somadorPC|Add0~9_sumout\))) # (\UC|seletorMUX_JMP~1_combout\ & (\REG_ID|DOUT\(105))) ) ) ) # ( 
+-- \MUX_jump|Equal2~0_combout\ & ( !\somador_somador|Add0~117_sumout\ & ( (!\UC|seletorMUX_JMP~1_combout\ & (((\somadorPC|Add0~9_sumout\ & !\selMUX_AND_BEQ~0_combout\)))) # (\UC|seletorMUX_JMP~1_combout\ & (\REG_ID|DOUT\(105))) ) ) ) # ( 
+-- !\MUX_jump|Equal2~0_combout\ & ( !\somador_somador|Add0~117_sumout\ & ( (!\UC|seletorMUX_JMP~1_combout\ & ((\somadorPC|Add0~9_sumout\))) # (\UC|seletorMUX_JMP~1_combout\ & (\REG_ID|DOUT\(105))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001110100011101000111010001000100011101000111010001110111011101",
+	lut_mask => "0011001101010101001100000101010100110011010101010011111101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \REG_ID|ALT_INV_DOUT\(105),
-	datab => \UC|ALT_INV_Equal3~0_combout\,
-	datac => \somadorPC|ALT_INV_Add0~17_sumout\,
-	datad => \ALT_INV_selMUX_AND_BEQ~0_combout\,
-	datae => \PC|ALT_INV_DOUT[31]~1_combout\,
+	datab => \somadorPC|ALT_INV_Add0~9_sumout\,
+	datac => \ALT_INV_selMUX_AND_BEQ~0_combout\,
+	datad => \UC|ALT_INV_seletorMUX_JMP~1_combout\,
+	datae => \MUX_jump|ALT_INV_Equal2~0_combout\,
 	dataf => \somador_somador|ALT_INV_Add0~117_sumout\,
-	combout => \MUX_jump|saida_MUX[31]~31_combout\);
+	combout => \MUX_jump|saida_MUX[31]~32_combout\);
 
 \PC|DOUT[31]\ : dffeas
 -- pragma translate_off
@@ -24623,14 +24702,14 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[31]~31_combout\,
+	d => \MUX_jump|saida_MUX[31]~32_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(31));
 
-\somadorPC|Add0~17\ : cyclonev_lcell_comb
+\somadorPC|Add0~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \somadorPC|Add0~17_sumout\ = SUM(( \PC|DOUT\(31) ) + ( GND ) + ( \somadorPC|Add0~22\ ))
+-- \somadorPC|Add0~9_sumout\ = SUM(( \PC|DOUT\(31) ) + ( GND ) + ( \somadorPC|Add0~14\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -24640,8 +24719,8 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	datad => \PC|ALT_INV_DOUT\(31),
-	cin => \somadorPC|Add0~22\,
-	sumout => \somadorPC|Add0~17_sumout\);
+	cin => \somadorPC|Add0~14\,
+	sumout => \somadorPC|Add0~9_sumout\);
 
 \etapaBusca|DOUT[63]\ : dffeas
 -- pragma translate_off
@@ -24651,119 +24730,25 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
-	d => \somadorPC|Add0~17_sumout\,
+	d => \somadorPC|Add0~9_sumout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \etapaBusca|DOUT\(63));
 
-\UC|Equal2~0\ : cyclonev_lcell_comb
+\UC|Equal12~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \UC|Equal2~0_combout\ = (\etapaBusca|DOUT\(58) & (\etapaBusca|DOUT\(61) & (\etapaBusca|DOUT\(60) & \etapaBusca|DOUT\(59))))
+-- \UC|Equal12~0_combout\ = (\etapaBusca|DOUT\(63) & (\etapaBusca|DOUT\(61) & \UC|Equal2~0_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \etapaBusca|ALT_INV_DOUT\(58),
-	datab => \etapaBusca|ALT_INV_DOUT\(61),
-	datac => \etapaBusca|ALT_INV_DOUT\(60),
-	datad => \etapaBusca|ALT_INV_DOUT\(59),
-	combout => \UC|Equal2~0_combout\);
-
-\MUX_ORI|saida_MUX[16]~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \MUX_ORI|saida_MUX[16]~0_combout\ = (\ROM_mips|memROM~5_combout\ & (((!\UC|Equal2~0_combout\) # (\etapaBusca|DOUT\(62))) # (\etapaBusca|DOUT\(63))))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000111100000111000011110000011100001111000001110000111100000111",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \etapaBusca|ALT_INV_DOUT\(63),
-	datab => \etapaBusca|ALT_INV_DOUT\(62),
-	datac => \ROM_mips|ALT_INV_memROM~5_combout\,
-	datad => \UC|ALT_INV_Equal2~0_combout\,
-	combout => \MUX_ORI|saida_MUX[16]~0_combout\);
-
-\REG_ID|DOUT[26]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \MUX_ORI|saida_MUX[16]~0_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \REG_ID|DOUT\(26));
-
-\MUX_jump|saida_MUX[26]~26\ : cyclonev_lcell_comb
--- Equation(s):
--- \MUX_jump|saida_MUX[26]~26_combout\ = ( \PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somador_somador|Add0~97_sumout\ ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( \PC|DOUT[31]~1_combout\ & ( \somadorPC|Add0~1_sumout\ ) ) ) # ( \PC|DOUT[13]~0_combout\ 
--- & ( !\PC|DOUT[31]~1_combout\ & ( \etapaBusca|DOUT\(56) ) ) ) # ( !\PC|DOUT[13]~0_combout\ & ( !\PC|DOUT[31]~1_combout\ & ( \REG_ID|DOUT\(100) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000111100001111000000001111111101010101010101010011001100110011",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \somadorPC|ALT_INV_Add0~1_sumout\,
-	datab => \somador_somador|ALT_INV_Add0~97_sumout\,
-	datac => \REG_ID|ALT_INV_DOUT\(100),
-	datad => \etapaBusca|ALT_INV_DOUT\(56),
-	datae => \PC|ALT_INV_DOUT[13]~0_combout\,
-	dataf => \PC|ALT_INV_DOUT[31]~1_combout\,
-	combout => \MUX_jump|saida_MUX[26]~26_combout\);
-
-\PC|DOUT[26]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \MUX_jump|saida_MUX[26]~26_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \PC|DOUT\(26));
-
-\etapaBusca|DOUT[58]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \somadorPC|Add0~1_sumout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \etapaBusca|DOUT\(58));
-
-\UC|Equal12~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \UC|Equal12~0_combout\ = (\etapaBusca|DOUT\(58) & (\etapaBusca|DOUT\(61) & (\etapaBusca|DOUT\(63) & \UC|Equal1~0_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \etapaBusca|ALT_INV_DOUT\(58),
 	datab => \etapaBusca|ALT_INV_DOUT\(61),
-	datac => \etapaBusca|ALT_INV_DOUT\(63),
-	datad => \UC|ALT_INV_Equal1~0_combout\,
+	datac => \UC|ALT_INV_Equal2~0_combout\,
 	combout => \UC|Equal12~0_combout\);
 
 \REG_ID|DOUT[138]\ : dffeas
