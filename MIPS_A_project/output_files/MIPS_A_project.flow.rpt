@@ -1,6 +1,6 @@
 Flow report for MIPS_A_project
-Sun Dec 06 13:45:26 2020
-Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Sun Dec 06 23:57:02 2020
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
 ---------------------
@@ -21,9 +21,9 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -33,32 +33,33 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sun Dec 06 13:45:26 2020       ;
-; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Flow Status                     ; Successful - Sun Dec 06 23:57:02 2020       ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; MIPS_A_project                              ;
 ; Top-level Entity Name           ; MIPS_A_project                              ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 2912                                        ;
-; Total pins                      ; 133                                         ;
+; Logic utilization (in ALMs)     ; 1,924 / 18,480 ( 10 % )                     ;
+; Total registers                 ; 3136                                        ;
+; Total pins                      ; 50 / 224 ( 22 % )                           ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
+; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
+; Total DSP Blocks                ; 0 / 66 ( 0 % )                              ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
 ; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
+; Total PLLs                      ; 0 / 4 ( 0 % )                               ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
 +---------------------------------+---------------------------------------------+
 
 
@@ -67,7 +68,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/27/2020 15:01:07 ;
+; Start date & time ; 12/06/2020 23:41:35 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIPS_A_project      ;
 +-------------------+---------------------+
@@ -78,7 +79,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 167317904317105.160650006634668        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 79965021551996.160730889409368         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -101,16 +102,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:46     ; 1.0                     ; 4889 MB             ; 00:01:03                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4714 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4728 MB             ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4718 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4728 MB             ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4718 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4728 MB             ; 00:00:04                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4718 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4728 MB             ; 00:00:01                           ;
-; Total                ; 00:01:05     ; --                      ; --                  ; 00:01:21                           ;
+; Analysis & Synthesis ; 00:00:36     ; 1.0                     ; 4856 MB             ; 00:01:03                           ;
+; Fitter               ; 00:07:05     ; 1.4                     ; 6205 MB             ; 00:13:38                           ;
+; Assembler            ; 00:00:12     ; 1.0                     ; 4853 MB             ; 00:00:09                           ;
+; Timing Analyzer      ; 00:07:16     ; 1.2                     ; 5165 MB             ; 00:07:11                           ;
+; EDA Netlist Writer   ; 00:00:07     ; 1.0                     ; 4750 MB             ; 00:00:06                           ;
+; Total                ; 00:15:16     ; --                      ; --                  ; 00:22:07                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -119,15 +116,11 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-U5DSIPV  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-U5DSIPV  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-U5DSIPV  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-U5DSIPV  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-U5DSIPV  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-U5DSIPV  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-U5DSIPV  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-U5DSIPV  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-U5DSIPV  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; LAPTOP-95VQLT04  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; LAPTOP-95VQLT04  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; LAPTOP-95VQLT04  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; LAPTOP-95VQLT04  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-95VQLT04  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -135,14 +128,10 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off MIPS_A_project -c MIPS_A_project
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS_A_project -c MIPS_A_project --vector_source=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/Waveform.vwf --testbench_file=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/simulation/qsim/Waveform.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/simulation/qsim/ MIPS_A_project -c MIPS_A_project
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS_A_project -c MIPS_A_project --vector_source=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/Waveform.vwf --testbench_file=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/simulation/qsim/Waveform.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/simulation/qsim/ MIPS_A_project -c MIPS_A_project
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS_A_project -c MIPS_A_project --vector_source=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/Waveform.vwf --testbench_file=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/simulation/qsim/Waveform.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/simulation/qsim/ MIPS_A_project -c MIPS_A_project
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS_A_project -c MIPS_A_project --vector_source=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/Waveform.vwf --testbench_file=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/simulation/qsim/Waveform.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/intelFPGA_lite/17.1/AulasDesignComputadores/MIPS_A_project/simulation/qsim/ MIPS_A_project -c MIPS_A_project
+quartus_fit --read_settings_files=off --write_settings_files=off MIPS_A_project -c MIPS_A_project
+quartus_asm --read_settings_files=off --write_settings_files=off MIPS_A_project -c MIPS_A_project
+quartus_sta MIPS_A_project -c MIPS_A_project
+quartus_eda --read_settings_files=off --write_settings_files=off MIPS_A_project -c MIPS_A_project
 
 
 

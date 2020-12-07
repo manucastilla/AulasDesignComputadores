@@ -24,7 +24,7 @@ entity processador is
 	--testess
 	inA_ULA :  out std_logic_vector(31 DOWNTO 0);
 	inB_ULA :  out std_logic_vector(31 DOWNTO 0);
-	mux_lui_out : out std_logic
+	mux_lui_out : out std_logic_vector(31 DOWNTO 0)
   );
 end entity;
 
@@ -195,7 +195,7 @@ begin
 					saida_MUX    => saida_LUI_REG
 				);
 
-	mux_lui_out <= seletorLUI;
+	mux_lui_out <= saida_LUI_REG;
 
 	bancoRegistrador : entity work.bancoRegistradores   
 				generic map (

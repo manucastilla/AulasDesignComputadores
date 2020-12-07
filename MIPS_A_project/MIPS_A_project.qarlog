@@ -1,0 +1,36 @@
+Quartus Prime Archive log --	C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project.qarlog
+
+Archive:	C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project.qar
+Date:		Sun Dec 06 22:48:19 2020
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project.qpf
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project.qsf
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_assignment_defaults.qdf
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/RAMMIPS.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/RAMcontent.mif
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/ROMMIPS.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/ROMcontent.mif
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/RegistradorGenerico.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/ULA.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/Waveform.vwf
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/bancoRegistradores.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/constantesMIPS.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/conversorHex7Seg.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/db/MIPS_A_project.cmp.rdb
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/edgeDetector.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/estendeSinalGenerico.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/muxGenerico2x1.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/muxGenerico4x1.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/processador.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/shftLEFT.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/somaConstante.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/somadorGenerico.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/unidadeControleFD.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/unidadeControleULA.vhd
+	======= Total: 25 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
