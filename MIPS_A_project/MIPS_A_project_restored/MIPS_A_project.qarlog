@@ -1,0 +1,42 @@
+Quartus Prime Archive log --	C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/MIPS_A_project.qarlog
+
+Archive:	C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/MIPS_A_project.qar
+Date:		Mon Dec 07 10:41:39 2020
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/MIPS_A_project.qpf
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/MIPS_A_project.qsf
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/MIPS_A_project.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/MIPS_A_project_assignment_defaults.qdf
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/RAMMIPS.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/RAMcontent.mif
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/ROMMIPS.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/ROMcontent.mif
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/RegistradorGenerico.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/ULA.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/Waveform.vwf
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/bancoRegistradores.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/constantesMIPS.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/conversorHex7Seg.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/db/MIPS_A_project.cmp.rdb
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/edgeDetector.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/estendeSinalGenerico.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/muxGenerico2x1.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/muxGenerico4x1.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/processador.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/shftLEFT.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/somaConstante.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/somadorGenerico.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/unidadeControleFD.vhd
+C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/unidadeControleULA.vhd
+	======= Total: 25 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Mon Dec 07 10:42:07 2020
+Source archive file:	C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/MIPS_A_project.qar
+Archive was extracted into	C:/Users/thive/Desktop/Insper/SextoSemestre/DesComp/AulasDesignComputadores/MIPS_A_project/MIPS_A_project_restored/MIPS_A_project_restored/
+		 - successfully.
